@@ -1,5 +1,6 @@
-＃ Any png gaiji in headwords and any "unable to get" should be changed to �. 
+# Author: shoui520
 # Null means you should just remove it as i found them useless 
+# Any png gaiji in headwords and any "unable to get" should be changed to �. 
 # E412.svg is a double full width space (　　)
 AC6E.svg	gaiji/AC6E.png
 A428.svg	🈔

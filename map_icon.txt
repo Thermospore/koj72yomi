@@ -1,3 +1,5 @@
+# Author: shoui520
+# Null means you should just remove it as i found them useless 
 square_a.svg	〘
 square_b.svg	〙
 yajirusi2.svg	➡
