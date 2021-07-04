@@ -1,0 +1,240 @@
+example 1:
+Title,Html
+まり‐りか 【圜りか】,"<rn></rn><a name=""010589200000""></a><div class=""midashi"">まり‐りか 【圜りか】</div><div class=""honbun""><rn></rn><a name=""010589200001""></a><div style=""margin-left:1em;"">まるいさま。新撰字鏡「<object class=""gaiji"" data=""E6C2.svg""></object>…奈太良加爾、又曽比也加爾、又万利々加爾」</div></div>"
+
+preview yomichan entry:
+=======================================================
+#headword
+まりりか
+圜りか
+# glossary content (body)
+まり‐りか 【圜りか】\n
+まるいさま。新撰字鏡「𦟛…奈太良加爾、又曽比也加爾、又万利々加爾」
+=======================================================
+END
+
+Comments:
+line 8 is representing the reading that appears on top of the headword. Make sure spaces and "‐" etc is stripped out to be applied to the reading for the expression
+line 11, keep original reading intact with the "‐" etc. 
+line 11, line break (\n) after each </div> and <rn></rn>, except from at the end of an entry. \n should not be visible in Yomichan but it will be in the json
+line 12, 𦟛 is from my gaiji map for E6C2.svg. Please see map_gaiji.txt
+extra: ignore <rn></rn> at the start of any entry in column Html. 
+
+example 2:
+Title,Html
+ふ‐せい 【浮世】,"<rn></rn><a name=""009766500000""></a><div class=""midashi"">ふ‐せい 【浮世】</div><div class=""honbun""><rn></rn><a name=""009766500001""></a><div style=""margin-left:1em;"">うきよ。はかないこの世。日本永代蔵(1)<a name=""y00976650-001""></a>「天地は万物の逆旅、光陰は百代の過客、―は夢<object class=""gaiji"" data=""AF26.svg""></object><sub class=""rubi"">ゆめまぼろし</sub>といふ」</div><rn></rn><a name=""009766500001""></a><div class=""oyko_link""><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00976795"">浮世は夢の若し</a></div></div>"
+
+preview yomichan entry:
+=======================================================
+#headword
+ふせい
+浮世
+# glossary content (body)
+ふ‐せい 【浮世】\n
+うきよ。はかないこの世。日本永代蔵(1)「天地は万物の逆旅、光陰は百代の過客、―は夢<INSERT GAIJI HERE:gaiji/AF26.png>（ゆめまぼろし）といふ」\n
+➡浮世は夢の若し
+========================================================
+
+Comments:
+line 34, Yomichan supports inline image gaiji, which you need to use for characters legitimately not present in Unicode, in this case it is gaiji/AF26.png. Another Yomichan dictionary that also uses gaiji you can use for reference is 旺文社国語辞典 第十一版, search for the entry 職 in its json files to see how it is done. Image: https://files.catbox.moe/qtv9u1.png
+line 34, （ゆめまぼろし）. While Yomichan supports ruby rt style furigana, it is quite finicky and should just be avoided. Instead use full width brackets （）for furigana.
+line 35, ➡ from my icon mapping. Please see map_icon.txt.
+line 34, make sure you don't do a double line break after </div><rn></rn>, just one. 
+
+example 3:
+Title,Html
+あた・る 【当たる・中る】,"<rn></rn><a name=""000218600000""></a><div class=""midashi"">あた・る 【当たる・中る】</div><div class=""honbun""><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;""><object class=""icon"" data=""square_a.svg""></object>自五<object class=""icon"" data=""square_b.svg""></object>対象に向かって直進し、対象がそれに対応するショックや反応をおこすような作用をいう。</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">❶直進して対象に到達する。<rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">①（目標や急所などに）ぶつかる。命中する。古今和歌集(物名)<a name=""y00021860-001""></a>「<object class=""gaiji"" data=""E16E.svg""></object>に―・る浪」。大鏡(道長)<a name=""y00021860-002""></a>「この矢―・れ」。<a name=""y00021860-003""></a>「的に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">②（局所などに）接触する。くっつく。今昔物語集(30)<a name=""y00021860-004""></a>「髪をさぐれば…ひややかにて―・る」。新内節、道中膝栗毛<a name=""y00021860-005""></a>「額に三角な紙が―・つてあり」。<a name=""y00021860-006""></a>「継ぎの―・ったズボン」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">③光がまともに差しつける。更級日記<a name=""y00021860-007""></a>「月のもりきて、児<sub class=""rubi"">ちご</sub>の顔に―・りたるが」。<a name=""y00021860-008""></a>「日が―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">④（ある態度で）人と接する。現代では、ひどく扱ったり怒りをぶつけたりする場合にいうことが多い。今昔物語集(3)<a name=""y00021860-009""></a>「その人の為に太子、ねんごろに―・り給ふことあれども」。<a name=""y00021860-010""></a>「疲れて家族に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑤物事に探りを入れる。また、ためしにぶつかってみる。狂言、末広がり<a name=""y00021860-011""></a>「田舎者と見えて、何やらわつぱと申す。ちと―・つて見うと存ずる」。<a name=""y00021860-012""></a>「心あたりを―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑥照合して確かめる。<a name=""y00021860-013""></a>「品物の値段を―・る」<a name=""y00021860-014""></a>「辞書に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑦野球で打者がヒットを打つ。<a name=""y00021860-015""></a>「4番打者が―・っている」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑧とがめだてをする。玉塵抄(5)<a name=""y00021860-016""></a>「告げぬほどに―・つて酒（罰杯）をくれたぞ」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑨釣りで、魚がえさに食いついたという感触がある。</div></div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">❷直進作用をまともに身に受ける。<rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">①（光・風・熱などを）身に受ける。身をさらす。古今和歌集(春)<a name=""y00021860-017""></a>「春の日の光に―・る我なれど」。徒然草<a name=""y00021860-018""></a>「風に―・り、湿に臥して」。あら野<a name=""y00021860-019""></a>「縫物をたたみて―・る火燵かな」（落梧）。<a name=""y00021860-020""></a>「火に―・るより、日に―・れ」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">②（役目や割当てなどを）引き受けて行う。担当する。また、割り当てられる。源氏物語(梅枝)<a name=""y00021860-021""></a>「いと苦しき判者にも―・りて侍るかな」。<a name=""y00021860-022""></a>「調停に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">③事件・不幸・罪などに直面する。宇津保物語(国譲中)<a name=""y00021860-023""></a>「さる禍になむ―・りて侍りし」。源氏物語(須磨)<a name=""y00021860-024""></a>「かく思ひかけぬ罪に―・り侍るも」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">④飲食物や暑気・寒気がからだにさわる。毒気・悪気の害を身に受ける。浄瑠璃、心中重井筒<a name=""y00021860-025""></a>「この頃酒が―・つて」。<a name=""y00021860-026""></a>「暑さに―・る」<a name=""y00021860-027""></a>「ふぐに―・る」</div></div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">❸物事と他の物事とがぴったり相対応する。<rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">①（勢いが）匹敵する。はりあう。神武紀<a name=""y00021860-028""></a>「敢へて―・るまじきことを懼<sub class=""rubi"">お</sub>ぢて」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">②（他からの刺激に）まともに反応する。思いあたる。徒然草<a name=""y00021860-029""></a>「折からの、思ひかけぬ心地して、胸に―・りけるにや」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">③（そういう関係・順位・資格・価値などに）相当する。宇津保物語(藤原君)<a name=""y00021860-030""></a>「左大臣殿の三郎に―・り給ふ実忠といふ宰相にて」。中華若木詩抄<a name=""y00021860-031""></a>「人が文章は一銭にも―・らぬと言ふ」。<a name=""y00021860-032""></a>「おばに―・る人」<a name=""y00021860-033""></a>「失礼に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">④ちょうどその方向・時期にある。該当する。宇津保物語(楼上下)<a name=""y00021860-034""></a>「七日の月…かの楼の上と思しきに―・りて輝く」。源氏物語(総角)<a name=""y00021860-035""></a>「三日に―・る夜、もちひなむまゐる」。<a name=""y00021860-036""></a>「引退に―・っての所感」<a name=""y00021860-037""></a>「北東に―・る方角」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑤（基準・道理または事実に）かなう。合致する。また、的中する。玉塵抄(14)<a name=""y00021860-038""></a>「威儀の振舞、なりかかりの法度<sub class=""rubi"">はっと</sub>に―・りかなうた」。<a name=""y00021860-039""></a>「その非難は―・らない」<a name=""y00021860-040""></a>「予言が―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑥（願望などが）期待通りになる。（物事が）うまくゆく。夫木和歌抄(32)<a name=""y00021860-041""></a>「うちたえて―・らぬ恋に病<sub class=""rubi"">やま</sub>ふ頃かな」。日葡辞書「クジガアタル」。<a name=""y00021860-042""></a>「興行が―・る」<a name=""y00021860-043""></a>「企画が―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑦対戦相手としてめぐり合う。<a name=""y00021860-044""></a>「初日に横綱に―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">⑧（否定表現を伴って、「…に適合しない」の意から）…するには及ばない。<a name=""y00021860-045""></a>「遠慮するには―・らない」</div></div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">❹（忌詞）<rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">①果実などがいたむ。<a name=""y00021860-046""></a>「蜜柑が―・る」</div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">②（他動詞的に使って）剃<sub class=""rubi"">そ</sub>る。擂<sub class=""rubi"">す</sub>る。商家で「する」「そる」というのを嫌っていう。<a name=""y00021860-047""></a>「顔を―・る」</div></div><rn></rn><a name=""000218600001""></a><div style=""margin-left:1em;"">広く一般には「当」、命中する・体に障るなどの場合に「中」を使うことがある。</div><rn></rn><a name=""000218600001""></a><div class=""oyko_link""><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00021020"">当たって砕けよ</a><br><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00021640"">当たらず障らず</a><br><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00021645"">中らずと雖も遠からず</a><br><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00021880"">当たるも八卦当たらぬも八卦</a><br><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00021885"">当たるを幸い</a></div></div>"
+
+// Quite a big one, make sure you have your word wrap on.  
+
+=====================================================================
+# headword
+あたる
+当たる
+# gloss content (body)
+あた・る 【当たる・中る】\n
+〘自五〙\n
+対象に向かって直進し、対象がそれに対応するショックや反応をおこすような作用をいう。\n
+❶直進して対象に到達する。\n
+①（目標や急所などに）ぶつかる。命中する。古今和歌集(物名)「梶に―・る浪」。大鏡(道長)「この矢―・れ」。「的に―・る」\n
+②（局所などに）接触する。くっつく。今昔物語集(30)「髪をさぐれば…ひややかにて―・る」。新内節、道中膝栗毛「額に三角な紙が―・つてあり」。「継ぎの―・ったズボン」\n
+③光がまともに差しつける。更級日記「月のもりきて、児（ちご）の顔に―・りたるが」。「日が―・る」\n
+④（ある態度で）人と接する。現代では、ひどく扱ったり怒りをぶつけたりする場合にいうことが多い。今昔物語集(3)「その人の為に太子、ねんごろに―・り給ふことあれども」。「疲れて家族に―・る」\n
+⑤物事に探りを入れる。また、ためしにぶつかってみる。狂言、末広がり「田舎者と見えて、何やらわつぱと申す。ちと―・つて見うと存ずる」。「心あたりを―・る」\n
+⑥照合して確かめる。「品物の値段を―・る」「辞書に―・る」\n
+⑦野球で打者がヒットを打つ。「4番打者が―・っている」\n
+⑧とがめだてをする。玉塵抄(5)「告げぬほどに―・つて酒（罰杯）をくれたぞ」\n
+⑨釣りで、魚がえさに食いついたという感触がある。\n
+❷直進作用をまともに身に受ける。\n
+①（光・風・熱などを）身に受ける。身をさらす。古今和歌集(春)「春の日の光に―・る我なれど」。徒然草「風に―・り、湿に臥して」。あら野「縫物をたたみて―・る火燵かな」（落梧）。「火に―・るより、日に―・れ」\n
+②（役目や割当てなどを）引き受けて行う。担当する。また、割り当てられる。源氏物語(梅枝)「いと苦しき判者にも―・りて侍るかな」。「調停に―・る」\n
+③事件・不幸・罪などに直面する。宇津保物語(国譲中)「さる禍になむ―・りて侍りし」。源氏物語(須磨)「かく思ひかけぬ罪に―・り侍るも」\n
+④飲食物や暑気・寒気がからだにさわる。毒気・悪気の害を身に受ける。浄瑠璃、心中重井筒「この頃酒が―・つて」。「暑さに―・る」「ふぐに―・る」\n
+❸物事と他の物事とがぴったり相対応する。\n
+①（勢いが）匹敵する。はりあう。神武紀「敢へて―・るまじきことを懼（お）ぢて」\n
+②（他からの刺激に）まともに反応する。思いあたる。徒然草「折からの、思ひかけぬ心地して、胸に―・りけるにや」\n
+③（そういう関係・順位・資格・価値などに）相当する。宇津保物語(藤原君)「左大臣殿の三郎に―・り給ふ実忠といふ宰相にて」。中華若木詩抄「人が文章は一銭にも―・らぬと言ふ」。「おばに―・る人」「失礼に―・る」\n
+④ちょうどその方向・時期にある。該当する。宇津保物語(楼上下)「七日の月…かの楼の上と思しきに―・りて輝く」。源氏物語(総角)「三日に―・る夜、もちひなむまゐる」。「引退に―・っての所感」「北東に―・る方角」\n
+⑤（基準・道理または事実に）かなう。合致する。また、的中する。玉塵抄(14)「威儀の振舞、なりかかりの法度（はっと）に―・りかなうた」。「その非難は―・らない」「予言が―・る」\n
+⑥（願望などが）期待通りになる。（物事が）うまくゆく。夫木和歌抄(32)「うちたえて―・らぬ恋に病（やま）ふ頃かな」。日葡辞書「クジガアタル」。「興行が―・る」「企画が―・る」\n
+⑦対戦相手としてめぐり合う。「初日に横綱に―・る」\n
+⑧（否定表現を伴って、「…に適合しない」の意から）…するには及ばない。「遠慮するには―・らない」\n
+❹（忌詞）\n
+①果実などがいたむ。「蜜柑が―・る」\n
+②（他動詞的に使って）剃（そ）る。擂（す）る。商家で「する」「そる」というのを嫌っていう。「顔を―・る」\n
+広く一般には「当」、命中する・体に障るなどの場合に「中」を使うことがある。\n
+➡当たって砕けよ\n
+➡当たらず障らず\n
+➡中らずと雖も遠からず\n
+➡当たるも八卦当たらぬも八卦\n
+➡当たるを幸い
+===============================================================================================================
+END
+
+Comments:
+line 53, make sure you also add 中る too! (kanji usages are separated by ・)
+line 56, a line with square_a.svg and square_b.svg must always be line broken. see example 7 for more info
+line 56, 〘 〙mapped from map_icon.txt
+line 59, gaiji E16E.svg mapped to 梶. Please see map_gaiji.txt.
+line 61, remember, full width parenthesis furigana （）
+
+example 4:
+
+Title,Html
+○星が割れる,"<rn></rn><a name=""010288300000""></a><div class=""midashi"">○星が割れる <sub>ほしがわれる</sub></div><div class=""honbun""><rn></rn><a name=""010288300001""></a><div style=""margin-left:1em;"">犯人が判明する。</div><rn></rn><a name=""010288300001""></a><div class=""oyko_link""><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:01028600"">ほし 【星】</a></div></div>"
+
+preview yomichan entry:
+===================
+#headword
+ほしがわれる
+星が割れる
+#gloss content (body)
+○星が割れる （ほしがわれる）\n
+犯人が判明する。\n
+➡ほし 【星】
+====================
+
+Comments:
+line 109, the reading information is not in its usual place for entries that have a ○ before them. Instead they are within the <sub></sub> tags. Just grab it from there.
+line 112, preserve how it is written in the midashi. 
+line 112, put full width parenthesis（）for <sub></sub> tags.  OR the new yomichan feature but i dont trust it
+
+example  5:
+
+Title,Html
+ほし‐くさ 【星草】,"<rn></rn><a name=""010288550000""></a><div class=""midashi"">ほし‐くさ 【星草】</div><div class=""honbun""><rn></rn><a name=""010288550001""></a><div style=""margin-left:1em;"">ホシクサ科の一年草。池沼・水田に自生。葉は線形で尖る。秋、白色小球状の花を頭状につける。タイコグサ。ミズタマソウ。<object class=""icon"" data=""angle_a.svg""></object><object class=""icon"" data=""kigo.svg""></object>秋<object class=""icon"" data=""angle_b.svg""></object><div class=""media""><img class=""FIGc"" src=""10301520.jpg"">提供：アーテファクト</img></div></div></div>"
+
+preview yomichan entry:
+======================
+# headword
+ほしくさ
+星草
+# gloss content
+ほし‐くさ 【星草】\n
+ホシクサ科の一年草。池沼・水田に自生。葉は線形で尖る。秋、白色小球状の花を頭状につける。タイコグサ。ミズタマソウ。《季・秋》
+=========================
+
+Comments:
+line 134, angle_a.svg, kigo.svg and angle_b.svg are mapped from my icon map. Please see map_icon.txt.
+line 134, text 提供：アーテファクト is meant to be a caption to the image that is supposed to be there, however it shows no useful information when there are no images, so just remove.
+extra: triple ></div></div></div> here so make sure you don't do a \n\n\n. In this case no \n is needed at all.  
+
+
+example 6:
+Title,Html
+アーケロン 【Archelon ラテン】,"<rn></rn><a name=""000001700000""></a><div class=""midashi"">アーケロン 【Archelon ラテン】</div><div class=""honbun""><rn></rn><a name=""000001700001""></a><div style=""margin-left:1em;"">白亜紀後期の北アメリカに生息したウミガメの一種。全長4メートル近くになり、ウミガメとしては史上最大。甲羅は骨化が弱く、多数のすき間がある。肉食性。</div></div>"
+
+preview yomichan entry:
+=========================================
+#headword
+アーケロン
+Archelon
+# gloss content
+アーケロン 【Archelon ラテン】\n
+白亜紀後期の北アメリカに生息したウミガメの一種。全長4メートル近くになり、ウミガメとしては史上最大。甲羅は骨化が弱く、多数のすき間がある。肉食性。
+==========================================
+
+Comments:
+line 151, removed ラテン from the headword. There are a lot of these so make sure you get all of them. Easiest way is just to search the Title column for a space ( ) + katakana (regex ([ァ-ン]))
+line 153, preserve ラテン in the gloss content(midashi).
+
+example 7:
+Title,Html
+うつくし・い 【美しい・愛しい】,"<rn></rn><a name=""001003750000""></a><div class=""midashi"">うつくし・い 【美しい・愛しい】</div><div class=""honbun""><rn></rn><a name=""001003750001""></a><div style=""margin-left:1em;""><object class=""icon"" data=""square_a.svg""></object>形<object class=""icon"" data=""square_b.svg""></object><img class=""icon"" src=""bungo.png""></img>うつく・し（シク）（肉親への愛から小さいものへの愛に、そして小さいものの美への愛に、と意味が移り変わり、さらに室町時代には、美そのものを表すようになった）</div><rn></rn><a name=""001003750001""></a><div style=""margin-left:1em;"">①愛らしい。かわいい。いとしい。万葉集(5)<a name=""y00100375-001""></a>「妻子<sub class=""rubi"">めこ</sub>見ればめぐし―・し」。枕草子(144)<a name=""y00100375-002""></a>「なにもなにもちひさき物はみな―・し」</div><rn></rn><a name=""001003750001""></a><div style=""margin-left:1em;"">②㋐形・色・声などが快く、このましい。きれいである。大鏡(道長)<a name=""y00100375-003""></a>「色濃く咲きたる木のやうたい―・しきが侍りしを」。<a name=""y00100375-004""></a>「―・い花」<rn></rn><a name=""001003750001""></a><div style=""margin-left:1em;"">㋑行動や心がけが立派で、心をうつ。栄華物語(布引滝)<a name=""y00100375-005""></a>「御年の程よりはものを―・しうの給はせ」。<a name=""y00100375-006""></a>「―・い友情」</div></div><rn></rn><a name=""001003750001""></a><div style=""margin-left:1em;"">③いさぎよい。さっぱりして余計なものがない。日葡辞書「ウツクシュウハテタ」「ネコガウツクシュウクウタ」</div></div>"
+
+preview yomichan entry:
+========================================================
+#headword
+うつくしい
+美しい
+# gloss content
+うつくし・い 【美しい・愛しい】\n
+〘形〙〔文〕うつく・し（シク）\n
+（肉親への愛から小さいものへの愛に、そして小さいものの美への愛に、と意味が移り変わり、さらに室町時代には、美そのものを表すようになった）\n
+①愛らしい。かわいい。いとしい。万葉集(5)「妻子（めこ）見ればめぐし―・し」。枕草子(144)「なにもなにもちひさき物はみな―・し」\n
+②㋐形・色・声などが快く、このましい。きれいである。大鏡(道長)「色濃く咲きたる木のやうたい―・しきが侍りしを」。「―・い花」\n
+㋑行動や心がけが立派で、心をうつ。栄華物語(布引滝)「御年の程よりはものを―・しうの給はせ」。「―・い友情」\n
+③いさぎよい。さっぱりして余計なものがない。日葡辞書「ウツクシュウハテタ」「ネコガウツクシュウクウタ」
+=================================================================
+
+Comments:
+line 172: bungo.png mapped from map_icon.txt
+line 172: line break after（シク）. an easy way to think about this is every line that has 〘〙 (square_a.svg	and square_b.svg) must have a line break. but the line break should come at the end of the line. See entries for 潔い and 重んずる in the 6th edition for more insight. 
+
+example 8:
+Title,Html
+あ（感動詞）,"<rn></rn><a name=""000000550000""></a><div class=""midashi"">あ</div><div class=""honbun""><rn></rn><a name=""000000550001""></a><div style=""margin-left:1em;""><object class=""icon"" data=""square_a.svg""></object>感<object class=""icon"" data=""square_b.svg""></object></div><rn></rn><a name=""000000550001""></a><div style=""margin-left:1em;"">①驚きや感動を表して発する声。あっ。太平記(12)<a name=""y00000055-001""></a>「―射たり射たりと感ずる声」。<a name=""y00000055-002""></a>「―、あぶない」<a name=""y00000055-003""></a>「―、ホームランだ」</div><rn></rn><a name=""000000550001""></a><div style=""margin-left:1em;"">②呼びかける声。源平盛衰記(6)<a name=""y00000055-004""></a>「主人―といはば、郎等さと出づべき体なりけり」</div><rn></rn><a name=""000000550001""></a><div style=""margin-left:1em;"">③応答の声。はい。禁秘抄<a name=""y00000055-005""></a>「女官申す、御手水参らせ候はん。女房、―といふ」</div></div>"
+
+===============================================================
+preview yomichan entry:
+# headword
+あ
+# gloss content
+あ
+〘感〙
+①驚きや感動を表して発する声。あっ。太平記(12)「―射たり射たりと感ずる声」。「―、あぶない」「―、ホームランだ」\n
+②呼びかける声。源平盛衰記(6)「主人―といはば、郎等さと出づべき体なりけり」\n
+③応答の声。はい。禁秘抄「女官申す、御手水参らせ候はん。女房、―といふ」
+===================================================================
+Comments: 
+line 191: （感動詞）should get removed. An easy rule to follow is any parenthesis in title should just get ignored.  
+
+example 9:
+
+Title,Html
+"はざ‐め 【<object class=""gaiji"" data=""AE6D.svg""></object>・睆】","<rn></rn><a name=""008919650000""></a><div class=""midashi"">はざ‐め 【<object class=""gaiji"" data=""AE6D.svg""></object>・睆】</div><div class=""honbun""><rn></rn><a name=""008919650001""></a><div style=""margin-left:1em;"">二重まぶたの目。〈新撰字鏡(2)〉</div></div>"
+
+preview yomichan entry:
+===================================================
+#headword
+はざめ
+�
+# glossary
+はざ‐め 【<INSERT GAIJI gaiji/AE6D.png>・睆】\n
+二重まぶたの目。〈新撰字鏡(2)〉
+===================================================
+
+Comments:
+line 211: you cannot have an image gaiji for the headword, therefore substitute entries like this with � for the headword.
+line 211: 睆 should be an alternate kanji usage and should display fine. 
+line 213: insert gaiji/AE6D.png there.  
+
+example 10:
+
+Title,Html
+しんど‐かいきゅう 【震度階級】,"<rn></rn><a name=""005833200000""></a><div class=""midashi"">しんど‐かいきゅう 【震度階級】 <sub>‥キフ</sub></div><div class=""honbun""><rn></rn><a name=""005833200001""></a><div style=""margin-left:1em;"">地震動の強さを表す階級。気象庁が定めた震度階級では、震度0から7までを10階級に分ける。人が感じたり見たりしたことに基づいていたが、現在は震度計の計測値に基づいて決められる。<div class=""media""><img class=""FIGs"" src=""ST0001.jpg""></img></div></div><rn></rn><a name=""005833200001""></a><div class=""oyko_link""><object class=""icon"" data=""yajirusi2.svg""></object><a href=""lved.dataid:00582970"">しん‐ど 【震度】</a></div></div>"
+
+preview yomichan entry
+========================
+#headword
+しんどかいきゅう
+震度階級
+# gloss content
+しんど‐かいきゅう 【震度階級】（‥キフ）\n
+地震動の強さを表す階級。気象庁が定めた震度階級では、震度0から7までを10階級に分ける。人が感じたり見たりしたことに基づいていたが、現在は震度計の計測値に基づいて決められる。\n
+➡しん‐ど 【震度】
+========================
+
+comments:
+line 233, yomichan now supports sub so you can use that too but to avoid disasters you can use full width （） parenthesis
+line 235, meant to be an image here but it is not available. ( i dont have the images )
