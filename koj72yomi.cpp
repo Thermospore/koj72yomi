@@ -59,7 +59,8 @@ int main()
 		string reading = "";
 		string pos = "";
 		int score = 0;
-		string gloss = "";
+		string midashi = "";
+		string honbun = "";
 				
 		// Extract reading and kanji
 		// Check for 【】 brackets
@@ -87,17 +88,32 @@ int main()
 			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
 		}
 		
-		// Temp: dumping raw html into gloss
-		gloss = html;
+		// Temp: dumping raw html into honbun
+		honbun = html;
+		
+		// potential strategy:
+		// Get rid of junk at start
+		// extract midashi
+		// extract honbun
+		// see if anything is left outside
+		
+		// Go through html tag by tag
+		// Identify which tag it is
+		// extract tag data
+		// proccess said data
+		// remove tag from html
+		// might need to rethink / get recursive if there are too many tags inside of tags
 		
 		// Print entry to term bank
+		// Note: probably faster to concat everything and minimize file writes?
 		if (seqNo != 1) termBank << ",\n";
 		termBank << "[\"" 
 			<< kanji << "\",\""
 			<< reading << "\",\"\",\""
 			<< pos << "\","
 			<< score << ",[\""
-			<< gloss << "\"],"
+			<< midashi << "\\n"
+			<< honbun << "\"],"
 			<< seqNo << ",\"\"]";
 	}
 	
