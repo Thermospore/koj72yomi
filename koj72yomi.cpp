@@ -22,7 +22,7 @@ int main()
 		seqNo++;
 		
 		// Temp: break once limit reached
-		if (seqNo > 20) break;
+		if (seqNo > 200) break;
 		
 		// Init dict csv components
 		string title = "";
@@ -51,8 +51,22 @@ int main()
 		string pos = "";
 		int score = 0;
 		string gloss = "";
+				
+		// Extract reading and kanji
+		int brackPos = title.find(" 【");
+		if (brackPos == -1) // Yes 【】 brackets
+		{
+			// Kana only
+			kanji = title;
+		}
+		else // No 【】 brackets
+		{
+			// Kanji + reading
+			reading = title.substr(0, brackPos);
+			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
+		}
 		
-		kanji = title;
+		// Temp: dumping raw html into gloss
 		gloss = html;
 		
 		// Print entry to term bank
