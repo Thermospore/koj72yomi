@@ -62,15 +62,27 @@ int main()
 		string gloss = "";
 				
 		// Extract reading and kanji
+		// Check for 【】 brackets
 		int brackPos = title.find(" 【");
-		if (brackPos == -1) // Yes 【】 brackets
+		if (brackPos == -1) 
 		{
-			// Kana only
-			kanji = title;
+			// No 【】 brackets; Kana only
+			// Check for （） brackets
+			brackPos = title.find("（");
+			if (brackPos == -1) 
+			{
+				// No （） brackets to worry about
+				kanji = title;
+			}
+			else
+			{
+				// Ignore （） bracket stuff at end
+				kanji = title.substr(0, brackPos);
+			}
 		}
-		else // No 【】 brackets
+		else 
 		{
-			// Kanji + reading
+			// Yes 【】 brackets; Kanji + reading
 			reading = title.substr(0, brackPos);
 			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
 		}
