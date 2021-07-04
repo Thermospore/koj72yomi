@@ -33,6 +33,15 @@ int main()
 		title = line.substr(0, commaPos);
 		html = line.substr(commaPos + 1);
 		
+		// Remove ‐s from Title
+		int hyphPos = 0;
+		while(1<2)
+		{
+			hyphPos = title.find("‐");
+			if (hyphPos == -1) break;
+			title.replace(hyphPos, 3, "");
+		}
+		
 		// Remove "s from edges of html
 		html = html.substr(1, html.length() - 2);
 		
