@@ -20,15 +20,14 @@ int main()
 	getline(file, line); // skip initial "Title,Html" line
 	while (1<2)
 	{
-		// Grab lines until end of csv
+		// Get next line and bump seqNo
 		getline(file, line);
-		if (line == ",") break;
-		
 		seqNo++;
 		
-		// TEMP: break once limit reached
+		// Break once end of csv is reached
+		// TEMP: or once seqNo limit is reached
 		// WARNING: with no cap, you will exceed github file size limit...
-		if (seqNo > 200) break;
+		if (line == "," /**/|| seqNo > 200/**/) break;
 		
 		// Detect if ALPH entry
 		bool alphEntry;
