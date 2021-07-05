@@ -35,12 +35,10 @@ int main()
 		string html = "";
 		
 		// Extract Title and Html
+		// NOTE: how to handle those romaji things at the end? and titles with gaiji or subtext?
 		int separatorPos = line.find(",\"<rn></rn><a name=\"\"");
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
-		
-		// TEMP: print html
-		//debugOutput << html << endl;
 		
 		// Remove ‐s from Title
 		// NOTE: count entry with largest number of these
@@ -101,6 +99,10 @@ int main()
 		// TEMP: dumping raw html into honbun
 		honbun = html;
 		
+		// Extract midashi
+		// NOTE: need to handle the <sub>‥イフ</sub> things
+		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
+		
 		// potential strategy:
 		// Get rid of junk at start
 		// extract midashi
@@ -114,9 +116,6 @@ int main()
 		// remove tag from html
 		// might need to rethink / get recursive if there are too many tags inside of tags
 		// maybe go count the size of the largest div nest
-		
-		// better error/exception checking...
-		// check for multiple csv commas
 		
 		// Print entry to term bank
 		// Note: probably faster to concat everything and minimize file writes?
