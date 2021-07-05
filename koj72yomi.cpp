@@ -18,11 +18,16 @@ int main()
 	ifstream file("KOUJIEN7.csv");
 	string line;
 	getline(file, line); // skip initial "Title,Html" line
-	while (getline(file, line))
+	while (1<2)
 	{
+		// Grab lines until end of csv
+		getline(file, line);
+		if (line == ",") break;
+		
 		seqNo++;
 		
-		// Temp: break once limit reached
+		// TEMP: break once limit reached
+		// WARNING: with no cap, you will exceed github file size limit...
 		if (seqNo > 200) break;
 		
 		// Init dict csv components
@@ -95,7 +100,7 @@ int main()
 			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
 		}
 		
-		// Temp: dumping raw html into honbun
+		// TEMP: dumping raw html into honbun
 		honbun = html;
 		
 		// potential strategy:
