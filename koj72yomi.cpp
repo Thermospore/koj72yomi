@@ -58,13 +58,13 @@ int main()
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
 		
-		// Handle Titles in quotation marks
+		// Handle titles in quotation marks
 		if (title[0] == '\"')
 		{
-			// remove external quotes
+			// Remove external quotes
 			title = title.substr(1, title.length() - 2);
 			
-			// replace "" with \"
+			// Replace "" with \"
 			int doubleQuotePos = 0;
 			while(1<2)
 			{
@@ -81,6 +81,7 @@ int main()
 			}
 			
 			// Replace gaiji objects (can be multiple per line)
+			// NOTE: still need to insert mapped gaiji from table
 			while(1<2)
 			{
 				int gaijiPos = title.find("<object class=\\\"gaiji\\\"");
@@ -89,7 +90,7 @@ int main()
 			}
 		}
 		
-		// Remove inconsistent space before `【`
+		// Remove inconsistent space before `【` in title
 		int randoSpacePos = title.find(" 【");
 		if (randoSpacePos != -1)
 		title.erase(randoSpacePos, 1);
@@ -108,7 +109,7 @@ int main()
 			title.erase(inflecPos, 3);
 		}
 		
-		// Clean up ALPH
+		// Clean up ALPH title
 		if (alphEntry == true)
 		{
 			// Remove starting junk
@@ -140,7 +141,7 @@ int main()
 			title.erase(tagPos, title.find(">") - tagPos + 1);
 		}
 		
-		// Remove ‐s from Title
+		// Remove ‐s from title
 		// NOTE: count entry with largest number of these
 		// NOTE: check for entries that don't have the same number in title and midashi
 		int hyphPos = 0;
@@ -150,15 +151,6 @@ int main()
 			if (hyphPos == -1) break;
 			title.replace(hyphPos, 3, "");
 		}
-		
-		// Replace "" with \" in html
-		int doubleQuotePos = 0;
-		while(1<2)
-		{
-			doubleQuotePos = html.find("\"\"");
-			if (doubleQuotePos == -1) break;
-			html.replace(doubleQuotePos, 1, "\\");
-		}
 				
 		// Extract reading and kanji from title
 		// NOTE: make case for ALPH entries
@@ -166,7 +158,7 @@ int main()
 		int brackPos = title.find("【");
 		if (brackPos == -1) 
 		{
-			// No 【】 brackets; Kana only
+			// No 【】 brackets; kana only
 			// NOTE: export a bunch of these to see how they look
 			// Check for （） brackets
 			brackPos = title.find("（");
@@ -184,10 +176,19 @@ int main()
 		}
 		else 
 		{
-			// Yes 【】 brackets; Kanji + reading
+			// Yes 【】 brackets; kanji + reading
 			// NOTE: export a bunch of stuff outside of 】 to see how it looks
 			reading = title.substr(0, brackPos);
 			kanji = title.substr(brackPos + 3, title.find("】") - brackPos - 3);
+		}
+		
+		// Replace "" with \" in html
+		int doubleQuotePos = 0;
+		while(1<2)
+		{
+			doubleQuotePos = html.find("\"\"");
+			if (doubleQuotePos == -1) break;
+			html.replace(doubleQuotePos, 1, "\\");
 		}
 		
 		// TEMP: dumping raw html into honbun
@@ -196,6 +197,11 @@ int main()
 		// Extract midashi from html
 		// NOTE: need to handle the <sub>‥イフ</sub> things
 		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
+		
+		// should just take term bank and debug offline, but keep a .old copy and use a local diff program
+		
+		// maybe start by just leaving honbun html tags in place and start throwing newlines and whatnot at it
+		// and look through a bunch of entries in chrome to get a feel for the structure
 		
 		// Extract honbun from html
 		// NOTE: ya doing it wrong. some of the honbuns don't go all the way to the end, like 012110600001
@@ -211,7 +217,7 @@ int main()
 		// Go through html tag by tag
 		// Identify which tag it is
 		// extract tag data
-		// proccess said data
+		// process said data
 		// remove tag from html
 		// might need to rethink / get recursive if there are too many tags inside of tags
 		// maybe go count the size of the largest div nest
