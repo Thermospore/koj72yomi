@@ -29,11 +29,13 @@ int main()
 		string html = "";
 		
 		// Extract Title and Html
+		// NOTE: check for multiple csv commas
 		int commaPos = line.find(",");
 		title = line.substr(0, commaPos);
 		html = line.substr(commaPos + 1);
 		
 		// Remove ‐s from Title
+		// NOTE: count entry with largest number of these
 		int hyphPos = 0;
 		while(1<2)
 		{
@@ -43,6 +45,7 @@ int main()
 		}
 		
 		// Remove "s from edges of html
+		// NOTE: check that there is in fact "s at edges
 		html = html.substr(1, html.length() - 2);
 		
 		// Replace "" with \" in html
@@ -68,6 +71,7 @@ int main()
 		if (brackPos == -1) 
 		{
 			// No 【】 brackets; Kana only
+			// NOTE: export a bunch of these to see how they look
 			// Check for （） brackets
 			brackPos = title.find("（");
 			if (brackPos == -1) 
@@ -78,12 +82,14 @@ int main()
 			else
 			{
 				// Ignore （） bracket stuff at end
+				// NOTE: maybe add these in tags?
 				kanji = title.substr(0, brackPos);
 			}
 		}
 		else 
 		{
 			// Yes 【】 brackets; Kanji + reading
+			// NOTE: export a bunch of stuff outside of 】 to see how it looks
 			reading = title.substr(0, brackPos);
 			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
 		}
@@ -103,6 +109,10 @@ int main()
 		// proccess said data
 		// remove tag from html
 		// might need to rethink / get recursive if there are too many tags inside of tags
+		// maybe go count the size of the largest div nest
+		
+		// better error/exception checking...
+		// check for multiple csv commas
 		
 		// Print entry to term bank
 		// Note: probably faster to concat everything and minimize file writes?
