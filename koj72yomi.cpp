@@ -98,6 +98,22 @@ int main()
 		{
 			// Remove starting junk
 			title = title.substr(50);
+			
+			// Remove ending numbers
+			if (title.find("①") != -1 ||
+				title.find("①") != -1 ||
+				title.find("②") != -1 ||
+				title.find("③") != -1 ||
+				title.find("④") != -1 ||
+				title.find("⑤") != -1 ||
+				title.find("⑥") != -1 ||
+				title.find("⑦") != -1 ||
+				title.find("⑧") != -1 ||
+				title.find("⑨") != -1 ||
+				title.find("⑩") != -1)
+			{
+				title = title.substr(0, title.length() - 3);
+			}
 		}
 		
 		// Lazily and dangerously remove remaining tags from title
