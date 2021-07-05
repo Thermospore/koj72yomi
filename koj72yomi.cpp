@@ -35,10 +35,12 @@ int main()
 		string html = "";
 		
 		// Extract Title and Html
-		// NOTE: check for multiple csv commas
-		int commaPos = line.find(",");
-		title = line.substr(0, commaPos);
-		html = line.substr(commaPos + 1);
+		int separatorPos = line.find(",\"<rn></rn><a name=\"\"");
+		title = line.substr(0, separatorPos);
+		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
+		
+		// TEMP: print html
+		//debugOutput << html << endl;
 		
 		// Remove ‐s from Title
 		// NOTE: count entry with largest number of these
@@ -49,10 +51,6 @@ int main()
 			if (hyphPos == -1) break;
 			title.replace(hyphPos, 3, "");
 		}
-		
-		// Remove "s from edges of html
-		// NOTE: check that there is in fact "s at edges
-		html = html.substr(1, html.length() - 2);
 		
 		// Replace "" with \" in html
 		int doubleQuotePos = 0;
