@@ -30,18 +30,38 @@ int main()
 		// WARNING: with no cap, you will exceed github file size limit...
 		if (seqNo > 200) break;
 		
+		// Detect if ALPH entry
+		bool alphEntry;
+		if (line.find("ALPH.svg") == -1)
+		{
+			alphEntry = false;
+		}
+		else
+		{
+			alphEntry = true;
+		}
+		
 		// Init dict csv components
 		string title = "";
 		string html = "";
 		
+		// Init term bank components
+		string kanji = "";
+		string reading = "";
+		string pos = "";
+		int score = 0;
+		string midashi = "";
+		string honbun = "";
+		
 		// Extract Title and Html
-		// NOTE: how to handle those romaji things at the end? and titles with gaiji or subtext?
+		// NOTE: should print all the titles out to check them
 		int separatorPos = line.find(",\"<rn></rn><a name=\"\"");
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
 		
 		// Remove ‐s from Title
 		// NOTE: count entry with largest number of these
+		// NOTE: check for entries that don't have the same number in title and midashi
 		int hyphPos = 0;
 		while(1<2)
 		{
@@ -58,16 +78,10 @@ int main()
 			if (doubleQuotePos == -1) break;
 			html.replace(doubleQuotePos, 1, "\\");
 		}
-		
-		// Init term bank components
-		string kanji = "";
-		string reading = "";
-		string pos = "";
-		int score = 0;
-		string midashi = "";
-		string honbun = "";
 				
-		// Extract reading and kanji
+		// Extract reading and kanji from title
+		// NOTE: how to handle ALPH entries at end?
+		// NOTE: titles with gaiji or subtext?
 		// Check for 【】 brackets
 		int brackPos = title.find(" 【");
 		if (brackPos == -1) 
@@ -99,10 +113,15 @@ int main()
 		// TEMP: dumping raw html into honbun
 		honbun = html;
 		
-		// Extract midashi
+		// Extract midashi from html
 		// NOTE: need to handle the <sub>‥イフ</sub> things
 		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
 		
+		// Extract honbun from html
+		// NOTE: ya doing it wrong. some of the honbuns don't go all the way to the end, like 012110600001
+		//int honbunStart = html.find("honbun") + 9;
+		//honbun = html.substr(honbunStart, html.length() - honbunStart - 6);
+				
 		// potential strategy:
 		// Get rid of junk at start
 		// extract midashi
