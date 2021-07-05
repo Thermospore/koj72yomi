@@ -27,7 +27,7 @@ int main()
 		// Break once end of csv is reached
 		// TEMP: or once seqNo limit is reached
 		// WARNING: with no cap, you will exceed github file size limit...
-		if (line == "," /**/|| seqNo > 200/**/) break;
+		if (line == "," /**/|| seqNo > 300/**/) break;
 		
 		// Detect if ALPH entry
 		bool alphEntry;
@@ -89,6 +89,11 @@ int main()
 			}
 		}
 		
+		// Remove inconsistent space before `【`
+		int randoSpacePos = title.find(" 【");
+		if (randoSpacePos != -1)
+		title.erase(randoSpacePos, 1);
+		
 		// NOTE: when to handle ○s?
 		
 		// NOTE: remove ・ outside of brackets?
@@ -148,7 +153,7 @@ int main()
 		// Extract reading and kanji from title
 		// NOTE: make case for ALPH entries
 		// Check for 【】 brackets
-		int brackPos = title.find(" 【");
+		int brackPos = title.find("【");
 		if (brackPos == -1) 
 		{
 			// No 【】 brackets; Kana only
@@ -172,7 +177,7 @@ int main()
 			// Yes 【】 brackets; Kanji + reading
 			// NOTE: export a bunch of stuff outside of 】 to see how it looks
 			reading = title.substr(0, brackPos);
-			kanji = title.substr(brackPos + 4, title.find("】") - brackPos - 4);
+			kanji = title.substr(brackPos + 3, title.find("】") - brackPos - 3);
 		}
 		
 		// TEMP: dumping raw html into honbun
