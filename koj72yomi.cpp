@@ -4,8 +4,9 @@ using namespace std;
 
 int main()
 {
-	// Create and open term bank file
+	// Create and open files
 	ofstream termBank("term_bank_1.json");
+	ofstream debugOutput("debugOutput.txt");
 	
 	// Write opening bracket
 	termBank << "[";
@@ -82,7 +83,7 @@ int main()
 			else
 			{
 				// Ignore （） bracket stuff at end
-				// NOTE: maybe add these in tags?
+				// NOTE: maybe add these in tags? some show up in honbun and some don't
 				kanji = title.substr(0, brackPos);
 			}
 		}
@@ -130,8 +131,9 @@ int main()
 	// Write closing bracket
 	termBank << "]";
 	
-	// Close the file
+	// Close files
 	termBank.close();
+	debugOutput.close();
 	
 	return 0;
 }
