@@ -73,20 +73,41 @@ int main()
 				title.replace(doubleQuotePos, 1, "\\");
 			}
 			
-			// Remove rubi objects
+			// Remove rubi object
+			int rubiPos = title.find("<sub class=\\\"rubi\\\">");
+			if (rubiPos != -1)
+			{
+				title.erase(rubiPos, title.find("</sub>") - rubiPos + 6);
+			}
 			
 			// Replace gaiji objects (can be multiple per line)
-			
-			//debugOutput << title << endl;
+			while(1<2)
+			{
+				int gaijiPos = title.find("<object class=\\\"gaiji\\\"");
+				if (gaijiPos == -1) break;
+				title.replace(gaijiPos, 51, "�");
+			}
 		}
 		
 		// NOTE: when to handle ○s?
 		
-		// NOTE: remove instances of `<sub>` `</sub>` `<sup>` `</sup>` from title
-		
-		// NOTE: remove leading and trailing junk for ALPH
-		
 		// NOTE: remove ・ outside of brackets?
+		
+		// Clean up ALPH
+		if (alphEntry == true)
+		{
+			// Remove starting junk
+			title = title.substr(50);
+		}
+		
+		// Lazily and dangerously remove remaining tags from title
+		// (should only be <sub>, <sup>, and <i>)
+		while(1<2)
+		{
+			int tagPos = title.find("<");
+			if (tagPos == -1) break;
+			title.erase(tagPos, title.find(">") - tagPos + 1);
+		}
 		
 		// Remove ‐s from Title
 		// NOTE: count entry with largest number of these
@@ -109,8 +130,7 @@ int main()
 		}
 				
 		// Extract reading and kanji from title
-		// NOTE: how to handle ALPH entries at end?
-		// NOTE: titles with gaiji or subtext?
+		// NOTE: make case for ALPH entries
 		// Check for 【】 brackets
 		int brackPos = title.find(" 【");
 		if (brackPos == -1) 
