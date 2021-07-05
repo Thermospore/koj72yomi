@@ -58,6 +58,36 @@ int main()
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
 		
+		// Handle Titles in quotation marks
+		if (title[0] == '\"')
+		{
+			// remove external quotes
+			title = title.substr(1, title.length() - 2);
+			
+			// replace "" with \"
+			int doubleQuotePos = 0;
+			while(1<2)
+			{
+				doubleQuotePos = title.find("\"\"");
+				if (doubleQuotePos == -1) break;
+				title.replace(doubleQuotePos, 1, "\\");
+			}
+			
+			// Remove rubi objects
+			
+			// Replace gaiji objects (can be multiple per line)
+			
+			//debugOutput << title << endl;
+		}
+		
+		// NOTE: when to handle ○s?
+		
+		// NOTE: remove instances of `<sub>` `</sub>` `<sup>` `</sup>` from title
+		
+		// NOTE: remove leading and trailing junk for ALPH
+		
+		// NOTE: remove ・ outside of brackets?
+		
 		// Remove ‐s from Title
 		// NOTE: count entry with largest number of these
 		// NOTE: check for entries that don't have the same number in title and midashi
