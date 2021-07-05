@@ -96,7 +96,17 @@ int main()
 		
 		// NOTE: when to handle ○s?
 		
-		// NOTE: remove ・ outside of brackets?
+		// Remove inflection point thingies ・ in title reading ie `あざ・る`
+		int inflecPos = title.find("・");
+		if (inflecPos != -1)
+		{
+			// Don't remove ・ inside of （） or 【】 !!!
+			int parenthPos = title.find("（");
+			int bracPos = title.find("【");
+			if (!(parenthPos != -1 && parenthPos < inflecPos) &&
+				!(bracPos != -1 && bracPos < inflecPos))
+			title.erase(inflecPos, 3);
+		}
 		
 		// Clean up ALPH
 		if (alphEntry == true)
