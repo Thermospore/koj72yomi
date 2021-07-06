@@ -30,15 +30,7 @@ int main()
 		if (line == "," /**/|| seqNo > 300/**/) break;
 		
 		// Detect if ALPH entry
-		bool alphEntry;
-		if (line.find("ALPH.svg") == -1)
-		{
-			alphEntry = false;
-		}
-		else
-		{
-			alphEntry = true;
-		}
+		bool alphEntry = (line.find("ALPH.svg") == -1) ? false : true;
 		
 		// Init dict csv components
 		string title = "";
