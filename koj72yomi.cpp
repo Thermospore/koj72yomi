@@ -27,6 +27,8 @@ int main()
 		// Break once end of csv is reached
 		// TEMP: or once seqNo limit is reached
 		// WARNING: with no cap, you will exceed github file size limit...
+		// NOTE: should just take term bank and debug offline, but keep a .old copy and use a local diff program
+		// NOTE: maybe ask for cap (or even a range) in console
 		if (line == "," /**/|| seqNo > 300/**/) break;
 		
 		// Detect if ALPH entry
@@ -183,9 +185,6 @@ int main()
 			html.replace(doubleQuotePos, 1, "\\");
 		}
 		
-		// TEMP: dumping raw html into honbun
-		honbun = html;
-		
 		// Extract midashi from html
 		// NOTE: also handle gaiji
 		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
@@ -220,29 +219,24 @@ int main()
 			midashi.replace(midashi.find("</i>"), 4, "\"}, \"");
 		}
 		
-		// should just take term bank and debug offline, but keep a .old copy and use a local diff program
-		
-		// maybe start by just leaving honbun html tags in place and start throwing newlines and whatnot at it
-		// and look through a bunch of entries in chrome to get a feel for the structure
-		
 		// Extract honbun from html
-		// NOTE: ya doing it wrong. some of the honbuns don't go all the way to the end, like 012110600001
-		//int honbunStart = html.find("honbun") + 9;
-		//honbun = html.substr(honbunStart, html.length() - honbunStart - 6);
-				
-		// potential strategy:
-		// Get rid of junk at start
-		// extract midashi
-		// extract honbun
-		// see if anything is left outside
+		// NOTE: find end of actual honbun div and print the stuff on the right side to check
+		honbun = html.substr(html.find("</div>") + 6);
 		
-		// Go through html tag by tag
-		// Identify which tag it is
-		// extract tag data
-		// process said data
-		// remove tag from html
-		// might need to rethink / get recursive if there are too many tags inside of tags
-		// maybe go count the size of the largest div nest
+		// Handle tags from left to right until they are all gone
+		while(1<2)
+		{
+			// Init tag properties
+			string tagType = "";
+			
+			// NOTE: obtain info about tag
+			
+			// NOTE: put switch here to handle each type
+			
+			// NOTE: break loop once all tags handled
+			
+			break;
+		}
 		
 		// Print entry to term bank
 		// Note: probably faster to concat everything and minimize file writes?
