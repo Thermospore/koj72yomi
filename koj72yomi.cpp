@@ -187,8 +187,38 @@ int main()
 		honbun = html;
 		
 		// Extract midashi from html
-		// NOTE: need to handle the <sub>‥イフ</sub> things
+		// NOTE: also handle gaiji
 		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
+		
+		// Handle <sub> in midashi using yomichan structured content
+		int subTagPos = 0;
+		while(1<2)
+		{
+			subTagPos = midashi.find("<sub>");
+			if (subTagPos == -1) break;
+			midashi.replace(subTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"small\", \"verticalAlign\": \"sub\"}, \"content\": \"");
+			midashi.replace(midashi.find("</sub>"), 6, "\"}, \"");
+		}
+		
+		// Handle <sup> in midashi
+		int supTagPos = 0;
+		while(1<2)
+		{
+			supTagPos = midashi.find("<sup>");
+			if (supTagPos == -1) break;
+			midashi.replace(supTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"");
+			midashi.replace(midashi.find("</sup>"), 6, "\"}, \"");
+		}
+		
+		// Handle <i> in midashi
+		int iTagPos = 0;
+		while(1<2)
+		{
+			iTagPos = midashi.find("<i>");
+			if (iTagPos == -1) break;
+			midashi.replace(iTagPos, 3, "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": \"");
+			midashi.replace(midashi.find("</i>"), 4, "\"}, \"");
+		}
 		
 		// should just take term bank and debug offline, but keep a .old copy and use a local diff program
 		
@@ -221,9 +251,9 @@ int main()
 			<< kanji << "\",\""
 			<< reading << "\",\"\",\""
 			<< pos << "\","
-			<< score << ",[\""
+			<< score << ",[{\"type\": \"structured-content\", \"content\": [\""
 			<< midashi << "\\n"
-			<< honbun << "\"],"
+			<< honbun << "\"]}],"
 			<< seqNo << ",\"\"]";
 	}
 	
