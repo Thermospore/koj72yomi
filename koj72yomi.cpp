@@ -221,25 +221,87 @@ int main()
 		
 		// Extract honbun from html
 		// NOTE: find end of actual honbun div and print the stuff on the right side to check
-		honbun = html.substr(html.find("</div>") + 6);
+		//honbun = html.substr(html.find("</div>") + 6);
+		// TEMP: using midashi for testing
+		honbun = html;
 		
-		// Handle tags from left to right until they are all gone
-		while(1<2)
+		// Handle tags in honbun from left to right until they are all gone
+		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
+		// TEMP: break after 3 loops, instead of infinitely
+		int loopNo = 0;
+		while(loopNo<3)
 		{
+			loopNo++;
+			
 			// Init tag properties
 			string tagType = "";
+			string tagAttributes = "";
+			string tagContents = "";
+			int openTagStart = -1;
+			int attributeSpacePos = -1;
+			int openTagEnd = -1;
+			int closeTagStart = -1;
 			
-			// NOTE: obtain info about tag
+			// Obtain info about tag
+			openTagStart = honbun.find("<");
+			if (openTagStart != -1)
+			{
+				openTagEnd = honbun.find(">");
+				attributeSpacePos = honbun.find(" ", openTagStart);
+				if (attributeSpacePos != -1 && attributeSpacePos < openTagEnd)
+				{
+					// Has attribute(s)
+					tagType = honbun.substr(openTagStart + 1, attributeSpacePos - openTagStart - 1);
+					tagAttributes = honbun.substr(attributeSpacePos + 1, openTagEnd - attributeSpacePos - 1);
+				}
+				else
+				{
+					// No attribute(s)
+					tagType = honbun.substr(openTagStart + 1, openTagEnd - openTagStart - 1);
+					attributeSpacePos = -1;
+				}
+				
+				// NOTE: this doesn't handle nested tags...
+				closeTagStart = honbun.find("</" + tagType);
+				tagContents = honbun.substr(openTagEnd + 1, closeTagStart - openTagEnd - 1);
+				
+				// NOTE: verify all the tag positions + lengths add up at the end (checksum)
+			}
+			// Break loop once all tags handled
+			else
+			{
+				break;
+			}
 			
-			// NOTE: put switch here to handle each type
+			// Perform tag operations
+			// NOTE: add delete function?
+			// NOTE: add a TEMP nullify function (replace < with ＜ lol)
+			if (tagType == "rn")
+			{
+				// This tag can always be ignored
+				honbun.erase(openTagStart, 9);
+			}
+			else if (tagType == "etc")
+			{
+				
+			}
+			else
+			{
+				
+			}
 			
-			// NOTE: break loop once all tags handled
-			
-			break;
+			// TEMP: print tag data to verify
+			debugOutput <<	tagType << ", "
+			<< tagAttributes << ", "
+			<< tagContents << ", "
+			<< openTagStart << ", "
+			<< attributeSpacePos << ", "
+			<< openTagEnd << ", "
+			<< closeTagStart << endl;
 		}
 		
 		// Print entry to term bank
-		// Note: probably faster to concat everything and minimize file writes?
+		// NOTE: probably faster to concat everything and minimize file writes?
 		if (seqNo != 1) termBank << ",\n";
 		termBank << "[\"" 
 			<< kanji << "\",\""
