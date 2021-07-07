@@ -233,7 +233,7 @@ int main()
 		{
 			loopNo++;
 			
-			// Init tag properties
+			// Define tag properties
 			string tagType = "";
 			string tagAttributes = "";
 			string tagContents = "";
@@ -273,13 +273,15 @@ int main()
 				break;
 			}
 			
-			// Perform tag operations
-			// NOTE: add delete function?
-			// NOTE: add a TEMP nullify function (replace < with ＜ lol)
+			// Define tag function flags
+			bool fnDelete = false; // deletes the tag itself, while leaving contents
+			bool fnNeutralize = false; // TEMP: replaces < with ＜ (for tags that aren't handled yet)
+			
+			// Set tag function flags & perform operations
 			if (tagType == "rn")
 			{
 				// This tag can always be ignored
-				honbun.erase(openTagStart, 9);
+				fnDelete = true;
 			}
 			else if (tagType == "etc")
 			{
@@ -287,11 +289,22 @@ int main()
 			}
 			else
 			{
+				// TEMP: delete everything to test delete function
+				fnDelete = true;
+			}
+			
+			// Perform tag functions
+			if (fnDelete == true)
+			{
+				// Erase closing tag
+				honbun.erase(closeTagStart, tagType.length() + 3);
 				
+				// Erase opening tag
+				honbun.erase(openTagStart, openTagEnd - openTagStart + 1);
 			}
 			
 			// TEMP: print tag data to verify
-			debugOutput <<	tagType << ", "
+			debugOutput << tagType << ", "
 			<< tagAttributes << ", "
 			<< tagContents << ", "
 			<< openTagStart << ", "
@@ -299,6 +312,9 @@ int main()
 			<< openTagEnd << ", "
 			<< closeTagStart << endl;
 		}
+		
+		// TEMP: nl after each entry's tag data
+		debugOutput << endl;
 		
 		// Print entry to term bank
 		// NOTE: probably faster to concat everything and minimize file writes?
