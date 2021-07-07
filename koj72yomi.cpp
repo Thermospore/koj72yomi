@@ -265,7 +265,7 @@ int main()
 				closeTagStart = honbun.find("</" + tagType);
 				tagContents = honbun.substr(openTagEnd + 1, closeTagStart - openTagEnd - 1);
 				
-				// NOTE: verify all the tag positions + lengths add up at the end (checksum)
+				// NOTE: verify all the tag positions + lengths add up at the end (checksum)?
 			}
 			// Break loop once all tags handled
 			else
@@ -274,8 +274,8 @@ int main()
 			}
 			
 			// Define tag function flags
-			bool fnDelete = false; // deletes the tag itself, while leaving contents
-			bool fnNeutralize = false; // TEMP: replaces < with ＜ (for tags that aren't handled yet)
+			bool fnDelete = false;
+			bool fnNeutralize = false;
 			
 			// Set tag function flags & perform operations
 			if (tagType == "rn")
@@ -289,18 +289,26 @@ int main()
 			}
 			else
 			{
-				// TEMP: delete everything to test delete function
-				fnDelete = true;
+				// TEMP: neutralize everything to test neutralize function
+				fnNeutralize = true;
 			}
 			
 			// Perform tag functions
+			// deletes the tag itself, while leaving contents
 			if (fnDelete == true)
 			{
-				// Erase closing tag
+				// Do the closing tag first, so the indexes for the other one don't get shifted...
 				honbun.erase(closeTagStart, tagType.length() + 3);
-				
-				// Erase opening tag
 				honbun.erase(openTagStart, openTagEnd - openTagStart + 1);
+			}
+			// TEMP: replaces <> with ＜＞ (for tags that aren't handled yet)
+			else if (fnNeutralize == true)
+			{
+				// Again, go back to front to not shift indexes
+				honbun.replace(closeTagStart + tagType.length() + 2, 1, "＞");
+				honbun.replace(closeTagStart, 1, "＜");
+				honbun.replace(openTagEnd, 1, "＞");
+				honbun.replace(openTagStart, 1, "＜");
 			}
 			
 			// TEMP: print tag data to verify
