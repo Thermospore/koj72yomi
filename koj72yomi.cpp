@@ -227,9 +227,10 @@ int main()
 		
 		// Handle tags in honbun from left to right until they are all gone
 		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
-		// TEMP: break after 3 loops, instead of infinitely
+		// NOTE: need handling for tags with no closer, like <br>
+		// TEMP: break after 6 loops, instead of infinitely
 		int loopNo = 0;
-		while(loopNo<3)
+		while(loopNo<6)
 		{
 			loopNo++;
 			
@@ -242,7 +243,7 @@ int main()
 			int openTagEnd = -1;
 			int closeTagStart = -1;
 			
-			// Obtain info about tag
+			// Obtain tag properties
 			openTagStart = honbun.find("<");
 			if (openTagStart != -1)
 			{
@@ -261,8 +262,34 @@ int main()
 					attributeSpacePos = -1;
 				}
 				
-				// NOTE: this doesn't handle nested tags...
-				closeTagStart = honbun.find("</" + tagType);
+				// Traverse heirarchy to find closeTagStart
+				// NOTE: oh shit, gotta handle <br>s inside the traverse, possibly others
+				int depth = 1;
+				int searchPos = openTagStart + 1;
+				while(1<2)
+				{
+					// Find next <
+					searchPos = honbun.find("<", searchPos) + 1;
+					
+					// If it isn't followed by /, you have gone in a layer
+					if (honbun[searchPos] != '/')
+					{
+						depth++;
+					}
+					// If it is, you have come out a layer
+					if (honbun[searchPos] == '/')
+					{
+						depth--;
+						
+						// Break once you reach closeTagStart (and verify it's the right tag, for safety)
+						if (depth == 0 && honbun.find(tagType, searchPos) - searchPos == 1)
+						{
+							closeTagStart = searchPos - 1;
+							break;
+						}
+					}
+				}
+				
 				tagContents = honbun.substr(openTagEnd + 1, closeTagStart - openTagEnd - 1);
 				
 				// NOTE: verify all the tag positions + lengths add up at the end (checksum)?
