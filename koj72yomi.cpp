@@ -334,11 +334,12 @@ int main()
 			}
 			
 			// Define tag function flags
-			// Add a fn to replace open/close tags with specified strings?
+			// NOTE: Add a fn to replace open/close tags with specified strings?
 			bool fnDelete = false;
 			bool fnNeutralize = false;
 			
 			// Set tag function flags & perform operations
+			// NOTE: check for all tagAttributes varieties etc
 			if (tagType == "rn")
 			{
 				// This tag can always be ignored
@@ -349,10 +350,57 @@ int main()
 				// NOTE: probably will be putting \n in place of <br>
 				honbun.replace(openTagStart, 4, "＜br＞");
 			}
+			else if (tagType == "div")
+			{
+				fnNeutralize = true;
+				
+				// TEMP: identifying different varieties
+				if (tagAttributes == "class=\\\"honbun\\\"" ||
+				tagAttributes == "style=\\\"margin-left:1em;\\\"" ||
+				tagAttributes == "class=\\\"media\\\"" ||
+				tagAttributes == "class=\\\"a_link\\\"" ||
+				tagAttributes == "class=\\\"oyko_link\\\"")				
+				{
+					
+				}
+				else
+				{
+					debugOutput<<tagAttributes<<endl;
+				}
+			}
+			else if (tagType == "a")
+			{
+				fnNeutralize = true;
+			}
+			else if (tagType == "q")
+			{
+				fnNeutralize = true;
+			}
+			else if (tagType == "sub")
+			{
+				fnNeutralize = true;
+			}
+			else if (tagType == "下")
+			{
+				// NOTE: p sure you can treat this just like <sub>
+				fnNeutralize = true;
+			}
+			else if (tagType == "sup")
+			{
+				fnNeutralize = true;
+			}
+			else if (tagType == "object")
+			{
+				fnNeutralize = true;
+			}
+			else if (tagType == "img")
+			{
+				fnNeutralize = true;
+			}
 			else
 			{
-				// TEMP: neutralize everything to test neutralize function
-				fnNeutralize = true;
+				// Something has gone wrong...
+				debugOutput<<"ERROR: unknown tag type: "<< tagType << endl;
 			}
 			
 			// Perform tag functions
@@ -372,7 +420,7 @@ int main()
 				honbun.replace(openTagEnd, 1, "＞");
 				honbun.replace(openTagStart, 1, "＜");
 			}
-			
+			/*
 			// TEMP: print tag data to verify
 			debugOutput << tagType << ", "
 			<< tagAttributes << ", "
@@ -380,11 +428,11 @@ int main()
 			<< openTagStart << ", "
 			<< attributeSpacePos << ", "
 			<< openTagEnd << ", "
-			<< closeTagStart << endl;
+			<< closeTagStart << endl;*/
 		}
-		
+		/*
 		// TEMP: nl after each entry's tag data
-		debugOutput << endl;
+		debugOutput << endl;*/
 		
 		// Print entry to term bank
 		// NOTE: probably faster to concat everything and minimize file writes?
