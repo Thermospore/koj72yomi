@@ -225,13 +225,9 @@ int main()
 		
 		// Handle tags in honbun from left to right until they are all gone
 		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
-		// NOTE: need handling for <br>
-		// TEMP: break after a certain number of loops, instead of infinitely
 		int loopNo = 0;
-		while(loopNo < 6)
-		{
-			loopNo++;
-			
+		while(1<2)
+		{			
 			// Define tag properties
 			string tagType = "";
 			string tagAttributes = "";
@@ -243,7 +239,13 @@ int main()
 			
 			// Obtain tag properties
 			openTagStart = honbun.find("<");
-			if (openTagStart != -1)
+			// Special case for <br>
+			if (honbun.find("<br>") != -1 && honbun.find("<br>") == openTagStart)
+			{
+				tagType = "br";
+			}
+			// Everything else goes here
+			else if (openTagStart != -1)
 			{
 				openTagEnd = honbun.find(">");
 				attributeSpacePos = honbun.find(" ", openTagStart);
@@ -315,9 +317,10 @@ int main()
 				// This tag can always be ignored
 				fnDelete = true;
 			}
-			else if (tagType == "etc")
+			else if (tagType == "br")
 			{
-				
+				// NOTE: probably will be putting \n in place of <br>
+				honbun.replace(openTagStart, 4, "＜br＞");
 			}
 			else
 			{

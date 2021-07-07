@@ -4,6 +4,8 @@ a, name=\"000000050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①母音の一つ。口を広く開き、舌を低く下げ、その先端を下歯の歯ぐきに触れる程度の位置におき、声帯を振動させて発する。〔a〕, 63, 67, 94, 273
 rn, , , 287, -1, 290, 291
 a, name=\"000000050001\", , 287, 289, 311, 312
+div, style=\"margin-left:1em;\", ②平仮名「あ」は「安」の草体。片仮名「ア」は「阿」の偏<sub class=\"rubi\">へん</sub>の略体。, 324, 328, 355, 481
+sub, class=\"rubi\", へん, 441, 445, 460, 467
 
 div, class=\"honbun\", <rn></rn><a name=\"000000100001\"></a><div style=\"margin-left:1em;\">あし。万葉集(14)<a name=\"y00000010-001\"></a>「―の音せず行かむ駒もが」</div>, 0, 4, 21, 189
 rn, , , 26, -1, 29, 30
@@ -24,6 +26,8 @@ a, name=\"000000200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", あみ。「網子<sub class=\"rubi\">あご</sub>」「網代<sub class=\"rubi\">あじろ</sub>」など、他の語に冠して複合語を作る。万葉集(3)<a name=\"y00000020-001\"></a>「―引すと―子ととのふる海人<sub class=\"rubi\">あま</sub>の呼び声」, 63, 67, 94, 377
 sub, class=\"rubi\", あご, 117, 121, 136, 143
 sub, class=\"rubi\", あじろ, 169, 173, 188, 198
+a, name=\"y00000020-001\", , 278, 280, 303, 304
+sub, class=\"rubi\", あま, 358, 362, 377, 384
 
 div, class=\"honbun\", <rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">①㋐次ぐ、準ずる、2番目である、の意。<a name=\"y00000025-001\"></a>「―熱帯」<rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋑〔化〕中心原子を同じくするオキソ酸などのうち、酸化の程度の低いものに冠する語。硝酸（HNO<sub>3</sub>）に対する亜硝酸（HNO<sub>2</sub>）の類。</div></div><rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">②㋐亜細亜<sub class=\"rubi\">アジア</sub>の略。<rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋑亜爾然丁<sub class=\"rubi\">アルゼンチン</sub>の略。</div><rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋒（幕末から明治初期にかけて用いた）亜米利加<sub class=\"rubi\">アメリカ</sub>の略。</div></div>, 0, 4, 21, 940
 rn, , , 26, -1, 29, 30
@@ -31,6 +35,22 @@ a, name=\"000000250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①㋐次ぐ、準ずる、2番目である、の意。<a name=\"y00000025-001\"></a>「―熱帯」<rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋑〔化〕中心原子を同じくするオキソ酸などのうち、酸化の程度の低いものに冠する語。硝酸（HNO<sub>3</sub>）に対する亜硝酸（HNO<sub>2</sub>）の類。</div>, 63, 67, 94, 469
 a, name=\"y00000025-001\", , 154, 156, 179, 180
 rn, , , 207, -1, 210, 211
+a, name=\"000000250001\", , 207, 209, 231, 232
+div, style=\"margin-left:1em;\", ㋑〔化〕中心原子を同じくするオキソ酸などのうち、酸化の程度の低いものに冠する語。硝酸（HNO<sub>3</sub>）に対する亜硝酸（HNO<sub>2</sub>）の類。, 244, 248, 275, 474
+sub, , 3, 412, -1, 416, 418
+sub, , 2, 462, -1, 466, 468
+rn, , , 514, -1, 517, 518
+a, name=\"000000250001\", , 514, 516, 538, 539
+div, style=\"margin-left:1em;\", ②㋐亜細亜<sub class=\"rubi\">アジア</sub>の略。<rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋑亜爾然丁<sub class=\"rubi\">アルゼンチン</sub>の略。</div><rn></rn><a name=\"000000250001\"></a><div style=\"margin-left:1em;\">㋒（幕末から明治初期にかけて用いた）亜米利加<sub class=\"rubi\">アメリカ</sub>の略。</div>, 551, 555, 582, 975
+sub, class=\"rubi\", アジア, 602, 606, 621, 631
+rn, , , 654, -1, 657, 658
+a, name=\"000000250001\", , 654, 656, 678, 679
+div, style=\"margin-left:1em;\", ㋑亜爾然丁<sub class=\"rubi\">アルゼンチン</sub>の略。, 691, 695, 722, 791
+sub, class=\"rubi\", アルゼンチン, 742, 746, 761, 780
+rn, , , 813, -1, 816, 817
+a, name=\"000000250001\", , 813, 815, 837, 838
+div, style=\"margin-left:1em;\", ㋒（幕末から明治初期にかけて用いた）亜米利加<sub class=\"rubi\">アメリカ</sub>の略。, 850, 854, 881, 995
+sub, class=\"rubi\", アメリカ, 952, 956, 971, 984
 
 div, class=\"honbun\", <rn></rn><a name=\"000000300001\"></a><div style=\"margin-left:1em;\">①人を呼ぶのに親しみを表して冠する語。<a name=\"y00000030-001\"></a>「―Q」</div><rn></rn><a name=\"000000300001\"></a><div style=\"margin-left:1em;\">②㋐阿弗利加<sub class=\"rubi\">アフリカ</sub>の略。<rn></rn><a name=\"000000300001\"></a><div style=\"margin-left:1em;\">㋑阿波国<sub class=\"rubi\">あわのくに</sub>の略。</div></div><rn></rn><a name=\"000000300001\"></a><div style=\"margin-left:1em;\">③梵語<sub class=\"rubi\">ぼんご</sub>の第1字母。梵字<object class=\"gaiji\" data=\"AC6E.svg\"></object>の音訳。 <a href=\"lved.dataid:00016045\">→阿字</a></div>, 0, 4, 21, 726
 rn, , , 26, -1, 29, 30
@@ -38,6 +58,19 @@ a, name=\"000000300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①人を呼ぶのに親しみを表して冠する語。<a name=\"y00000030-001\"></a>「―Q」, 63, 67, 94, 192
 a, name=\"y00000030-001\", , 156, 158, 181, 182
 rn, , , 214, -1, 217, 218
+a, name=\"000000300001\", , 214, 216, 238, 239
+div, style=\"margin-left:1em;\", ②㋐阿弗利加<sub class=\"rubi\">アフリカ</sub>の略。<rn></rn><a name=\"000000300001\"></a><div style=\"margin-left:1em;\">㋑阿波国<sub class=\"rubi\">あわのくに</sub>の略。</div>, 251, 255, 282, 486
+sub, class=\"rubi\", アフリカ, 305, 309, 324, 337
+rn, , , 360, -1, 363, 364
+a, name=\"000000300001\", , 360, 362, 384, 385
+div, style=\"margin-left:1em;\", ㋑阿波国<sub class=\"rubi\">あわのくに</sub>の略。, 397, 401, 428, 491
+sub, class=\"rubi\", あわのくに, 445, 449, 464, 480
+rn, , , 523, -1, 526, 527
+a, name=\"000000300001\", , 523, 525, 547, 548
+div, style=\"margin-left:1em;\", ③梵語<sub class=\"rubi\">ぼんご</sub>の第1字母。梵字<object class=\"gaiji\" data=\"AC6E.svg\"></object>の音訳。 <a href=\"lved.dataid:00016045\">→阿字</a>, 560, 564, 591, 768
+sub, class=\"rubi\", ぼんご, 605, 609, 624, 634
+object, class=\"gaiji\" data=\"AC6E.svg\", , 670, 677, 711, 712
+a, href=\"lved.dataid:00016045\", →阿字, 742, 744, 774, 784
 
 div, class=\"honbun\", <rn></rn><a name=\"000000350001\"></a><div style=\"margin-left:1em;\">（「あん」の「ん」を表記しない形）考え。思案。源氏物語(若菜下)<a name=\"y00000035-001\"></a>「―のごとく、桐壺の御方より伝へて」</div>, 0, 4, 21, 274
 rn, , , 26, -1, 29, 30
@@ -56,6 +89,10 @@ a, name=\"000000450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>代<object class=\"icon\" data=\"square_b.svg\"></object>（一人称）われ。私。同義の「わ」に比して用例は少なく、多く<a name=\"y00000045-001\"></a>「―が（私の、自分の）」の形で、相手に親密感を持つ場合に使う。古事記(上)<a name=\"y00000045-002\"></a>「―はもよ、女<sub class=\"rubi\">め</sub>にしあれば」。源氏物語(夕顔)<a name=\"y00000045-003\"></a>「―が君、生き出で給へ」, 63, 67, 94, 617
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000045-001\", , 313, 315, 338, 339
+a, name=\"y00000045-002\", , 458, 460, 483, 484
+sub, class=\"rubi\", め, 517, 521, 536, 540
+a, name=\"y00000045-003\", , 595, 597, 620, 621
 
 div, class=\"honbun\", <rn></rn><a name=\"000000500001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>代<object class=\"icon\" data=\"square_b.svg\"></object>遠くのものを指していう語。あれ。多く<a name=\"y00000050-001\"></a>「―は」の形で使われた。源氏物語(松風)<a name=\"y00000050-002\"></a>「淡路の島の―はと見し月」</div>, 0, 4, 21, 418
 rn, , , 26, -1, 29, 30
@@ -63,6 +100,8 @@ a, name=\"000000500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>代<object class=\"icon\" data=\"square_b.svg\"></object>遠くのものを指していう語。あれ。多く<a name=\"y00000050-001\"></a>「―は」の形で使われた。源氏物語(松風)<a name=\"y00000050-002\"></a>「淡路の島の―はと見し月」, 63, 67, 94, 415
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000050-001\", , 280, 282, 305, 306
+a, name=\"y00000050-002\", , 374, 376, 399, 400
 
 div, class=\"honbun\", <rn></rn><a name=\"000000550001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object></div><rn></rn><a name=\"000000550001\"></a><div style=\"margin-left:1em;\">①驚きや感動を表して発する声。あっ。太平記(12)<a name=\"y00000055-001\"></a>「―射たり射たりと感ずる声」。<a name=\"y00000055-002\"></a>「―、あぶない」<a name=\"y00000055-003\"></a>「―、ホームランだ」</div><rn></rn><a name=\"000000550001\"></a><div style=\"margin-left:1em;\">②呼びかける声。源平盛衰記(6)<a name=\"y00000055-004\"></a>「主人―といはば、郎等さと出づべき体なりけり」</div><rn></rn><a name=\"000000550001\"></a><div style=\"margin-left:1em;\">③応答の声。はい。禁秘抄<a name=\"y00000055-005\"></a>「女官申す、御手水参らせ候はん。女房、―といふ」</div>, 0, 4, 21, 972
 rn, , , 26, -1, 29, 30
@@ -70,6 +109,20 @@ a, name=\"000000550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object>, 63, 67, 94, 206
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+rn, , , 236, -1, 239, 240
+a, name=\"000000550001\", , 236, 238, 260, 261
+div, style=\"margin-left:1em;\", ①驚きや感動を表して発する声。あっ。太平記(12)<a name=\"y00000055-001\"></a>「―射たり射たりと感ずる声」。<a name=\"y00000055-002\"></a>「―、あぶない」<a name=\"y00000055-003\"></a>「―、ホームランだ」, 273, 277, 304, 561
+a, name=\"y00000055-001\", , 376, 378, 401, 402
+a, name=\"y00000055-002\", , 459, 461, 484, 485
+a, name=\"y00000055-003\", , 521, 523, 546, 547
+rn, , , 599, -1, 602, 603
+a, name=\"000000550001\", , 599, 601, 623, 624
+div, style=\"margin-left:1em;\", ②呼びかける声。源平盛衰記(6)<a name=\"y00000055-004\"></a>「主人―といはば、郎等さと出づべき体なりけり」, 636, 640, 667, 809
+a, name=\"y00000055-004\", , 714, 716, 739, 740
+rn, , , 831, -1, 834, 835
+a, name=\"000000550001\", , 831, 833, 855, 856
+div, style=\"margin-left:1em;\", ③応答の声。はい。禁秘抄<a name=\"y00000055-005\"></a>「女官申す、御手水参らせ候はん。女房、―といふ」, 868, 872, 899, 1038
+a, name=\"y00000055-005\", , 940, 942, 965, 966
 
 div, class=\"honbun\", <rn></rn><a name=\"000000600001\"></a><div style=\"margin-left:1em;\">烏などの鳴き声。</div>, 0, 4, 21, 122
 rn, , , 26, -1, 29, 30
@@ -82,6 +135,9 @@ a, name=\"000000650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>副<object class=\"icon\" data=\"square_b.svg\"></object>あのように。浮世風呂(3)<a name=\"y00000065-001\"></a>「―はいかねへ」。<a name=\"y00000065-002\"></a>「―でもない、こうでもない」<a name=\"y00000065-003\"></a>「―言えば、こう言う」, 63, 67, 94, 431
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000065-001\", , 259, 261, 284, 285
+a, name=\"y00000065-002\", , 324, 326, 349, 350
+a, name=\"y00000065-003\", , 404, 406, 429, 430
 
 div, class=\"honbun\", <rn></rn><a name=\"000000700001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object></div><rn></rn><a name=\"000000700001\"></a><div style=\"margin-left:1em;\">①ものに感じて発する声。謡曲、鉢木<a name=\"y00000070-001\"></a>「―降つたる雪かな」。<a name=\"y00000070-002\"></a>「―愉快なり」</div><rn></rn><a name=\"000000700001\"></a><div style=\"margin-left:1em;\">②呼びかける声。謡曲、安宅<a name=\"y00000070-003\"></a>「―しばらく」</div><rn></rn><a name=\"000000700001\"></a><div style=\"margin-left:1em;\">③応答の声。狂言、木六駄<a name=\"y00000070-004\"></a>「―。―とは不返事なが、おのれ行くまいといふ事か」。浮世風呂(3)<a name=\"y00000070-005\"></a>「此の頃は鍋鶴さんがひさしくお見えなさんねへね。―、あの子は病気だはな」</div>, 0, 4, 21, 989
 rn, , , 26, -1, 29, 30
@@ -89,6 +145,20 @@ a, name=\"000000700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object>, 63, 67, 94, 206
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+rn, , , 236, -1, 239, 240
+a, name=\"000000700001\", , 236, 238, 260, 261
+div, style=\"margin-left:1em;\", ①ものに感じて発する声。謡曲、鉢木<a name=\"y00000070-001\"></a>「―降つたる雪かな」。<a name=\"y00000070-002\"></a>「―愉快なり」, 273, 277, 304, 470
+a, name=\"y00000070-001\", , 360, 362, 385, 386
+a, name=\"y00000070-002\", , 431, 433, 456, 457
+rn, , , 500, -1, 503, 504
+a, name=\"000000700001\", , 500, 502, 524, 525
+div, style=\"margin-left:1em;\", ②呼びかける声。謡曲、安宅<a name=\"y00000070-003\"></a>「―しばらく」, 537, 541, 568, 659
+a, name=\"y00000070-003\", , 612, 614, 637, 638
+rn, , , 681, -1, 684, 685
+a, name=\"000000700001\", , 681, 683, 705, 706
+div, style=\"margin-left:1em;\", ③応答の声。狂言、木六駄<a name=\"y00000070-004\"></a>「―。―とは不返事なが、おのれ行くまいといふ事か」。浮世風呂(3)<a name=\"y00000070-005\"></a>「此の頃は鍋鶴さんがひさしくお見えなさんねへね。―、あの子は病気だはな」, 718, 722, 749, 1047
+a, name=\"y00000070-004\", , 790, 792, 815, 816
+a, name=\"y00000070-005\", , 921, 923, 946, 947
 
 div, class=\"honbun\", <rn></rn><a name=\"000000750001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>連体<object class=\"icon\" data=\"square_b.svg\"></object>あのような。あんな。ああした。<a name=\"y00000075-001\"></a>「―男はたくさんいる」</div>, 0, 4, 21, 320
 rn, , , 26, -1, 29, 30
@@ -96,6 +166,7 @@ a, name=\"000000750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>連体<object class=\"icon\" data=\"square_b.svg\"></object>あのような。あんな。ああした。<a name=\"y00000075-001\"></a>「―男はたくさんいる」, 63, 67, 94, 317
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+a, name=\"y00000075-001\", , 274, 276, 299, 300
 
 div, class=\"honbun\", <rn></rn><a name=\"000000800001\"></a><div style=\"margin-left:1em;\">アメリカの小説家。作「ガープの世界」など。（1942～）</div>, 0, 4, 21, 174
 rn, , , 26, -1, 29, 30
@@ -118,6 +189,7 @@ a, name=\"000000950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①古文書・記録文書類。また、その保管所。公文書館。, 63, 67, 94, 170
 rn, , , 184, -1, 187, 188
 a, name=\"000000950001\", , 184, 186, 208, 209
+div, style=\"margin-left:1em;\", ②コンピューターで、関連のある複数のファイルをまとめること。また、まとめたもの。まとめる際に圧縮されることが多い。, 221, 225, 252, 424
 
 div, class=\"honbun\", <rn></rn><a name=\"000001000001\"></a><div style=\"margin-left:1em;\">（「アーガイル」はスコットランドの旧州名）数色の糸を使った菱形の格子模様。多くセーターや靴下などに用いる。</div>, 0, 4, 21, 257
 rn, , , 26, -1, 29, 30
@@ -143,6 +215,9 @@ a, name=\"000001150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①建築。建築様式。建築学。構造。構成。, 63, 67, 94, 152
 rn, , , 166, -1, 169, 170
 a, name=\"000001150001\", , 166, 168, 190, 191
+div, style=\"margin-left:1em;\", ②コンピューター‐システムの論理的構造全般のこと。また、ある立場の利用者から見たコンピューターの属性。基本設計思想。<a name=\"y00000115-001\"></a>「ソフトウェア‐―」<a name=\"y00000115-002\"></a>「ネットワーク‐―」, 203, 207, 234, 529
+a, name=\"y00000115-001\", , 413, 415, 438, 439
+a, name=\"y00000115-002\", , 481, 483, 506, 507
 
 div, class=\"honbun\", <rn></rn><a name=\"000001200001\"></a><div style=\"margin-left:1em;\">ロシア生れの彫刻家。1909年パリに出て、マッスと空間を関係づける造形で注目され、のち多様な材質による彫刻を試みた。23年アメリカに移住。（1887～1964）</div>, 0, 4, 21, 310
 rn, , , 26, -1, 29, 30
@@ -155,6 +230,18 @@ a, name=\"000001250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （円弧の意）, 63, 67, 94, 113
 rn, , , 127, -1, 130, 131
 a, name=\"000001250001\", , 127, 129, 151, 152
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000130\">アーク‐とう【アーク灯】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000135\">アーク‐ほうでん【アーク放電】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000140\">アーク‐ようせつ【アーク溶接】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000150\">アーク‐ろ【アーク炉】</a>, 164, 168, 188, 728
+object, class=\"icon\" data=\"yajirusi2.svg\", , 193, 200, 238, 239
+a, href=\"lved.dataid:00000130\", アーク‐とう【アーク灯】, 256, 258, 288, 325
+br, , , 337, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 345, 352, 390, 391
+a, href=\"lved.dataid:00000135\", アーク‐ほうでん【アーク放電】, 408, 410, 440, 486
+br, , , 498, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 506, 513, 551, 552
+a, href=\"lved.dataid:00000140\", アーク‐ようせつ【アーク溶接】, 569, 571, 601, 647
+br, , , 659, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 667, 674, 712, 713
+a, href=\"lved.dataid:00000150\", アーク‐ろ【アーク炉】, 730, 732, 762, 796
 
 div, class=\"honbun\", <rn></rn><a name=\"000001300001\"></a><div style=\"margin-left:1em;\">アーク放電を利用した電灯。1876年パリで街路照明に用い、のち映写機などの強い光源に使用された。投光器、スペクトルの分光分析などにも用いる。アークライト。弧光灯。</div><rn></rn><a name=\"000001300001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a></div>, 0, 4, 21, 513
 rn, , , 26, -1, 29, 30
@@ -162,6 +249,9 @@ a, name=\"000001300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", アーク放電を利用した電灯。1876年パリで街路照明に用い、のち映写機などの強い光源に使用された。投光器、スペクトルの分光分析などにも用いる。アークライト。弧光灯。, 63, 67, 94, 330
 rn, , , 344, -1, 347, 348
 a, name=\"000001300001\", , 344, 346, 368, 369
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a>, 381, 385, 405, 517
+object, class=\"icon\" data=\"yajirusi2.svg\", , 410, 417, 455, 456
+a, href=\"lved.dataid:00000125\", アーク 【arc】, 473, 475, 505, 525
 
 div, class=\"honbun\", <rn></rn><a name=\"000001350001\"></a><div style=\"margin-left:1em;\">気体中での放電の一種。電極間の気体が電離し、そこを電流が流れる。電流密度が極めて大きく、高熱を発して強く輝き、持続性がある。</div><rn></rn><a name=\"000001350001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a></div>, 0, 4, 21, 464
 rn, , , 26, -1, 29, 30
@@ -169,6 +259,9 @@ a, name=\"000001350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 気体中での放電の一種。電極間の気体が電離し、そこを電流が流れる。電流密度が極めて大きく、高熱を発して強く輝き、持続性がある。, 63, 67, 94, 281
 rn, , , 295, -1, 298, 299
 a, name=\"000001350001\", , 295, 297, 319, 320
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a>, 332, 336, 356, 468
+object, class=\"icon\" data=\"yajirusi2.svg\", , 361, 368, 406, 407
+a, href=\"lved.dataid:00000125\", アーク 【arc】, 424, 426, 456, 476
 
 div, class=\"honbun\", <rn></rn><a name=\"000001400001\"></a><div style=\"margin-left:1em;\">電気溶接の一種。両電極間または電極と工作物との間にアーク放電を行わせ、その熱で金属を溶接する。</div><rn></rn><a name=\"000001400001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a></div>, 0, 4, 21, 419
 rn, , , 26, -1, 29, 30
@@ -176,6 +269,9 @@ a, name=\"000001400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 電気溶接の一種。両電極間または電極と工作物との間にアーク放電を行わせ、その熱で金属を溶接する。, 63, 67, 94, 236
 rn, , , 250, -1, 253, 254
 a, name=\"000001400001\", , 250, 252, 274, 275
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a>, 287, 291, 311, 423
+object, class=\"icon\" data=\"yajirusi2.svg\", , 316, 323, 361, 362
+a, href=\"lved.dataid:00000125\", アーク 【arc】, 379, 381, 411, 431
 
 div, class=\"honbun\", <rn></rn><a name=\"000001450001\"></a><div style=\"margin-left:1em;\">イギリスの発明家・実業家。1769年、水力を利用した紡績機械を発明したとして特許を取得。紡績会社の経営に成功、産業革命に大きな影響を及ぼした。（1732～1792）</div>, 0, 4, 21, 320
 rn, , , 26, -1, 29, 30
@@ -188,6 +284,9 @@ a, name=\"000001500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 電気炉の一種。電極同士または電極と原料との間にアーク放電を行わせ、炭素鋼・合金鋼の製造や高純度金属試料の融解などに用いる。, 63, 67, 94, 278
 rn, , , 292, -1, 295, 296
 a, name=\"000001500001\", , 292, 294, 316, 317
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000125\">アーク 【arc】</a>, 329, 333, 353, 465
+object, class=\"icon\" data=\"yajirusi2.svg\", , 358, 365, 403, 404
+a, href=\"lved.dataid:00000125\", アーク 【arc】, 421, 423, 453, 473
 
 div, class=\"honbun\", <rn></rn><a name=\"000001550001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00037670\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>アルカイック</a></div>, 0, 4, 21, 209
 rn, , , 26, -1, 29, 30
@@ -202,6 +301,7 @@ a, name=\"000001600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①柱列上に同型のアーチが連続した建築物。街路に沿って、または中庭に面して設けられ、通路をなす。, 63, 67, 94, 236
 rn, , , 250, -1, 253, 254
 a, name=\"000001600001\", , 250, 252, 274, 275
+div, style=\"margin-left:1em;\", ②上に屋根をおおいかぶせた商店街。, 287, 291, 318, 370
 
 div, class=\"honbun\", <rn></rn><a name=\"000001650001\"></a><div style=\"margin-left:1em;\">真核生物の主要な系統の一つ。緑色植物や紅色植物を含み、広義の植物に相当。階級は多くドメインと界の間に位置づけられる。古色素体類。</div>, 0, 4, 21, 290
 rn, , , 26, -1, 29, 30
@@ -219,6 +319,7 @@ a, name=\"000001750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （Arthurian romances）6世紀のウェールズの武将、のちブリタニア王アーサー（Arthur）（実在か否か不詳）と円卓の騎士たちとを主人公にした武勇と恋愛の物語。古く9世紀初めの文献にその名が見え、12世紀以降、フランス・イギリス・ドイツ3国を中心にヨーロッパ全土に伝播。中世後期にはトリスタン伝説や聖杯伝説も混入して韻文・散文の物語が成立。イギリスでは19世紀の文学・絵画に復活、現代では映画やミュージカルにも登場。円卓物語。 <a href=\"lved.dataid:00263920\">→騎士道物語</a> <a href=\"lved.dataid:00330415\">→クレチアン＝ド＝トロワ</a> <a href=\"lved.dataid:01060695\">→マロリー</a>, 63, 67, 94, 876
 a, href=\"lved.dataid:00263920\", →騎士道物語, 698, 700, 730, 749
 a, href=\"lved.dataid:00330415\", →クレチアン＝ド＝トロワ, 762, 764, 794, 831
+a, href=\"lved.dataid:01060695\", →マロリー, 844, 846, 876, 892
 
 div, class=\"honbun\", <rn></rn><a name=\"000001800001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>連体<object class=\"icon\" data=\"square_b.svg\"></object>あのような。あんな。ああいった。<a name=\"y00000180-001\"></a>「―やり方ではうまくいかない」</div>, 0, 4, 21, 335
 rn, , , 26, -1, 29, 30
@@ -226,6 +327,7 @@ a, name=\"000001800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>連体<object class=\"icon\" data=\"square_b.svg\"></object>あのような。あんな。ああいった。<a name=\"y00000180-001\"></a>「―やり方ではうまくいかない」, 63, 67, 94, 332
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+a, name=\"y00000180-001\", , 277, 279, 302, 303
 
 div, class=\"honbun\", <rn></rn><a name=\"000001850001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>副<object class=\"icon\" data=\"square_b.svg\"></object>あのように。ああいう具合に。<a name=\"y00000185-001\"></a>「―のんびり過ごす」<a name=\"y00000185-002\"></a>「―おいて大丈夫か」</div>, 0, 4, 21, 371
 rn, , , 26, -1, 29, 30
@@ -233,6 +335,8 @@ a, name=\"000001850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>副<object class=\"icon\" data=\"square_b.svg\"></object>あのように。ああいう具合に。<a name=\"y00000185-001\"></a>「―のんびり過ごす」<a name=\"y00000185-002\"></a>「―おいて大丈夫か」, 63, 67, 94, 368
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000185-001\", , 268, 270, 293, 294
+a, name=\"y00000185-002\", , 336, 338, 361, 362
 
 div, class=\"honbun\", <rn></rn><a name=\"000001900001\"></a><div style=\"margin-left:1em;\">あざけり笑う意のはやしことば。古事記(中)<a name=\"y00000190-001\"></a>「―、こはあざわらふそ」</div>, 0, 4, 21, 223
 rn, , , 26, -1, 29, 30
@@ -246,6 +350,16 @@ a, name=\"000001950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （地球・大地の意）電気装置などを地面と接続すること。また、その接続線。地球の電位と等しくさせ、また過大電流が装置に入るのを防ぐ。地絡<sub class=\"rubi\">ちらく</sub>。接地。, 63, 67, 94, 340
 sub, class=\"rubi\", ちらく, 297, 301, 316, 326
 rn, , , 362, -1, 365, 366
+a, name=\"000001950001\", , 362, 364, 386, 387
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000200\">アース‐カラー【earth colo（u）r】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000205\">アース‐ダム【earth dam】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000210\">アース‐デー【Earth Day】</a>, 399, 403, 423, 819
+object, class=\"icon\" data=\"yajirusi2.svg\", , 428, 435, 473, 474
+a, href=\"lved.dataid:00000200\", アース‐カラー【earth colo（u）r】, 491, 493, 523, 569
+br, , , 581, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 589, 596, 634, 635
+a, href=\"lved.dataid:00000205\", アース‐ダム【earth dam】, 652, 654, 684, 718
+br, , , 730, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 738, 745, 783, 784
+a, href=\"lved.dataid:00000210\", アース‐デー【Earth Day】, 801, 803, 833, 867
 
 div, class=\"honbun\", <rn></rn><a name=\"000002000001\"></a><div style=\"margin-left:1em;\">大地・土の色。ベージュ・カーキ色の類。</div><rn></rn><a name=\"000002000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a></div>, 0, 4, 21, 337
 rn, , , 26, -1, 29, 30
@@ -253,6 +367,9 @@ a, name=\"000002000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 大地・土の色。ベージュ・カーキ色の類。, 63, 67, 94, 152
 rn, , , 166, -1, 169, 170
 a, name=\"000002000001\", , 166, 168, 190, 191
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a>, 203, 207, 227, 341
+object, class=\"icon\" data=\"yajirusi2.svg\", , 232, 239, 277, 278
+a, href=\"lved.dataid:00000195\", アース 【earth】, 295, 297, 327, 349
 
 div, class=\"honbun\", <rn></rn><a name=\"000002050001\"></a><div style=\"margin-left:1em;\">ダムの一形式。主として土で築造されたもの。土堰<sub class=\"rubi\">どえん</sub>堤。 <a href=\"lved.dataid:00704545\">→ダム（図）</a>。</div><rn></rn><a name=\"000002050001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a></div>, 0, 4, 21, 449
 rn, , , 26, -1, 29, 30
@@ -260,6 +377,11 @@ a, name=\"000002050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ダムの一形式。主として土で築造されたもの。土堰<sub class=\"rubi\">どえん</sub>堤。 <a href=\"lved.dataid:00704545\">→ダム（図）</a>。, 63, 67, 94, 264
 sub, class=\"rubi\", どえん, 168, 172, 187, 197
 a, href=\"lved.dataid:00704545\", →ダム（図）, 218, 220, 250, 269
+rn, , , 294, -1, 297, 298
+a, name=\"000002050001\", , 294, 296, 318, 319
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a>, 331, 335, 355, 469
+object, class=\"icon\" data=\"yajirusi2.svg\", , 360, 367, 405, 406
+a, href=\"lved.dataid:00000195\", アース 【earth】, 423, 425, 455, 477
 
 div, class=\"honbun\", <rn></rn><a name=\"000002100001\"></a><div style=\"margin-left:1em;\">地球の日。4月22日。1970年ネルソン（G. Nelson1916～2005）米上院議員が環境問題について考える日として提唱したのに始まる。世界的に多彩な活動が行われる。</div><rn></rn><a name=\"000002100001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a></div>, 0, 4, 21, 490
 rn, , , 26, -1, 29, 30
@@ -267,6 +389,9 @@ a, name=\"000002100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 地球の日。4月22日。1970年ネルソン（G. Nelson1916～2005）米上院議員が環境問題について考える日として提唱したのに始まる。世界的に多彩な活動が行われる。, 63, 67, 94, 305
 rn, , , 319, -1, 322, 323
 a, name=\"000002100001\", , 319, 321, 343, 344
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000195\">アース 【earth】</a>, 356, 360, 380, 494
+object, class=\"icon\" data=\"yajirusi2.svg\", , 385, 392, 430, 431
+a, href=\"lved.dataid:00000195\", アース 【earth】, 448, 450, 480, 502
 
 div, class=\"honbun\", <rn></rn><a name=\"000002150001\"></a><div style=\"margin-left:1em;\">①〔建〕窓・門・橋などの開口上部を、くさび形の石や煉瓦を組み上げて曲線状に構築したもの。諸種の形式がある。迫持<sub class=\"rubi\">せりもち</sub>。拱<sub class=\"rubi\">きょう</sub>。<div class=\"media\"><img class=\"FIGs\" src=\"200001.jpg\"></img></div></div><rn></rn><a name=\"000002150001\"></a><div style=\"margin-left:1em;\">②洋風庭園や祝典会場などに設ける門。上部を弓形にし、杉や桧<sub class=\"rubi\">ひのき</sub>などの青葉でつつむ。緑門<sub class=\"rubi\">りょくもん</sub>。グリーン‐アーチ。</div><rn></rn><a name=\"000002150001\"></a><div style=\"margin-left:1em;\">③一般に、弧形。弓形。穹窿<sub class=\"rubi\">きゅうりゅう</sub>。</div><rn></rn><a name=\"000002150001\"></a><div style=\"margin-left:1em;\">④野球で、ホームランのこと。</div><rn></rn><a name=\"000002150001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000225\">アーチ‐きょう【アーチ橋】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000235\">アーチ‐ダム【arch dam】</a></div>, 0, 4, 21, 1330
 rn, , , 26, -1, 29, 30
@@ -274,6 +399,28 @@ a, name=\"000002150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①〔建〕窓・門・橋などの開口上部を、くさび形の石や煉瓦を組み上げて曲線状に構築したもの。諸種の形式がある。迫持<sub class=\"rubi\">せりもち</sub>。拱<sub class=\"rubi\">きょう</sub>。<div class=\"media\"><img class=\"FIGs\" src=\"200001.jpg\"></img></div>, 63, 67, 94, 414
 sub, class=\"rubi\", せりもち, 264, 268, 283, 296
 sub, class=\"rubi\", きょう, 316, 320, 335, 345
+div, class=\"media\", <img class=\"FIGs\" src=\"200001.jpg\"></img>, 362, 366, 382, 428
+img, class=\"FIGs\" src=\"200001.jpg\", , 387, 391, 425, 426
+rn, , , 460, -1, 463, 464
+a, name=\"000002150001\", , 460, 462, 484, 485
+div, style=\"margin-left:1em;\", ②洋風庭園や祝典会場などに設ける門。上部を弓形にし、杉や桧<sub class=\"rubi\">ひのき</sub>などの青葉でつつむ。緑門<sub class=\"rubi\">りょくもん</sub>。グリーン‐アーチ。, 497, 501, 528, 758
+sub, class=\"rubi\", ひのき, 620, 624, 639, 649
+sub, class=\"rubi\", りょくもん, 699, 703, 718, 734
+rn, , , 788, -1, 791, 792
+a, name=\"000002150001\", , 788, 790, 812, 813
+div, style=\"margin-left:1em;\", ③一般に、弧形。弓形。穹窿<sub class=\"rubi\">きゅうりゅう</sub>。, 825, 829, 856, 943
+sub, class=\"rubi\", きゅうりゅう, 900, 904, 919, 938
+rn, , , 965, -1, 968, 969
+a, name=\"000002150001\", , 965, 967, 989, 990
+div, style=\"margin-left:1em;\", ④野球で、ホームランのこと。, 1002, 1006, 1033, 1076
+rn, , , 1090, -1, 1093, 1094
+a, name=\"000002150001\", , 1090, 1092, 1114, 1115
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000225\">アーチ‐きょう【アーチ橋】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000235\">アーチ‐ダム【arch dam】</a>, 1127, 1131, 1151, 1411
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1156, 1163, 1201, 1202
+a, href=\"lved.dataid:00000225\", アーチ‐きょう【アーチ橋】, 1219, 1221, 1251, 1291
+br, , , 1303, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1311, 1318, 1356, 1357
+a, href=\"lved.dataid:00000235\", アーチ‐ダム【arch dam】, 1374, 1376, 1406, 1439
 
 div, class=\"honbun\", <rn></rn><a name=\"000002200001\"></a><div style=\"margin-left:1em;\">①洋弓。</div><rn></rn><a name=\"000002200001\"></a><div style=\"margin-left:1em;\">②洋弓を用いて、矢を標的に射当てる競技。</div>, 0, 4, 21, 246
 rn, , , 26, -1, 29, 30
@@ -281,6 +428,7 @@ a, name=\"000002200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①洋弓。, 63, 67, 94, 107
 rn, , , 121, -1, 124, 125
 a, name=\"000002200001\", , 121, 123, 145, 146
+div, style=\"margin-left:1em;\", ②洋弓を用いて、矢を標的に射当てる競技。, 158, 162, 189, 250
 
 div, class=\"honbun\", <rn></rn><a name=\"000002250001\"></a><div style=\"margin-left:1em;\">主桁<sub class=\"rubi\">しゅげた</sub>がアーチ構造の橋。</div><rn></rn><a name=\"000002250001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000215\">アーチ 【arch】</a></div>, 0, 4, 21, 350
 rn, , , 26, -1, 29, 30
@@ -288,6 +436,10 @@ a, name=\"000002250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 主桁<sub class=\"rubi\">しゅげた</sub>がアーチ構造の橋。, 63, 67, 94, 166
 sub, class=\"rubi\", しゅげた, 105, 109, 124, 137
 rn, , , 188, -1, 191, 192
+a, name=\"000002250001\", , 188, 190, 212, 213
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000215\">アーチ 【arch】</a>, 225, 229, 249, 362
+object, class=\"icon\" data=\"yajirusi2.svg\", , 254, 261, 299, 300
+a, href=\"lved.dataid:00000215\", アーチ 【arch】, 317, 319, 349, 370
 
 div, class=\"honbun\", <rn></rn><a name=\"000002300001\"></a><div style=\"margin-left:1em;\">（アーティストとも）芸術家。特に美術家・演奏家。中村正直、西国立志編<a name=\"y00000230-001\"></a>「―、工芸の人」</div>, 0, 4, 21, 254
 rn, , , 26, -1, 29, 30
@@ -301,6 +453,11 @@ a, name=\"000002350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 上流側へアーチ状に張り出した構造のダム。コンクリートで築造し、アーチを利用して水圧を両岸の岩盤で支える。コンクリートの使用量が少なくてすむ。拱堰堤<sub class=\"rubi\">きょうえんてい</sub>。 <a href=\"lved.dataid:00704545\">→ダム（図）</a>, 63, 67, 94, 420
 sub, class=\"rubi\", きょうえんてい, 318, 322, 337, 359
 a, href=\"lved.dataid:00704545\", →ダム（図）, 377, 379, 409, 428
+rn, , , 450, -1, 453, 454
+a, name=\"000002350001\", , 450, 452, 474, 475
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000215\">アーチ 【arch】</a>, 487, 491, 511, 624
+object, class=\"icon\" data=\"yajirusi2.svg\", , 516, 523, 561, 562
+a, href=\"lved.dataid:00000215\", アーチ 【arch】, 579, 581, 611, 632
 
 div, class=\"honbun\", <rn></rn><a name=\"000002400001\"></a><div style=\"margin-left:1em;\">①ことばを歯切れよく、一音一音はっきりと発音してしゃべること。</div><rn></rn><a name=\"000002400001\"></a><div style=\"margin-left:1em;\">②学校間で教育内容や履修単位に連続性・互換性を持たせること。</div>, 0, 4, 21, 357
 rn, , , 26, -1, 29, 30
@@ -308,6 +465,7 @@ a, name=\"000002400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①ことばを歯切れよく、一音一音はっきりと発音してしゃべること。, 63, 67, 94, 188
 rn, , , 202, -1, 205, 206
 a, name=\"000002400001\", , 202, 204, 226, 227
+div, style=\"margin-left:1em;\", ②学校間で教育内容や履修単位に連続性・互換性を持たせること。, 239, 243, 270, 361
 
 div, class=\"honbun\", <rn></rn><a name=\"000002450001\"></a><div style=\"margin-left:1em;\">①新聞や雑誌の、記事・論説。</div><rn></rn><a name=\"000002450001\"></a><div style=\"margin-left:1em;\">②法律や契約の箇条。条項。</div>, 0, 4, 21, 255
 rn, , , 26, -1, 29, 30
@@ -315,6 +473,7 @@ a, name=\"000002450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①新聞や雑誌の、記事・論説。, 63, 67, 94, 137
 rn, , , 151, -1, 154, 155
 a, name=\"000002450001\", , 151, 153, 175, 176
+div, style=\"margin-left:1em;\", ②法律や契約の箇条。条項。, 188, 192, 219, 259
 
 div, class=\"honbun\", <rn></rn><a name=\"000002500001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00000230\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>アーチスト</a></div>, 0, 4, 21, 206
 rn, , , 26, -1, 29, 30
@@ -329,6 +488,7 @@ a, name=\"000002550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", キク科の多年草。原産地は地中海沿岸。アザミに似るが大形、頭花は紅紫色で直径8センチメートル以上になる。蕾<sub class=\"rubi\">つぼみ</sub>から総苞を除いたものや、もやし状に育てた葉柄を食用。チョウセンアザミ。<div class=\"media\"><img class=\"FIGs\" src=\"S00001.jpg\"></img></div>, 63, 67, 94, 461
 sub, class=\"rubi\", つぼみ, 253, 257, 272, 282
 div, class=\"media\", <img class=\"FIGs\" src=\"S00001.jpg\"></img>, 401, 405, 421, 467
+img, class=\"FIGs\" src=\"S00001.jpg\", , 426, 430, 464, 465
 
 div, class=\"honbun\", <rn></rn><a name=\"000002600001\"></a><div style=\"margin-left:1em;\">①㋐芸術。美術。<a name=\"y00000260-001\"></a>「モダン‐―」<rn></rn><a name=\"000002600001\"></a><div style=\"margin-left:1em;\">㋑技術。</div></div><rn></rn><a name=\"000002600001\"></a><div style=\"margin-left:1em;\">②アート紙の略。</div><rn></rn><a name=\"000002600001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000265\">アート‐し【アート紙】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000270\">アート‐シアター【art theatre】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000275\">アート‐タイトル【art title】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000285\">アート‐ディレクター【art director】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000290\">アート‐フェア【art fair】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000295\">アート‐フラワー</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000300\">アート‐マネージメント【art management】</a></div>, 0, 4, 21, 1371
 rn, , , 26, -1, 29, 30
@@ -336,6 +496,34 @@ a, name=\"000002600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①㋐芸術。美術。<a name=\"y00000260-001\"></a>「モダン‐―」<rn></rn><a name=\"000002600001\"></a><div style=\"margin-left:1em;\">㋑技術。</div>, 63, 67, 94, 258
 a, name=\"y00000260-001\", , 123, 125, 148, 149
 rn, , , 182, -1, 185, 186
+a, name=\"000002600001\", , 182, 184, 206, 207
+div, style=\"margin-left:1em;\", ㋑技術。, 219, 223, 250, 263
+rn, , , 287, -1, 290, 291
+a, name=\"000002600001\", , 287, 289, 311, 312
+div, style=\"margin-left:1em;\", ②アート紙の略。, 324, 328, 355, 380
+rn, , , 394, -1, 397, 398
+a, name=\"000002600001\", , 394, 396, 418, 419
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000265\">アート‐し【アート紙】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000270\">アート‐シアター【art theatre】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000275\">アート‐タイトル【art title】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000285\">アート‐ディレクター【art director】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000290\">アート‐フェア【art fair】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000295\">アート‐フラワー</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000300\">アート‐マネージメント【art management】</a>, 431, 435, 455, 1397
+object, class=\"icon\" data=\"yajirusi2.svg\", , 460, 467, 505, 506
+a, href=\"lved.dataid:00000265\", アート‐し【アート紙】, 523, 525, 555, 589
+br, , , 601, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 609, 616, 654, 655
+a, href=\"lved.dataid:00000270\", アート‐シアター【art theatre】, 672, 674, 704, 746
+br, , , 758, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 766, 773, 811, 812
+a, href=\"lved.dataid:00000275\", アート‐タイトル【art title】, 829, 831, 861, 901
+br, , , 913, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 921, 928, 966, 967
+a, href=\"lved.dataid:00000285\", アート‐ディレクター【art director】, 984, 986, 1016, 1065
+br, , , 1077, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1085, 1092, 1130, 1131
+a, href=\"lved.dataid:00000290\", アート‐フェア【art fair】, 1148, 1150, 1180, 1216
+br, , , 1228, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1236, 1243, 1281, 1282
+a, href=\"lved.dataid:00000295\", アート‐フラワー, 1299, 1301, 1331, 1356
+br, , , 1368, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1376, 1383, 1421, 1422
+a, href=\"lved.dataid:00000300\", アート‐マネージメント【art management】, 1439, 1441, 1471, 1525
 
 div, class=\"honbun\", <rn></rn><a name=\"000002650001\"></a><div style=\"margin-left:1em;\">（art paper）高級網版印刷・多色印刷用の洋紙。炭酸カルシウム・カオリンなどの白色顔料に接着剤を混ぜて原紙に塗布し、スーパー‐カレンダーで平滑にして光沢を出したもの。</div><rn></rn><a name=\"000002650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 518
 rn, , , 26, -1, 29, 30
@@ -343,6 +531,9 @@ a, name=\"000002650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （art paper）高級網版印刷・多色印刷用の洋紙。炭酸カルシウム・カオリンなどの白色顔料に接着剤を混ぜて原紙に塗布し、スーパー‐カレンダーで平滑にして光沢を出したもの。, 63, 67, 94, 335
 rn, , , 349, -1, 352, 353
 a, name=\"000002650001\", , 349, 351, 373, 374
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 386, 390, 410, 522
+object, class=\"icon\" data=\"yajirusi2.svg\", , 415, 422, 460, 461
+a, href=\"lved.dataid:00000260\", アート 【art】, 478, 480, 510, 530
 
 div, class=\"honbun\", <rn></rn><a name=\"000002700001\"></a><div style=\"margin-left:1em;\">芸術映画や実験的な映画を専門に上映する映画館。</div><rn></rn><a name=\"000002700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 347
 rn, , , 26, -1, 29, 30
@@ -350,6 +541,9 @@ a, name=\"000002700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 芸術映画や実験的な映画を専門に上映する映画館。, 63, 67, 94, 164
 rn, , , 178, -1, 181, 182
 a, name=\"000002700001\", , 178, 180, 202, 203
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 215, 219, 239, 351
+object, class=\"icon\" data=\"yajirusi2.svg\", , 244, 251, 289, 290
+a, href=\"lved.dataid:00000260\", アート 【art】, 307, 309, 339, 359
 
 div, class=\"honbun\", <rn></rn><a name=\"000002750001\"></a><div style=\"margin-left:1em;\">字体・背景などデザインに工夫を凝らした映画・テレビの字幕。意匠字幕。美術字幕。</div><rn></rn><a name=\"000002750001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 395
 rn, , , 26, -1, 29, 30
@@ -357,6 +551,9 @@ a, name=\"000002750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 字体・背景などデザインに工夫を凝らした映画・テレビの字幕。意匠字幕。美術字幕。, 63, 67, 94, 212
 rn, , , 226, -1, 229, 230
 a, name=\"000002750001\", , 226, 228, 250, 251
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 263, 267, 287, 399
+object, class=\"icon\" data=\"yajirusi2.svg\", , 292, 299, 337, 338
+a, href=\"lved.dataid:00000260\", アート 【art】, 355, 357, 387, 407
 
 div, class=\"honbun\", <rn></rn><a name=\"000002800001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00424365\"><sup>(→)</sup>コロタイプ</a>に同じ。</div>, 0, 4, 21, 179
 rn, , , 26, -1, 29, 30
@@ -371,6 +568,12 @@ a, name=\"000002850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①演劇・映画などで、舞台・小道具・背景・衣装などの美術的効果を指導する者。美術監督。, 63, 67, 94, 221
 rn, , , 235, -1, 238, 239
 a, name=\"000002850001\", , 235, 237, 259, 260
+div, style=\"margin-left:1em;\", ②広告制作で、美術部門を統括する者。, 272, 276, 303, 358
+rn, , , 372, -1, 375, 376
+a, name=\"000002850001\", , 372, 374, 396, 397
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 409, 413, 433, 545
+object, class=\"icon\" data=\"yajirusi2.svg\", , 438, 445, 483, 484
+a, href=\"lved.dataid:00000260\", アート 【art】, 501, 503, 533, 553
 
 div, class=\"honbun\", <rn></rn><a name=\"000002900001\"></a><div style=\"margin-left:1em;\">美術の見本市。大規模なものは、1960年代以降、ケルン・バーゼル・パリなどで始まる。</div><rn></rn><a name=\"000002900001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 396
 rn, , , 26, -1, 29, 30
@@ -378,6 +581,9 @@ a, name=\"000002900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 美術の見本市。大規模なものは、1960年代以降、ケルン・バーゼル・パリなどで始まる。, 63, 67, 94, 213
 rn, , , 227, -1, 230, 231
 a, name=\"000002900001\", , 227, 229, 251, 252
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 264, 268, 288, 400
+object, class=\"icon\" data=\"yajirusi2.svg\", , 293, 300, 338, 339
+a, href=\"lved.dataid:00000260\", アート 【art】, 356, 358, 388, 408
 
 div, class=\"honbun\", <rn></rn><a name=\"000002950001\"></a><div style=\"margin-left:1em;\">（和製語art flower）（料理研究家飯田深雪の命名）布で、自然のものに模して作った造花。また、その技法。</div><rn></rn><a name=\"000002950001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 423
 rn, , , 26, -1, 29, 30
@@ -385,6 +591,9 @@ a, name=\"000002950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （和製語art flower）（料理研究家飯田深雪の命名）布で、自然のものに模して作った造花。また、その技法。, 63, 67, 94, 240
 rn, , , 254, -1, 257, 258
 a, name=\"000002950001\", , 254, 256, 278, 279
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 291, 295, 315, 427
+object, class=\"icon\" data=\"yajirusi2.svg\", , 320, 327, 365, 366
+a, href=\"lved.dataid:00000260\", アート 【art】, 383, 385, 415, 435
 
 div, class=\"honbun\", <rn></rn><a name=\"000003000001\"></a><div style=\"margin-left:1em;\">芸術作品を鑑賞者に提供するために、企画立案から運営に携わる仕事。</div><rn></rn><a name=\"000003000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a></div>, 0, 4, 21, 374
 rn, , , 26, -1, 29, 30
@@ -392,6 +601,9 @@ a, name=\"000003000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 芸術作品を鑑賞者に提供するために、企画立案から運営に携わる仕事。, 63, 67, 94, 191
 rn, , , 205, -1, 208, 209
 a, name=\"000003000001\", , 205, 207, 229, 230
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000260\">アート 【art】</a>, 242, 246, 266, 378
+object, class=\"icon\" data=\"yajirusi2.svg\", , 271, 278, 316, 317
+a, href=\"lved.dataid:00000260\", アート 【art】, 334, 336, 366, 386
 
 div, class=\"honbun\", <rn></rn><a name=\"000003050001\"></a><div style=\"margin-left:1em;\">（「我<sub class=\"rubi\">が</sub>」と漢訳）インド哲学の根本原理の一つ。もと呼吸・生命原理を意味し、のちに個人の心身の活動の基礎原理、すなわち自我の本質・霊魂を意味するようになった。ウパニシャッドの哲学では、このアートマンがブラフマン（宇宙の根本原理）と同一であることが究極の真理と考えられた。</div>, 0, 4, 21, 526
 rn, , , 26, -1, 29, 30
@@ -427,6 +639,12 @@ a, name=\"000003300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 都市の。都会風の。, 63, 67, 94, 122
 rn, , , 136, -1, 139, 140
 a, name=\"000003300001\", , 136, 138, 160, 161
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000335\">アーバン‐デザイン【urban design】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000340\">アーバン‐ライフ【urban life】</a>, 173, 177, 197, 471
+object, class=\"icon\" data=\"yajirusi2.svg\", , 202, 209, 247, 248
+a, href=\"lved.dataid:00000335\", アーバン‐デザイン【urban design】, 265, 267, 297, 343
+br, , , 355, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 363, 370, 408, 409
+a, href=\"lved.dataid:00000340\", アーバン‐ライフ【urban life】, 426, 428, 458, 499
 
 div, class=\"honbun\", <rn></rn><a name=\"000003350001\"></a><div style=\"margin-left:1em;\">都市計画の理論に基づいて行う都市空間の設計。都市設計。都市デザイン。</div><rn></rn><a name=\"000003350001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000330\">アーバン 【urban】</a></div>, 0, 4, 21, 385
 rn, , , 26, -1, 29, 30
@@ -434,6 +652,9 @@ a, name=\"000003350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 都市計画の理論に基づいて行う都市空間の設計。都市設計。都市デザイン。, 63, 67, 94, 197
 rn, , , 211, -1, 214, 215
 a, name=\"000003350001\", , 211, 213, 235, 236
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000330\">アーバン 【urban】</a>, 248, 252, 272, 389
+object, class=\"icon\" data=\"yajirusi2.svg\", , 277, 284, 322, 323
+a, href=\"lved.dataid:00000330\", アーバン 【urban】, 340, 342, 372, 397
 
 div, class=\"honbun\", <rn></rn><a name=\"000003400001\"></a><div style=\"margin-left:1em;\">都会での現代的な生活。都市生活。</div><rn></rn><a name=\"000003400001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000330\">アーバン 【urban】</a></div>, 0, 4, 21, 331
 rn, , , 26, -1, 29, 30
@@ -441,6 +662,9 @@ a, name=\"000003400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 都会での現代的な生活。都市生活。, 63, 67, 94, 143
 rn, , , 157, -1, 160, 161
 a, name=\"000003400001\", , 157, 159, 181, 182
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000330\">アーバン 【urban】</a>, 194, 198, 218, 335
+object, class=\"icon\" data=\"yajirusi2.svg\", , 223, 230, 268, 269
+a, href=\"lved.dataid:00000330\", アーバン 【urban】, 286, 288, 318, 343
 
 div, class=\"honbun\", <rn></rn><a name=\"000003450001\"></a><div style=\"margin-left:1em;\">ノルウェーの数学者。5次以上の代数方程式は一般に代数的には解けないことを証明。楕円関数論およびアーベル関数論を創始。（1802～1829）</div>, 0, 4, 21, 287
 rn, , , 26, -1, 29, 30
@@ -469,6 +693,10 @@ a, name=\"000003650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 軍隊。特に、陸軍。<a name=\"y00000365-001\"></a>「―‐ルック」, 63, 67, 94, 173
 a, name=\"y00000365-001\", , 126, 128, 151, 152
 rn, , , 195, -1, 198, 199
+a, name=\"000003650001\", , 195, 197, 219, 220
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000370\">アーミー‐ナイフ【army knife】</a>, 232, 236, 256, 389
+object, class=\"icon\" data=\"yajirusi2.svg\", , 261, 268, 306, 307
+a, href=\"lved.dataid:00000370\", アーミー‐ナイフ【army knife】, 324, 326, 356, 397
 
 div, class=\"honbun\", <rn></rn><a name=\"000003700001\"></a><div style=\"margin-left:1em;\">爪切り・はさみ・栓抜きなども備えた、多機能の折畳み式ナイフ。本来は軍用だが、広くアウトドアなどで用いる。</div><rn></rn><a name=\"000003700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000365\">アーミー 【army】</a></div>, 0, 4, 21, 438
 rn, , , 26, -1, 29, 30
@@ -476,6 +704,9 @@ a, name=\"000003700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 爪切り・はさみ・栓抜きなども備えた、多機能の折畳み式ナイフ。本来は軍用だが、広くアウトドアなどで用いる。, 63, 67, 94, 251
 rn, , , 265, -1, 268, 269
 a, name=\"000003700001\", , 265, 267, 289, 290
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000365\">アーミー 【army】</a>, 302, 306, 326, 442
+object, class=\"icon\" data=\"yajirusi2.svg\", , 331, 338, 376, 377
+a, href=\"lved.dataid:00000365\", アーミー 【army】, 394, 396, 426, 450
 
 div, class=\"honbun\", <rn></rn><a name=\"000003750001\"></a><div style=\"margin-left:1em;\">キリスト教プロテスタントのメノー派の一派。また、その信徒。スイスのアマン（J. Ammann1644頃～1730頃）の創始。迫害を避け、アメリカのペンシルヴァニア州や同国中西部、カナダに移住、地域共同体を形成。電気・自動車など現代技術文明を厳しく制限する簡素な生活と平和主義で知られる。</div>, 0, 4, 21, 493
 rn, , , 26, -1, 29, 30
@@ -499,6 +730,36 @@ a, name=\"000003900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①腕。, 63, 67, 94, 104
 rn, , , 118, -1, 121, 122
 a, name=\"000003900001\", , 118, 120, 142, 143
+div, style=\"margin-left:1em;\", ②㋐機械などの腕状の部分。<rn></rn><a name=\"000003900001\"></a><div style=\"margin-left:1em;\">㋑トーンアームの略。レコード‐プレーヤーで、カートリッジを支える腕状の部品。</div>, 155, 159, 186, 416
+rn, , , 230, -1, 233, 234
+a, name=\"000003900001\", , 230, 232, 254, 255
+div, style=\"margin-left:1em;\", ㋑トーンアームの略。レコード‐プレーヤーで、カートリッジを支える腕状の部品。, 267, 271, 298, 413
+rn, , , 437, -1, 440, 441
+a, name=\"000003900001\", , 437, 439, 461, 462
+div, style=\"margin-left:1em;\", ③腕木。, 474, 478, 505, 518
+rn, , , 532, -1, 535, 536
+a, name=\"000003900001\", , 532, 534, 556, 557
+div, style=\"margin-left:1em;\", ④洋服の袖。, 569, 573, 600, 619
+rn, , , 633, -1, 636, 637
+a, name=\"000003900001\", , 633, 635, 657, 658
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000395\">アーム‐カバー【arm cover】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000420\">アーム‐チェア【armchair】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000425\">アーム‐バンド【armband】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000430\">アーム‐ホール【armhole】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000435\">アーム‐レスト【armrest】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000440\">アーム‐レスリング【arm wrestling】</a>, 670, 674, 694, 1486
+object, class=\"icon\" data=\"yajirusi2.svg\", , 699, 706, 744, 745
+a, href=\"lved.dataid:00000395\", アーム‐カバー【arm cover】, 762, 764, 794, 831
+br, , , 843, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 851, 858, 896, 897
+a, href=\"lved.dataid:00000420\", アーム‐チェア【armchair】, 914, 916, 946, 982
+br, , , 994, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1002, 1009, 1047, 1048
+a, href=\"lved.dataid:00000425\", アーム‐バンド【armband】, 1065, 1067, 1097, 1132
+br, , , 1144, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1152, 1159, 1197, 1198
+a, href=\"lved.dataid:00000430\", アーム‐ホール【armhole】, 1215, 1217, 1247, 1282
+br, , , 1294, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1302, 1309, 1347, 1348
+a, href=\"lved.dataid:00000435\", アーム‐レスト【armrest】, 1365, 1367, 1397, 1432
+br, , , 1444, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1452, 1459, 1497, 1498
+a, href=\"lved.dataid:00000440\", アーム‐レスリング【arm wrestling】, 1515, 1517, 1547, 1594
 
 div, class=\"honbun\", <rn></rn><a name=\"000003950001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00662195\"><sup>(→)</sup>袖カバー</a>に同じ。</div><rn></rn><a name=\"000003950001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a></div>, 0, 4, 21, 356
 rn, , , 26, -1, 29, 30
@@ -506,6 +767,11 @@ a, name=\"000003950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00662195\"><sup>(→)</sup>袖カバー</a>に同じ。, 63, 67, 94, 173
 a, href=\"lved.dataid:00662195\", <sup>(→)</sup>袖カバー, 100, 102, 132, 161
 sup, , (→), 137, -1, 141, 147
+rn, , , 203, -1, 206, 207
+a, name=\"000003950001\", , 203, 205, 227, 228
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 240, 244, 264, 376
+object, class=\"icon\" data=\"yajirusi2.svg\", , 269, 276, 314, 315
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 332, 334, 364, 384
 
 div, class=\"honbun\", <rn></rn><a name=\"000004000001\"></a><div style=\"margin-left:1em;\">ユゴー作「レ‐ミゼラブル」の黒岩涙香による邦訳題名。 <a href=\"lved.dataid:01186860\">→レ‐ミゼラブル</a></div>, 0, 4, 21, 238
 rn, , , 26, -1, 29, 30
@@ -534,6 +800,9 @@ a, name=\"000004200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ひじかけ椅子。, 63, 67, 94, 116
 rn, , , 130, -1, 133, 134
 a, name=\"000004200001\", , 130, 132, 154, 155
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 167, 171, 191, 303
+object, class=\"icon\" data=\"yajirusi2.svg\", , 196, 203, 241, 242
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 259, 261, 291, 311
 
 div, class=\"honbun\", <rn></rn><a name=\"000004250001\"></a><div style=\"margin-left:1em;\">ワイシャツなどの袖を留めるバンド。腕バンド。</div><rn></rn><a name=\"000004250001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a></div>, 0, 4, 21, 344
 rn, , , 26, -1, 29, 30
@@ -541,6 +810,9 @@ a, name=\"000004250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ワイシャツなどの袖を留めるバンド。腕バンド。, 63, 67, 94, 161
 rn, , , 175, -1, 178, 179
 a, name=\"000004250001\", , 175, 177, 199, 200
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 212, 216, 236, 348
+object, class=\"icon\" data=\"yajirusi2.svg\", , 241, 248, 286, 287
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 304, 306, 336, 356
 
 div, class=\"honbun\", <rn></rn><a name=\"000004300001\"></a><div style=\"margin-left:1em;\">袖ぐり。袖ぐりの寸法。</div><rn></rn><a name=\"000004300001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a></div>, 0, 4, 21, 311
 rn, , , 26, -1, 29, 30
@@ -548,6 +820,9 @@ a, name=\"000004300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 袖ぐり。袖ぐりの寸法。, 63, 67, 94, 128
 rn, , , 142, -1, 145, 146
 a, name=\"000004300001\", , 142, 144, 166, 167
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 179, 183, 203, 315
+object, class=\"icon\" data=\"yajirusi2.svg\", , 208, 215, 253, 254
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 271, 273, 303, 323
 
 div, class=\"honbun\", <rn></rn><a name=\"000004350001\"></a><div style=\"margin-left:1em;\">椅子のひじかけ。</div><rn></rn><a name=\"000004350001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a></div>, 0, 4, 21, 302
 rn, , , 26, -1, 29, 30
@@ -555,6 +830,9 @@ a, name=\"000004350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 椅子のひじかけ。, 63, 67, 94, 119
 rn, , , 133, -1, 136, 137
 a, name=\"000004350001\", , 133, 135, 157, 158
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 170, 174, 194, 306
+object, class=\"icon\" data=\"yajirusi2.svg\", , 199, 206, 244, 245
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 262, 264, 294, 314
 
 div, class=\"honbun\", <rn></rn><a name=\"000004400001\"></a><div style=\"margin-left:1em;\">腕相撲に似た競技。世界アーム‐レスリング連盟（WAF）制定による共通ルールに従って行う。</div><rn></rn><a name=\"000004400001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a></div>, 0, 4, 21, 404
 rn, , , 26, -1, 29, 30
@@ -562,6 +840,9 @@ a, name=\"000004400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 腕相撲に似た競技。世界アーム‐レスリング連盟（WAF）制定による共通ルールに従って行う。, 63, 67, 94, 221
 rn, , , 235, -1, 238, 239
 a, name=\"000004400001\", , 235, 237, 259, 260
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000390\">アーム 【arm】</a>, 272, 276, 296, 408
+object, class=\"icon\" data=\"yajirusi2.svg\", , 301, 308, 346, 347
+a, href=\"lved.dataid:00000390\", アーム 【arm】, 364, 366, 396, 416
 
 div, class=\"honbun\", <rn></rn><a name=\"000004450001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00000360\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>アーマダバード</a></div>, 0, 4, 21, 212
 rn, , , 26, -1, 29, 30
@@ -581,6 +862,7 @@ a, name=\"000004550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", バラ科の落葉高木。中央アジア原産。高さ6メートルに達し、葉・花・果実とも桃に似るが、果肉は薄く、熟すと裂開し、平たい核がある。核中の仁を、スイート‐アーモンドでは食用、苦い品種の苦扁桃（ビター‐アーモンド）では鎮咳<sub class=\"rubi\">ちんがい</sub>・鎮痙<sub class=\"rubi\">ちんけい</sub>などの薬用とする。扁桃。巴旦杏<sub class=\"rubi\">はたんきょう</sub>。アメンドウ。アマンド。, 63, 67, 94, 624
 sub, class=\"rubi\", ちんがい, 418, 422, 437, 450
 sub, class=\"rubi\", ちんけい, 473, 477, 492, 505
+sub, class=\"rubi\", はたんきょう, 564, 568, 583, 602
 
 div, class=\"honbun\", <rn></rn><a name=\"000004600001\"></a><div style=\"margin-left:1em;\">（アーユルは生命、ヴェーダは聖典の意） <a href=\"lved.dataid:00085065\"><sup>(→)</sup>インド医学</a>のこと。</div>, 0, 4, 21, 236
 rn, , , 26, -1, 29, 30
@@ -600,6 +882,7 @@ a, name=\"000004700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object>（「あら」を強めた形）強い感動を表す声。あれまあ。日葡辞書「アアラウレシヤ。アアラカナシヤ」。<a name=\"y00000470-001\"></a>「―不思議」, 63, 67, 94, 395
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000470-001\", , 367, 369, 392, 393
 
 div, class=\"honbun\", <rn></rn><a name=\"000004750001\"></a><div style=\"margin-left:1em;\">インド音楽で、拍子構造をもたずにラーガを提示する序奏の部分。アーラーパナ。</div>, 0, 4, 21, 209
 rn, , , 26, -1, 29, 30
@@ -641,6 +924,22 @@ a, name=\"000005050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①アルファベットの18番目の文字。, 63, 67, 94, 142
 rn, , , 156, -1, 159, 160
 a, name=\"000005050001\", , 156, 158, 180, 181
+div, style=\"margin-left:1em;\", ②右を表す記号（R）。, 193, 197, 224, 256
+rn, , , 270, -1, 273, 274
+a, name=\"000005050001\", , 270, 272, 294, 295
+div, style=\"margin-left:1em;\", ③〔数〕半径を表す記号（r）。直角を表す記号（R）。, 307, 311, 338, 413
+rn, , , 427, -1, 430, 431
+a, name=\"000005050001\", , 427, 429, 451, 452
+div, style=\"margin-left:1em;\", ④〔理〕X線またはガンマ線の照射線量の単位レントゲンの記号（R）。, 464, 468, 495, 591
+rn, , , 605, -1, 608, 609
+a, name=\"000005050001\", , 605, 607, 629, 630
+div, style=\"margin-left:1em;\", ⑤気体定数を表す記号（R）。, 642, 646, 673, 714
+rn, , , 728, -1, 731, 732
+a, name=\"000005050001\", , 728, 730, 752, 753
+div, style=\"margin-left:1em;\", ⑥〔化〕炭化水素の分子から水素原子1個を除いた記号（R）。アルコールをROHと記す類。, 765, 769, 796, 916
+rn, , , 930, -1, 933, 934
+a, name=\"000005050001\", , 930, 932, 954, 955
+div, style=\"margin-left:1em;\", ⑦（roof）建物の屋上。, 967, 971, 998, 1030
 
 div, class=\"honbun\", <rn></rn><a name=\"000005100001\"></a><div style=\"margin-left:1em;\">面積の単位。1アールは100平方メートル（約30.25坪）。記号a</div>, 0, 4, 21, 177
 rn, , , 26, -1, 29, 30
@@ -653,6 +952,17 @@ a, name=\"000005150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00000260\"><sup>(→)</sup>アート①㋐</a>に同じ。, 63, 67, 94, 176
 a, href=\"lved.dataid:00000260\", <sup>(→)</sup>アート①㋐, 100, 102, 132, 164
 sup, , (→), 137, -1, 141, 147
+rn, , , 206, -1, 209, 210
+a, name=\"000005150001\", , 206, 208, 230, 231
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000610\">アール‐デコ【art déco フランス】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000620\">アール‐ヌーヴォー【art nouveau フランス】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000635\">アール‐ブリュット【art brut フランス】</a>, 243, 247, 267, 709
+object, class=\"icon\" data=\"yajirusi2.svg\", , 272, 279, 317, 318
+a, href=\"lved.dataid:00000610\", アール‐デコ【art déco フランス】, 335, 337, 367, 414
+br, , , 426, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 434, 441, 479, 480
+a, href=\"lved.dataid:00000620\", アール‐ヌーヴォー【art nouveau フランス】, 497, 499, 529, 587
+br, , , 599, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 607, 614, 652, 653
+a, href=\"lved.dataid:00000635\", アール‐ブリュット【art brut フランス】, 670, 672, 702, 757
 
 div, class=\"honbun\", <rn></rn><a name=\"000005200001\"></a><div style=\"margin-left:1em;\">（radioisotope laboratory）放射性同位元素を扱うために、換気・排水などの安全性に特に配慮した実験室。</div>, 0, 4, 21, 235
 rn, , , 26, -1, 29, 30
@@ -685,6 +995,20 @@ a, name=\"000005450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （ribonucleic acid） <a href=\"lved.dataid:01170175\"><sup>(→)</sup>リボ核酸</a>。, 63, 67, 94, 186
 a, href=\"lved.dataid:01170175\", <sup>(→)</sup>リボ核酸, 122, 124, 154, 183
 sup, , (→), 159, -1, 163, 169
+rn, , , 216, -1, 219, 220
+a, name=\"000005450001\", , 216, 218, 240, 241
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000550\">アールエヌエー‐ウイルス【RNA virus】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000555\">アールエヌエー‐かんしょう【RNA干渉】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000560\">アールエヌエー‐ポリメラーゼ【RNA polymerase】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000565\">アールエヌエー‐ワールド【RNA world】</a>, 253, 257, 277, 876
+object, class=\"icon\" data=\"yajirusi2.svg\", , 282, 289, 327, 328
+a, href=\"lved.dataid:00000550\", アールエヌエー‐ウイルス【RNA virus】, 345, 347, 377, 429
+br, , , 441, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 449, 456, 494, 495
+a, href=\"lved.dataid:00000555\", アールエヌエー‐かんしょう【RNA干渉】, 512, 514, 544, 599
+br, , , 611, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 619, 626, 664, 665
+a, href=\"lved.dataid:00000560\", アールエヌエー‐ポリメラーゼ【RNA polymerase】, 682, 684, 714, 777
+br, , , 789, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 797, 804, 842, 843
+a, href=\"lved.dataid:00000565\", アールエヌエー‐ワールド【RNA world】, 860, 862, 892, 944
 
 div, class=\"honbun\", <rn></rn><a name=\"000005500001\"></a><div style=\"margin-left:1em;\">RNAを持つウイルス。植物ウイルスのほとんど、またインフルエンザ‐ウイルス・レトロウイルスなどがこれに属する。 <a href=\"lved.dataid:00758730\">→DNAウイルス</a>。</div><rn></rn><a name=\"000005500001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a></div>, 0, 4, 21, 514
 rn, , , 26, -1, 29, 30
@@ -692,6 +1016,10 @@ a, name=\"000005500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", RNAを持つウイルス。植物ウイルスのほとんど、またインフルエンザ‐ウイルス・レトロウイルスなどがこれに属する。 <a href=\"lved.dataid:00758730\">→DNAウイルス</a>。, 63, 67, 94, 313
 a, href=\"lved.dataid:00758730\", →DNAウイルス, 259, 261, 291, 310
 rn, , , 335, -1, 338, 339
+a, name=\"000005500001\", , 335, 337, 359, 360
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a>, 372, 376, 396, 526
+object, class=\"icon\" data=\"yajirusi2.svg\", , 401, 408, 446, 447
+a, href=\"lved.dataid:00000545\", アール‐エヌ‐エー 【RNA】, 464, 466, 496, 534
 
 div, class=\"honbun\", <rn></rn><a name=\"000005550001\"></a><div style=\"margin-left:1em;\">（RNA interference）マイクロRNAなどの比較的小さなRNA分子によってメッセンジャーRNAの働きが抑えられる現象。RNAiと略記。</div><rn></rn><a name=\"000005550001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a></div>, 0, 4, 21, 457
 rn, , , 26, -1, 29, 30
@@ -699,6 +1027,9 @@ a, name=\"000005550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （RNA interference）マイクロRNAなどの比較的小さなRNA分子によってメッセンジャーRNAの働きが抑えられる現象。RNAiと略記。, 63, 67, 94, 256
 rn, , , 270, -1, 273, 274
 a, name=\"000005550001\", , 270, 272, 294, 295
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a>, 307, 311, 331, 461
+object, class=\"icon\" data=\"yajirusi2.svg\", , 336, 343, 381, 382
+a, href=\"lved.dataid:00000545\", アール‐エヌ‐エー 【RNA】, 399, 401, 431, 469
 
 div, class=\"honbun\", <rn></rn><a name=\"000005600001\"></a><div style=\"margin-left:1em;\">RNA合成を触媒するポリメラーゼ。</div><rn></rn><a name=\"000005600001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a></div>, 0, 4, 21, 341
 rn, , , 26, -1, 29, 30
@@ -706,6 +1037,9 @@ a, name=\"000005600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", RNA合成を触媒するポリメラーゼ。, 63, 67, 94, 140
 rn, , , 154, -1, 157, 158
 a, name=\"000005600001\", , 154, 156, 178, 179
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a>, 191, 195, 215, 345
+object, class=\"icon\" data=\"yajirusi2.svg\", , 220, 227, 265, 266
+a, href=\"lved.dataid:00000545\", アール‐エヌ‐エー 【RNA】, 283, 285, 315, 353
 
 div, class=\"honbun\", <rn></rn><a name=\"000005650001\"></a><div style=\"margin-left:1em;\">原始地球上に存在したと考えられる、複製と進化がRNAのみによって行われていた時代。</div><rn></rn><a name=\"000005650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a></div>, 0, 4, 21, 413
 rn, , , 26, -1, 29, 30
@@ -713,6 +1047,9 @@ a, name=\"000005650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 原始地球上に存在したと考えられる、複製と進化がRNAのみによって行われていた時代。, 63, 67, 94, 212
 rn, , , 226, -1, 229, 230
 a, name=\"000005650001\", , 226, 228, 250, 251
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000545\">アール‐エヌ‐エー 【RNA】</a>, 263, 267, 287, 417
+object, class=\"icon\" data=\"yajirusi2.svg\", , 292, 299, 337, 338
+a, href=\"lved.dataid:00000545\", アール‐エヌ‐エー 【RNA】, 355, 357, 387, 425
 
 div, class=\"honbun\", <rn></rn><a name=\"000005700001\"></a><div style=\"margin-left:1em;\">（radio frequency）無線周波数。無線通信や放送に使われる高い周波数のこと。電波として空間を伝わりやすい。</div><rn></rn><a name=\"000005700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000575\">アールエフ‐アイディー【RF‐ID】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000580\">アールエフ‐タグ【RF tag】</a></div>, 0, 4, 21, 584
 rn, , , 26, -1, 29, 30
@@ -720,6 +1057,12 @@ a, name=\"000005700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （radio frequency）無線周波数。無線通信や放送に使われる高い周波数のこと。電波として空間を伝わりやすい。, 63, 67, 94, 242
 rn, , , 256, -1, 259, 260
 a, name=\"000005700001\", , 256, 258, 280, 281
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000575\">アールエフ‐アイディー【RF‐ID】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000580\">アールエフ‐タグ【RF tag】</a>, 293, 297, 317, 588
+object, class=\"icon\" data=\"yajirusi2.svg\", , 322, 329, 367, 368
+a, href=\"lved.dataid:00000575\", アールエフ‐アイディー【RF‐ID】, 385, 387, 417, 464
+br, , , 476, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 484, 491, 529, 530
+a, href=\"lved.dataid:00000580\", アールエフ‐タグ【RF tag】, 547, 549, 579, 616
 
 div, class=\"honbun\", <rn></rn><a name=\"000005750001\"></a><div style=\"margin-left:1em;\">（radio frequency identification） <a href=\"lved.dataid:00001900\"><sup>(→)</sup>ICタグ</a>に同じ。RF信号を用いてID情報をやりとりすることからの称。</div><rn></rn><a name=\"000005750001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000570\">アール‐エフ 【RF】</a></div>, 0, 4, 21, 466
 rn, , , 26, -1, 29, 30
@@ -727,6 +1070,11 @@ a, name=\"000005750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （radio frequency identification） <a href=\"lved.dataid:00001900\"><sup>(→)</sup>ICタグ</a>に同じ。RF信号を用いてID情報をやりとりすることからの称。, 63, 67, 94, 275
 a, href=\"lved.dataid:00001900\", <sup>(→)</sup>ICタグ, 136, 138, 168, 193
 sup, , (→), 173, -1, 177, 183
+rn, , , 305, -1, 308, 309
+a, name=\"000005750001\", , 305, 307, 329, 330
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000570\">アール‐エフ 【RF】</a>, 342, 346, 366, 486
+object, class=\"icon\" data=\"yajirusi2.svg\", , 371, 378, 416, 417
+a, href=\"lved.dataid:00000570\", アール‐エフ 【RF】, 434, 436, 466, 494
 
 div, class=\"honbun\", <rn></rn><a name=\"000005800001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00001900\"><sup>(→)</sup>ICタグ</a>に同じ。</div><rn></rn><a name=\"000005800001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000570\">アール‐エフ 【RF】</a></div>, 0, 4, 21, 360
 rn, , , 26, -1, 29, 30
@@ -734,6 +1082,11 @@ a, name=\"000005800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00001900\"><sup>(→)</sup>ICタグ</a>に同じ。, 63, 67, 94, 169
 a, href=\"lved.dataid:00001900\", <sup>(→)</sup>ICタグ, 100, 102, 132, 157
 sup, , (→), 137, -1, 141, 147
+rn, , , 199, -1, 202, 203
+a, name=\"000005800001\", , 199, 201, 223, 224
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000570\">アール‐エフ 【RF】</a>, 236, 240, 260, 380
+object, class=\"icon\" data=\"yajirusi2.svg\", , 265, 272, 310, 311
+a, href=\"lved.dataid:00000570\", アール‐エフ 【RF】, 328, 330, 360, 388
 
 div, class=\"honbun\", <rn></rn><a name=\"000005850001\"></a><div style=\"margin-left:1em;\">（return on equity）自己資本純利益率。税引後純利益を自己資本で割って求める。株主の観点からの収益性を判断するのに用いられる。株主資本利益率。</div>, 0, 4, 21, 300
 rn, , , 26, -1, 29, 30
@@ -768,6 +1121,9 @@ a, name=\"000006100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （「装飾芸術」の意。1925年開催の同名の展覧会に因む）1920年代から30年代前半にかけてフランスを中心にヨーロッパで流行した工芸・グラフィック・ファッションなどのデザイン思潮。アール‐ヌーヴォーの植物的モチーフへの反動として、幾何学的形態と機能美を強調した。「1925年様式」ともいう。, 63, 67, 94, 502
 rn, , , 516, -1, 519, 520
 a, name=\"000006100001\", , 516, 518, 540, 541
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000515\">アール 【art フランス】</a>, 553, 557, 577, 702
+object, class=\"icon\" data=\"yajirusi2.svg\", , 582, 589, 627, 628
+a, href=\"lved.dataid:00000515\", アール 【art フランス】, 645, 647, 677, 710
 
 div, class=\"honbun\", <rn></rn><a name=\"000006150001\"></a><div style=\"margin-left:1em;\">フィンランドの建築家・家具デザイナー。同国パイミオのサナトリウムやヘルシンキ工科大学（現アールト大学）のオタニエミ‐キャンパスなどを設計。椅子などの製品のデザインにも優れた。（1898～1976）</div>, 0, 4, 21, 376
 rn, , , 26, -1, 29, 30
@@ -780,6 +1136,11 @@ a, name=\"000006200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （「新芸術」の意。1895年開店の工芸品店の名に因むという）モリスらのデザイン運動を源流とする19世紀末の装飾芸術。植物の枝や蔓<sub class=\"rubi\">つる</sub>を思わせる曲線の流れを特色とする。建築・工芸・絵画・ポスターなどさまざまなジャンルにわたり、20世紀の芸術に大きな影響を与えた。 <a href=\"lved.dataid:01132140\">→ユーゲント‐シュティール</a>。, 63, 67, 94, 575
 sub, class=\"rubi\", つる, 279, 283, 298, 305
 a, href=\"lved.dataid:01132140\", →ユーゲント‐シュティール, 508, 510, 540, 580
+rn, , , 605, -1, 608, 609
+a, name=\"000006200001\", , 605, 607, 629, 630
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000515\">アール 【art フランス】</a>, 642, 646, 666, 791
+object, class=\"icon\" data=\"yajirusi2.svg\", , 671, 678, 716, 717
+a, href=\"lved.dataid:00000515\", アール 【art フランス】, 734, 736, 766, 799
 
 div, class=\"honbun\", <rn></rn><a name=\"000006250001\"></a><div style=\"margin-left:1em;\">（role-playing game）ロール‐プレーイング‐ゲームの略。</div>, 0, 4, 21, 172
 rn, , , 26, -1, 29, 30
@@ -797,6 +1158,9 @@ a, name=\"000006350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （「生の芸術」の意）伝統的な美術教育・訓練とは無縁の、自由で自発的な芸術表現。子供や精神障害者の絵画などにそれを見出したデュビュッフェの用語。, 63, 67, 94, 308
 rn, , , 322, -1, 325, 326
 a, name=\"000006350001\", , 322, 324, 346, 347
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000515\">アール 【art フランス】</a>, 359, 363, 383, 508
+object, class=\"icon\" data=\"yajirusi2.svg\", , 388, 395, 433, 434
+a, href=\"lved.dataid:00000515\", アール 【art フランス】, 451, 453, 483, 516
 
 div, class=\"honbun\", <rn></rn><a name=\"000006400001\"></a><div style=\"margin-left:1em;\">アメリカの政治哲学者。ドイツ生れ。1941年アメリカに亡命。全体主義国家の思想史的解明や、現代社会の精神的危機への深い洞察を著した。著「全体主義の起源」「人間の条件」など。（1906～1975）</div>, 0, 4, 21, 365
 rn, , , 26, -1, 29, 30
@@ -809,6 +1173,8 @@ a, name=\"000006450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①赤ん坊や幼児などが泣く声。, 63, 67, 94, 137
 rn, , , 151, -1, 154, 155
 a, name=\"000006450001\", , 151, 153, 175, 176
+div, style=\"margin-left:1em;\", ②人が口を大きく開けたさま。<a name=\"y00000645-001\"></a>「―してごらん」, 188, 192, 219, 316
+a, name=\"y00000645-001\", , 266, 268, 291, 292
 
 div, class=\"honbun\", <rn></rn><a name=\"000006500001\"></a><div style=\"margin-left:1em;\">（Āndhra） <a href=\"lved.dataid:00430095\"><sup>(→)</sup>サータヴァーハナ朝</a>に同じ。</div>, 0, 4, 21, 204
 rn, , , 26, -1, 29, 30
@@ -840,6 +1206,49 @@ a, name=\"000006700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"kan1.svg\"></object><object class=\"icon\" data=\"square_a.svg\"></object>名<object class=\"icon\" data=\"square_b.svg\"></object><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">①あうこと。出会い。万葉集(2)<a name=\"y00000670-001\"></a>「直<sub class=\"rubi\">ただ</sub>の―は逢ひかつましじ」</div><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">②二人で杙<sub class=\"rubi\">くい</sub>を打ち合うときに用いる大きな槌<sub class=\"rubi\">つち</sub>。掛矢<sub class=\"rubi\">かけや</sub>。あいづち。倭名類聚鈔(15)「椓撃、漢語抄云阿比」</div><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">③共に組んで事（特に悪事）をすること。また、その仲間。同類。ぐる。浄瑠璃、吉野都女楠<a name=\"y00000670-002\"></a>「むむ、さては―ぢやの、さあそなたから銭せう」</div>, 63, 67, 94, 1090
 object, class=\"icon\" data=\"kan1.svg\", , 99, 106, 139, 140
 object, class=\"icon\" data=\"square_a.svg\", , 157, 164, 201, 202
+object, class=\"icon\" data=\"square_b.svg\", , 222, 229, 266, 267
+rn, , , 284, -1, 287, 288
+a, name=\"000006700001\", , 284, 286, 308, 309
+div, style=\"margin-left:1em;\", ①あうこと。出会い。万葉集(2)<a name=\"y00000670-001\"></a>「直<sub class=\"rubi\">ただ</sub>の―は逢ひかつましじ」, 321, 325, 352, 496
+a, name=\"y00000670-001\", , 399, 401, 424, 425
+sub, class=\"rubi\", ただ, 443, 447, 462, 469
+rn, , , 526, -1, 529, 530
+a, name=\"000006700001\", , 526, 528, 550, 551
+div, style=\"margin-left:1em;\", ②二人で杙<sub class=\"rubi\">くい</sub>を打ち合うときに用いる大きな槌<sub class=\"rubi\">つち</sub>。掛矢<sub class=\"rubi\">かけや</sub>。あいづち。倭名類聚鈔(15)「椓撃、漢語抄云阿比」, 563, 567, 594, 833
+sub, class=\"rubi\", くい, 614, 618, 633, 640
+sub, class=\"rubi\", つち, 699, 703, 718, 725
+sub, class=\"rubi\", かけや, 748, 752, 767, 777
+rn, , , 871, -1, 874, 875
+a, name=\"000006700001\", , 871, 873, 895, 896
+div, style=\"margin-left:1em;\", ③共に組んで事（特に悪事）をすること。また、その仲間。同類。ぐる。浄瑠璃、吉野都女楠<a name=\"y00000670-002\"></a>「むむ、さては―ぢやの、さあそなたから銭せう」, 908, 912, 939, 1165
+a, name=\"y00000670-002\", , 1070, 1072, 1095, 1096
+rn, , , 1197, -1, 1200, 1201
+a, name=\"000006700001\", , 1197, 1199, 1221, 1222
+div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"kan2.svg\"></object><object class=\"icon\" data=\"square_a.svg\"></object>接頭<object class=\"icon\" data=\"square_b.svg\"></object>（「相」と書く）<rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">①名詞または動詞に付いて、一つの事柄に共にかかわる意をあらわす。<rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">㋐一緒に。同じ関係にある。源氏物語(帚木)<a name=\"y00000670-003\"></a>「ある上人来あひて、この車に―乗りて侍れば」。<a name=\"y00000670-004\"></a>「―弟子」<a name=\"y00000670-005\"></a>「―客」</div><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">㋑互いに。万葉集(4)<a name=\"y00000670-006\"></a>「―見ずは恋ひざらましを」。<a name=\"y00000670-007\"></a>「―対」</div></div><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">②（動詞に冠して）語勢を添え、語調を整え、また改まった意を添える。候文<sub class=\"rubi\">そうろうぶん</sub>に用いることが多い。宇治拾遺物語(5)<a name=\"y00000670-008\"></a>「―構へてつとめよ」。夏目漱石、書簡<a name=\"y00000670-009\"></a>「又しばらく人間界の御厄介に―成る事と―成候」。<a name=\"y00000670-010\"></a>「―済みません」</div>, 1234, 1238, 1265, 2680
+object, class=\"icon\" data=\"kan2.svg\", , 1270, 1277, 1310, 1311
+object, class=\"icon\" data=\"square_a.svg\", , 1328, 1335, 1372, 1373
+object, class=\"icon\" data=\"square_b.svg\", , 1396, 1403, 1440, 1441
+rn, , , 1482, -1, 1485, 1486
+a, name=\"000006700001\", , 1482, 1484, 1506, 1507
+div, style=\"margin-left:1em;\", ①名詞または動詞に付いて、一つの事柄に共にかかわる意をあらわす。<rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">㋐一緒に。同じ関係にある。源氏物語(帚木)<a name=\"y00000670-003\"></a>「ある上人来あひて、この車に―乗りて侍れば」。<a name=\"y00000670-004\"></a>「―弟子」<a name=\"y00000670-005\"></a>「―客」</div><rn></rn><a name=\"000006700001\"></a><div style=\"margin-left:1em;\">㋑互いに。万葉集(4)<a name=\"y00000670-006\"></a>「―見ずは恋ひざらましを」。<a name=\"y00000670-007\"></a>「―対」</div>, 1519, 1523, 1550, 2185
+rn, , , 1651, -1, 1654, 1655
+a, name=\"000006700001\", , 1651, 1653, 1675, 1676
+div, style=\"margin-left:1em;\", ㋐一緒に。同じ関係にある。源氏物語(帚木)<a name=\"y00000670-003\"></a>「ある上人来あひて、この車に―乗りて侍れば」。<a name=\"y00000670-004\"></a>「―弟子」<a name=\"y00000670-005\"></a>「―客」, 1688, 1692, 1719, 1965
+a, name=\"y00000670-003\", , 1783, 1785, 1808, 1809
+a, name=\"y00000670-004\", , 1890, 1892, 1915, 1916
+a, name=\"y00000670-005\", , 1943, 1945, 1968, 1969
+rn, , , 2003, -1, 2006, 2007
+a, name=\"000006700001\", , 2003, 2005, 2027, 2028
+div, style=\"margin-left:1em;\", ㋑互いに。万葉集(4)<a name=\"y00000670-006\"></a>「―見ずは恋ひざらましを」。<a name=\"y00000670-007\"></a>「―対」, 2040, 2044, 2071, 2213
+a, name=\"y00000670-006\", , 2103, 2105, 2128, 2129
+a, name=\"y00000670-007\", , 2183, 2185, 2208, 2209
+rn, , , 2253, -1, 2256, 2257
+a, name=\"000006700001\", , 2253, 2255, 2277, 2278
+div, style=\"margin-left:1em;\", ②（動詞に冠して）語勢を添え、語調を整え、また改まった意を添える。候文<sub class=\"rubi\">そうろうぶん</sub>に用いることが多い。宇治拾遺物語(5)<a name=\"y00000670-008\"></a>「―構へてつとめよ」。夏目漱石、書簡<a name=\"y00000670-009\"></a>「又しばらく人間界の御厄介に―成る事と―成候」。<a name=\"y00000670-010\"></a>「―済みません」, 2290, 2294, 2321, 2762
+sub, class=\"rubi\", そうろうぶん, 2431, 2435, 2450, 2469
+a, name=\"y00000670-008\", , 2534, 2536, 2559, 2560
+a, name=\"y00000670-009\", , 2626, 2628, 2651, 2652
+a, name=\"y00000670-010\", , 2736, 2738, 2761, 2762
 
 div, class=\"honbun\", <rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">①物と物との中間。あいだ。ま。義経記(7)<a name=\"y00000675-001\"></a>「―五町ばかりぞ隔てける」</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">②事と事との中間の時間。また、限られたひと続きの時間。あいま。</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">③人と人との間柄。仲。日葡辞書「フタリノアイガワルウゴザル」</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">④他の者同士が酒を飲みあっている間に入って、杯のうけさしをすること。狂言、鞍馬聟<a name=\"y00000675-002\"></a>「お―で私が頂きませう」</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">⑤間狂言<sub class=\"rubi\">あいきょうげん</sub>の略。「アイ」と書く。</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">⑥間駒<sub class=\"rubi\">あいごま</sub>の略。</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">⑦間宿<sub class=\"rubi\">あいのしゅく</sub>の略。</div><rn></rn><a name=\"000006750001\"></a><div style=\"margin-left:1em;\">⑧（女房詞）間食。</div>, 0, 4, 21, 1362
 rn, , , 26, -1, 29, 30
@@ -847,6 +1256,30 @@ a, name=\"000006750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①物と物との中間。あいだ。ま。義経記(7)<a name=\"y00000675-001\"></a>「―五町ばかりぞ隔てける」, 63, 67, 94, 221
 a, name=\"y00000675-001\", , 156, 158, 181, 182
 rn, , , 243, -1, 246, 247
+a, name=\"000006750001\", , 243, 245, 267, 268
+div, style=\"margin-left:1em;\", ②事と事との中間の時間。また、限られたひと続きの時間。あいま。, 280, 284, 311, 405
+rn, , , 419, -1, 422, 423
+a, name=\"000006750001\", , 419, 421, 443, 444
+div, style=\"margin-left:1em;\", ③人と人との間柄。仲。日葡辞書「フタリノアイガワルウゴザル」, 456, 460, 487, 578
+rn, , , 592, -1, 595, 596
+a, name=\"000006750001\", , 592, 594, 616, 617
+div, style=\"margin-left:1em;\", ④他の者同士が酒を飲みあっている間に入って、杯のうけさしをすること。狂言、鞍馬聟<a name=\"y00000675-002\"></a>「お―で私が頂きませう」, 629, 633, 660, 847
+a, name=\"y00000675-002\", , 785, 787, 810, 811
+rn, , , 869, -1, 872, 873
+a, name=\"000006750001\", , 869, 871, 893, 894
+div, style=\"margin-left:1em;\", ⑤間狂言<sub class=\"rubi\">あいきょうげん</sub>の略。「アイ」と書く。, 906, 910, 937, 1030
+sub, class=\"rubi\", あいきょうげん, 954, 958, 973, 995
+rn, , , 1052, -1, 1055, 1056
+a, name=\"000006750001\", , 1052, 1054, 1076, 1077
+div, style=\"margin-left:1em;\", ⑥間駒<sub class=\"rubi\">あいごま</sub>の略。, 1089, 1093, 1120, 1177
+sub, class=\"rubi\", あいごま, 1134, 1138, 1153, 1166
+rn, , , 1199, -1, 1202, 1203
+a, name=\"000006750001\", , 1199, 1201, 1223, 1224
+div, style=\"margin-left:1em;\", ⑦間宿<sub class=\"rubi\">あいのしゅく</sub>の略。, 1236, 1240, 1267, 1330
+sub, class=\"rubi\", あいのしゅく, 1281, 1285, 1300, 1319
+rn, , , 1352, -1, 1355, 1356
+a, name=\"000006750001\", , 1352, 1354, 1376, 1377
+div, style=\"margin-left:1em;\", ⑧（女房詞）間食。, 1389, 1393, 1420, 1448
 
 div, class=\"honbun\", <rn></rn><a name=\"000006800001\"></a><div style=\"margin-left:1em;\">アユの転。〈文明本節用集〉</div>, 0, 4, 21, 137
 rn, , , 26, -1, 29, 30
@@ -859,6 +1292,23 @@ a, name=\"000006850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①タデ科の一年草。東南アジアの原産。高さ50～70センチメートル。イヌタデによく似て、秋に花柄を出し、紅色の小花を穂状につける。葉や茎から染料をとる。古く中国から渡来し、江戸時代には四国を中心にひろく栽培。三草の一つ。たであい。あいたで。〈新撰字鏡(7)〉<div class=\"media\"><img class=\"FIGs\" src=\"S00002.jpg\"></img></div>, 63, 67, 94, 537
 div, class=\"media\", <img class=\"FIGs\" src=\"S00002.jpg\"></img>, 469, 473, 489, 535
 img, class=\"FIGs\" src=\"S00002.jpg\", , 494, 498, 532, 533
+rn, , , 567, -1, 570, 571
+a, name=\"000006850001\", , 567, 569, 591, 592
+div, style=\"margin-left:1em;\", ② <a href=\"lved.dataid:00000685\">①</a>からとった染料。また、それで染めた色。青より濃く、紺より淡い。あいいろ。, 604, 608, 635, 788
+a, href=\"lved.dataid:00000685\", ①, 644, 646, 676, 680
+rn, , , 810, -1, 813, 814
+a, name=\"000006850001\", , 810, 812, 834, 835
+div, style=\"margin-left:1em;\", ③〔化〕 <a href=\"lved.dataid:00083710\"><sup>(→)</sup>インジゴ</a>に同じ。, 847, 851, 878, 969
+a, href=\"lved.dataid:00083710\", <sup>(→)</sup>インジゴ, 896, 898, 928, 957
+sup, , (→), 933, -1, 937, 943
+rn, , , 999, -1, 1002, 1003
+a, name=\"000006850001\", , 999, 1001, 1023, 1024
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000880\">藍植う</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00003950\">藍より出でて藍より青し</a>, 1036, 1040, 1060, 1291
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1065, 1072, 1110, 1111
+a, href=\"lved.dataid:00000880\", 藍植う, 1128, 1130, 1160, 1170
+br, , , 1182, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1190, 1197, 1235, 1236
+a, href=\"lved.dataid:00003950\", 藍より出でて藍より青し, 1253, 1255, 1285, 1319
 
 div, class=\"honbun\", <rn></rn><a name=\"000006900001\"></a><div style=\"margin-left:1em;\">あわれむこと。かわいそうに思うこと。<a name=\"y00000690-001\"></a>「―を請う」</div>, 0, 4, 21, 200
 rn, , , 26, -1, 29, 30
@@ -872,6 +1322,8 @@ a, name=\"000006950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①数の単位。1の10億分の1。, 63, 67, 94, 132
 rn, , , 146, -1, 149, 150
 a, name=\"000006950001\", , 146, 148, 170, 171
+div, style=\"margin-left:1em;\", ②埃及<sub class=\"rubi\">エジプト</sub>の略。, 183, 187, 214, 271
+sub, class=\"rubi\", エジプト, 228, 232, 247, 260
 
 div, class=\"honbun\", <rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">①親兄弟のいつくしみ合う心。広く、人間や生物への思いやり。続日本紀(8)<a name=\"y00000700-001\"></a>「周孔の風、尤も仁―を先にし」</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">②（男女間の）相手を慕う情。恋。</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">③かわいがること。大切にすること。御伽草子、七草草紙<a name=\"y00000700-002\"></a>「己より幼きをばいとほしみ、―をなし」</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">④このむこと。めでること。醒睡笑<a name=\"y00000700-003\"></a>「慈照院殿、―に思し召さるる壺あり」</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">⑤愛敬<sub class=\"rubi\">あいきょう</sub>。愛想<sub class=\"rubi\">あいそ</sub>。好色二代男<a name=\"y00000700-004\"></a>「まねけばうなづく、笑へば―をなし」</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">⑥〔仏〕渇愛。対象に対する強い欲望。十二因縁では第8支に位置づけられ、迷いの根源として否定的にみられる。今昔物語集(2)<a name=\"y00000700-005\"></a>「その形、端正なるを見て、忽ちに―の心をおこして妻<sub class=\"rubi\">め</sub>とせんと思ひて」</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">⑦キリスト教で、神が人間をあまねく限りなくいつくしみ、人間の救いのために自らを与えること。また、この神の愛を恵まれた人間が互いにいつくしみ合うこと。 <a href=\"lved.dataid:00008310\">→アガペー①</a>。</div><rn></rn><a name=\"000007000001\"></a><div style=\"margin-left:1em;\">⑧愛蘭<sub class=\"rubi\">アイルランド</sub>の略。</div><rn></rn><a name=\"000007000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00003215\">愛に愛持つ</a></div>, 0, 4, 21, 2197
 rn, , , 26, -1, 29, 30
@@ -879,6 +1331,40 @@ a, name=\"000007000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①親兄弟のいつくしみ合う心。広く、人間や生物への思いやり。続日本紀(8)<a name=\"y00000700-001\"></a>「周孔の風、尤も仁―を先にし」, 63, 67, 94, 272
 a, name=\"y00000700-001\", , 201, 203, 226, 227
 rn, , , 294, -1, 297, 298
+a, name=\"000007000001\", , 294, 296, 318, 319
+div, style=\"margin-left:1em;\", ②（男女間の）相手を慕う情。恋。, 331, 335, 362, 411
+rn, , , 425, -1, 428, 429
+a, name=\"000007000001\", , 425, 427, 449, 450
+div, style=\"margin-left:1em;\", ③かわいがること。大切にすること。御伽草子、七草草紙<a name=\"y00000700-002\"></a>「己より幼きをばいとほしみ、―をなし」, 462, 466, 493, 659
+a, name=\"y00000700-002\", , 576, 578, 601, 602
+rn, , , 681, -1, 684, 685
+a, name=\"000007000001\", , 681, 683, 705, 706
+div, style=\"margin-left:1em;\", ④このむこと。めでること。醒睡笑<a name=\"y00000700-003\"></a>「慈照院殿、―に思し召さるる壺あり」, 718, 722, 749, 882
+a, name=\"y00000700-003\", , 802, 804, 827, 828
+rn, , , 904, -1, 907, 908
+a, name=\"000007000001\", , 904, 906, 928, 929
+div, style=\"margin-left:1em;\", ⑤愛敬<sub class=\"rubi\">あいきょう</sub>。愛想<sub class=\"rubi\">あいそ</sub>。好色二代男<a name=\"y00000700-004\"></a>「まねけばうなづく、笑へば―をなし」, 941, 945, 972, 1169
+sub, class=\"rubi\", あいきょう, 986, 990, 1005, 1021
+sub, class=\"rubi\", あいそ, 1044, 1048, 1063, 1073
+a, name=\"y00000700-004\", , 1105, 1107, 1130, 1131
+rn, , , 1207, -1, 1210, 1211
+a, name=\"000007000001\", , 1207, 1209, 1231, 1232
+div, style=\"margin-left:1em;\", ⑥〔仏〕渇愛。対象に対する強い欲望。十二因縁では第8支に位置づけられ、迷いの根源として否定的にみられる。今昔物語集(2)<a name=\"y00000700-005\"></a>「その形、端正なるを見て、忽ちに―の心をおこして妻<sub class=\"rubi\">め</sub>とせんと思ひて」, 1244, 1248, 1275, 1606
+a, name=\"y00000700-005\", , 1452, 1454, 1477, 1478
+sub, class=\"rubi\", め, 1565, 1569, 1584, 1588
+rn, , , 1636, -1, 1639, 1640
+a, name=\"000007000001\", , 1636, 1638, 1660, 1661
+div, style=\"margin-left:1em;\", ⑦キリスト教で、神が人間をあまねく限りなくいつくしみ、人間の救いのために自らを与えること。また、この神の愛を恵まれた人間が互いにいつくしみ合うこと。 <a href=\"lved.dataid:00008310\">→アガペー①</a>。, 1673, 1677, 1704, 1986
+a, href=\"lved.dataid:00008310\", →アガペー①, 1932, 1934, 1964, 1983
+rn, , , 2008, -1, 2011, 2012
+a, name=\"000007000001\", , 2008, 2010, 2032, 2033
+div, style=\"margin-left:1em;\", ⑧愛蘭<sub class=\"rubi\">アイルランド</sub>の略。, 2045, 2049, 2076, 2139
+sub, class=\"rubi\", アイルランド, 2090, 2094, 2109, 2128
+rn, , , 2161, -1, 2164, 2165
+a, name=\"000007000001\", , 2161, 2163, 2185, 2186
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00003215\">愛に愛持つ</a>, 2198, 2202, 2222, 2330
+object, class=\"icon\" data=\"yajirusi2.svg\", , 2227, 2234, 2272, 2273
+a, href=\"lved.dataid:00003215\", 愛に愛持つ, 2290, 2292, 2322, 2338
 
 div, class=\"honbun\", <rn></rn><a name=\"000007050001\"></a><div style=\"margin-left:1em;\">目。目に似たもの。<a name=\"y00000705-001\"></a>「―‐マスク」<a name=\"y00000705-002\"></a>「―‐ライン」<a name=\"y00000705-003\"></a>「カメラ‐―」</div>, 0, 4, 21, 278
 rn, , , 26, -1, 29, 30
@@ -886,6 +1372,7 @@ a, name=\"000007050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 目。目に似たもの。<a name=\"y00000705-001\"></a>「―‐マスク」<a name=\"y00000705-002\"></a>「―‐ライン」<a name=\"y00000705-003\"></a>「カメラ‐―」, 63, 67, 94, 275
 a, name=\"y00000705-001\", , 126, 128, 151, 152
 a, name=\"y00000705-002\", , 185, 187, 210, 211
+a, name=\"y00000705-003\", , 244, 246, 269, 270
 
 div, class=\"honbun\", <rn></rn><a name=\"000007100001\"></a><div style=\"margin-left:1em;\">①アルファベットの9番目の文字。</div><rn></rn><a name=\"000007100001\"></a><div style=\"margin-left:1em;\">②ローマ数字の「1」。</div><rn></rn><a name=\"000007100001\"></a><div style=\"margin-left:1em;\">③〔化〕ヨウ素の元素記号（I）。</div><rn></rn><a name=\"000007100001\"></a><div style=\"margin-left:1em;\">④〔生〕自家受精によって生じた子孫。I<sub>1</sub>I<sub>2</sub>などと世代数を右下に記す。</div><rn></rn><a name=\"000007100001\"></a><div style=\"margin-left:1em;\">⑤〔数〕虚数の単位（i）。</div>, 0, 4, 21, 681
 rn, , , 26, -1, 29, 30
@@ -893,6 +1380,18 @@ a, name=\"000007100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①アルファベットの9番目の文字。, 63, 67, 94, 141
 rn, , , 155, -1, 158, 159
 a, name=\"000007100001\", , 155, 157, 179, 180
+div, style=\"margin-left:1em;\", ②ローマ数字の「1」。, 192, 196, 223, 255
+rn, , , 269, -1, 272, 273
+a, name=\"000007100001\", , 269, 271, 293, 294
+div, style=\"margin-left:1em;\", ③〔化〕ヨウ素の元素記号（I）。, 306, 310, 337, 384
+rn, , , 398, -1, 401, 402
+a, name=\"000007100001\", , 398, 400, 422, 423
+div, style=\"margin-left:1em;\", ④〔生〕自家受精によって生じた子孫。I<sub>1</sub>I<sub>2</sub>などと世代数を右下に記す。, 435, 439, 466, 586
+sub, , 1, 526, -1, 530, 532
+sub, , 2, 547, -1, 551, 553
+rn, , , 616, -1, 619, 620
+a, name=\"000007100001\", , 616, 618, 640, 641
+div, style=\"margin-left:1em;\", ⑤〔数〕虚数の単位（i）。, 653, 657, 684, 722
 
 div, class=\"honbun\", <rn></rn><a name=\"000007150001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>接頭<object class=\"icon\" data=\"square_b.svg\"></object> <a href=\"lved.dataid:00000670\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>あい（合）<object class=\"gaiji\" data=\"A428.svg\"></object></a></div>, 0, 4, 21, 371
 rn, , , 26, -1, 29, 30
@@ -900,6 +1399,9 @@ a, name=\"000007150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>接頭<object class=\"icon\" data=\"square_b.svg\"></object> <a href=\"lved.dataid:00000670\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>あい（合）<object class=\"gaiji\" data=\"A428.svg\"></object></a>, 63, 67, 94, 368
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+a, href=\"lved.dataid:00000670\", <object class=\"icon\" data=\"yajirusi1.svg\"></object>あい（合）<object class=\"gaiji\" data=\"A428.svg\"></object>, 230, 232, 262, 384
+object, class=\"icon\" data=\"yajirusi1.svg\", , 267, 274, 312, 313
+object, class=\"gaiji\" data=\"A428.svg\", , 345, 352, 386, 387
 
 div, class=\"honbun\", <rn></rn><a name=\"000007200001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object>呼ばれて返事をする時や同意をあらわす時の声。「はい」よりくだけた感じで使う。浮世風呂(3)<a name=\"y00000720-001\"></a>「―、さやうさやう」</div>, 0, 4, 21, 398
 rn, , , 26, -1, 29, 30
@@ -907,6 +1409,7 @@ a, name=\"000007200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>感<object class=\"icon\" data=\"square_b.svg\"></object>呼ばれて返事をする時や同意をあらわす時の声。「はい」よりくだけた感じで使う。浮世風呂(3)<a name=\"y00000720-001\"></a>「―、さやうさやう」, 63, 67, 94, 395
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+a, name=\"y00000720-001\", , 355, 357, 380, 381
 
 div, class=\"honbun\", <rn></rn><a name=\"000007250001\"></a><div style=\"margin-left:1em;\">①（information retrieval） <a href=\"lved.dataid:00556375\"><sup>(→)</sup>情報検索</a>。</div><rn></rn><a name=\"000007250001\"></a><div style=\"margin-left:1em;\">②（investor relations）企業による投資家向け広報。経営状況や財務状況などを自発的に発信する。</div><rn></rn><a name=\"000007250001\"></a><div style=\"margin-left:1em;\">③（integrated reporting）企業の財務情報と非財務情報を関連づけて統合した報告書。統合報告。</div><rn></rn><a name=\"000007250001\"></a><div style=\"margin-left:1em;\">④（infrared）赤外線。<a name=\"y00000725-001\"></a>「―‐リモコン」</div>, 0, 4, 21, 762
 rn, , , 26, -1, 29, 30
@@ -914,6 +1417,16 @@ a, name=\"000007250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①（information retrieval） <a href=\"lved.dataid:00556375\"><sup>(→)</sup>情報検索</a>。, 63, 67, 94, 194
 a, href=\"lved.dataid:00556375\", <sup>(→)</sup>情報検索, 130, 132, 162, 191
 sup, , (→), 167, -1, 171, 177
+rn, , , 224, -1, 227, 228
+a, name=\"000007250001\", , 224, 226, 248, 249
+div, style=\"margin-left:1em;\", ②（investor relations）企業による投資家向け広報。経営状況や財務状況などを自発的に発信する。, 261, 265, 292, 422
+rn, , , 436, -1, 439, 440
+a, name=\"000007250001\", , 436, 438, 460, 461
+div, style=\"margin-left:1em;\", ③（integrated reporting）企業の財務情報と非財務情報を関連づけて統合した報告書。統合報告。, 473, 477, 504, 630
+rn, , , 644, -1, 647, 648
+a, name=\"000007250001\", , 644, 646, 668, 669
+div, style=\"margin-left:1em;\", ④（infrared）赤外線。<a name=\"y00000725-001\"></a>「―‐リモコン」, 681, 685, 712, 796
+a, name=\"y00000725-001\", , 746, 748, 771, 772
 
 div, class=\"honbun\", <rn></rn><a name=\"000007300001\"></a><div style=\"margin-left:1em;\">（Irish Republican Army）アイルランド共和軍。北アイルランドの武装集団。1919年結成。ベルファスト合意に基づく2005年の武装解除に応じたが、一部組織がアイルランド全島の統一を目標に武装闘争を継続。</div>, 0, 4, 21, 370
 rn, , , 26, -1, 29, 30
@@ -932,6 +1445,26 @@ a, name=\"000007400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 一緒に物事をすること。共有・共用すること。松翁道話<a name=\"y00000740-001\"></a>「仏壇の御あかしと―で夜業<sub class=\"rubi\">よなべ</sub>するのぢや」, 63, 67, 94, 292
 a, name=\"y00000740-001\", , 174, 176, 199, 200
 sub, class=\"rubi\", よなべ, 251, 255, 270, 280
+rn, , , 322, -1, 325, 326
+a, name=\"000007400001\", , 322, 324, 346, 347
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000760\">あいあい‐いど【相合井戸】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000765\">あいあい‐うし【相合牛】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000770\">あいあい‐かご【相合駕籠】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000775\">あいあい‐がさ【相合傘】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000780\">あいあい‐ギセル【相合煙管】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000795\">あいあい‐ばん【相合版】</a>, 359, 363, 383, 1184
+object, class=\"icon\" data=\"yajirusi2.svg\", , 388, 395, 433, 434
+a, href=\"lved.dataid:00000760\", あいあい‐いど【相合井戸】, 451, 453, 483, 523
+br, , , 535, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 543, 550, 588, 589
+a, href=\"lved.dataid:00000765\", あいあい‐うし【相合牛】, 606, 608, 638, 675
+br, , , 687, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 695, 702, 740, 741
+a, href=\"lved.dataid:00000770\", あいあい‐かご【相合駕籠】, 758, 760, 790, 830
+br, , , 842, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 850, 857, 895, 896
+a, href=\"lved.dataid:00000775\", あいあい‐がさ【相合傘】, 913, 915, 945, 982
+br, , , 994, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1002, 1009, 1047, 1048
+a, href=\"lved.dataid:00000780\", あいあい‐ギセル【相合煙管】, 1065, 1067, 1097, 1140
+br, , , 1152, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1160, 1167, 1205, 1206
+a, href=\"lved.dataid:00000795\", あいあい‐ばん【相合版】, 1223, 1225, 1255, 1292
 
 div, class=\"honbun\", <rn></rn><a name=\"000007450001\"></a><div style=\"margin-left:1em;\">①草木の茂るさま。</div><rn></rn><a name=\"000007450001\"></a><div style=\"margin-left:1em;\">②多くて盛んなさま。</div><rn></rn><a name=\"000007450001\"></a><div style=\"margin-left:1em;\">③心のやわらいださま。<a name=\"y00000745-001\"></a>「和気―」</div>, 0, 4, 21, 385
 rn, , , 26, -1, 29, 30
@@ -939,6 +1472,11 @@ a, name=\"000007450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①草木の茂るさま。, 63, 67, 94, 122
 rn, , , 136, -1, 139, 140
 a, name=\"000007450001\", , 136, 138, 160, 161
+div, style=\"margin-left:1em;\", ②多くて盛んなさま。, 173, 177, 204, 235
+rn, , , 249, -1, 252, 253
+a, name=\"000007450001\", , 249, 251, 273, 274
+div, style=\"margin-left:1em;\", ③心のやわらいださま。<a name=\"y00000745-001\"></a>「和気―」, 286, 290, 317, 396
+a, name=\"y00000745-001\", , 355, 357, 380, 381
 
 div, class=\"honbun\", <rn></rn><a name=\"000007500001\"></a><div style=\"margin-left:1em;\">雲や霞<sub class=\"rubi\">かすみ</sub>の集まりたなびくさま。また、ゆったりしているさま。靄然。</div>, 0, 4, 21, 226
 rn, , , 26, -1, 29, 30
@@ -952,6 +1490,8 @@ a, name=\"000007550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （啼<sub class=\"rubi\">な</sub>き声に由来。一説に、マダガスカル語「ハイハイ（知らない）」からとも）アイアイ科のサル。マダガスカル島の多雨林に生息。夜行性。頭胴長と尾長は共に40センチメートルで、毛は長く黒褐色に白い斑点がある。手足の指は非常に長い。指猿<sub class=\"rubi\">ゆびざる</sub>。<div class=\"media\"><img class=\"FIGs\" src=\"SS0261.jpg\"></img></div>, 63, 67, 94, 572
 sub, class=\"rubi\", な, 105, 109, 124, 128
 sub, class=\"rubi\", ゆびざる, 471, 475, 490, 503
+div, class=\"media\", <img class=\"FIGs\" src=\"SS0261.jpg\"></img>, 520, 524, 540, 586
+img, class=\"FIGs\" src=\"SS0261.jpg\", , 545, 549, 583, 584
 
 div, class=\"honbun\", <rn></rn><a name=\"000007600001\"></a><div style=\"margin-left:1em;\">近所で共同に使う井戸。浄瑠璃、傾城八花がた<a name=\"y00000760-001\"></a>「―の水鏡、移れば変る品々の」</div><rn></rn><a name=\"000007600001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 449
 rn, , , 26, -1, 29, 30
@@ -959,6 +1499,11 @@ a, name=\"000007600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 近所で共同に使う井戸。浄瑠璃、傾城八花がた<a name=\"y00000760-001\"></a>「―の水鏡、移れば変る品々の」, 63, 67, 94, 233
 a, name=\"y00000760-001\", , 162, 164, 187, 188
 rn, , , 255, -1, 258, 259
+a, name=\"000007600001\", , 255, 257, 279, 280
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 292, 296, 316, 461
+object, class=\"icon\" data=\"yajirusi2.svg\", , 321, 328, 366, 367
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 384, 386, 416, 469
+sub, , アヒアヒ, 450, -1, 454, 467
 
 div, class=\"honbun\", <rn></rn><a name=\"000007650001\"></a><div style=\"margin-left:1em;\">二人以上で牛を共用すること。また、その牛。</div><rn></rn><a name=\"000007650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 374
 rn, , , 26, -1, 29, 30
@@ -966,6 +1511,10 @@ a, name=\"000007650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 二人以上で牛を共用すること。また、その牛。, 63, 67, 94, 158
 rn, , , 172, -1, 175, 176
 a, name=\"000007650001\", , 172, 174, 196, 197
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 209, 213, 233, 378
+object, class=\"icon\" data=\"yajirusi2.svg\", , 238, 245, 283, 284
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 301, 303, 333, 386
+sub, , アヒアヒ, 367, -1, 371, 384
 
 div, class=\"honbun\", <rn></rn><a name=\"000007700001\"></a><div style=\"margin-left:1em;\">男女二人で一つの駕籠に乗ること。あいかご。冥途の飛脚<a name=\"y00000770-001\"></a>「忠兵衛梅川―」</div><rn></rn><a name=\"000007700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 443
 rn, , , 26, -1, 29, 30
@@ -973,6 +1522,11 @@ a, name=\"000007700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 男女二人で一つの駕籠に乗ること。あいかご。冥途の飛脚<a name=\"y00000770-001\"></a>「忠兵衛梅川―」, 63, 67, 94, 227
 a, name=\"y00000770-001\", , 177, 179, 202, 203
 rn, , , 249, -1, 252, 253
+a, name=\"000007700001\", , 249, 251, 273, 274
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 286, 290, 310, 455
+object, class=\"icon\" data=\"yajirusi2.svg\", , 315, 322, 360, 361
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 378, 380, 410, 463
+sub, , アヒアヒ, 444, -1, 448, 461
 
 div, class=\"honbun\", <rn></rn><a name=\"000007750001\"></a><div style=\"margin-left:1em;\">1本の傘を男女二人でさすこと。また、異性との親密さの象徴として、落書きで傘の柄の両側に男女の名を書いたもの。あいがさ。</div><rn></rn><a name=\"000007750001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 486
 rn, , , 26, -1, 29, 30
@@ -980,6 +1534,10 @@ a, name=\"000007750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 1本の傘を男女二人でさすこと。また、異性との親密さの象徴として、落書きで傘の柄の両側に男女の名を書いたもの。あいがさ。, 63, 67, 94, 270
 rn, , , 284, -1, 287, 288
 a, name=\"000007750001\", , 284, 286, 308, 309
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 321, 325, 345, 490
+object, class=\"icon\" data=\"yajirusi2.svg\", , 350, 357, 395, 396
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 413, 415, 445, 498
+sub, , アヒアヒ, 479, -1, 483, 496
 
 div, class=\"honbun\", <rn></rn><a name=\"000007800001\"></a><div style=\"margin-left:1em;\">男女二人が1本のキセルでタバコを吸うこと。</div><rn></rn><a name=\"000007800001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 372
 rn, , , 26, -1, 29, 30
@@ -987,6 +1545,10 @@ a, name=\"000007800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 男女二人が1本のキセルでタバコを吸うこと。, 63, 67, 94, 156
 rn, , , 170, -1, 173, 174
 a, name=\"000007800001\", , 170, 172, 194, 195
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 207, 211, 231, 376
+object, class=\"icon\" data=\"yajirusi2.svg\", , 236, 243, 281, 282
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 299, 301, 331, 384
+sub, , アヒアヒ, 365, -1, 369, 382
 
 div, class=\"honbun\", <rn></rn><a name=\"000007850001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>形<object class=\"icon\" data=\"square_b.svg\"></object><img class=\"icon\" src=\"bungo.png\"></img>あいあい・し（シク）愛らしい。愛想がよい。南総里見八犬伝(110)<a name=\"y00000785-001\"></a>「先づこなたへと―・しくやがて座敷へ請ひ登すれば」</div>, 0, 4, 21, 447
 rn, , , 26, -1, 29, 30
@@ -994,6 +1556,8 @@ a, name=\"000007850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>形<object class=\"icon\" data=\"square_b.svg\"></object><img class=\"icon\" src=\"bungo.png\"></img>あいあい・し（シク）愛らしい。愛想がよい。南総里見八犬伝(110)<a name=\"y00000785-001\"></a>「先づこなたへと―・しくやがて座敷へ請ひ登すれば」, 63, 67, 94, 444
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 164, 171, 208, 209
+img, class=\"icon\" src=\"bungo.png\", , 226, 230, 263, 264
+a, name=\"y00000785-001\", , 367, 369, 392, 393
 
 div, class=\"honbun\", <rn></rn><a name=\"000007900001\"></a><div style=\"margin-left:1em;\">狂言。 <a href=\"lved.dataid:00978665\"><sup>(→)</sup>「二人袴<sub class=\"rubi\">ふたりばかま</sub>」</a>に同じ。</div>, 0, 4, 21, 232
 rn, , , 26, -1, 29, 30
@@ -1001,6 +1565,7 @@ a, name=\"000007900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 狂言。 <a href=\"lved.dataid:00978665\"><sup>(→)</sup>「二人袴<sub class=\"rubi\">ふたりばかま</sub>」</a>に同じ。, 63, 67, 94, 229
 a, href=\"lved.dataid:00978665\", <sup>(→)</sup>「二人袴<sub class=\"rubi\">ふたりばかま</sub>」, 109, 111, 141, 217
 sup, , (→), 146, -1, 150, 156
+sub, class=\"rubi\", ふたりばかま, 182, 186, 201, 220
 
 div, class=\"honbun\", <rn></rn><a name=\"000007950001\"></a><div style=\"margin-left:1em;\">江戸時代、複数の本屋（版元）が共同で出版した書物。刊記に版元名を連記する場合が多く、版木を分けて所有した。相版。</div><rn></rn><a name=\"000007950001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a></div>, 0, 4, 21, 479
 rn, , , 26, -1, 29, 30
@@ -1008,6 +1573,10 @@ a, name=\"000007950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 江戸時代、複数の本屋（版元）が共同で出版した書物。刊記に版元名を連記する場合が多く、版木を分けて所有した。相版。, 63, 67, 94, 263
 rn, , , 277, -1, 280, 281
 a, name=\"000007950001\", , 277, 279, 301, 302
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000740\">あい‐あい 【相合】 <sub>アヒアヒ</sub></a>, 314, 318, 338, 483
+object, class=\"icon\" data=\"yajirusi2.svg\", , 343, 350, 388, 389
+a, href=\"lved.dataid:00000740\", あい‐あい 【相合】 <sub>アヒアヒ</sub>, 406, 408, 438, 491
+sub, , アヒアヒ, 472, -1, 476, 489
 
 div, class=\"honbun\", <rn></rn><a name=\"000008000001\"></a><div style=\"margin-left:1em;\">江戸時代、奥女中などが打掛<sub class=\"rubi\">うちかけ</sub>と下着との間に着た紅色の綾や綸子<sub class=\"rubi\">りんず</sub>の小袖。</div>, 0, 4, 21, 270
 rn, , , 26, -1, 29, 30
@@ -1104,6 +1673,13 @@ a, name=\"000008800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 晩春に藍の苗を苗床から畑に移植する。<object class=\"icon\" data=\"angle_a.svg\"></object><object class=\"icon\" data=\"kigo.svg\"></object>春<object class=\"icon\" data=\"angle_b.svg\"></object>, 63, 67, 94, 308
 object, class=\"icon\" data=\"angle_a.svg\", , 153, 160, 196, 197
 object, class=\"icon\" data=\"kigo.svg\", , 214, 221, 254, 255
+object, class=\"icon\" data=\"angle_b.svg\", , 275, 282, 318, 319
+rn, , , 346, -1, 349, 350
+a, name=\"000008800001\", , 346, 348, 370, 371
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000685\">あい 【藍】 <sub>アヰ</sub></a>, 383, 387, 407, 534
+object, class=\"icon\" data=\"yajirusi2.svg\", , 412, 419, 457, 458
+a, href=\"lved.dataid:00000685\", あい 【藍】 <sub>アヰ</sub>, 475, 477, 507, 542
+sub, , アヰ, 529, -1, 533, 540
 
 div, class=\"honbun\", <rn></rn><a name=\"000008850001\"></a><div style=\"margin-left:1em;\">江戸時代、契約に際して二人が相互に請人<sub class=\"rubi\">うけにん</sub>となること。幕法で禁止。</div>, 0, 4, 21, 229
 rn, , , 26, -1, 29, 30
@@ -1122,6 +1698,11 @@ a, name=\"000008950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①二人で同時に物を打つこと。, 63, 67, 94, 137
 rn, , , 151, -1, 154, 155
 a, name=\"000008950001\", , 151, 153, 175, 176
+div, style=\"margin-left:1em;\", ②敵味方双方が同時に相手をうつこと。転じて、勝ち負けのないこと。あいこ。<a name=\"y00000895-001\"></a>「―になる」, 188, 192, 219, 376
+a, name=\"y00000895-001\", , 332, 334, 357, 358
+rn, , , 398, -1, 401, 402
+a, name=\"000008950001\", , 398, 400, 422, 423
+div, style=\"margin-left:1em;\", ③一人の敵を味方二人で一緒に討つこと。, 435, 439, 466, 524
 
 div, class=\"honbun\", <rn></rn><a name=\"000009000001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>自五<object class=\"icon\" data=\"square_b.svg\"></object>互いに打ち合う。<a name=\"y00000900-001\"></a>「肉弾―・つ」</div>, 0, 4, 21, 287
 rn, , , 26, -1, 29, 30
@@ -1129,6 +1710,7 @@ a, name=\"000009000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>自五<object class=\"icon\" data=\"square_b.svg\"></object>互いに打ち合う。<a name=\"y00000900-001\"></a>「肉弾―・つ」, 63, 67, 94, 284
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+a, name=\"y00000900-001\", , 253, 255, 278, 279
 
 div, class=\"honbun\", <rn></rn><a name=\"000009050001\"></a><div style=\"margin-left:1em;\">①藍1色で、もしくは藍を主色とし他の色を抑制して摺った浮世絵版画。江戸末期に行われ、主にベロ藍を使用。葛飾北斎・歌川国貞などの作品に見られる。藍摺<sub class=\"rubi\">あいずり</sub>。藍摺絵。</div><rn></rn><a name=\"000009050001\"></a><div style=\"margin-left:1em;\">②陶磁器に呉須<sub class=\"rubi\">ごす</sub>を用いた藍色の絵模様。</div>, 0, 4, 21, 530
 rn, , , 26, -1, 29, 30
@@ -1136,6 +1718,9 @@ a, name=\"000009050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①藍1色で、もしくは藍を主色とし他の色を抑制して摺った浮世絵版画。江戸末期に行われ、主にベロ藍を使用。葛飾北斎・歌川国貞などの作品に見られる。藍摺<sub class=\"rubi\">あいずり</sub>。藍摺絵。, 63, 67, 94, 365
 sub, class=\"rubi\", あいずり, 316, 320, 335, 348
 rn, , , 387, -1, 390, 391
+a, name=\"000009050001\", , 387, 389, 411, 412
+div, style=\"margin-left:1em;\", ②陶磁器に呉須<sub class=\"rubi\">ごす</sub>を用いた藍色の絵模様。, 424, 428, 455, 542
+sub, class=\"rubi\", ごす, 481, 485, 500, 507
 
 div, class=\"honbun\", <rn></rn><a name=\"000009100001\"></a><div style=\"margin-left:1em;\">（International Atomic Energy Agency） <a href=\"lved.dataid:00391905\"><sup>(→)</sup>国際原子力機関</a>。</div>, 0, 4, 21, 216
 rn, , , 26, -1, 29, 30
@@ -1162,6 +1747,11 @@ a, name=\"000009250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （International Organization for Standardization） <a href=\"lved.dataid:00392245\"><sup>(→)</sup>国際標準化機構</a>。イソ。, 63, 67, 94, 234
 a, href=\"lved.dataid:00392245\", <sup>(→)</sup>国際標準化機構, 152, 154, 184, 222
 sup, , (→), 189, -1, 193, 199
+rn, , , 264, -1, 267, 268
+a, name=\"000009250001\", , 264, 266, 288, 289
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000930\">アイエスオー‐かんど【ISO感度】</a>, 301, 305, 325, 463
+object, class=\"icon\" data=\"yajirusi2.svg\", , 330, 337, 375, 376
+a, href=\"lved.dataid:00000930\", アイエスオー‐かんど【ISO感度】, 393, 395, 425, 471
 
 div, class=\"honbun\", <rn></rn><a name=\"000009300001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00058105\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>イソかんど</a></div><rn></rn><a name=\"000009300001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000925\">アイ‐エス‐オー 【ISO】</a></div>, 0, 4, 21, 401
 rn, , , 26, -1, 29, 30
@@ -1169,6 +1759,11 @@ a, name=\"000009300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00058105\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>イソかんど</a>, 63, 67, 94, 203
 a, href=\"lved.dataid:00058105\", <object class=\"icon\" data=\"yajirusi1.svg\"></object>イソかんど, 100, 102, 132, 203
 object, class=\"icon\" data=\"yajirusi1.svg\", , 137, 144, 182, 183
+rn, , , 233, -1, 236, 237
+a, name=\"000009300001\", , 233, 235, 257, 258
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000925\">アイ‐エス‐オー 【ISO】</a>, 270, 274, 294, 421
+object, class=\"icon\" data=\"yajirusi2.svg\", , 299, 306, 344, 345
+a, href=\"lved.dataid:00000925\", アイ‐エス‐オー 【ISO】, 362, 364, 394, 429
 
 div, class=\"honbun\", <rn></rn><a name=\"000009350001\"></a><div style=\"margin-left:1em;\">（integrated services digital network）統合サービスデジタル通信網の略称。電話・データ・ファクシミリ・画像など、従来の通信網では別個に運用してきた通信サービスを統合的に提供するデジタル通信網。インターネットの発展に伴い、その存在価値が失われつつある。</div>, 0, 4, 21, 454
 rn, , , 26, -1, 29, 30
@@ -1225,6 +1820,21 @@ a, name=\"000009800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （International Monetary Fund）国際通貨基金。IMF協定に基づき、1946年に加盟国の出資によって創設された国際金融機関。国連専門機関の一つ。本部はワシントン。為替管理の撤廃、為替相場の安定、国際収支難に陥っている加盟国への短期資金の融資などを目的とする。日本は52年加盟。, 63, 67, 94, 473
 rn, , , 487, -1, 490, 491
 a, name=\"000009800001\", , 487, 489, 511, 512
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000985\">アイエムエフ‐きょうてい【IMF協定】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000990\">アイエムエフ‐コンディショナリティー【IMF conditionality】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000995\">アイエムエフ‐じゅうよんじょう‐こく【IMF一四条国】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001000\">アイエムエフ‐はちじょう‐こく【IMF八条国】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001005\">アイエムエフ‐リザーブ‐ポジション【IMF reserve position】</a>, 524, 528, 548, 1369
+object, class=\"icon\" data=\"yajirusi2.svg\", , 553, 560, 598, 599
+a, href=\"lved.dataid:00000985\", アイエムエフ‐きょうてい【IMF協定】, 616, 618, 648, 700
+br, , , 712, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 720, 727, 765, 766
+a, href=\"lved.dataid:00000990\", アイエムエフ‐コンディショナリティー【IMF conditionality】, 783, 785, 815, 894
+br, , , 906, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 914, 921, 959, 960
+a, href=\"lved.dataid:00000995\", アイエムエフ‐じゅうよんじょう‐こく【IMF一四条国】, 977, 979, 1009, 1085
+br, , , 1097, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1105, 1112, 1150, 1151
+a, href=\"lved.dataid:00001000\", アイエムエフ‐はちじょう‐こく【IMF八条国】, 1168, 1170, 1200, 1264
+br, , , 1276, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1284, 1291, 1329, 1330
+a, href=\"lved.dataid:00001005\", アイエムエフ‐リザーブ‐ポジション【IMF reserve position】, 1347, 1349, 1379, 1457
 
 div, class=\"honbun\", <rn></rn><a name=\"000009850001\"></a><div style=\"margin-left:1em;\">（Articles of Agreement of the International Monetary Fund）IMFの設立協定。1944年7月のブレトン‐ウッズ会議で調印され、45年12月に発効。数次にわたる改正のうち、SDRの創出を規定した第1次改正（69年）と、変動相場制を容認した第2次改正（78年）が重要。</div><rn></rn><a name=\"000009850001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a></div>, 0, 4, 21, 619
 rn, , , 26, -1, 29, 30
@@ -1232,6 +1842,9 @@ a, name=\"000009850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （Articles of Agreement of the International Monetary Fund）IMFの設立協定。1944年7月のブレトン‐ウッズ会議で調印され、45年12月に発効。数次にわたる改正のうち、SDRの創出を規定した第1次改正（69年）と、変動相場制を容認した第2次改正（78年）が重要。, 63, 67, 94, 421
 rn, , , 435, -1, 438, 439
 a, name=\"000009850001\", , 435, 437, 459, 460
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a>, 472, 476, 496, 623
+object, class=\"icon\" data=\"yajirusi2.svg\", , 501, 508, 546, 547
+a, href=\"lved.dataid:00000980\", アイ‐エム‐エフ 【IMF】, 564, 566, 596, 631
 
 div, class=\"honbun\", <rn></rn><a name=\"000009900001\"></a><div style=\"margin-left:1em;\">IMFから融資を受ける国が条件として課せられる政策プログラム。国際収支を改善するための引締政策が中心。インフレ抑制・財政健全化・経済自由化等のより広範囲の政策も含まれる。</div><rn></rn><a name=\"000009900001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a></div>, 0, 4, 21, 542
 rn, , , 26, -1, 29, 30
@@ -1239,6 +1852,9 @@ a, name=\"000009900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", IMFから融資を受ける国が条件として課せられる政策プログラム。国際収支を改善するための引締政策が中心。インフレ抑制・財政健全化・経済自由化等のより広範囲の政策も含まれる。, 63, 67, 94, 344
 rn, , , 358, -1, 361, 362
 a, name=\"000009900001\", , 358, 360, 382, 383
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a>, 395, 399, 419, 546
+object, class=\"icon\" data=\"yajirusi2.svg\", , 424, 431, 469, 470
+a, href=\"lved.dataid:00000980\", アイ‐エム‐エフ 【IMF】, 487, 489, 519, 554
 
 div, class=\"honbun\", <rn></rn><a name=\"000009950001\"></a><div style=\"margin-left:1em;\">IMF協定14条により、経常取引に関する自国通貨と外国通貨の交換性義務（IMF協定8条）を免除されている国。</div><rn></rn><a name=\"000009950001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a></div>, 0, 4, 21, 437
 rn, , , 26, -1, 29, 30
@@ -1246,6 +1862,9 @@ a, name=\"000009950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", IMF協定14条により、経常取引に関する自国通貨と外国通貨の交換性義務（IMF協定8条）を免除されている国。, 63, 67, 94, 239
 rn, , , 253, -1, 256, 257
 a, name=\"000009950001\", , 253, 255, 277, 278
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a>, 290, 294, 314, 441
+object, class=\"icon\" data=\"yajirusi2.svg\", , 319, 326, 364, 365
+a, href=\"lved.dataid:00000980\", アイ‐エム‐エフ 【IMF】, 382, 384, 414, 449
 
 div, class=\"honbun\", <rn></rn><a name=\"000010000001\"></a><div style=\"margin-left:1em;\">経常取引に関する自国通貨と外国通貨の交換性義務（IMF協定8条）を履行している国。日本は1964年に14条国から8条国に移行した。</div><rn></rn><a name=\"000010000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a></div>, 0, 4, 21, 466
 rn, , , 26, -1, 29, 30
@@ -1253,6 +1872,9 @@ a, name=\"000010000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 経常取引に関する自国通貨と外国通貨の交換性義務（IMF協定8条）を履行している国。日本は1964年に14条国から8条国に移行した。, 63, 67, 94, 268
 rn, , , 282, -1, 285, 286
 a, name=\"000010000001\", , 282, 284, 306, 307
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a>, 319, 323, 343, 470
+object, class=\"icon\" data=\"yajirusi2.svg\", , 348, 355, 393, 394
+a, href=\"lved.dataid:00000980\", アイ‐エム‐エフ 【IMF】, 411, 413, 443, 478
 
 div, class=\"honbun\", <rn></rn><a name=\"000010050001\"></a><div style=\"margin-left:1em;\">IMF加盟国が、その出資額に応じてIMFからほぼ無条件で借りることのできる限度額のこと。当該国の外貨準備の一部を構成する。</div><rn></rn><a name=\"000010050001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a></div>, 0, 4, 21, 464
 rn, , , 26, -1, 29, 30
@@ -1260,6 +1882,9 @@ a, name=\"000010050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", IMF加盟国が、その出資額に応じてIMFからほぼ無条件で借りることのできる限度額のこと。当該国の外貨準備の一部を構成する。, 63, 67, 94, 266
 rn, , , 280, -1, 283, 284
 a, name=\"000010050001\", , 280, 282, 304, 305
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00000980\">アイ‐エム‐エフ 【IMF】</a>, 317, 321, 341, 468
+object, class=\"icon\" data=\"yajirusi2.svg\", , 346, 353, 391, 392
+a, href=\"lved.dataid:00000980\", アイ‐エム‐エフ 【IMF】, 409, 411, 441, 476
 
 div, class=\"honbun\", <rn></rn><a name=\"000010100001\"></a><div style=\"margin-left:1em;\">（International Labour Organization）国際労働機関。ヴェルサイユ条約に基づき1919年国際連盟の一機構として設立。第二次大戦後は国際連合の専門機関。政府・労使の代表によって構成され、労働条件について各国への勧告、労働関係資料の収集・紹介などを行う。 <a href=\"lved.dataid:00392415\">→国際労働憲章</a>。</div><rn></rn><a name=\"000010100001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001015\">アイエルオー‐じょうやく【ILO条約】</a></div>, 0, 4, 21, 718
 rn, , , 26, -1, 29, 30
@@ -1267,6 +1892,10 @@ a, name=\"000010100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （International Labour Organization）国際労働機関。ヴェルサイユ条約に基づき1919年国際連盟の一機構として設立。第二次大戦後は国際連合の専門機関。政府・労使の代表によって構成され、労働条件について各国への勧告、労働関係資料の収集・紹介などを行う。 <a href=\"lved.dataid:00392415\">→国際労働憲章</a>。, 63, 67, 94, 503
 a, href=\"lved.dataid:00392415\", →国際労働憲章, 446, 448, 478, 500
 rn, , , 525, -1, 528, 529
+a, name=\"000010100001\", , 525, 527, 549, 550
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001015\">アイエルオー‐じょうやく【ILO条約】</a>, 562, 566, 586, 730
+object, class=\"icon\" data=\"yajirusi2.svg\", , 591, 598, 636, 637
+a, href=\"lved.dataid:00001015\", アイエルオー‐じょうやく【ILO条約】, 654, 656, 686, 738
 
 div, class=\"honbun\", <rn></rn><a name=\"000010150001\"></a><div style=\"margin-left:1em;\">ILOが条約の形式で設定した国際的な労働基準。加盟国が批准すると、その国に対して国際労働法として拘束力をもつ。</div><rn></rn><a name=\"000010150001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001010\">アイ‐エル‐オー 【ILO】</a></div>, 0, 4, 21, 452
 rn, , , 26, -1, 29, 30
@@ -1274,6 +1903,9 @@ a, name=\"000010150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ILOが条約の形式で設定した国際的な労働基準。加盟国が批准すると、その国に対して国際労働法として拘束力をもつ。, 63, 67, 94, 254
 rn, , , 268, -1, 271, 272
 a, name=\"000010150001\", , 268, 270, 292, 293
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001010\">アイ‐エル‐オー 【ILO】</a>, 305, 309, 329, 456
+object, class=\"icon\" data=\"yajirusi2.svg\", , 334, 341, 379, 380
+a, href=\"lved.dataid:00001010\", アイ‐エル‐オー 【ILO】, 397, 399, 429, 464
 
 div, class=\"honbun\", <rn></rn><a name=\"000010200001\"></a><div style=\"margin-left:1em;\">あわれに美しくしとやかなこと。</div>, 0, 4, 21, 143
 rn, , , 26, -1, 29, 30
@@ -1297,6 +1929,28 @@ a, name=\"000010350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①一つの根から2本の幹が相接して生え出ること。二つのものがともどもに生まれ育つこと。「相老い」の意にもかける。古今和歌集(仮名序)<a name=\"y00001035-001\"></a>「高砂、住の江の松も、―の様に覚え」, 63, 67, 94, 368
 a, name=\"y00001035-001\", , 288, 290, 313, 314
 rn, , , 390, -1, 393, 394
+a, name=\"000010350001\", , 390, 392, 414, 415
+div, style=\"margin-left:1em;\", ②「相生挿し」の略。西鶴織留(1)<a name=\"y00001035-002\"></a>「立花は池の坊に―迄習ひ」, 427, 431, 458, 573
+a, name=\"y00001035-002\", , 508, 510, 533, 534
+rn, , , 595, -1, 598, 599
+a, name=\"000010350001\", , 595, 597, 619, 620
+div, style=\"margin-left:1em;\", ③ <a href=\"lved.dataid:00684770\"><sup>(→)</sup>高砂②㋐</a>の古称。, 632, 636, 663, 745
+a, href=\"lved.dataid:00684770\", <sup>(→)</sup>高砂②㋐, 672, 674, 704, 733
+sup, , (→), 709, -1, 713, 719
+rn, , , 775, -1, 778, 779
+a, name=\"000010350001\", , 775, 777, 799, 800
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001050\">あいおい‐ざし【相生挿し】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001060\">あいおい‐の‐まつ【相生の松】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001065\">あいおい‐ぼん【相生盆】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001070\">あいおい‐むすび【相生結び】</a>, 812, 816, 836, 1379
+object, class=\"icon\" data=\"yajirusi2.svg\", , 841, 848, 886, 887
+a, href=\"lved.dataid:00001050\", あいおい‐ざし【相生挿し】, 904, 906, 936, 976
+br, , , 988, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 996, 1003, 1041, 1042
+a, href=\"lved.dataid:00001060\", あいおい‐の‐まつ【相生の松】, 1059, 1061, 1091, 1137
+br, , , 1149, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1157, 1164, 1202, 1203
+a, href=\"lved.dataid:00001065\", あいおい‐ぼん【相生盆】, 1220, 1222, 1252, 1289
+br, , , 1301, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1309, 1316, 1354, 1355
+a, href=\"lved.dataid:00001070\", あいおい‐むすび【相生結び】, 1372, 1374, 1404, 1447
 
 div, class=\"honbun\", <rn></rn><a name=\"000010400001\"></a><div style=\"margin-left:1em;\">兵庫県南西部、瀬戸内海沿岸にある市。造船業が立地。人口3万。</div>, 0, 4, 21, 186
 rn, , , 26, -1, 29, 30
@@ -1315,6 +1969,11 @@ a, name=\"000010500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", いけ花で、心<sub class=\"rubi\">しん</sub>に黒松と赤松を二つ向き合わせて挿すもの。, 63, 67, 94, 205
 sub, class=\"rubi\", しん, 117, 121, 136, 143
 rn, , , 227, -1, 230, 231
+a, name=\"000010500001\", , 227, 229, 251, 252
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a>, 264, 268, 288, 433
+object, class=\"icon\" data=\"yajirusi2.svg\", , 293, 300, 338, 339
+a, href=\"lved.dataid:00001035\", あい‐おい 【相生】 <sub>アヒオヒ</sub>, 356, 358, 388, 441
+sub, , アヒオヒ, 422, -1, 426, 439
 
 div, class=\"honbun\", <rn></rn><a name=\"000010550001\"></a><div style=\"margin-left:1em;\">長唄。本名題「風流相生獅子」。7世杵屋喜三郎作曲か。1734年（享保19）初演。獅子物中の最古の曲。</div>, 0, 4, 21, 234
 rn, , , 26, -1, 29, 30
@@ -1327,6 +1986,11 @@ a, name=\"000010600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 黒松と赤松とが一つの根から生え出た松。高砂の松が有名。夫婦が深い契りで結ばれて、ともに長生きすることの象徴とする。謡曲、高砂<a name=\"y00001060-001\"></a>「高砂・住吉の―の精、夫婦と現じ来りたり」, 63, 67, 94, 374
 a, name=\"y00001060-001\", , 285, 287, 310, 311
 rn, , , 396, -1, 399, 400
+a, name=\"000010600001\", , 396, 398, 420, 421
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a>, 433, 437, 457, 602
+object, class=\"icon\" data=\"yajirusi2.svg\", , 462, 469, 507, 508
+a, href=\"lved.dataid:00001035\", あい‐おい 【相生】 <sub>アヒオヒ</sub>, 525, 527, 557, 610
+sub, , アヒオヒ, 591, -1, 595, 608
 
 div, class=\"honbun\", <rn></rn><a name=\"000010650001\"></a><div style=\"margin-left:1em;\">婚礼に用いる、男島と女島とを並べた盆景。</div><rn></rn><a name=\"000010650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a></div>, 0, 4, 21, 371
 rn, , , 26, -1, 29, 30
@@ -1334,6 +1998,10 @@ a, name=\"000010650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 婚礼に用いる、男島と女島とを並べた盆景。, 63, 67, 94, 155
 rn, , , 169, -1, 172, 173
 a, name=\"000010650001\", , 169, 171, 193, 194
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a>, 206, 210, 230, 375
+object, class=\"icon\" data=\"yajirusi2.svg\", , 235, 242, 280, 281
+a, href=\"lved.dataid:00001035\", あい‐おい 【相生】 <sub>アヒオヒ</sub>, 298, 300, 330, 383
+sub, , アヒオヒ, 364, -1, 368, 381
 
 div, class=\"honbun\", <rn></rn><a name=\"000010700001\"></a><div style=\"margin-left:1em;\">紐の結び方。女結びの一端を、さらにその結び目に通したもの。贈答用の水引や、装束の袖括<sub class=\"rubi\">そでぐくり</sub>の余りの結び、うちわの柄の紐飾りなどに用いる。<div class=\"media\"><img class=\"FIGs\" src=\"S00004.jpg\"></img></div></div><rn></rn><a name=\"000010700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a></div>, 0, 4, 21, 619
 rn, , , 26, -1, 29, 30
@@ -1341,6 +2009,13 @@ a, name=\"000010700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 紐の結び方。女結びの一端を、さらにその結び目に通したもの。贈答用の水引や、装束の袖括<sub class=\"rubi\">そでぐくり</sub>の余りの結び、うちわの柄の紐飾りなどに用いる。<div class=\"media\"><img class=\"FIGs\" src=\"S00004.jpg\"></img></div>, 63, 67, 94, 403
 sub, class=\"rubi\", そでぐくり, 225, 229, 244, 260
 div, class=\"media\", <img class=\"FIGs\" src=\"S00004.jpg\"></img>, 343, 347, 363, 409
+img, class=\"FIGs\" src=\"S00004.jpg\", , 368, 372, 406, 407
+rn, , , 441, -1, 444, 445
+a, name=\"000010700001\", , 441, 443, 465, 466
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001035\">あい‐おい 【相生】 <sub>アヒオヒ</sub></a>, 478, 482, 502, 647
+object, class=\"icon\" data=\"yajirusi2.svg\", , 507, 514, 552, 553
+a, href=\"lved.dataid:00001035\", あい‐おい 【相生】 <sub>アヒオヒ</sub>, 570, 572, 602, 655
+sub, , アヒオヒ, 636, -1, 640, 653
 
 div, class=\"honbun\", <rn></rn><a name=\"000010750001\"></a><div style=\"margin-left:1em;\">（input/output）入力（input）と出力（output）とを合わせて呼ぶ言葉。コンピューター本体との間で、データの入力および出力をする周辺機器を入出力装置またはI／O装置と呼ぶ。</div>, 0, 4, 21, 333
 rn, , , 26, -1, 29, 30
@@ -1363,6 +2038,8 @@ a, name=\"000010900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①（Integrated Ocean Drilling Program）統合国際深海掘削計画。ODPを引き継いで2003年から開始。, 63, 67, 94, 213
 rn, , , 227, -1, 230, 231
 a, name=\"000010900001\", , 227, 229, 251, 252
+div, style=\"margin-left:1em;\", ②（International Ocean Discovery Program）国際深海科学掘削計画。地球深部探査船「ちきゅう」とアメリカの深海掘削船を運用した国際的な共同研究で、 <a href=\"lved.dataid:00001090\">①</a>を引き継ぎ2013年から開始。, 264, 268, 295, 570
+a, href=\"lved.dataid:00001090\", ①, 497, 499, 529, 533
 
 div, class=\"honbun\", <rn></rn><a name=\"000010950001\"></a><div style=\"margin-left:1em;\">タバコの異称。</div>, 0, 4, 21, 119
 rn, , , 26, -1, 29, 30
@@ -1413,6 +2090,8 @@ a, name=\"000011350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", スイス中部、西アルプスの高峰。標高3970メートル。険しい北壁で有名。<div class=\"media\"><img class=\"FIGc\" src=\"10110120.jpg\">提供：白籏史朗</img><br><img class=\"FIGc\" src=\"10110130.jpg\">提供：白籏史朗</img></div>, 63, 67, 94, 359
 div, class=\"media\", <img class=\"FIGc\" src=\"10110120.jpg\">提供：白籏史朗</img><br><img class=\"FIGc\" src=\"10110130.jpg\">提供：白籏史朗</img>, 196, 200, 216, 357
 img, class=\"FIGc\" src=\"10110120.jpg\", 提供：白籏史朗, 221, 225, 261, 283
+br, , , 297, -1, -1, -1
+img, class=\"FIGc\" src=\"10110130.jpg\", 提供：白籏史朗, 305, 309, 345, 367
 
 div, class=\"honbun\", <rn></rn><a name=\"000011400001\"></a><div style=\"margin-left:1em;\">小紋などの文様のある上を、さらに藍で染めたもの。</div>, 0, 4, 21, 170
 rn, , , 26, -1, 29, 30
@@ -1425,6 +2104,10 @@ a, name=\"000011450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①敵味方の双方が同時に攻めかかること。太平記(5)<a name=\"y00001145-001\"></a>「防ぐ兵は打物の鞘をはづして―に近づく」, 63, 67, 94, 254
 a, name=\"y00001145-001\", , 168, 170, 193, 194
 rn, , , 276, -1, 279, 280
+a, name=\"000011450001\", , 276, 278, 300, 301
+div, style=\"margin-left:1em;\", ②将棋で、序盤の一陣形。相居飛車<sub class=\"rubi\">あいいびしゃ</sub>で互いに飛車先の歩<sub class=\"rubi\">ふ</sub>を進める手で始まり、その後の変化は様々。, 313, 317, 344, 553
+sub, class=\"rubi\", あいいびしゃ, 397, 401, 416, 435
+sub, class=\"rubi\", ふ, 476, 480, 495, 499
 
 div, class=\"honbun\", <rn></rn><a name=\"000011500001\"></a><div style=\"margin-left:1em;\">一つの鍵のほかに、その錠<sub class=\"rubi\">じょう</sub>に合う他の鍵。〈日葡辞書〉。<a name=\"y00001150-001\"></a>「―で開ける」<a name=\"y00001150-002\"></a>「―を作る」</div>, 0, 4, 21, 310
 rn, , , 26, -1, 29, 30
@@ -1432,6 +2115,7 @@ a, name=\"000011500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 一つの鍵のほかに、その錠<sub class=\"rubi\">じょう</sub>に合う他の鍵。〈日葡辞書〉。<a name=\"y00001150-001\"></a>「―で開ける」<a name=\"y00001150-002\"></a>「―を作る」, 63, 67, 94, 307
 sub, class=\"rubi\", じょう, 135, 139, 154, 164
 a, name=\"y00001150-001\", , 220, 222, 245, 246
+a, name=\"y00001150-002\", , 279, 281, 304, 305
 
 div, class=\"honbun\", <rn></rn><a name=\"000011550001\"></a><div style=\"margin-left:1em;\">〔建〕梁<sub class=\"rubi\">はり</sub>・根太<sub class=\"rubi\">ねだ</sub>などの継ぎ手の一種。継ぐ位置で両材の端を同形に欠いて重ね合わせること。<div class=\"media\"><img class=\"FIGs\" src=\"S00005.jpg\"></img></div></div>, 0, 4, 21, 360
 rn, , , 26, -1, 29, 30
@@ -1439,6 +2123,8 @@ a, name=\"000011550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 〔建〕梁<sub class=\"rubi\">はり</sub>・根太<sub class=\"rubi\">ねだ</sub>などの継ぎ手の一種。継ぐ位置で両材の端を同形に欠いて重ね合わせること。<div class=\"media\"><img class=\"FIGs\" src=\"S00005.jpg\"></img></div>, 63, 67, 94, 357
 sub, class=\"rubi\", はり, 111, 115, 130, 137
 sub, class=\"rubi\", ねだ, 160, 164, 179, 186
+div, class=\"media\", <img class=\"FIGs\" src=\"S00005.jpg\"></img>, 305, 309, 325, 371
+img, class=\"FIGs\" src=\"S00005.jpg\", , 330, 334, 368, 369
 
 div, class=\"honbun\", <rn></rn><a name=\"000011600001\"></a><div style=\"margin-left:1em;\">一つの駕籠に二人が相乗りすること。あいあいかご。浄瑠璃、山崎与次兵衛寿の門松<a name=\"y00001160-001\"></a>「いざ―とささやきて」</div>, 0, 4, 21, 275
 rn, , , 26, -1, 29, 30
@@ -1466,6 +2152,13 @@ a, name=\"000011750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①主に長唄で、三味線を主とした間奏部分。, 63, 67, 94, 155
 rn, , , 169, -1, 172, 173
 a, name=\"000011750001\", , 169, 171, 193, 194
+div, style=\"margin-left:1em;\", ②歌舞伎で、俳優の台詞<sub class=\"rubi\">せりふ</sub>・仕種<sub class=\"rubi\">しぐさ</sub>などに合わせて下座<sub class=\"rubi\">げざ</sub>の演奏する唄の伴わない三味線曲。, 206, 210, 237, 457
+sub, class=\"rubi\", せりふ, 275, 279, 294, 304
+sub, class=\"rubi\", しぐさ, 327, 331, 346, 356
+sub, class=\"rubi\", げざ, 397, 401, 416, 423
+rn, , , 495, -1, 498, 499
+a, name=\"000011750001\", , 495, 497, 519, 520
+div, style=\"margin-left:1em;\", ③広く、歌い手に対し、三味線をひく者。, 532, 536, 563, 621
 
 div, class=\"honbun\", <rn></rn><a name=\"000011800001\"></a><div style=\"margin-left:1em;\">①相手。相手役。<a name=\"y00001180-001\"></a>「漫才で―をつとめる」</div><rn></rn><a name=\"000011800001\"></a><div style=\"margin-left:1em;\">②（「敵娼」とも書く）客の相手をする遊女。</div>, 0, 4, 21, 324
 rn, , , 26, -1, 29, 30
@@ -1473,6 +2166,8 @@ a, name=\"000011800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①相手。相手役。<a name=\"y00001180-001\"></a>「漫才で―をつとめる」, 63, 67, 94, 182
 a, name=\"y00001180-001\", , 123, 125, 148, 149
 rn, , , 204, -1, 207, 208
+a, name=\"000011800001\", , 204, 206, 228, 229
+div, style=\"margin-left:1em;\", ②（「敵娼」とも書く）客の相手をする遊女。, 241, 245, 272, 336
 
 div, class=\"honbun\", <rn></rn><a name=\"000011850001\"></a><div style=\"margin-left:1em;\">二人で物をかつぐ時の相手の者。相棒。</div>, 0, 4, 21, 152
 rn, , , 26, -1, 29, 30
@@ -1508,6 +2203,9 @@ a, name=\"000012100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①よく気を配って。慎重に。今昔物語集(16)<a name=\"y00001210-001\"></a>「京に上る船に付きて―上りぬ」, 63, 67, 94, 228
 a, name=\"y00001210-001\", , 157, 159, 182, 183
 rn, , , 250, -1, 253, 254
+a, name=\"000012100001\", , 250, 252, 274, 275
+div, style=\"margin-left:1em;\", ②（下に禁止の語を伴う）必ず。決して。平家物語(1)<a name=\"y00001210-002\"></a>「―念仏おこたり給ふな」, 287, 291, 318, 457
+a, name=\"y00001210-002\", , 395, 397, 420, 421
 
 div, class=\"honbun\", <rn></rn><a name=\"000012150001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00001815\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>あいし</a></div>, 0, 4, 21, 200
 rn, , , 26, -1, 29, 30
@@ -1522,6 +2220,12 @@ a, name=\"000012200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ① <a href=\"lved.dataid:00006020\"><sup>(→)</sup>青花紙<sub class=\"rubi\">あおばながみ</sub></a>に同じ。, 63, 67, 94, 217
 a, href=\"lved.dataid:00006020\", <sup>(→)</sup>青花紙<sub class=\"rubi\">あおばながみ</sub>, 103, 105, 135, 205
 sup, , (→), 140, -1, 144, 150
+sub, class=\"rubi\", あおばながみ, 173, 177, 192, 211
+rn, , , 255, -1, 258, 259
+a, name=\"000012200001\", , 255, 257, 279, 280
+div, style=\"margin-left:1em;\", ②藍染料を用いて藍色に染めた紙。写経・歌集などに用いた。あおがみ。<div class=\"media\"><img class=\"FIGc\" src=\"50022640.jpg\">撮影：関戸 勇</img></div>, 292, 296, 323, 516
+div, class=\"media\", <img class=\"FIGc\" src=\"50022640.jpg\">撮影：関戸 勇</img>, 427, 431, 447, 514
+img, class=\"FIGc\" src=\"50022640.jpg\", 撮影：関戸 勇, 452, 456, 492, 512
 
 div, class=\"honbun\", <rn></rn><a name=\"000012250001\"></a><div style=\"margin-left:1em;\">藍汁<sub class=\"rubi\">あいしる</sub>を貯えておく容器。藍壺。</div><rn></rn><a name=\"000012250001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001230\">あいがめ‐やく【藍瓶役】</a></div>, 0, 4, 21, 375
 rn, , , 26, -1, 29, 30
@@ -1529,6 +2233,10 @@ a, name=\"000012250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 藍汁<sub class=\"rubi\">あいしる</sub>を貯えておく容器。藍壺。, 63, 67, 94, 175
 sub, class=\"rubi\", あいしる, 105, 109, 124, 137
 rn, , , 197, -1, 200, 201
+a, name=\"000012250001\", , 197, 199, 221, 222
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001230\">あいがめ‐やく【藍瓶役】</a>, 234, 238, 258, 387
+object, class=\"icon\" data=\"yajirusi2.svg\", , 263, 270, 308, 309
+a, href=\"lved.dataid:00001230\", あいがめ‐やく【藍瓶役】, 326, 328, 358, 395
 
 div, class=\"honbun\", <rn></rn><a name=\"000012300001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00384490\"><sup>(→)</sup>紺屋役<sub class=\"rubi\">こうややく</sub></a>に同じ。</div><rn></rn><a name=\"000012300001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001225\">あい‐がめ 【藍瓶】 <sub>アヰ‥</sub></a></div>, 0, 4, 21, 424
 rn, , , 26, -1, 29, 30
@@ -1536,6 +2244,13 @@ a, name=\"000012300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00384490\"><sup>(→)</sup>紺屋役<sub class=\"rubi\">こうややく</sub></a>に同じ。, 63, 67, 94, 211
 a, href=\"lved.dataid:00384490\", <sup>(→)</sup>紺屋役<sub class=\"rubi\">こうややく</sub>, 100, 102, 132, 199
 sup, , (→), 137, -1, 141, 147
+sub, class=\"rubi\", こうややく, 170, 174, 189, 205
+rn, , , 249, -1, 252, 253
+a, name=\"000012300001\", , 249, 251, 273, 274
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001225\">あい‐がめ 【藍瓶】 <sub>アヰ‥</sub></a>, 286, 290, 310, 452
+object, class=\"icon\" data=\"yajirusi2.svg\", , 315, 322, 360, 361
+a, href=\"lved.dataid:00001225\", あい‐がめ 【藍瓶】 <sub>アヰ‥</sub>, 378, 380, 410, 460
+sub, , アヰ‥, 444, -1, 448, 458
 
 div, class=\"honbun\", <rn></rn><a name=\"000012350001\"></a><div style=\"margin-left:1em;\">ものを見る際の眼球の運動の軌跡や眼の停留位置・時間などを記録する装置。対象物のどこがよく見られるかを調べる時などに使う。</div>, 0, 4, 21, 278
 rn, , , 26, -1, 29, 30
@@ -1555,6 +2270,10 @@ a, name=\"000012450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 新潟県佐渡市西部の地名。江戸初期、幕府直轄の鉱山が開かれ、金・銀を産出。明治時代民営となり、1989年閉山。鉱山の土を原料とする無名異<sub class=\"rubi\">むみょうい</sub>焼（相川焼）は有名。, 63, 67, 94, 359
 sub, class=\"rubi\", むみょうい, 292, 296, 311, 327
 rn, , , 381, -1, 384, 385
+a, name=\"000012450001\", , 381, 383, 405, 406
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001260\">あいかわ‐おんど【相川音頭】</a>, 418, 422, 442, 577
+object, class=\"icon\" data=\"yajirusi2.svg\", , 447, 454, 492, 493
+a, href=\"lved.dataid:00001260\", あいかわ‐おんど【相川音頭】, 510, 512, 542, 585
 
 div, class=\"honbun\", <rn></rn><a name=\"000012500001\"></a><div style=\"margin-left:1em;\">姓氏の一つ。</div><rn></rn><a name=\"000012500001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001265\">あいかわ‐よしすけ【鮎川義介】</a></div>, 0, 4, 21, 322
 rn, , , 26, -1, 29, 30
@@ -1562,6 +2281,9 @@ a, name=\"000012500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 姓氏の一つ。, 63, 67, 94, 113
 rn, , , 127, -1, 130, 131
 a, name=\"000012500001\", , 127, 129, 151, 152
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001265\">あいかわ‐よしすけ【鮎川義介】</a>, 164, 168, 188, 326
+object, class=\"icon\" data=\"yajirusi2.svg\", , 193, 200, 238, 239
+a, href=\"lved.dataid:00001265\", あいかわ‐よしすけ【鮎川義介】, 256, 258, 288, 334
 
 div, class=\"honbun\", <rn></rn><a name=\"000012550001\"></a><div style=\"margin-left:1em;\">藍色に染めた革。あいなめし。あおなめし。<a name=\"y00001255-001\"></a>「―縅<sub class=\"rubi\">おどし</sub>」</div>, 0, 4, 21, 235
 rn, , , 26, -1, 29, 30
@@ -1576,6 +2298,11 @@ a, name=\"000012600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 相川地方の民謡。盆踊唄。口説<sub class=\"rubi\">くどき</sub>形式で、「源平軍談」の義経弓流しなどから採る。御前踊。, 63, 67, 94, 253
 sub, class=\"rubi\", くどき, 141, 145, 160, 170
 rn, , , 275, -1, 278, 279
+a, name=\"000012600001\", , 275, 277, 299, 300
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001245\">あいかわ 【相川】 <sub>アヒカハ</sub></a>, 312, 316, 336, 478
+object, class=\"icon\" data=\"yajirusi2.svg\", , 341, 348, 386, 387
+a, href=\"lved.dataid:00001245\", あいかわ 【相川】 <sub>アヒカハ</sub>, 404, 406, 436, 486
+sub, , アヒカハ, 467, -1, 471, 484
 
 div, class=\"honbun\", <rn></rn><a name=\"000012650001\"></a><div style=\"margin-left:1em;\">実業家。山口県生れ。東大卒。久原<sub class=\"rubi\">くはら</sub>房之助の義兄。日産コンツェルンの創始者、満州重工業開発会社の経営者。（1880～1967）</div><rn></rn><a name=\"000012650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001250\">あいかわ 【鮎川】 <sub>‥カハ</sub></a></div>, 0, 4, 21, 507
 rn, , , 26, -1, 29, 30
@@ -1583,6 +2310,11 @@ a, name=\"000012650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 実業家。山口県生れ。東大卒。久原<sub class=\"rubi\">くはら</sub>房之助の義兄。日産コンツェルンの創始者、満州重工業開発会社の経営者。（1880～1967）, 63, 67, 94, 297
 sub, class=\"rubi\", くはら, 147, 151, 166, 176
 rn, , , 319, -1, 322, 323
+a, name=\"000012650001\", , 319, 321, 343, 344
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001250\">あいかわ 【鮎川】 <sub>‥カハ</sub></a>, 356, 360, 380, 519
+object, class=\"icon\" data=\"yajirusi2.svg\", , 385, 392, 430, 431
+a, href=\"lved.dataid:00001250\", あいかわ 【鮎川】 <sub>‥カハ</sub>, 448, 450, 480, 527
+sub, , ‥カハ, 511, -1, 515, 525
 
 div, class=\"honbun\", <rn></rn><a name=\"000012700001\"></a><div style=\"margin-left:1em;\">以前と同様に。平常と特に変化なく。<a name=\"y00001270-001\"></a>「―の生活」<a name=\"y00001270-002\"></a>「―元気だ」</div><rn></rn><a name=\"000012700001\"></a><div style=\"margin-left:1em;\">「相も変わらず」はこれを強めた言い方で、あざけり・ひやかしの気持が加わる。</div>, 0, 4, 21, 432
 rn, , , 26, -1, 29, 30
@@ -1590,6 +2322,9 @@ a, name=\"000012700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 以前と同様に。平常と特に変化なく。<a name=\"y00001270-001\"></a>「―の生活」<a name=\"y00001270-002\"></a>「―元気だ」, 63, 67, 94, 242
 a, name=\"y00001270-001\", , 150, 152, 175, 176
 a, name=\"y00001270-002\", , 206, 208, 231, 232
+rn, , , 272, -1, 275, 276
+a, name=\"000012700001\", , 272, 274, 296, 297
+div, style=\"margin-left:1em;\", 「相も変わらず」はこれを強めた言い方で、あざけり・ひやかしの気持が加わる。, 309, 313, 340, 452
 
 div, class=\"honbun\", <rn></rn><a name=\"000012750001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00003585\"><sup>(→)</sup>合符<sub class=\"rubi\">あいふ</sub></a>に同じ。</div>, 0, 4, 21, 205
 rn, , , 26, -1, 29, 30
@@ -1597,6 +2332,7 @@ a, name=\"000012750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00003585\"><sup>(→)</sup>合符<sub class=\"rubi\">あいふ</sub></a>に同じ。, 63, 67, 94, 202
 a, href=\"lved.dataid:00003585\", <sup>(→)</sup>合符<sub class=\"rubi\">あいふ</sub>, 100, 102, 132, 190
 sup, , (→), 137, -1, 141, 147
+sub, class=\"rubi\", あいふ, 167, 171, 186, 196
 
 div, class=\"honbun\", <rn></rn><a name=\"000012800001\"></a><div style=\"margin-left:1em;\">ものがなしい感じ。悲哀感。<a name=\"y00001280-001\"></a>「―をそそる」</div>, 0, 4, 21, 188
 rn, , , 26, -1, 29, 30
@@ -1622,6 +2358,9 @@ a, name=\"000012950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", もてあそび楽しむこと。小動物などを、大切にしてかわいがること。, 63, 67, 94, 188
 rn, , , 202, -1, 205, 206
 a, name=\"000012950001\", , 202, 204, 226, 227
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001300\">あいがん‐どうぶつ【愛玩動物】</a>, 239, 243, 263, 401
+object, class=\"icon\" data=\"yajirusi2.svg\", , 268, 275, 313, 314
+a, href=\"lved.dataid:00001300\", あいがん‐どうぶつ【愛玩動物】, 331, 333, 363, 409
 
 div, class=\"honbun\", <rn></rn><a name=\"000013000001\"></a><div style=\"margin-left:1em;\">猫や犬など、愛玩する目的で飼う動物。ペット。</div><rn></rn><a name=\"000013000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001295\">あい‐がん 【愛玩】 <sub>‥グワン</sub></a></div>, 0, 4, 21, 377
 rn, , , 26, -1, 29, 30
@@ -1629,6 +2368,10 @@ a, name=\"000013000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 猫や犬など、愛玩する目的で飼う動物。ペット。, 63, 67, 94, 161
 rn, , , 175, -1, 178, 179
 a, name=\"000013000001\", , 175, 177, 199, 200
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001295\">あい‐がん 【愛玩】 <sub>‥グワン</sub></a>, 212, 216, 236, 381
+object, class=\"icon\" data=\"yajirusi2.svg\", , 241, 248, 286, 287
+a, href=\"lved.dataid:00001295\", あい‐がん 【愛玩】 <sub>‥グワン</sub>, 304, 306, 336, 389
+sub, , ‥グワン, 370, -1, 374, 387
 
 div, class=\"honbun\", <rn></rn><a name=\"000013050001\"></a><div style=\"margin-left:1em;\">愛用している飛行機。また、愛用している写真機などの機器。</div>, 0, 4, 21, 182
 rn, , , 26, -1, 29, 30
@@ -1653,6 +2396,9 @@ a, name=\"000013200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①上着と下着との間に着る衣服。, 63, 67, 94, 140
 rn, , , 154, -1, 157, 158
 a, name=\"000013200001\", , 154, 156, 178, 179
+div, style=\"margin-left:1em;\", ② <a href=\"lved.dataid:00003615\"><sup>(→)</sup>「あいふく」</a>に同じ。, 191, 195, 222, 310
+a, href=\"lved.dataid:00003615\", <sup>(→)</sup>「あいふく」, 231, 233, 263, 298
+sup, , (→), 268, -1, 272, 278
 
 div, class=\"honbun\", <rn></rn><a name=\"000013250001\"></a><div style=\"margin-left:1em;\">かわいがっている芸妓・娼妓。</div>, 0, 4, 21, 140
 rn, , , 26, -1, 29, 30
@@ -1675,6 +2421,7 @@ a, name=\"000013400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①宿屋で同じ部屋に泊まり合わせた客。, 63, 67, 94, 149
 rn, , , 163, -1, 166, 167
 a, name=\"000013400001\", , 163, 165, 187, 188
+div, style=\"margin-left:1em;\", ②たまたま同時に来合わせた客。, 200, 204, 231, 277
 
 div, class=\"honbun\", <rn></rn><a name=\"000013450001\"></a><div style=\"margin-left:1em;\">（「人目をひくもの」の意）</div><rn></rn><a name=\"000013450001\"></a><div style=\"margin-left:1em;\">①広告の中で、見る人の目をまず引きつける図柄や写真など。</div><rn></rn><a name=\"000013450001\"></a><div style=\"margin-left:1em;\">②店頭の棚などで、軸に付けて立てる小型の広告板。</div>, 0, 4, 21, 445
 rn, , , 26, -1, 29, 30
@@ -1682,6 +2429,10 @@ a, name=\"000013450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （「人目をひくもの」の意）, 63, 67, 94, 134
 rn, , , 148, -1, 151, 152
 a, name=\"000013450001\", , 148, 150, 172, 173
+div, style=\"margin-left:1em;\", ①広告の中で、見る人の目をまず引きつける図柄や写真など。, 185, 189, 216, 301
+rn, , , 315, -1, 318, 319
+a, name=\"000013450001\", , 315, 317, 339, 340
+div, style=\"margin-left:1em;\", ②店頭の棚などで、軸に付けて立てる小型の広告板。, 352, 356, 383, 456
 
 div, class=\"honbun\", <rn></rn><a name=\"000013500001\"></a><div style=\"margin-left:1em;\">江戸時代、一つの村を複数の給人（領主）が分割知行していること。領主が3人・4人の場合、三給・四給ともいった。その村を相給地という。</div>, 0, 4, 21, 289
 rn, , , 26, -1, 29, 30
@@ -1717,6 +2468,10 @@ a, name=\"000013750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 生れ故郷を愛すること。<a name=\"y00001375-001\"></a>「―心」, 63, 67, 94, 170
 a, name=\"y00001375-001\", , 132, 134, 157, 158
 rn, , , 192, -1, 195, 196
+a, name=\"000013750001\", , 192, 194, 216, 217
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001420\">あいきょう‐じゅく【愛郷塾】</a>, 229, 233, 253, 388
+object, class=\"icon\" data=\"yajirusi2.svg\", , 258, 265, 303, 304
+a, href=\"lved.dataid:00001420\", あいきょう‐じゅく【愛郷塾】, 321, 323, 353, 396
 
 div, class=\"honbun\", <rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">① <a href=\"lved.dataid:00001395\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>あいぎょう</a>。</div><rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">②（「愛嬌」とも書く）<rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">㋐女性や子供などが、にこやかでかわいらしいこと。また、こっけいでほほえましいこと。<a name=\"y00001380-001\"></a>「―のある娘」</div><rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">㋑人に好かれるような愛想や世辞。また、催しごとや物を売るときに添えるもの。座興。おまけ。<a name=\"y00001380-002\"></a>「―をふりまく」<a name=\"y00001380-003\"></a>「御―に1曲歌いましょう」</div></div><rn></rn><a name=\"000013800001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001405\">あいきょう‐あばた【愛敬痘痕】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001410\">あいきょう‐げ【愛敬毛】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001425\">あいきょう‐しょうばい【愛敬商売】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001435\">あいきょう‐づきあい【愛敬付合い】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001450\">あいきょう‐の‐もち【愛敬の餅】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001455\">あいきょう‐べに【愛敬紅】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001460\">あいきょう‐ぼくろ【愛敬黒子】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001465\">あいきょう‐まもり【愛敬守り】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001470\">あいきょう‐もの【愛敬者】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001475\">あいきょう‐わらい【愛敬笑い】</a></div>, 0, 4, 21, 2369
 rn, , , 26, -1, 29, 30
@@ -1724,6 +2479,50 @@ a, name=\"000013800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ① <a href=\"lved.dataid:00001395\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>あいぎょう</a>。, 63, 67, 94, 209
 a, href=\"lved.dataid:00001395\", <object class=\"icon\" data=\"yajirusi1.svg\"></object>あいぎょう, 103, 105, 135, 206
 object, class=\"icon\" data=\"yajirusi1.svg\", , 140, 147, 185, 186
+rn, , , 239, -1, 242, 243
+a, name=\"000013800001\", , 239, 241, 263, 264
+div, style=\"margin-left:1em;\", ②（「愛嬌」とも書く）<rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">㋐女性や子供などが、にこやかでかわいらしいこと。また、こっけいでほほえましいこと。<a name=\"y00001380-001\"></a>「―のある娘」</div><rn></rn><a name=\"000013800001\"></a><div style=\"margin-left:1em;\">㋑人に好かれるような愛想や世辞。また、催しごとや物を売るときに添えるもの。座興。おまけ。<a name=\"y00001380-002\"></a>「―をふりまく」<a name=\"y00001380-003\"></a>「御―に1曲歌いましょう」</div>, 276, 280, 307, 920
+rn, , , 345, -1, 348, 349
+a, name=\"000013800001\", , 345, 347, 369, 370
+div, style=\"margin-left:1em;\", ㋐女性や子供などが、にこやかでかわいらしいこと。また、こっけいでほほえましいこと。<a name=\"y00001380-001\"></a>「―のある娘」, 382, 386, 413, 588
+a, name=\"y00001380-001\", , 541, 543, 566, 567
+rn, , , 610, -1, 613, 614
+a, name=\"000013800001\", , 610, 612, 634, 635
+div, style=\"margin-left:1em;\", ㋑人に好かれるような愛想や世辞。また、催しごとや物を売るときに添えるもの。座興。おまけ。<a name=\"y00001380-002\"></a>「―をふりまく」<a name=\"y00001380-003\"></a>「御―に1曲歌いましょう」, 647, 651, 678, 932
+a, name=\"y00001380-002\", , 815, 817, 840, 841
+a, name=\"y00001380-003\", , 877, 879, 902, 903
+rn, , , 972, -1, 975, 976
+a, name=\"000013800001\", , 972, 974, 996, 997
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001405\">あいきょう‐あばた【愛敬痘痕】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001410\">あいきょう‐げ【愛敬毛】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001425\">あいきょう‐しょうばい【愛敬商売】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001435\">あいきょう‐づきあい【愛敬付合い】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001450\">あいきょう‐の‐もち【愛敬の餅】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001455\">あいきょう‐べに【愛敬紅】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001460\">あいきょう‐ぼくろ【愛敬黒子】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001465\">あいきょう‐まもり【愛敬守り】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001470\">あいきょう‐もの【愛敬者】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001475\">あいきょう‐わらい【愛敬笑い】</a>, 1009, 1013, 1033, 2434
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1038, 1045, 1083, 1084
+a, href=\"lved.dataid:00001405\", あいきょう‐あばた【愛敬痘痕】, 1101, 1103, 1133, 1179
+br, , , 1191, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1199, 1206, 1244, 1245
+a, href=\"lved.dataid:00001410\", あいきょう‐げ【愛敬毛】, 1262, 1264, 1294, 1331
+br, , , 1343, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1351, 1358, 1396, 1397
+a, href=\"lved.dataid:00001425\", あいきょう‐しょうばい【愛敬商売】, 1414, 1416, 1446, 1498
+br, , , 1510, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1518, 1525, 1563, 1564
+a, href=\"lved.dataid:00001435\", あいきょう‐づきあい【愛敬付合い】, 1581, 1583, 1613, 1665
+br, , , 1677, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1685, 1692, 1730, 1731
+a, href=\"lved.dataid:00001450\", あいきょう‐の‐もち【愛敬の餅】, 1748, 1750, 1780, 1829
+br, , , 1841, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1849, 1856, 1894, 1895
+a, href=\"lved.dataid:00001455\", あいきょう‐べに【愛敬紅】, 1912, 1914, 1944, 1984
+br, , , 1996, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 2004, 2011, 2049, 2050
+a, href=\"lved.dataid:00001460\", あいきょう‐ぼくろ【愛敬黒子】, 2067, 2069, 2099, 2145
+br, , , 2157, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 2165, 2172, 2210, 2211
+a, href=\"lved.dataid:00001465\", あいきょう‐まもり【愛敬守り】, 2228, 2230, 2260, 2306
+br, , , 2318, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 2326, 2333, 2371, 2372
+a, href=\"lved.dataid:00001470\", あいきょう‐もの【愛敬者】, 2389, 2391, 2421, 2461
+br, , , 2473, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 2481, 2488, 2526, 2527
+a, href=\"lved.dataid:00001475\", あいきょう‐わらい【愛敬笑い】, 2544, 2546, 2576, 2622
 
 div, class=\"honbun\", <rn></rn><a name=\"000013850001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00001380\"><sup>(→)</sup>愛敬<sub class=\"rubi\">あいきょう</sub></a>に同じ。</div>, 0, 4, 21, 211
 rn, , , 26, -1, 29, 30
@@ -1731,6 +2530,7 @@ a, name=\"000013850001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00001380\"><sup>(→)</sup>愛敬<sub class=\"rubi\">あいきょう</sub></a>に同じ。, 63, 67, 94, 208
 a, href=\"lved.dataid:00001380\", <sup>(→)</sup>愛敬<sub class=\"rubi\">あいきょう</sub>, 100, 102, 132, 196
 sup, , (→), 137, -1, 141, 147
+sub, class=\"rubi\", あいきょう, 167, 171, 186, 202
 
 div, class=\"honbun\", <rn></rn><a name=\"000013900001\"></a><div style=\"margin-left:1em;\">①越年したアユ。</div><rn></rn><a name=\"000013900001\"></a><div style=\"margin-left:1em;\">②子持ちアユの塩漬け乾燥品。江戸初期、肥後の名産。</div>, 0, 4, 21, 273
 rn, , , 26, -1, 29, 30
@@ -1738,6 +2538,7 @@ a, name=\"000013900001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①越年したアユ。, 63, 67, 94, 119
 rn, , , 133, -1, 136, 137
 a, name=\"000013900001\", , 133, 135, 157, 158
+div, style=\"margin-left:1em;\", ②子持ちアユの塩漬け乾燥品。江戸初期、肥後の名産。, 170, 174, 201, 277
 
 div, class=\"honbun\", <rn></rn><a name=\"000013950001\"></a><div style=\"margin-left:1em;\">（中世以降、アイキョウとも）</div><rn></rn><a name=\"000013950001\"></a><div style=\"margin-left:1em;\">①いつくしみ敬うこと。</div><rn></rn><a name=\"000013950001\"></a><div style=\"margin-left:1em;\">②表情などのかわいらしいこと。宇津保物語(楼上上)<a name=\"y00001395-001\"></a>「―こぼるばかりにておはする」</div><rn></rn><a name=\"000013950001\"></a><div style=\"margin-left:1em;\">③なさけがあること。思いやり。落窪物語(1)<a name=\"y00001395-002\"></a>「いと―なかりける心持たりけるものかな」</div><rn></rn><a name=\"000013950001\"></a><div style=\"margin-left:1em;\">④（「愛行」の意かという）夫婦の和合。源氏物語(葵)<a name=\"y00001395-003\"></a>「げに、―のはじめは日選りして」</div><rn></rn><a name=\"000013950001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001430\">あいぎょう‐そう【愛敬相】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001440\">あいぎょう‐づ・く【愛敬付く】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001445\">あいぎょう‐な・し【愛敬なし】</a></div>, 0, 4, 21, 1407
 rn, , , 26, -1, 29, 30
@@ -1745,6 +2546,30 @@ a, name=\"000013950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （中世以降、アイキョウとも）, 63, 67, 94, 137
 rn, , , 151, -1, 154, 155
 a, name=\"000013950001\", , 151, 153, 175, 176
+div, style=\"margin-left:1em;\", ①いつくしみ敬うこと。, 188, 192, 219, 253
+rn, , , 267, -1, 270, 271
+a, name=\"000013950001\", , 267, 269, 291, 292
+div, style=\"margin-left:1em;\", ②表情などのかわいらしいこと。宇津保物語(楼上上)<a name=\"y00001395-001\"></a>「―こぼるばかりにておはする」, 304, 308, 335, 482
+a, name=\"y00001395-001\", , 411, 413, 436, 437
+rn, , , 504, -1, 507, 508
+a, name=\"000013950001\", , 504, 506, 528, 529
+div, style=\"margin-left:1em;\", ③なさけがあること。思いやり。落窪物語(1)<a name=\"y00001395-002\"></a>「いと―なかりける心持たりけるものかな」, 541, 545, 572, 723
+a, name=\"y00001395-002\", , 637, 639, 662, 663
+rn, , , 745, -1, 748, 749
+a, name=\"000013950001\", , 745, 747, 769, 770
+div, style=\"margin-left:1em;\", ④（「愛行」の意かという）夫婦の和合。源氏物語(葵)<a name=\"y00001395-003\"></a>「げに、―のはじめは日選りして」, 782, 786, 813, 966
+a, name=\"y00001395-003\", , 892, 894, 917, 918
+rn, , , 988, -1, 991, 992
+a, name=\"000013950001\", , 988, 990, 1012, 1013
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001430\">あいぎょう‐そう【愛敬相】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001440\">あいぎょう‐づ・く【愛敬付く】</a><br><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001445\">あいぎょう‐な・し【愛敬なし】</a>, 1025, 1029, 1049, 1463
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1054, 1061, 1099, 1100
+a, href=\"lved.dataid:00001430\", あいぎょう‐そう【愛敬相】, 1117, 1119, 1149, 1189
+br, , , 1201, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1209, 1216, 1254, 1255
+a, href=\"lved.dataid:00001440\", あいぎょう‐づ・く【愛敬付く】, 1272, 1274, 1304, 1350
+br, , , 1362, -1, -1, -1
+object, class=\"icon\" data=\"yajirusi2.svg\", , 1370, 1377, 1415, 1416
+a, href=\"lved.dataid:00001445\", あいぎょう‐な・し【愛敬なし】, 1433, 1435, 1465, 1511
 
 div, class=\"honbun\", <rn></rn><a name=\"000014000001\"></a><div style=\"margin-left:1em;\">（「楽」は好む意）</div><rn></rn><a name=\"000014000001\"></a><div style=\"margin-left:1em;\">①〔仏〕願い求めること。日本霊異記(中)<a name=\"y00001400-001\"></a>「諸<object class=\"gaiji\" data=\"A434.svg\"></object>の道俗の為に―せらる」</div><rn></rn><a name=\"000014000001\"></a><div style=\"margin-left:1em;\">②愛し好むこと。徒然草<a name=\"y00001400-002\"></a>「人に―せられずして衆に交はるは、恥なり」</div>, 0, 4, 21, 579
 rn, , , 26, -1, 29, 30
@@ -1752,6 +2577,13 @@ a, name=\"000014000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （「楽」は好む意）, 63, 67, 94, 122
 rn, , , 136, -1, 139, 140
 a, name=\"000014000001\", , 136, 138, 160, 161
+div, style=\"margin-left:1em;\", ①〔仏〕願い求めること。日本霊異記(中)<a name=\"y00001400-001\"></a>「諸<object class=\"gaiji\" data=\"A434.svg\"></object>の道俗の為に―せらる」, 173, 177, 204, 381
+a, name=\"y00001400-001\", , 265, 267, 290, 291
+object, class=\"gaiji\" data=\"A434.svg\", , 309, 316, 350, 351
+rn, , , 411, -1, 414, 415
+a, name=\"000014000001\", , 411, 413, 435, 436
+div, style=\"margin-left:1em;\", ②愛し好むこと。徒然草<a name=\"y00001400-002\"></a>「人に―せられずして衆に交はるは、恥なり」, 448, 452, 479, 606
+a, name=\"y00001400-002\", , 517, 519, 542, 543
 
 div, class=\"honbun\", <rn></rn><a name=\"000014050001\"></a><div style=\"margin-left:1em;\">愛敬を添えるように見える、軽いあばた。</div><rn></rn><a name=\"000014050001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 371
 rn, , , 26, -1, 29, 30
@@ -1759,6 +2591,10 @@ a, name=\"000014050001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 愛敬を添えるように見える、軽いあばた。, 63, 67, 94, 152
 rn, , , 166, -1, 169, 170
 a, name=\"000014050001\", , 166, 168, 190, 191
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 203, 207, 227, 375
+object, class=\"icon\" data=\"yajirusi2.svg\", , 232, 239, 277, 278
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 295, 297, 327, 383
+sub, , ‥キヤウ, 364, -1, 368, 381
 
 div, class=\"honbun\", <rn></rn><a name=\"000014100001\"></a><div style=\"margin-left:1em;\">（顔に愛敬を添えるからいう）女性が鬢<sub class=\"rubi\">びん</sub>の毛を頰のあたりに垂らしたもの。</div><rn></rn><a name=\"000014100001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 448
 rn, , , 26, -1, 29, 30
@@ -1766,6 +2602,11 @@ a, name=\"000014100001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", （顔に愛敬を添えるからいう）女性が鬢<sub class=\"rubi\">びん</sub>の毛を頰のあたりに垂らしたもの。, 63, 67, 94, 229
 sub, class=\"rubi\", びん, 153, 157, 172, 179
 rn, , , 251, -1, 254, 255
+a, name=\"000014100001\", , 251, 253, 275, 276
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 288, 292, 312, 460
+object, class=\"icon\" data=\"yajirusi2.svg\", , 317, 324, 362, 363
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 380, 382, 412, 468
+sub, , ‥キヤウ, 449, -1, 453, 466
 
 div, class=\"honbun\", <rn></rn><a name=\"000014150001\"></a><div style=\"margin-left:1em;\">①能の曲中で、狂言方が登場して演ずるもの。また、その役。「高砂」の浦の男、「安宅」の強力<sub class=\"rubi\">ごうりき</sub>と太刀持など。アイ。</div><rn></rn><a name=\"000014150001\"></a><div style=\"margin-left:1em;\">②浄瑠璃・歌舞伎などで、各段・演目の間に演ぜられる、主として滑稽な寸劇。</div>, 0, 4, 21, 482
 rn, , , 26, -1, 29, 30
@@ -1773,6 +2614,8 @@ a, name=\"000014150001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", ①能の曲中で、狂言方が登場して演ずるもの。また、その役。「高砂」の浦の男、「安宅」の強力<sub class=\"rubi\">ごうりき</sub>と太刀持など。アイ。, 63, 67, 94, 295
 sub, class=\"rubi\", ごうりき, 231, 235, 250, 263
 rn, , , 317, -1, 320, 321
+a, name=\"000014150001\", , 317, 319, 341, 342
+div, style=\"margin-left:1em;\", ②浄瑠璃・歌舞伎などで、各段・演目の間に演ぜられる、主として滑稽な寸劇。, 354, 358, 385, 494
 
 div, class=\"honbun\", <rn></rn><a name=\"000014200001\"></a><div style=\"margin-left:1em;\">1931年（昭和6）に橘孝三郎（1893～1974）が茨城県水戸に創立した農本主義による私塾。農民決死隊を編成、青年将校と結んで五‐一五事件に参加。</div><rn></rn><a name=\"000014200001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001375\">あい‐きょう 【愛郷】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 510
 rn, , , 26, -1, 29, 30
@@ -1780,6 +2623,10 @@ a, name=\"000014200001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 1931年（昭和6）に橘孝三郎（1893～1974）が茨城県水戸に創立した農本主義による私塾。農民決死隊を編成、青年将校と結んで五‐一五事件に参加。, 63, 67, 94, 291
 rn, , , 305, -1, 308, 309
 a, name=\"000014200001\", , 305, 307, 329, 330
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001375\">あい‐きょう 【愛郷】 <sub>‥キヤウ</sub></a>, 342, 346, 366, 514
+object, class=\"icon\" data=\"yajirusi2.svg\", , 371, 378, 416, 417
+a, href=\"lved.dataid:00001375\", あい‐きょう 【愛郷】 <sub>‥キヤウ</sub>, 434, 436, 466, 522
+sub, , ‥キヤウ, 503, -1, 507, 520
 
 div, class=\"honbun\", <rn></rn><a name=\"000014250001\"></a><div style=\"margin-left:1em;\">愛敬がなければ立ちゆかない商売。料理屋の類。</div><rn></rn><a name=\"000014250001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 380
 rn, , , 26, -1, 29, 30
@@ -1787,6 +2634,10 @@ a, name=\"000014250001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 愛敬がなければ立ちゆかない商売。料理屋の類。, 63, 67, 94, 161
 rn, , , 175, -1, 178, 179
 a, name=\"000014250001\", , 175, 177, 199, 200
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 212, 216, 236, 384
+object, class=\"icon\" data=\"yajirusi2.svg\", , 241, 248, 286, 287
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 304, 306, 336, 392
+sub, , ‥キヤウ, 373, -1, 377, 390
 
 div, class=\"honbun\", <rn></rn><a name=\"000014300001\"></a><div style=\"margin-left:1em;\">〔仏〕柔和な心と温和な恵みを施す容貌・態度。阿弥陀如来・地蔵菩薩などの相貌にいう。</div><rn></rn><a name=\"000014300001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a></div>, 0, 4, 21, 437
 rn, , , 26, -1, 29, 30
@@ -1794,6 +2645,10 @@ a, name=\"000014300001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 〔仏〕柔和な心と温和な恵みを施す容貌・態度。阿弥陀如来・地蔵菩薩などの相貌にいう。, 63, 67, 94, 218
 rn, , , 232, -1, 235, 236
 a, name=\"000014300001\", , 232, 234, 256, 257
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a>, 269, 273, 293, 441
+object, class=\"icon\" data=\"yajirusi2.svg\", , 298, 305, 343, 344
+a, href=\"lved.dataid:00001395\", あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub>, 361, 363, 393, 449
+sub, , ‥ギヤウ, 430, -1, 434, 447
 
 div, class=\"honbun\", <rn></rn><a name=\"000014350001\"></a><div style=\"margin-left:1em;\">通り一遍のつきあい。なみの交際。</div><rn></rn><a name=\"000014350001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 362
 rn, , , 26, -1, 29, 30
@@ -1801,6 +2656,10 @@ a, name=\"000014350001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 通り一遍のつきあい。なみの交際。, 63, 67, 94, 143
 rn, , , 157, -1, 160, 161
 a, name=\"000014350001\", , 157, 159, 181, 182
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 194, 198, 218, 366
+object, class=\"icon\" data=\"yajirusi2.svg\", , 223, 230, 268, 269
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 286, 288, 318, 374
+sub, , ‥キヤウ, 355, -1, 359, 372
 
 div, class=\"honbun\", <rn></rn><a name=\"000014400001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>自四<object class=\"icon\" data=\"square_b.svg\"></object>表情や態度に魅力が出てくる。</div><rn></rn><a name=\"000014400001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a></div>, 0, 4, 21, 470
 rn, , , 26, -1, 29, 30
@@ -1808,6 +2667,12 @@ a, name=\"000014400001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>自四<object class=\"icon\" data=\"square_b.svg\"></object>表情や態度に魅力が出てくる。, 63, 67, 94, 251
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+rn, , , 281, -1, 284, 285
+a, name=\"000014400001\", , 281, 283, 305, 306
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a>, 318, 322, 342, 490
+object, class=\"icon\" data=\"yajirusi2.svg\", , 347, 354, 392, 393
+a, href=\"lved.dataid:00001395\", あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub>, 410, 412, 442, 498
+sub, , ‥ギヤウ, 479, -1, 483, 496
 
 div, class=\"honbun\", <rn></rn><a name=\"000014450001\"></a><div style=\"margin-left:1em;\"><object class=\"icon\" data=\"square_a.svg\"></object>形ク<object class=\"icon\" data=\"square_b.svg\"></object>かわいげがない。小憎たらしい。源氏物語(帚木)<a name=\"y00001445-001\"></a>「三史五経、道々しき方を、明らかに悟り明かさんこそ―・からめ」</div><rn></rn><a name=\"000014450001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a></div>, 0, 4, 21, 616
 rn, , , 26, -1, 29, 30
@@ -1815,6 +2680,13 @@ a, name=\"000014450001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", <object class=\"icon\" data=\"square_a.svg\"></object>形ク<object class=\"icon\" data=\"square_b.svg\"></object>かわいげがない。小憎たらしい。源氏物語(帚木)<a name=\"y00001445-001\"></a>「三史五経、道々しき方を、明らかに悟り明かさんこそ―・からめ」, 63, 67, 94, 397
 object, class=\"icon\" data=\"square_a.svg\", , 99, 106, 143, 144
 object, class=\"icon\" data=\"square_b.svg\", , 167, 174, 211, 212
+a, name=\"y00001445-001\", , 294, 296, 319, 320
+rn, , , 435, -1, 438, 439
+a, name=\"000014450001\", , 435, 437, 459, 460
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001395\">あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub></a>, 472, 476, 496, 644
+object, class=\"icon\" data=\"yajirusi2.svg\", , 501, 508, 546, 547
+a, href=\"lved.dataid:00001395\", あい‐ぎょう 【愛敬】 <sub>‥ギヤウ</sub>, 564, 566, 596, 652
+sub, , ‥ギヤウ, 633, -1, 637, 650
 
 div, class=\"honbun\", <rn></rn><a name=\"000014500001\"></a><div style=\"margin-left:1em;\">婚礼後3日目の祝いの餅。三日餅<sub class=\"rubi\">みかのもちい</sub>。</div><rn></rn><a name=\"000014500001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 404
 rn, , , 26, -1, 29, 30
@@ -1822,6 +2694,11 @@ a, name=\"000014500001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 婚礼後3日目の祝いの餅。三日餅<sub class=\"rubi\">みかのもちい</sub>。, 63, 67, 94, 185
 sub, class=\"rubi\", みかのもちい, 142, 146, 161, 180
 rn, , , 207, -1, 210, 211
+a, name=\"000014500001\", , 207, 209, 231, 232
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 244, 248, 268, 416
+object, class=\"icon\" data=\"yajirusi2.svg\", , 273, 280, 318, 319
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 336, 338, 368, 424
+sub, , ‥キヤウ, 405, -1, 409, 422
 
 div, class=\"honbun\", <rn></rn><a name=\"000014550001\"></a><div style=\"margin-left:1em;\">目尻や頰や耳たぶにつけて愛敬を添える紅。</div><rn></rn><a name=\"000014550001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 374
 rn, , , 26, -1, 29, 30
@@ -1829,6 +2706,10 @@ a, name=\"000014550001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 目尻や頰や耳たぶにつけて愛敬を添える紅。, 63, 67, 94, 155
 rn, , , 169, -1, 172, 173
 a, name=\"000014550001\", , 169, 171, 193, 194
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 206, 210, 230, 378
+object, class=\"icon\" data=\"yajirusi2.svg\", , 235, 242, 280, 281
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 298, 300, 330, 386
+sub, , ‥キヤウ, 367, -1, 371, 384
 
 div, class=\"honbun\", <rn></rn><a name=\"000014600001\"></a><div style=\"margin-left:1em;\">愛敬を添えるように見える、かわいらしいほくろ。</div><rn></rn><a name=\"000014600001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 383
 rn, , , 26, -1, 29, 30
@@ -1836,6 +2717,10 @@ a, name=\"000014600001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 愛敬を添えるように見える、かわいらしいほくろ。, 63, 67, 94, 164
 rn, , , 178, -1, 181, 182
 a, name=\"000014600001\", , 178, 180, 202, 203
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 215, 219, 239, 387
+object, class=\"icon\" data=\"yajirusi2.svg\", , 244, 251, 289, 290
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 307, 309, 339, 395
+sub, , ‥キヤウ, 376, -1, 380, 393
 
 div, class=\"honbun\", <rn></rn><a name=\"000014650001\"></a><div style=\"margin-left:1em;\">江戸時代、貴婦人の婚礼の時、新婦が襟にかけたお守り。</div><rn></rn><a name=\"000014650001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 392
 rn, , , 26, -1, 29, 30
@@ -1843,6 +2728,10 @@ a, name=\"000014650001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 江戸時代、貴婦人の婚礼の時、新婦が襟にかけたお守り。, 63, 67, 94, 173
 rn, , , 187, -1, 190, 191
 a, name=\"000014650001\", , 187, 189, 211, 212
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 224, 228, 248, 396
+object, class=\"icon\" data=\"yajirusi2.svg\", , 253, 260, 298, 299
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 316, 318, 348, 404
+sub, , ‥キヤウ, 385, -1, 389, 402
 
 div, class=\"honbun\", <rn></rn><a name=\"000014700001\"></a><div style=\"margin-left:1em;\">愛敬のある振舞いで人からかわいがられる存在。<a name=\"y00001470-001\"></a>「―の猿」</div><rn></rn><a name=\"000014700001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 425
 rn, , , 26, -1, 29, 30
@@ -1850,6 +2739,11 @@ a, name=\"000014700001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 愛敬のある振舞いで人からかわいがられる存在。<a name=\"y00001470-001\"></a>「―の猿」, 63, 67, 94, 206
 a, name=\"y00001470-001\", , 165, 167, 190, 191
 rn, , , 228, -1, 231, 232
+a, name=\"000014700001\", , 228, 230, 252, 253
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 265, 269, 289, 437
+object, class=\"icon\" data=\"yajirusi2.svg\", , 294, 301, 339, 340
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 357, 359, 389, 445
+sub, , ‥キヤウ, 426, -1, 430, 443
 
 div, class=\"honbun\", <rn></rn><a name=\"000014750001\"></a><div style=\"margin-left:1em;\">愛想<sub class=\"rubi\">あいそ</sub>笑い。おせじ笑い。</div><rn></rn><a name=\"000014750001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a></div>, 0, 4, 21, 382
 rn, , , 26, -1, 29, 30
@@ -1857,6 +2751,11 @@ a, name=\"000014750001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 愛想<sub class=\"rubi\">あいそ</sub>笑い。おせじ笑い。, 63, 67, 94, 163
 sub, class=\"rubi\", あいそ, 105, 109, 124, 134
 rn, , , 185, -1, 188, 189
+a, name=\"000014750001\", , 185, 187, 209, 210
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001380\">あい‐きょう 【愛敬】 <sub>‥キヤウ</sub></a>, 222, 226, 246, 394
+object, class=\"icon\" data=\"yajirusi2.svg\", , 251, 258, 296, 297
+a, href=\"lved.dataid:00001380\", あい‐きょう 【愛敬】 <sub>‥キヤウ</sub>, 314, 316, 346, 402
+sub, , ‥キヤウ, 383, -1, 387, 400
 
 div, class=\"honbun\", <rn></rn><a name=\"000014800001\"></a><div style=\"margin-left:1em;\"> <a href=\"lved.dataid:00002390\"><sup>(→)</sup>間銭<sub class=\"rubi\">あいせん</sub></a>に同じ。</div>, 0, 4, 21, 208
 rn, , , 26, -1, 29, 30
@@ -1864,6 +2763,7 @@ a, name=\"000014800001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00002390\"><sup>(→)</sup>間銭<sub class=\"rubi\">あいせん</sub></a>に同じ。, 63, 67, 94, 205
 a, href=\"lved.dataid:00002390\", <sup>(→)</sup>間銭<sub class=\"rubi\">あいせん</sub>, 100, 102, 132, 193
 sup, , (→), 137, -1, 141, 147
+sub, class=\"rubi\", あいせん, 167, 171, 186, 199
 
 div, class=\"honbun\", <rn></rn><a name=\"000014850001\"></a><div style=\"margin-left:1em;\">詩歌を悲しげに口ずさむこと。</div>, 0, 4, 21, 140
 rn, , , 26, -1, 29, 30
@@ -1881,6 +2781,11 @@ a, name=\"000014950001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\",  <a href=\"lved.dataid:00018160\"><object class=\"icon\" data=\"yajirusi1.svg\"></object>アショーカおう</a>。, 63, 67, 94, 212
 a, href=\"lved.dataid:00018160\", <object class=\"icon\" data=\"yajirusi1.svg\"></object>アショーカおう, 100, 102, 132, 209
 object, class=\"icon\" data=\"yajirusi1.svg\", , 137, 144, 182, 183
+rn, , , 242, -1, 245, 246
+a, name=\"000014950001\", , 242, 244, 266, 267
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001500\">あいくおう‐ざん【阿育王山】</a>, 279, 283, 303, 438
+object, class=\"icon\" data=\"yajirusi2.svg\", , 308, 315, 353, 354
+a, href=\"lved.dataid:00001500\", あいくおう‐ざん【阿育王山】, 371, 373, 403, 446
 
 div, class=\"honbun\", <rn></rn><a name=\"000015000001\"></a><div style=\"margin-left:1em;\">中国浙江省寧波<sub class=\"rubi\">ニンポー</sub>の東、阿育王寺のある山。3世紀末、西晋の劉薩訶<sub class=\"rubi\">りゅうさつか</sub>がこの地で阿育<sub class=\"rubi\">アショーカ</sub>王の造立になる舎利塔を発見したと伝えられる。宋朝五山の一つ。育王山。</div><rn></rn><a name=\"000015000001\"></a><div class=\"oyko_link\"><object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001495\">あいく‐おう 【阿育王】 <sub>‥ワウ</sub></a></div>, 0, 4, 21, 648
 rn, , , 26, -1, 29, 30
@@ -1888,4 +2793,11 @@ a, name=\"000015000001\", , 26, 28, 50, 51
 div, style=\"margin-left:1em;\", 中国浙江省寧波<sub class=\"rubi\">ニンポー</sub>の東、阿育王寺のある山。3世紀末、西晋の劉薩訶<sub class=\"rubi\">りゅうさつか</sub>がこの地で阿育<sub class=\"rubi\">アショーカ</sub>王の造立になる舎利塔を発見したと伝えられる。宋朝五山の一つ。育王山。, 63, 67, 94, 429
 sub, class=\"rubi\", ニンポー, 120, 124, 139, 152
 sub, class=\"rubi\", りゅうさつか, 233, 237, 252, 271
+sub, class=\"rubi\", アショーカ, 306, 310, 325, 341
+rn, , , 467, -1, 470, 471
+a, name=\"000015000001\", , 467, 469, 491, 492
+div, class=\"oyko_link\", <object class=\"icon\" data=\"yajirusi2.svg\"></object><a href=\"lved.dataid:00001495\">あいく‐おう 【阿育王】 <sub>‥ワウ</sub></a>, 504, 508, 528, 676
+object, class=\"icon\" data=\"yajirusi2.svg\", , 533, 540, 578, 579
+a, href=\"lved.dataid:00001495\", あいく‐おう 【阿育王】 <sub>‥ワウ</sub>, 596, 598, 628, 684
+sub, , ‥ワウ, 668, -1, 672, 682
 
