@@ -4,7 +4,19 @@ using namespace std;
 
 int main()
 {
+	// Define user range vars
+	int startSeq = 0;
+	int endSeq = 0;
+	
+	// Get seqNo range from user
+	cout << "startSeq: ";
+	cin >> startSeq;
+	cout << "endSeq (0 for no cap): ";
+	cin >> endSeq;
+	cout << "\nExport position:\n";
+	
 	// Create and open files
+	// NOTE: should just take term bank and debug offline, but keep a .old copy and use a local diff program
 	ofstream termBank("term_bank_1.json");
 	ofstream debugOutput("debugOutput.txt");
 	
@@ -24,16 +36,18 @@ int main()
 		getline(file, line);
 		seqNo++;
 		
+		// Break once end of csv is reached, or when endSeq is reached
+		// WARNING: with no cap, you will exceed github file size limit...
+		if (line == "," || (endSeq > 0 && seqNo > endSeq))
+		break;
+	
+		// Continue if startSeq isn't reached
+		if (seqNo < startSeq)
+		continue;
+		
 		// Print progress
 		if (seqNo % 10000 == 0)
 		cout << seqNo/1000 << "k" << endl;
-		
-		// Break once end of csv is reached
-		// TEMP: or once seqNo limit is reached
-		// WARNING: with no cap, you will exceed github file size limit...
-		// NOTE: should just take term bank and debug offline, but keep a .old copy and use a local diff program
-		// NOTE: maybe ask for cap (or even a range) in console
-		if (line == "," /**/|| seqNo > 300/**/) break;
 		
 		// Detect if ALPH entry
 		bool alphEntry = (line.find("ALPH.svg") == -1) ? false : true;
@@ -374,7 +388,7 @@ int main()
 		
 		// Print entry to term bank
 		// NOTE: probably faster to concat everything and minimize file writes?
-		if (seqNo != 1) termBank << ",\n";
+		if (seqNo != 1 && seqNo != startSeq) termBank << ",\n";
 		termBank << "[\"" 
 			<< kanji << "\",\""
 			<< reading << "\",\"\",\""
