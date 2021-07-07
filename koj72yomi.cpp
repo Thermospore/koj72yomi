@@ -220,17 +220,15 @@ int main()
 		}
 		
 		// Extract honbun from html
-		// NOTE: find end of actual honbun div and print the stuff on the right side to check
-		//honbun = html.substr(html.find("</div>") + 6);
-		// TEMP: using midashi for testing
-		honbun = html;
+		// NOTE: print the stuff on the right side of honbun div to check
+		honbun = html.substr(html.find("</div>") + 6);
 		
 		// Handle tags in honbun from left to right until they are all gone
 		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
 		// NOTE: need handling for <br>
-		// TEMP: break after 6 loops, instead of infinitely
+		// TEMP: break after a certain number of loops, instead of infinitely
 		int loopNo = 0;
-		while(loopNo<6)
+		while(loopNo < 6)
 		{
 			loopNo++;
 			
