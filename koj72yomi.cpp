@@ -111,7 +111,6 @@ int main()
 			
 			// Remove ending numbers
 			if (title.find("①") != -1 ||
-				title.find("①") != -1 ||
 				title.find("②") != -1 ||
 				title.find("③") != -1 ||
 				title.find("④") != -1 ||
