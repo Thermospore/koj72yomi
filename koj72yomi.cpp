@@ -24,6 +24,10 @@ int main()
 		getline(file, line);
 		seqNo++;
 		
+		// Print progress
+		if (seqNo % 10000 == 0)
+		cout << seqNo/1000 << "k" << endl;
+		
 		// Break once end of csv is reached
 		// TEMP: or once seqNo limit is reached
 		// WARNING: with no cap, you will exceed github file size limit...
@@ -221,6 +225,16 @@ int main()
 		// Extract honbun from html
 		// NOTE: print the stuff on the right side of honbun div to check
 		honbun = html.substr(html.find("</div>") + 6);
+		
+		// Fix broken html in some ALPH entries
+		if (alphEntry == true)
+		{
+			// (Pos is for Position, but that's a funny coincidence lol)
+			int brokenPos = honbun.find("<div class=\\\"a_link");
+			if (brokenPos != -1)
+			honbun.insert(brokenPos, "</a>");
+			// Fun fact: my internet is down rn and I just hoped and prayed that insert was a real function
+		}
 		
 		// Handle tags in honbun from left to right until they are all gone
 		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
