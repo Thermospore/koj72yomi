@@ -338,7 +338,7 @@ int main()
 			bool fnDelete = false;
 			bool fnNeutralize = false;
 			
-			// Set tag function flags & perform operations
+			// Set tag function flag
 			// NOTE: check for all tagAttributes varieties etc
 			if (tagType == "rn")
 			{
@@ -347,38 +347,45 @@ int main()
 			}
 			else if (tagType == "br")
 			{
-				// Used for newlines in xref sections
+				// Used for newlines in xref sections, image sections, etc
+				// NOTE: move this to replacement function
 				honbun.replace(openTagStart, 4, "\\n");
 			}
 			else if (tagType == "div")
 			{
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
+					// Encapsulate the whole entry (except midashi)
 					// Fun Fact: the only entries with content outside the honbun
 					//           div are those broken a_link ALPH entries
 					// NOTE: do you even need this outer div at all? just delete?
+					// NOTE: maybe check how that works in those broken ALPH entries though
 					fnNeutralize = true;				
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
+					// Encapsulate senses etc in entry (this is the juicy stuff rh, mwah～)
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"media\\\"")
 				{
+					// Exclusively contains FIGc and FIGs class <img> tags
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"a_link\\\"")
 				{
+					// Exclusively contain the <a> href tags in those broken a_link ALPH entries
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
+					// Encapsulate those long xref lists that use yajirusi2.svg
 					fnNeutralize = true;
 				}
 			}
 			else if (tagType == "a")
 			{
-				if (tagAttributes.find("href") != -1)
+				if (tagAttributes.find("href=\\\"lved.dataid:") != -1)
 				{
 					// NOTE: these are xrefs; underline and make blue?
 					// NOTE: all hrefs have contents and all non-hrefs have no contents
@@ -387,7 +394,7 @@ int main()
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
-					// There's one of these before every gloss
+					// There's one of these before every sense etc
 					// Maybe they are internal links? Not useful to us, so delete
 					fnDelete = true;
 				}
