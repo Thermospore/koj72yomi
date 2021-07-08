@@ -352,20 +352,25 @@ int main()
 			}
 			else if (tagType == "div")
 			{
-				fnNeutralize = true;
-				
-				// TEMP: identifying different varieties
-				if (tagAttributes == "class=\\\"honbun\\\"" ||
-				tagAttributes == "style=\\\"margin-left:1em;\\\"" ||
-				tagAttributes == "class=\\\"media\\\"" ||
-				tagAttributes == "class=\\\"a_link\\\"" ||
-				tagAttributes == "class=\\\"oyko_link\\\"")				
+				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
-					
+					fnNeutralize = true;				
 				}
-				else
+				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
-					debugOutput<<tagAttributes<<endl;
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"media\\\"")
+				{
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"a_link\\\"")
+				{
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"oyko_link\\\"")
+				{
+					fnNeutralize = true;
 				}
 			}
 			else if (tagType == "a")
@@ -380,7 +385,7 @@ int main()
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
 					// There's one of these before every gloss
-					// Maybe they are internal links. Not useful to us, so delete
+					// Maybe they are internal links? Not useful to us, so delete
 					fnDelete = true;
 				}
 				else if (tagAttributes.find("name=\\\"y") != -1)
