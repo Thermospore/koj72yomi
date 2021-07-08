@@ -270,6 +270,7 @@ int main()
 			if (honbun.find("<br>") != -1 && honbun.find("<br>") == openTagStart)
 			{
 				tagType = "br";
+				openTagEnd = openTagStart + 3;
 			}
 			// Everything else goes here
 			else if (openTagStart != -1)
@@ -334,9 +335,10 @@ int main()
 			}
 			
 			// Define tag function flags
-			// NOTE: Add a fn to replace open/close tags with specified strings?
 			bool fnDelete = false;
 			bool fnNeutralize = false;
+			string fnOpenReplace = "";
+			string fnCloseReplace = "";
 			
 			// Set tag function flag
 			// NOTE: check for all tagAttributes varieties etc
@@ -348,8 +350,7 @@ int main()
 			else if (tagType == "br")
 			{
 				// Used for newlines in xref sections, image sections, etc
-				// NOTE: move this to replacement function
-				honbun.replace(openTagStart, 4, "\\n");
+				fnOpenReplace = "\\n";
 			}
 			else if (tagType == "div")
 			{
@@ -446,6 +447,14 @@ int main()
 				honbun.replace(closeTagStart, 1, "＜");
 				honbun.replace(openTagEnd, 1, "＞");
 				honbun.replace(openTagStart, 1, "＜");
+			}
+			// replaces opening and or closing tag with specified string
+			else if (fnOpenReplace != "" || fnCloseReplace != "")
+			{
+				if (fnCloseReplace != "")
+				honbun.replace(closeTagStart, tagType.length() + 3, fnCloseReplace);
+				if (fnOpenReplace != "")
+				honbun.replace(openTagStart, openTagEnd - openTagStart + 1, fnOpenReplace);
 			}
 			/*
 			// TEMP: print tag data to verify
