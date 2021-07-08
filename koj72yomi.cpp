@@ -407,7 +407,29 @@ int main()
 			}
 			else if (tagType == "q")
 			{
-				fnNeutralize = true;
+				if (tagAttributes == "class=\\\"siki\\\"")
+				{
+					// Gonna guess as in 式
+					// How to format for yomichan?? italics? simply print `s on outside?
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"kente\\\"")
+				{
+					// ...圏点?? btw typing that in ime brings some up
+					// internet too slow to research 
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"kenten2\\\"")
+				{
+					// Gonna guess as in 圏点
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "class=\\\"bousen1\\\"")
+				{
+					// Gonna guess as in 傍線/棒線
+					// might be on top, judging from goog image results for 余事象?
+					fnNeutralize = true;
+				}
 			}
 			else if (tagType == "sub")
 			{
