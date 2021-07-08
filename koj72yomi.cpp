@@ -342,13 +342,13 @@ int main()
 			// NOTE: check for all tagAttributes varieties etc
 			if (tagType == "rn")
 			{
-				// This tag can always be ignored
+				// Not sure what this does, but I don't think it's useful to us
 				fnDelete = true;
 			}
 			else if (tagType == "br")
 			{
-				// NOTE: probably will be putting \n in place of <br>
-				honbun.replace(openTagStart, 4, "＜br＞");
+				// Used for newlines in xref sections
+				honbun.replace(openTagStart, 4, "\\n");
 			}
 			else if (tagType == "div")
 			{
@@ -370,18 +370,23 @@ int main()
 			}
 			else if (tagType == "a")
 			{
-				// NOTE: all hrefs have contents and all non-hrefs have no contents
 				if (tagAttributes.find("href") != -1)
 				{
+					// NOTE: these are xrefs; underline and make blue?
+					// NOTE: all hrefs have contents and all non-hrefs have no contents
+					// NOTE: check how all the varieties look (check contents)
 					fnNeutralize = true;
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
-					fnNeutralize = true;
+					// There's one of these before every gloss
+					// Maybe they are internal links. Not useful to us, so delete
+					fnDelete = true;
 				}
 				else if (tagAttributes.find("name=\\\"y") != -1)
 				{
-					fnNeutralize = true;
+					// One of these before each example sentence
+					fnDelete = true;
 				}
 			}
 			else if (tagType == "q")
