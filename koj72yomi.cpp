@@ -370,7 +370,19 @@ int main()
 			}
 			else if (tagType == "a")
 			{
-				fnNeutralize = true;
+				// NOTE: all hrefs have contents and all non-hrefs have no contents
+				if (tagAttributes.find("href") != -1)
+				{
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("name=\\\"0") != -1)
+				{
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("name=\\\"y") != -1)
+				{
+					fnNeutralize = true;
+				}
 			}
 			else if (tagType == "q")
 			{
@@ -396,11 +408,6 @@ int main()
 			else if (tagType == "img")
 			{
 				fnNeutralize = true;
-			}
-			else
-			{
-				// Something has gone wrong...
-				debugOutput<<"ERROR: unknown tag type: "<< tagType << endl;
 			}
 			
 			// Perform tag functions
