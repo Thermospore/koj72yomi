@@ -354,6 +354,9 @@ int main()
 			{
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
+					// Fun Fact: the only entries with content outside the honbun
+					//           div are those broken a_link ALPH entries
+					// NOTE: do you even need this outer div at all? just delete?
 					fnNeutralize = true;				
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
@@ -470,6 +473,8 @@ int main()
 	// Close files
 	termBank.close();
 	debugOutput.close();
+	
+	cout << endl << "Done!!";
 	
 	return 0;
 }
