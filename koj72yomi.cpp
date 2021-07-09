@@ -351,40 +351,43 @@ int main()
 			else if (tagType == "br")
 			{
 				// Used for newlines in xref sections, image sections, etc
+				// NOTE: wait, yomi has actual <br>s dumbo
 				fnOpenReplace = "\\n";
 			}
 			else if (tagType == "div")
 			{
+				// NOTE: avoid leaving all those excessive empty ""s between divs etc?
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
 					// Encapsulate the whole entry (except midashi)
 					// Fun Fact: the only entries with content outside the honbun
 					//           div are those broken a_link ALPH entries
-					// NOTE: do you even need this outer div at all? just delete?
-					//       maybe check how that works in those broken ALPH entries though.
-					//       actually no, if you are gonna run midashi through here too, then
-					//       you should keep this div
-					fnNeutralize = true;				
+					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, \"";	
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
 					// Encapsulate senses etc in entry (this is the juicy stuff rh, mwah～)
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"media\\\"")
 				{
 					// Exclusively contains FIGc and FIGs class <img> tags
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, \"";	
 				}
 				else if (tagAttributes == "class=\\\"a_link\\\"")
 				{
 					// Exclusively contain the <a> href tags in those broken a_link ALPH entries
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, \"";	
 				}
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, \"";	
 				}
 			}
 			else if (tagType == "a")
@@ -486,7 +489,9 @@ int main()
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
 				{
 					// These all seem to be mathematical figures. tagContents empty
-					// NOTE: sure we can't get any of these?? only 38 of them
+					// They get plopped inline, not in a div
+					// Basically gaiji; look at 陰関数 in 6th ed to compare
+					// NOTE: sure we can't get these?? only 38 of them
 					fnNeutralize = true;
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
