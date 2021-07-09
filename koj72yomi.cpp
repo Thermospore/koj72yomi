@@ -433,15 +433,30 @@ int main()
 			}
 			else if (tagType == "sub")
 			{
-				fnNeutralize = true;
+				if (tagAttributes == "class=\\\"rubi\\\"")
+				{
+					// Furigana
+					// NOTE: how to detect what the furigana goes over??
+					//       maybe you just stop when you reach something non-kanji
+					fnNeutralize = true;
+				}
+				else if (tagAttributes == "")
+				{
+					// Plain ol subscript
+					// NOTE: have a single source for the sub style for this, midashi, and 下
+					fnNeutralize = true;
+				}
 			}
 			else if (tagType == "下")
 			{
-				// NOTE: p sure you can treat this just like <sub>
+				// Seems to be used exactly the same as the sub with no attributes
+				// Fun Fact: literally the only two entries that have this are LC50 and LD50
 				fnNeutralize = true;
 			}
 			else if (tagType == "sup")
 			{
+				// Superscript
+				// NOTE: have a single source for the sup style for this and midashi
 				fnNeutralize = true;
 			}
 			else if (tagType == "object")
