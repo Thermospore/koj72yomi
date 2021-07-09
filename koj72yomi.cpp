@@ -204,6 +204,7 @@ int main()
 		
 		// Extract midashi from html
 		// NOTE: also handle gaiji
+		// NOTE: actually, you should probably just let the html renderer handle the midashi...
 		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
 		
 		// Handle <sub> in midashi using yomichan structured content
@@ -360,7 +361,9 @@ int main()
 					// Fun Fact: the only entries with content outside the honbun
 					//           div are those broken a_link ALPH entries
 					// NOTE: do you even need this outer div at all? just delete?
-					// NOTE: maybe check how that works in those broken ALPH entries though
+					//       maybe check how that works in those broken ALPH entries though.
+					//       actually no, if you are gonna run midashi through here too, then
+					//       you should keep this div
 					fnNeutralize = true;				
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
@@ -461,11 +464,44 @@ int main()
 			}
 			else if (tagType == "object")
 			{
-				fnNeutralize = true;
+				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
+				{
+					// Map from external gaiji text file
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("class=\\\"icon\\\" data=\\\"") != -1)
+				{
+					// Map from external icons text file
+					fnNeutralize = true;
+				}
 			}
 			else if (tagType == "img")
 			{
-				fnNeutralize = true;
+				if (tagAttributes.find("class=\\\"FIGc\\\" src=\\\"") != -1)
+				{
+					// These all contain 撮影/提供 credits in tagContents
+					// NOTE: look through some entries to see what these are
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
+				{
+					// These all seem to be mathematical figures. tagContents empty
+					// NOTE: sure we can't get any of these?? only 38 of them
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
+				{
+					// Empty tagContents
+					// NOTE: look through some entries to see what these are
+					fnNeutralize = true;
+				}
+				else if (tagAttributes.find("class=\\\"icon\\\" src=\\\"") != -1)
+				{
+					// Entirely consists of bungo.png. Empty tagContents
+					// Why did they not put this <object> lol
+					// I guess it is actually a png, not an svg like the others
+					fnNeutralize = true;
+				}
 			}
 			
 			// Perform tag functions
