@@ -386,6 +386,7 @@ int main()
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
+					// NOTE: might need to get even more agressive; look at shit like うき‐よ【憂き世・浮世】
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
 				}
@@ -438,9 +439,9 @@ int main()
 				}
 				else if (tagAttributes == "class=\\\"bousen1\\\"")
 				{
-					// Gonna guess as in 傍線/棒線
-					// might be on top, judging from goog image results for 余事象?
-					fnNeutralize = true;
+					// Gonna guess as in 傍線/棒線. Goes on top, not bottom
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"overline\"}, \"content\": [\"";
+					fnCloseReplace =  "\"]}, \"";
 				}
 			}
 			else if (tagType == "sub")
