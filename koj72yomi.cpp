@@ -61,8 +61,6 @@ int main()
 		string reading = "";
 		string pos = "";
 		int score = 0;
-		string midashi = "";
-		string honbun = "";
 		
 		// Extract Title and Html
 		// NOTE: should print all the titles out to check them
@@ -202,57 +200,17 @@ int main()
 			html.replace(doubleQuotePos, 1, "\\");
 		}
 		
-		// Extract midashi from html
-		// NOTE: also handle gaiji
-		// NOTE: actually, you should probably just let the html renderer handle the midashi...
-		midashi = html.substr(61, html.find("</div>") - 61); // They all start at 61...
-		
-		// Handle <sub> in midashi using yomichan structured content
-		int subTagPos = 0;
-		while(1<2)
-		{
-			subTagPos = midashi.find("<sub>");
-			if (subTagPos == -1) break;
-			midashi.replace(subTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"");
-			midashi.replace(midashi.find("</sub>"), 6, "\"}, \"");
-		}
-		
-		// Handle <sup> in midashi
-		int supTagPos = 0;
-		while(1<2)
-		{
-			supTagPos = midashi.find("<sup>");
-			if (supTagPos == -1) break;
-			midashi.replace(supTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"");
-			midashi.replace(midashi.find("</sup>"), 6, "\"}, \"");
-		}
-		
-		// Handle <i> in midashi
-		int iTagPos = 0;
-		while(1<2)
-		{
-			iTagPos = midashi.find("<i>");
-			if (iTagPos == -1) break;
-			midashi.replace(iTagPos, 3, "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": \"");
-			midashi.replace(midashi.find("</i>"), 4, "\"}, \"");
-		}
-		
-		// Extract honbun from html
-		// NOTE: print the stuff on the right side of honbun div to check
-		honbun = html.substr(html.find("</div>") + 6);
-		
 		// Fix broken html in some ALPH entries
 		if (alphEntry == true)
 		{
 			// (Pos is for Position, but that's a funny coincidence lol)
-			int brokenPos = honbun.find("<div class=\\\"a_link");
+			int brokenPos = html.find("<div class=\\\"a_link");
 			if (brokenPos != -1)
-			honbun.insert(brokenPos, "</a>");
+			html.insert(brokenPos, "</a>");
 			// Fun fact: my internet is down rn and I just hoped and prayed that insert was a real function
 		}
 		
-		// Handle tags in honbun from left to right until they are all gone
-		// NOTE: don't forget the tag positions are no longer accurate after you replace stuff lol
+		// Handle tags in html from left to right until they are all gone
 		int loopNo = 0;
 		while(1<2)
 		{			
@@ -266,9 +224,9 @@ int main()
 			int closeTagStart = -1;
 			
 			// Obtain tag properties
-			openTagStart = honbun.find("<");
+			openTagStart = html.find("<");
 			// Special case for <br>
-			if (honbun.find("<br>") != -1 && honbun.find("<br>") == openTagStart)
+			if (html.find("<br>") != -1 && html.find("<br>") == openTagStart)
 			{
 				tagType = "br";
 				openTagEnd = openTagStart + 3;
@@ -276,18 +234,18 @@ int main()
 			// Everything else goes here
 			else if (openTagStart != -1)
 			{
-				openTagEnd = honbun.find(">");
-				attributeSpacePos = honbun.find(" ", openTagStart);
+				openTagEnd = html.find(">");
+				attributeSpacePos = html.find(" ", openTagStart);
 				if (attributeSpacePos != -1 && attributeSpacePos < openTagEnd)
 				{
 					// Has attribute(s)
-					tagType = honbun.substr(openTagStart + 1, attributeSpacePos - openTagStart - 1);
-					tagAttributes = honbun.substr(attributeSpacePos + 1, openTagEnd - attributeSpacePos - 1);
+					tagType = html.substr(openTagStart + 1, attributeSpacePos - openTagStart - 1);
+					tagAttributes = html.substr(attributeSpacePos + 1, openTagEnd - attributeSpacePos - 1);
 				}
 				else
 				{
 					// No attribute(s)
-					tagType = honbun.substr(openTagStart + 1, openTagEnd - openTagStart - 1);
+					tagType = html.substr(openTagStart + 1, openTagEnd - openTagStart - 1);
 					attributeSpacePos = -1;
 				}
 				
@@ -297,27 +255,27 @@ int main()
 				while(1<2)
 				{
 					// Find next <
-					searchPos = honbun.find("<", searchPos) + 1;
+					searchPos = html.find("<", searchPos) + 1;
 					
 					// If you reach a <br>, just ignore it
-					if (honbun[searchPos] == 'b' &&
-						honbun[searchPos + 1] == 'r' &&
-						honbun[searchPos + 2] == '>')
+					if (html[searchPos] == 'b' &&
+						html[searchPos + 1] == 'r' &&
+						html[searchPos + 2] == '>')
 					{
 						continue;
 					}
 					// If it isn't followed by /, you have gone in a layer
-					else if (honbun[searchPos] != '/')
+					else if (html[searchPos] != '/')
 					{
 						depth++;
 					}
 					// If it is, you have come out a layer
-					else if (honbun[searchPos] == '/')
+					else if (html[searchPos] == '/')
 					{
 						depth--;
 						
 						// Break once you reach closeTagStart (and verify it's the right tag, for safety)
-						if (depth == 0 && honbun.find(tagType, searchPos) - searchPos == 1)
+						if (depth == 0 && html.find(tagType, searchPos) - searchPos == 1)
 						{
 							closeTagStart = searchPos - 1;
 							break;
@@ -325,9 +283,7 @@ int main()
 					}
 				}
 				
-				tagContents = honbun.substr(openTagEnd + 1, closeTagStart - openTagEnd - 1);
-				
-				// NOTE: verify all the tag positions + lengths add up at the end (checksum)?
+				tagContents = html.substr(openTagEnd + 1, closeTagStart - openTagEnd - 1);
 			}
 			// Break loop once all tags handled
 			else
@@ -342,7 +298,6 @@ int main()
 			string fnCloseReplace = "";
 			
 			// Set tag function flag
-			// NOTE: check for all tagAttributes varieties etc
 			if (tagType == "rn")
 			{
 				// Not sure what this does, but I don't think it's useful to us
@@ -356,30 +311,35 @@ int main()
 			}
 			else if (tagType == "div")
 			{
-				// NOTE: avoid leaving all those excessive empty ""s between divs etc?
+				if (tagAttributes == "class=\\\"midashi\\\"")
+				{
+					// Encapsulates the headword
+					fnOpenReplace = "{\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}, ";	
+				}
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
-					// Encapsulate the whole entry (except midashi)
+					// Encapsulates the body of the entry
 					// Fun Fact: the only entries with content outside the honbun
 					//           div are those broken a_link ALPH entries
-					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}, \"";	
+					fnOpenReplace = "{\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}";	
+				}
+				else if (tagAttributes == "class=\\\"a_link\\\"")
+				{
+					// Exclusively contain the <a> href tags in those broken a_link ALPH entries
+					fnOpenReplace = ", {\"tag\": \"div\", \"content\": [\"";
+					fnCloseReplace = "\"]}";	
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
-					// Encapsulate senses etc in entry (this is the juicy stuff rh, mwah～)
+					// Encapsulates senses etc in entry (this is the juicy stuff rh, mwah～)
 					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"media\\\"")
 				{
 					// Exclusively contains FIGc and FIGs class <img> tags
-					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}, \"";	
-				}
-				else if (tagAttributes == "class=\\\"a_link\\\"")
-				{
-					// Exclusively contain the <a> href tags in those broken a_link ALPH entries
 					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
 				}
@@ -466,15 +426,22 @@ int main()
 			{
 				// Seems to be used exactly the same as the sub with no attributes
 				// Fun Fact: literally the only two entries that have this are LC50 and LD50
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
-					fnCloseReplace =  "\"}, \"";
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
+				fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "sup")
 			{
 				// Superscript
 				// NOTE: have a single source for the sup style for this and midashi
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"";
-					fnCloseReplace =  "\"}, \"";
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"";
+				fnCloseReplace =  "\"}, \"";
+			}
+			else if (tagType == "i")
+			{
+				// Italic
+				// Fun Fact: literally the only two entries that have this are NOx and SOx
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": \"";
+				fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "object")
 			{
@@ -525,50 +492,38 @@ int main()
 			if (fnDelete == true)
 			{
 				// Do the closing tag first, so the indexes for the other one don't get shifted...
-				honbun.erase(closeTagStart, tagType.length() + 3);
-				honbun.erase(openTagStart, openTagEnd - openTagStart + 1);
+				html.erase(closeTagStart, tagType.length() + 3);
+				html.erase(openTagStart, openTagEnd - openTagStart + 1);
 			}
 			// TEMP: replaces <> with ＜＞ (for tags that aren't handled yet)
 			else if (fnNeutralize == true)
 			{
 				// Again, go back to front to not shift indexes
-				honbun.replace(closeTagStart + tagType.length() + 2, 1, "＞");
-				honbun.replace(closeTagStart, 1, "＜");
-				honbun.replace(openTagEnd, 1, "＞");
-				honbun.replace(openTagStart, 1, "＜");
+				html.replace(closeTagStart + tagType.length() + 2, 1, "＞");
+				html.replace(closeTagStart, 1, "＜");
+				html.replace(openTagEnd, 1, "＞");
+				html.replace(openTagStart, 1, "＜");
 			}
 			// replaces opening and or closing tag with specified string
 			else if (fnOpenReplace != "" || fnCloseReplace != "")
 			{
 				if (fnCloseReplace != "")
-				honbun.replace(closeTagStart, tagType.length() + 3, fnCloseReplace);
+				html.replace(closeTagStart, tagType.length() + 3, fnCloseReplace);
 				if (fnOpenReplace != "")
-				honbun.replace(openTagStart, openTagEnd - openTagStart + 1, fnOpenReplace);
+				html.replace(openTagStart, openTagEnd - openTagStart + 1, fnOpenReplace);
 			}
-			/*
-			// TEMP: print tag data to verify
-			debugOutput << tagType << ", "
-			<< tagAttributes << ", "
-			<< tagContents << ", "
-			<< openTagStart << ", "
-			<< attributeSpacePos << ", "
-			<< openTagEnd << ", "
-			<< closeTagStart << endl;*/
 		}
-		/*
-		// TEMP: nl after each entry's tag data
-		debugOutput << endl;*/
-		
+				
 		// Print entry to term bank
 		// NOTE: probably faster to concat everything and minimize file writes?
+		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
 		if (seqNo != 1 && seqNo != startSeq) termBank << ",\n";
 		termBank << "[\"" 
 			<< kanji << "\",\""
 			<< reading << "\",\"\",\""
 			<< pos << "\","
-			<< score << ",[{\"type\": \"structured-content\", \"content\": [\""
-			<< midashi << "\\n"
-			<< honbun << "\"]}],"
+			<< score << ",[{\"type\": \"structured-content\", \"content\": ["
+			<< html << "]}],"
 			<< seqNo << ",\"\"]";
 	}
 	
