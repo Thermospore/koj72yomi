@@ -386,8 +386,7 @@ int main()
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
-					// NOTE: make font size for this sect smaller?
-					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
 				}
 			}
@@ -396,15 +395,15 @@ int main()
 				if (tagAttributes.find("href=\\\"lved.dataid:") != -1)
 				{
 					// Hyperlinks/xrefs
-					// NOTE: check how all the varieties look (check contents)
-					// NOTE: Underline looks garbo and can't do blue anyway, so I'm just gonna italicize
-					//       See: わそう‐コート 【和装コート】
-					//       Actually nope; the jp text doesn't get italicized...
-					//       Should be denoted somehow. There are instances where it could be confusing not to
-					//       Bold? encapsulate in something? add an asterisk?
-					//fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": [\"";
-					//fnCloseReplace =  "\"]}, \"";
-					fnNeutralize = true;
+					// NOTE: check how all the varieties look (check contents).
+					// TEMP: underline looks kinda garbo at times.
+					//       italics don't work. not a fan of the bold either.
+					//       add an asterisk or something?
+					//       going with half width square brackets for now, even though it
+					//       conflicts with this もうき‐の‐ふぼく 【盲亀の浮木】
+					//       Should be denoted somehow. There are instances where it could be confusing not to.
+					fnOpenReplace = "[";//"\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"[";
+					fnCloseReplace =  "]";//"]\"]}, \"";
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
