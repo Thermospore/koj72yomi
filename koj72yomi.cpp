@@ -313,9 +313,10 @@ int main()
 			{
 				if (tagAttributes == "class=\\\"midashi\\\"")
 				{
-					// Encapsulates the headword
-					fnOpenReplace = "{\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}, ";	
+					// Encapsulates the headword. Dropping the structured div
+					// (otherwise you can't have dict name and midashi on same line)
+					fnOpenReplace = "\"";
+					fnCloseReplace = "\", ";	
 				}
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
@@ -360,8 +361,11 @@ int main()
 					// TEMP: underline looks kinda garbo at times.
 					//       italics don't work. not a fan of the bold either.
 					//       add an asterisk or something?
+					//       half brackets plus underline like yomichan images?
 					//       going with half width square brackets for now, even though it
-					//       conflicts with this もうき‐の‐ふぼく 【盲亀の浮木】
+					//       conflicts with
+					//           もうき‐の‐ふぼく 【盲亀の浮木】
+					//           alph entries, ie INF
 					//       Should be denoted somehow. There are instances where it could be confusing not to.
 					fnOpenReplace = "[";//"\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"[";
 					fnCloseReplace =  "]";//"]\"]}, \"";
@@ -517,6 +521,7 @@ int main()
 		// Print entry to term bank
 		// NOTE: probably faster to concat everything and minimize file writes?
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
+		//       maybe just be lazy and loop to remove all ` "",` in html lol
 		if (seqNo != 1 && seqNo != startSeq) termBank << ",\n";
 		termBank << "[\"" 
 			<< kanji << "\",\""
