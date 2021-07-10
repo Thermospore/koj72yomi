@@ -213,7 +213,7 @@ int main()
 		{
 			subTagPos = midashi.find("<sub>");
 			if (subTagPos == -1) break;
-			midashi.replace(subTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"small\", \"verticalAlign\": \"sub\"}, \"content\": \"");
+			midashi.replace(subTagPos, 5, "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"");
 			midashi.replace(midashi.find("</sub>"), 6, "\"}, \"");
 		}
 		
@@ -386,6 +386,7 @@ int main()
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
+					// NOTE: make font size for this sect smaller?
 					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
 				}
@@ -394,9 +395,15 @@ int main()
 			{
 				if (tagAttributes.find("href=\\\"lved.dataid:") != -1)
 				{
-					// NOTE: these are xrefs; underline and make blue?
-					// NOTE: all hrefs have contents and all non-hrefs have no contents
+					// Hyperlinks/xrefs
 					// NOTE: check how all the varieties look (check contents)
+					// NOTE: Underline looks garbo and can't do blue anyway, so I'm just gonna italicize
+					//       See: わそう‐コート 【和装コート】
+					//       Actually nope; the jp text doesn't get italicized...
+					//       Should be denoted somehow. There are instances where it could be confusing not to
+					//       Bold? encapsulate in something? add an asterisk?
+					//fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": [\"";
+					//fnCloseReplace =  "\"]}, \"";
 					fnNeutralize = true;
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
@@ -442,28 +449,32 @@ int main()
 				if (tagAttributes == "class=\\\"rubi\\\"")
 				{
 					// Furigana
-					// NOTE: how to detect what the furigana goes over??
-					//       maybe you just stop when you reach something non-kanji
-					fnNeutralize = true;
+					// There is no way to detect what kanji the furigana should go over, so doing this instead
+					// See: わそう‐コート 【和装コート】
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"top\"}, \"content\": \"";
+					fnCloseReplace =  "\"}, \"";
 				}
 				else if (tagAttributes == "")
 				{
 					// Plain ol subscript
 					// NOTE: have a single source for the sub style for this, midashi, and 下
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
+					fnCloseReplace =  "\"}, \"";
 				}
 			}
 			else if (tagType == "下")
 			{
 				// Seems to be used exactly the same as the sub with no attributes
 				// Fun Fact: literally the only two entries that have this are LC50 and LD50
-				fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
+					fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "sup")
 			{
 				// Superscript
 				// NOTE: have a single source for the sup style for this and midashi
-				fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"";
+					fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "object")
 			{
