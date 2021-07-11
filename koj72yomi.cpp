@@ -349,6 +349,7 @@ int main()
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
 					// NOTE: might need to get even more agressive; look at shit like うき‐よ【憂き世・浮世】
+					//       Kill newlines? place in a hyperlinked table?
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
 				}
@@ -359,20 +360,19 @@ int main()
 				{
 					// Hyperlinks/xrefs
 					// NOTE: check how all the varieties look (check contents).
-					// TEMP: underline looks kinda garbo at times.
+					// TEMP: underline looks kinda garbo at times, but for the moment I'll match the epwing/html.
 					//       italics don't work. not a fan of the bold either.
 					//       add an asterisk or something?
 					//       half brackets plus underline like yomichan images?
-					//       going with half width square brackets for now, even though it
-					//       conflicts with
+					//       half width square brackets conflicts with
 					//           もうき‐の‐ふぼく 【盲亀の浮木】
 					//           alph entries, ie INF
-					//       Maybe half w curly brackets could get the job done?
+					//       Maybe half w curly brackets could get the job done? nah
 					//       Maybe underline (+ square brackets?) only where it is needed?
 					//       (ie if there is not an arrow or anything)
 					//       Should be denoted somehow. There are instances where it could be confusing not to.
-					fnOpenReplace = "{";//"\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"[";
-					fnCloseReplace =  "}";//"]\"]}, \"";
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"";
+					fnCloseReplace =  "\"]}, \"";
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
@@ -420,13 +420,14 @@ int main()
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
 					// See: わそう‐コート 【和装コート】
 					// NOTE: how does this look bold? super script?
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"top\"}, \"content\": \"";
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
 				}
 				else if (tagAttributes == "")
 				{
 					// Plain ol subscript
 					// NOTE: have a single source for the sub style for this, midashi, and 下
+					// NOTE: make this bottom instead of sub? so there isn't a contrast with rubi?
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
 				}
@@ -554,6 +555,12 @@ int main()
 		}
 		
 		// NOTE: Remove loan origin here? ie ドイツ
+		
+		// NOTE: Skip alphabetical kanji forms here (except from ALPH.svg entries)?
+		//       Could just delete from the queue if
+		//			whole thing matches isalpha()
+		//			has more than one or two or three chars?
+		//			don't forget the katakana needs to be moved to the kanji for yomichan tho
 		
 		// Loop to fold out a copy of the entry for each kanji alt
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
