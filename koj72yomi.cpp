@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <queue>
 using namespace std;
 
 int main()
@@ -366,9 +367,12 @@ int main()
 					//       conflicts with
 					//           もうき‐の‐ふぼく 【盲亀の浮木】
 					//           alph entries, ie INF
+					//       Maybe half w curly brackets could get the job done?
+					//       Maybe underline (+ square brackets?) only where it is needed?
+					//       (ie if there is not an arrow or anything)
 					//       Should be denoted somehow. There are instances where it could be confusing not to.
-					fnOpenReplace = "[";//"\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"[";
-					fnCloseReplace =  "]";//"]\"]}, \"";
+					fnOpenReplace = "{";//"\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"[";
+					fnCloseReplace =  "}";//"]\"]}, \"";
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
@@ -415,6 +419,7 @@ int main()
 					// Furigana
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
 					// See: わそう‐コート 【和装コート】
+					// NOTE: how does this look bold? super script?
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"top\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
 				}
@@ -517,19 +522,59 @@ int main()
 				html.replace(openTagStart, openTagEnd - openTagStart + 1, fnOpenReplace);
 			}
 		}
-				
-		// Print entry to term bank
-		// NOTE: probably faster to concat everything and minimize file writes?
+		
+		// Extract all kanji variants. Has to account for ; and ・
+		// ie ツァーリズム 【tsarizm ロシア・czarism; tsarism イギリス】
+		queue<string> kanjiQ;
+		while(1<2)
+		{
+			// Find separators
+			int jpSepPos = kanji.find("・");
+			int alphSepPos = kanji.find(";");
+			
+			// Extract frontmost variant and place it in the queue (until `kanji` is empty)
+			if (jpSepPos != -1 &&
+				(alphSepPos == -1 || jpSepPos < alphSepPos))
+			{
+				kanjiQ.push(kanji.substr(0, jpSepPos));
+				kanji.erase(0, jpSepPos + 3);
+			}
+			else if (alphSepPos != -1 &&
+				(jpSepPos == -1 || alphSepPos < jpSepPos))
+			{
+				kanjiQ.push(kanji.substr(0, alphSepPos));
+				kanji.erase(0, alphSepPos + 2);
+			}
+			else
+			{
+				kanjiQ.push(kanji);
+				kanji.erase(0);
+				break;
+			}
+		}
+		
+		// NOTE: Remove loan origin here? ie ドイツ
+		
+		// Loop to fold out a copy of the entry for each kanji alt
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
 		//       maybe just be lazy and loop to remove all ` "",` in html lol
-		if (seqNo != 1 && seqNo != startSeq) termBank << ",\n";
-		termBank << "[\"" 
-			<< kanji << "\",\""
-			<< reading << "\",\"\",\""
-			<< pos << "\","
-			<< score << ",[{\"type\": \"structured-content\", \"content\": ["
-			<< html << "]}],"
-			<< seqNo << ",\"\"]";
+		while(kanjiQ.empty() == false)
+		{
+			// Close previous line/entry (if applicable)
+			if (seqNo != 1 && seqNo != startSeq) termBank << ",\n";
+			
+			// Print entry to term bank
+			termBank << "[\"" 
+				<< kanjiQ.front() << "\",\""
+				<< reading << "\",\"\",\""
+				<< pos << "\","
+				<< score << ",[{\"type\": \"structured-content\", \"content\": ["
+				<< html << "]}],"
+				<< seqNo << ",\"\"]";
+			
+			// Remove kanji form we've already printed
+			kanjiQ.pop();
+		}
 	}
 	
 	// Write closing bracket
