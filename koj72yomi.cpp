@@ -336,6 +336,7 @@ int main()
 			bool fnNeutralize = false;
 			string fnOpenReplace = "";
 			string fnCloseReplace = "";
+			string fnAllReplace = "";
 			
 			// Set tag function flag
 			if (tagType == "rn")
@@ -508,7 +509,20 @@ int main()
 				else if (tagAttributes.find("class=\\\"icon\\\" data=\\\"") != -1)
 				{
 					// Map from external icons text file
-					fnNeutralize = true;
+					// Get filename from <object> attributes
+					string iconFilename = tagAttributes.substr(22, tagAttributes.length() - 24);			
+					
+					// Loop until you find it in the list
+					int i = 0;
+					while(1<2)
+					{
+						if (iconFind[i] == iconFilename)
+						{
+							fnAllReplace = iconReplace[i];
+							break;
+						}
+						i++;
+					}
 				}
 			}
 			else if (tagType == "img")
@@ -536,9 +550,19 @@ int main()
 				else if (tagAttributes.find("class=\\\"icon\\\" src=\\\"") != -1)
 				{
 					// Entirely consists of bungo.png. Empty tagContents
-					// Why did they not put this <object> lol
-					// I guess it is actually a png, not an svg like the others
-					fnNeutralize = true;
+					string iconFilename = "bungo.png";
+					
+					// Loop until you find it in the list
+					int i = 0;
+					while(1<2)
+					{
+						if (iconFind[i] == iconFilename)
+						{
+							fnAllReplace = iconReplace[i];
+							break;
+						}
+						i++;
+					}
 				}
 			}
 			
@@ -566,6 +590,16 @@ int main()
 				html.replace(closeTagStart, tagType.length() + 3, fnCloseReplace);
 				if (fnOpenReplace != "")
 				html.replace(openTagStart, openTagEnd - openTagStart + 1, fnOpenReplace);
+			}
+			// replaces whole tag with specified string
+			else if (fnAllReplace != "")
+			{
+				// Ensure there are no contents
+				if (tagContents == "")
+				{
+					html.erase(closeTagStart, tagType.length() + 3);
+					html.replace(openTagStart, openTagEnd - openTagStart + 1, fnAllReplace);
+				}
 			}
 		}
 		
