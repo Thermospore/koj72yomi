@@ -10,7 +10,7 @@ B731.svg	？
 B074.svg	𧓈
 5676.svg	噶
 A438.svg	𣑥
-F07A.svg	菟	
+F07A.svg	菟
 B463.svg	驓
 A157.svg	‘
 E16E.svg	梶
@@ -42,7 +42,7 @@ B565.svg	Ｌ
 B55B.svg	Ｄ
 A952.svg	𨫤
 B135.svg	蛿
-E6C1.svg	煕	
+E6C1.svg	煕
 B44B.svg	𨷂
 B24C.svg	𨳯
 B064.svg	䩠
@@ -55,7 +55,7 @@ B923.svg	(ii)
 B561.svg	Ａ
 B562.svg	Ｂ
 A337.svg	レ
-B339.svg	gaiji/B339.png	
+B339.svg	gaiji/B339.png
 B338.svg	gaiji/B338.png
 E21C.svg	馭
 AC44.svg	▬
@@ -81,7 +81,7 @@ AF51.svg	运
 E213.svg	革
 AC2C.svg	𧏛
 B221.svg	𣑊
-E1E7.svg	null	
+E1E7.svg	null
 DD53.svg	牙
 AC32.svg	gaiji/AC32.png
 B44A.svg	𨗈
@@ -110,7 +110,7 @@ B449.svg	狦
 E1F5.svg	躬
 E534.svg	⛤
 AD47.svg	gaiji/AD47.png
-B345.svg	髡		
+B345.svg	髡
 DD54.svg	エ゛
 AE59.svg	gaiji/AE59.png
 B477.svg	殑
@@ -212,7 +212,7 @@ E431.svg	null
 AF4F.svg	gaiji/AF4F.png
 A824.svg	䃾
 B33E.svg	gaiji/B33E.png
-AF3C.svg	㔾	
+AF3C.svg	㔾
 AF26.svg	gaiji/AF26.png
 B34A.svg	gaiji/B34A.png
 B34B.svg	gaiji/B34B.png
@@ -248,7 +248,7 @@ B54F.svg	⑹
 B550.svg	⑺
 B551.svg	⑻
 B552.svg	⑼
-B553.svg　⑽
+B553.svg	⑽
 AF43.svg	𫐯
 B13F.svg	𦞜
 B33F.svg	gaiji/B33F.png
