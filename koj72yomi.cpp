@@ -1,25 +1,64 @@
 #include <iostream>
 #include <fstream>
 #include <queue>
+#include <vector>
 using namespace std;
 
 int main()
 {
-	// Define user range vars
+	// Get seqNo range from user
 	int startSeq = 0;
 	int endSeq = 0;
-	
-	// Get seqNo range from user
 	cout << "startSeq: ";
 	cin >> startSeq;
 	cout << "endSeq (0 for no cap): ";
 	cin >> endSeq;
 	cout << "\nExport position:\n";
 	
-	// Create and open files
+	// Create and open output files
 	// NOTE: should just take term bank and debug offline, but keep a .old copy and use a local diff program
 	ofstream termBank("term_bank_1.json");
 	ofstream debugOutput("debugOutput.txt");
+	
+	// Read in icon map
+	vector<string> iconFind;
+	vector<string> iconReplace;
+	ifstream iconMap("map_icon.txt");
+	string line;
+	while (getline(iconMap, line))
+	{
+		// Skip comment lines
+		if (line[0] == '#')
+			continue;
+		
+		// Find tab separator
+		int tabPos = line.find("\t");
+		
+		// Store contents
+		iconFind.push_back(line.substr(0,tabPos));
+		iconReplace.push_back(line.substr(tabPos + 1));
+	}
+	iconMap.close();
+	
+	// Read in gaiji map
+	vector<string> gaijiFind;
+	vector<string> gaijiReplace;
+	ifstream gaijiMap("map_gaiji.txt");
+	line = "";
+	while (getline(gaijiMap, line))
+	{
+		// Skip comment lines
+		if (line[0] == '#')
+			continue;
+		
+		// Find tab separator
+		int tabPos = line.find("\t");
+		
+		// Store contents
+		gaijiFind.push_back(line.substr(0,tabPos));
+		gaijiReplace.push_back(line.substr(tabPos + 1));
+	}
+	gaijiMap.close();
 	
 	// Write opening bracket
 	termBank << "[";
@@ -28,13 +67,13 @@ int main()
 	int seqNo = 0;
 	
 	// Read dict line by line
-	ifstream file("KOUJIEN7.csv");
-	string line;
-	getline(file, line); // skip initial "Title,Html" line
+	ifstream koj("KOUJIEN7.csv");
+	line = "";
+	getline(koj, line); // skip initial "Title,Html" line
 	while (1<2)
 	{
 		// Get next line and bump seqNo
-		getline(file, line);
+		getline(koj, line);
 		seqNo++;
 		
 		// Break once end of csv is reached, or when endSeq is reached
@@ -316,6 +355,7 @@ int main()
 				{
 					// Encapsulates the headword. Dropping the structured div
 					// (otherwise you can't have dict name and midashi on same line)
+					// NOTE: underline / bold the midashi?
 					fnOpenReplace = "\"";
 					fnCloseReplace = "\", ";	
 				}
@@ -361,6 +401,7 @@ int main()
 					// Hyperlinks/xrefs
 					// NOTE: check how all the varieties look (check contents).
 					// TEMP: underline looks kinda garbo at times, but for the moment I'll match the epwing/html.
+					//    ***   force underline off for sub/sup/etc?   ***
 					//       italics don't work. not a fan of the bold either.
 					//       add an asterisk or something?
 					//       half brackets plus underline like yomichan images?
@@ -370,7 +411,7 @@ int main()
 					//       Maybe half w curly brackets could get the job done? nah
 					//       Maybe underline (+ square brackets?) only where it is needed?
 					//       (ie if there is not an arrow or anything)
-					//       Should be denoted somehow. There are instances where it could be confusing not to.
+					//       Should be denoted somehow. There are instances where it could be confusing not to
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"";
 					fnCloseReplace =  "\"]}, \"";
 				}
@@ -392,17 +433,21 @@ int main()
 				{
 					// Gonna guess as in 式
 					// How to format for yomichan?? italics? simply print `s on outside?
+					// 6th ed in ebwin just bolds / different font? 組合せ, 差集合
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"kente\\\"")
 				{
 					// ...圏点?? btw typing that in ime brings some up
 					// internet too slow to research 
+					// 6th edition in ebwin just bolds for this: 沓冠; 序詞冠
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"kenten2\\\"")
 				{
 					// Gonna guess as in 圏点
+					// This only exists in entry for 沓冠
+					// 6th ed in ebwin doesn't show any sign of it
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"bousen1\\\"")
@@ -590,6 +635,7 @@ int main()
 	// Close files
 	termBank.close();
 	debugOutput.close();
+	koj.close();
 	
 	cout << endl << "Done!!";
 	
