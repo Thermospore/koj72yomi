@@ -429,11 +429,24 @@ int main()
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
-					// NOTE: might need to get even more agressive
-					//       look at shit like まくら 【枕】
-					//       Kill newlines? place in a hyperlinked table?
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";
+					
+					// Strip <br> tags (because look at shit like まくら 【枕】)
+					// ...while carefully adjusting closeTagStart position lol
+					while(1<2)
+					{
+						int brPos = html.find("<br>", openTagEnd);
+						if (brPos != -1 && brPos < closeTagStart)
+						{
+							html.replace(brPos, 4, " ");
+							closeTagStart -= 3;
+						}
+						else
+						{
+							break;
+						}
+					}
 				}
 			}
 			else if (tagType == "a")
