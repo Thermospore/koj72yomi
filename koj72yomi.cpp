@@ -377,6 +377,7 @@ int main()
 			else if (tagType == "br")
 			{
 				// Used for newlines in xref sections, image sections, etc
+				// NOTE: what <br>s exist outside of oyko_link div?
 				// NOTE: wait, yomi has actual <br>s dumbo
 				fnOpenReplace = "\\n";
 			}
@@ -514,10 +515,8 @@ int main()
 				}
 				else if (tagAttributes == "")
 				{
-					// Plain ol subscript
-					// NOTE: have a single source for the sub style for this, midashi, and 下
-					// NOTE: make this bottom instead of sub? so there isn't a contrast with rubi?
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
+					// Plain ol subscript. Technically making this `bottom`, not sub (to match rubi)
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
 				}
 			}
@@ -525,7 +524,7 @@ int main()
 			{
 				// Seems to be used exactly the same as the sub with no attributes
 				// Fun Fact: literally the only two entries that have this are LC50 and LD50
-				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"sub\"}, \"content\": \"";
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 				fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "sup")
