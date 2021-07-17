@@ -89,9 +89,6 @@ int main()
 		if (seqNo % 10000 == 0)
 		cout << seqNo/1000 << "k" << endl;
 		
-		// Detect if ALPH entry
-		bool alphEntry = (line.find("ALPH.svg") == -1) ? false : true;
-		
 		// Init dict csv components
 		string title = "";
 		string html = "";
@@ -107,6 +104,12 @@ int main()
 		int separatorPos = line.find(",\"<rn></rn><a name=\"\"");
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
+		
+		// Detect if phrase
+		bool phraseEntry = (title.find("○") == -1) ? false : true;
+		
+		// Detect if ALPH entry
+		bool alphEntry = (title.find("ALPH.svg") == -1) ? false : true;
 		
 		// Handle titles in quotation marks
 		if (title[0] == '\"')
@@ -131,7 +134,6 @@ int main()
 			}
 			
 			// Handle gaiji objects (can be multiple per line)
-			// NOTE: replace 〻 with 々 in title?
 			while(1<2)
 			{
 				// Break if all gaiji handled
@@ -171,8 +173,6 @@ int main()
 		if (randoSpacePos != -1)
 		title.erase(randoSpacePos, 1);
 		
-		// NOTE: when to handle ○s?
-		
 		// Remove inflection point thingies ・ in title reading ie `あざ・る`
 		int inflecPos = title.find("・");
 		if (inflecPos != -1)
@@ -184,6 +184,10 @@ int main()
 				!(bracPos != -1 && bracPos < inflecPos))
 			title.erase(inflecPos, 3);
 		}
+		
+		// Remove ○ from phrase title
+		if (phraseEntry == true)
+		title.erase(0,3);
 		
 		// Clean up ALPH title
 		if (alphEntry == true)
@@ -384,7 +388,16 @@ int main()
 					// (otherwise you can't have dict name and midashi on same line)
 					// NOTE: underline / bold the midashi?
 					fnOpenReplace = "\"";
-					fnCloseReplace = "\", ";	
+					fnCloseReplace = "\", ";
+					
+					// Add readings for phrase entries
+					if (phraseEntry == true)
+					{
+						// Skip phrases that are kana only
+						int readingPos = tagContents.find("<sub>");
+						if (readingPos != -1)
+						reading = tagContents.substr(readingPos + 5, tagContents.length() - readingPos - 11);
+					}
 				}
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
@@ -392,13 +405,13 @@ int main()
 					// Fun Fact: the only entries with content outside the honbun
 					//           div are those broken a_link ALPH entries
 					fnOpenReplace = "{\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}";	
+					fnCloseReplace = "\"]}";
 				}
 				else if (tagAttributes == "class=\\\"a_link\\\"")
 				{
 					// Exclusively contain the <a> href tags in those broken a_link ALPH entries
 					fnOpenReplace = ", {\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}";	
+					fnCloseReplace = "\"]}";
 				}
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
@@ -410,7 +423,7 @@ int main()
 				{
 					// Exclusively contains FIGc and FIGs class <img> tags
 					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
-					fnCloseReplace = "\"]}, \"";	
+					fnCloseReplace = "\"]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
@@ -419,7 +432,7 @@ int main()
 					//       look at shit like まくら 【枕】
 					//       Kill newlines? place in a hyperlinked table?
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
-					fnCloseReplace = "\"]}, \"";	
+					fnCloseReplace = "\"]}, \"";
 				}
 			}
 			else if (tagType == "a")
@@ -539,6 +552,11 @@ int main()
 				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
 				{
 					// Map from external gaiji text file
+					// NOTE: change (i) and (ii) to {i} and {ii} so they stand apart a bit more?
+					// NOTE: make E565.svg	＊ <sup>? can just add html right into the gaiji file like with <strike>
+					// NOTE: change those cap leters to these?
+					//       https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+					// NOTE: is A16A really supposed to be F? why did they gaiji it?
 					// NOTE: match these to icons file? A428.svg	🈔
 					// NOTE: what's up with E1E7; is it supposed to be null?
 					// NOTE: AD56.svg	𬮆 doesn't show up for me, might not have good font support?
