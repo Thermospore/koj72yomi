@@ -440,13 +440,9 @@ int main()
 				if (tagAttributes.find("href=\\\"lved.dataid:") != -1)
 				{
 					// Hyperlinks/xrefs
-					// NOTE: check how all the varieties look (check contents).
 					// TEMP: underline looks kinda garbo at times, but for the moment I'll match the epwing/html.
-					//       force underline off for sub/sup/etc?
-					//    ***look up instances that have no arrow (inside or out) to see***
-					//       italics don't work. not a fan of the bold either.
-					//       add an asterisk or something?
-					//       half brackets plus underline like yomichan images?
+					//       italics don't work
+					//       not a fan of the bold either; can't see separation between the refs
 					//       half width square brackets conflicts with
 					//           もうき‐の‐ふぼく 【盲亀の浮木】
 					//           alph entries, ie INF
@@ -456,6 +452,44 @@ int main()
 					//       Should be denoted somehow. There are instances where it could be confusing not to
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"underline\"}, \"content\": [\"";
 					fnCloseReplace =  "\"]}, \"";
+					
+					// maybe do underline + bold if there isn't an indicator ↓
+					/*
+					// This covers most cases
+					if (
+						// indicator already present
+						tagContents.find("→") != 0 &&
+						tagContents.find("<sup>(→)</sup>") != 0 &&
+						tagContents.find("<object class=\\\"icon\\\" data=\\\"yajirusi1.svg\\\"></object>") != 0 &&
+						html.find("➡", openTagStart - 3) != openTagStart - 3 &&
+						html.find("参照", closeTagStart + 4) != closeTagStart + 4 &&
+						// indicator not already present
+						alphEntry == false &&
+						tagContents.find("①") == -1 &&
+						tagContents.find("②") == -1 &&
+						tagContents.find("③") == -1 &&
+						tagContents.find("④") == -1 &&
+						tagContents.find("⑤") == -1 &&
+						tagContents.find("⑥") == -1 &&
+						tagContents.find("⑦") == -1 &&
+						tagContents.find("⑧") == -1 &&
+						tagContents.find("⑨") == -1 &&
+						tagContents.find("⑩") == -1 &&
+						tagContents.find("⑪") == -1 &&
+						tagContents.find("⑫") == -1 &&
+						tagContents.find("A42") != 31 &&
+						tagContents.find("❶") == -1 &&
+						tagContents.find("❷") == -1 &&
+						tagContents.find("❸") == -1 &&
+						tagContents.find("❹") == -1 &&
+						tagContents.find("❺") == -1 &&
+						tagContents.find("❼") == -1 &&
+						tagContents.find("㋐") == -1 &&
+						tagContents.find("㋑") == -1 &&
+						tagContents.find("㋒") == -1 &&
+						tagContents.find("㋓") == -1 &&
+						tagContents.find("㋔") == -1)
+					debugOutput<<tagContents<<"〚"<<kanji<<"〛"<<html<<endl;*/
 				}
 				else if (tagAttributes.find("name=\\\"0") != -1)
 				{
