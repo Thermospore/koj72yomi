@@ -130,13 +130,39 @@ int main()
 				title.erase(rubiPos, title.find("</sub>") - rubiPos + 6);
 			}
 			
-			// Replace gaiji objects (can be multiple per line)
-			// NOTE: still need to insert mapped gaiji from table
+			// Handle gaiji objects (can be multiple per line)
+			// NOTE: replace 〻 with 々 in title?
 			while(1<2)
 			{
+				// Break if all gaiji handled
 				int gaijiPos = title.find("<object class=\\\"gaiji\\\"");
 				if (gaijiPos == -1) break;
-				title.replace(gaijiPos, 51, "�");
+				
+				// Get filename from <object> attributes
+				string gaijiFilename = title.substr(gaijiPos + 31, 8);
+					
+				// Loop until you find it in the list
+				int i = 0;
+				while(1<2)
+				{
+					if (gaijiFind[i] == gaijiFilename)
+					{
+						// SVG mapping. Can't do this for yomichan headword, so replace with �
+						if (gaijiReplace[i].find(".svg") != -1)
+						{
+							title.replace(gaijiPos, 51, "�");
+						}
+						// Unicode mapping
+						else
+						{
+							title.replace(gaijiPos, 51, gaijiReplace[i]);
+						}
+						
+						break;
+					}
+					
+					i++;
+				}
 			}
 		}
 		
@@ -389,7 +415,8 @@ int main()
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
 					// Encapsulate those long xref lists that use yajirusi2.svg
-					// NOTE: might need to get even more agressive; look at shit like うき‐よ【憂き世・浮世】
+					// NOTE: might need to get even more agressive
+					//       look at shit like まくら 【枕】
 					//       Kill newlines? place in a hyperlinked table?
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";	
@@ -402,7 +429,8 @@ int main()
 					// Hyperlinks/xrefs
 					// NOTE: check how all the varieties look (check contents).
 					// TEMP: underline looks kinda garbo at times, but for the moment I'll match the epwing/html.
-					//    ***   force underline off for sub/sup/etc?   ***
+					//       force underline off for sub/sup/etc?
+					//    ***look up instances that have no arrow (inside or out) to see***
 					//       italics don't work. not a fan of the bold either.
 					//       add an asterisk or something?
 					//       half brackets plus underline like yomichan images?
@@ -464,7 +492,8 @@ int main()
 				{
 					// Furigana
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
-					// See: わそう‐コート 【和装コート】
+					//     See: わそう‐コート 【和装コート】
+					// Example where having rubi formatting is important アートマン 【ātman 梵】
 					// NOTE: how does this look bold? super script?
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
@@ -499,18 +528,62 @@ int main()
 				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": \"";
 				fnCloseReplace =  "\"}, \"";
 			}
+			else if (tagType == "strike")
+			{
+				// Tag I added myself for a single pair of gaiji lol (E535.svg and E536.svg)
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"line-through\"}, \"content\": [\"";
+				fnCloseReplace =  "\"]}, \"";
+			}
 			else if (tagType == "object")
 			{
 				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
 				{
 					// Map from external gaiji text file
-					fnNeutralize = true;
+					// NOTE: match these to icons file? A428.svg	🈔
+					// NOTE: what's up with E1E7; is it supposed to be null?
+					// NOTE: AD56.svg	𬮆 doesn't show up for me, might not have good font support?
+					//       same with B258.svg	𭸻
+					//       same with AE46.svg	𬝟
+					//       same with AE6E.svg	𫫠
+					// NOTE: not sure how I feel about B925.svg	（縦線二本）＄
+					// Get filename from <object> attributes
+					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);
+					
+					// Loop until you find it in the list
+					int i = 0;
+					while(1<2)
+					{
+						if (gaijiFind[i] == gaijiFilename)
+						{
+							// Ignore null
+							if (gaijiReplace[i] == "null")
+							{
+								fnDelete = true;
+							}
+							// SVG mapping. Insert structured content
+							// NOTE: try how different imageRendering settings look, since these are vector graphics not images
+							else if (gaijiReplace[i].find(".svg") != -1)
+							{
+								fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"" + gaijiReplace[i];
+								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"imageRendering\": \"crisp-edges\", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\"}, \"";
+							}
+							// Unicode mapping
+							else
+							{
+								fnAllReplace = gaijiReplace[i];
+							}
+							
+							break;
+						}
+						
+						i++;
+					}
 				}
 				else if (tagAttributes.find("class=\\\"icon\\\" data=\\\"") != -1)
 				{
 					// Map from external icons text file
 					// Get filename from <object> attributes
-					string iconFilename = tagAttributes.substr(22, tagAttributes.length() - 24);			
+					string iconFilename = tagAttributes.substr(22, tagAttributes.length() - 24);
 					
 					// Loop until you find it in the list
 					int i = 0;
