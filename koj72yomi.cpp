@@ -791,8 +791,8 @@ int main()
 			//		https://github.com/FooSoft/yomichan-import/blob/35175a5a1ef618847f940767fb94b8ce82c728d0/edict.go#L36
 			// TEMP: Some examples of these:
 			//		願ず (がんず)
-			//		観ずる (かんずる)
-			//		燗す (かんす)
+			//		観ずる (かんずる) // maybe assign v1 to this like epi koj6 does (and some of the others)?
+			//		燗す (かんす) // can you even get deinflection to work for these? isn't it just old 燗する or sometihng?
 			//		刊する (かんする)
 			else if (posRaw == "サ変" ||
 				posRaw == "自サ変" ||
@@ -867,7 +867,16 @@ int main()
 			}
 		}
 		
-		// NOTE: print PoS flags to `pos` string here
+		// Print PoS flags to `pos` string
+		if (v1Flag == true) pos += "v1 ";
+		if (v5Flag == true) pos += "v5 ";
+		if (vsFlag == true) pos += "vs ";
+		if (vkFlag == true) pos += "vk ";
+		if (adjiFlag == true) pos += "adj-i ";
+		
+		// Erase the trailing space at the end of pos string
+		if (pos.length() > 0)
+			pos.erase(pos.length() - 1, 1);
 		
 		// Extract all kanji variants. Has to account for ; and ・
 		// ie ツァーリズム 【tsarizm ロシア・czarism; tsarism イギリス】
