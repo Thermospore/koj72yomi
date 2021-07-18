@@ -432,7 +432,7 @@ int main()
 					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";
 					
-					// Strip <br> tags (because look at shit like まくら 【枕】)
+					// Strip <br> tags (because look at shit like まくら 【枕】or even worse にほん 【日本】)
 					// ...while carefully adjusting closeTagStart position lol
 					while(1<2)
 					{
@@ -520,7 +520,7 @@ int main()
 				{
 					// Furigana
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
-					//     See: わそう‐コート 【和装コート】
+					//		See: わそう‐コート 【和装コート】
 					// Example where having rubi formatting is important アートマン 【ātman 梵】
 					// NOTE: how does this look bold? super script?
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
@@ -568,14 +568,14 @@ int main()
 					// NOTE: change (i) and (ii) to {i} and {ii} so they stand apart a bit more?
 					// NOTE: make E565.svg	＊ <sup>? can just add html right into the gaiji file like with <strike>
 					// NOTE: change those cap leters to these?
-					//       https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+					//		https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
 					// NOTE: is A16A really supposed to be F? why did they gaiji it?
 					// NOTE: match these to icons file? A428.svg	🈔
 					// NOTE: what's up with E1E7; is it supposed to be null?
 					// NOTE: AD56.svg	𬮆 doesn't show up for me, might not have good font support?
-					//       same with B258.svg	𭸻
-					//       same with AE46.svg	𬝟
-					//       same with AE6E.svg	𫫠
+					//		same with B258.svg	𭸻
+					//		same with AE46.svg	𬝟
+					//		same with AE6E.svg	𫫠
 					// NOTE: not sure how I feel about B925.svg	（縦線二本）＄
 					// Get filename from <object> attributes
 					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);
@@ -707,6 +707,168 @@ int main()
 			}
 		}
 		
+		// Define PoS flags
+		bool v1Flag = false;
+		bool v5Flag = false;
+		bool vsFlag = false;
+		bool vkFlag = false;
+		bool adjiFlag = false;
+		
+		// Extract PoS info
+		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable endings?
+		//		since you are unlikely to mismatch?
+		//		Koj doesn't include PoS info for those
+		// Referencing these:
+		//		file:///C:/Program%20Files%20(x86)/LogoVista/LVEDBRSR/DIC/KOJIEN7/HANREI/contents/ryakugo.html
+		//		https://github.com/FooSoft/yomichan-import/blob/master/koujien.go
+		//		https://github.com/FooSoft/yomichan-import/blob/master/edict.go
+		// Fun Fact: あ・く 【明く・開く・空く】 and おのれ 【己】 have the most〘PoS〙tags at 4
+		int curPos = 0;
+		while(1<2)
+		{
+			// Find start of PoS tag (or break if we've reached the end)
+			int opBracPos = html.find("〘", curPos);
+			if (opBracPos == -1)
+				break;
+			
+			// Find end of PoS tag and update position
+			int closBracPos = html.find("〙", curPos);
+			curPos = closBracPos + 3;
+			
+			// Extract contents
+			string posRaw = html.substr(opBracPos + 3, closBracPos - opBracPos - 3);
+			
+			// Set PoS flags based on contents
+			// v1: ichidan verb
+			if (posRaw == "自上一" ||
+				posRaw == "自他上一" ||
+				posRaw == "他上一" ||
+				
+				posRaw == "自下一" ||
+				posRaw == "自他下一" ||
+				posRaw == "他下一")
+			{
+				v1Flag = true;
+			}
+			// v5: godan verb
+			else if (posRaw == "五" ||
+				posRaw == "自五" ||
+				posRaw == "自他五" ||
+				posRaw == "他五" ||
+				
+				// NOTE: I think these can go here?
+				posRaw == "四" ||
+				posRaw == "自四" ||
+				posRaw == "自他四" ||
+				posRaw == "他四" ||
+				
+				// NOTE: I think these can go here?
+				posRaw == "上二" ||
+				posRaw == "自上二" ||
+				posRaw == "自他上二" ||
+				posRaw == "他上二" ||
+				
+				// NOTE: I think these can go here?
+				posRaw == "下二" ||
+				posRaw == "自下二" ||
+				posRaw == "自他下二" ||
+				posRaw == "他下二" ||
+				
+				// NOTE: Can maybe just throw these here too?
+				// 		Full list:
+				//		往ぬ・去ぬ (いぬ)
+				//		酔ひ死ぬ (えいしぬ)
+				//		思ひ死ぬ (おもいしぬ)
+				//		恋ひ死ぬ (こいしぬ)
+				//		乾死ぬ・干死ぬ (ひしぬ)
+				posRaw == "自ナ変")
+			{
+				v5Flag = true;
+			}
+			// vs: suru verb
+			// NOTE: looks like yomi import limits to `(strings.HasSuffix(term.Expression, "する") || strings.HasSuffix(term.Expression, "為る")`?
+			// NOTE: wait does yomichan have a vz tag too?
+			//		https://github.com/FooSoft/yomichan-import/blob/35175a5a1ef618847f940767fb94b8ce82c728d0/edict.go#L36
+			// TEMP: Some examples of these:
+			//		願ず (がんず)
+			//		観ずる (かんずる)
+			//		燗す (かんす)
+			//		刊する (かんする)
+			else if (posRaw == "サ変" ||
+				posRaw == "自サ変" ||
+				posRaw == "自他サ変" ||
+				posRaw == "他サ変")
+			{
+				vsFlag = true;
+			}
+			// vk: kuru verb
+			// NOTE: looks like yomi import koj6 limits to only `term.Expression == "来る"`?
+			//		Full list:
+			//		在り来 (ありく)
+			//		行って来る (いってくる)
+			//		出で来 (いでく)
+			//		来 (く)
+			//		来る (くる)
+			//		漕ぎ来る (こぎくる)
+			//		立ち来 (たちく)
+			//		出来 (でく)
+			//		尋め来 (とめく)
+			//		参来 (まいく)
+			//		参出来 (まいでく)
+			//		参り来 (まいりく)
+			//		詣で来 (までく)
+			//		惑ひ来 (まどいく)
+			//		参来 (もうく)
+			//		詣で来 (もうでく)
+			//		遣って来る (やってくる)
+			//		行き来・往き来 (ゆきく)
+			//		寄せ来る (よせくる)
+			//		寄り来る (よりくる)
+			else if (posRaw == "自カ変")
+			{
+				vkFlag = true;
+			}
+			// adj-i: i-adjective
+			else if (posRaw == "形")
+			{
+				adjiFlag = true;
+			}
+			// Leave PoS blank
+			else if (posRaw == "形ク" ||
+				posRaw == "形シク" ||
+				
+				posRaw == "自ラ変" ||
+				posRaw == "他ラ変" ||
+				
+				posRaw == "助詞" ||
+				posRaw == "助動" || // I think?
+				
+				posRaw == "接続" ||
+				posRaw == "接頭" ||
+				posRaw == "接尾" ||
+				
+				posRaw == "連体" ||
+				
+				// Interesting: こ・ず 【掘ず】〘他〙（用例は連用形のみ、活用は上二段か四段か不明）
+				posRaw == "他" ||
+				
+				posRaw == "感" ||
+				posRaw == "代" ||
+				posRaw == "副" ||
+				posRaw == "枕" ||
+				posRaw == "名")
+			{
+				// Do absolutely nothing
+			}
+			// Otherwise there is some sort of error
+			else
+			{
+				debugOutput << posRaw << "; " << kanji << " (" << reading << ")" << endl;
+			}
+		}
+		
+		// NOTE: print PoS flags to `pos` string here
+		
 		// Extract all kanji variants. Has to account for ; and ・
 		// ie ツァーリズム 【tsarizm ロシア・czarism; tsarism イギリス】
 		queue<string> kanjiQ;
@@ -740,14 +902,14 @@ int main()
 		// NOTE: Remove loan origin here? ie ドイツ
 		
 		// NOTE: Skip alphabetical kanji forms here (except from ALPH.svg entries)?
-		//       Could just delete from the queue if
+		//		Could just delete from the queue if
 		//			whole thing matches isalpha()
 		//			has more than one or two or three chars?
 		//			don't forget the katakana needs to be moved to the kanji for yomichan tho
 		
 		// Loop to fold out a copy of the entry for each kanji alt
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
-		//       maybe just be lazy and loop to remove all ` "",` in html lol
+		//		maybe just be lazy and loop to remove all ` "",` in html lol
 		while(kanjiQ.empty() == false)
 		{
 			// Close previous line/entry (if applicable)
