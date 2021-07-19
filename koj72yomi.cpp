@@ -790,10 +790,10 @@ int main()
 			// NOTE: wait does yomichan have a vz tag too?
 			//		https://github.com/FooSoft/yomichan-import/blob/35175a5a1ef618847f940767fb94b8ce82c728d0/edict.go#L36
 			// TEMP: Some examples of these:
-			//		願ず (がんず)
-			//		観ずる (かんずる) // maybe assign v1 to this like epi koj6 does (and some of the others)?
-			//		燗す (かんす) // can you even get deinflection to work for these? isn't it just old 燗する or sometihng?
-			//		刊する (かんする)
+			//		願ず (がんず) // NOTE: give these nothing?
+			//		観ずる (かんずる) // NOTE: give these `vz`?
+			//		燗す (かんす) // NOTE: give these nothing?
+			//		刊する (かんする) // NOTE: restrict vs to these?
 			else if (posRaw == "サ変" ||
 				posRaw == "自サ変" ||
 				posRaw == "自他サ変" ||
@@ -878,6 +878,22 @@ int main()
 		if (pos.length() > 0)
 			pos.erase(pos.length() - 1, 1);
 		
+		// Remove multiple loan word source symbol `・ ` so they don't get folded out into kanjiQ
+		// (the whole chunk (ie ` ポルトガルスペイン`) will get removed later)
+		// Ex: サクラメント 【sacramento ポルトガル・ スペイン・ イタリア・sacrament イギリス】
+		while(1<2)
+		{
+			int multiSourceLoc = kanji.find("・ ");
+			if (multiSourceLoc != -1)
+			{
+				kanji.erase(multiSourceLoc, 4);
+			}
+			else
+			{
+				break;
+			}
+		}
+			
 		// Extract all kanji variants. Has to account for ; and ・
 		// ie ツァーリズム 【tsarizm ロシア・czarism; tsarism イギリス】
 		queue<string> kanjiQ;
@@ -908,7 +924,86 @@ int main()
 			}
 		}
 		
-		// NOTE: Remove loan origin here? ie ドイツ
+		// Define loan word origins
+		const int loanOriginSize = 46;
+		string loanOrigin [loanOriginSize] = {
+			"ラテン",
+			"梵",
+			"ドイツ",
+			"ヒンディー",
+			"フランス",
+			"ギリシア",
+			"ペルシア",
+			"アメリカ",
+			"ベトナム",
+			"アラビア",
+			"イタリア",
+			"ロシア",
+			"イギリス",
+			"ポルトガル",
+			"スペイン",
+			"デンマーク",
+			"アフリカーンス",
+			"オランダ",
+			"インドネシア",
+			"トルコ",
+			"フラマン",
+			"モンゴル",
+			"エスペラント",
+			"マレー",
+			"スウェーデン",
+			"カタルニア",
+			"ヘブライ",
+			"カンボジア",
+			"アイスランド",
+			"タイ",
+			"バスク",
+			"ノルウェー",
+			"フィンランド",
+			"ビルマ",
+			"ネパール",
+			"パーリ",
+			"チベット",
+			"ダリー",
+			"クロアチア",
+			"タングート",
+			"ハンガリー",
+			"タガログ",
+			"ブリヤート",
+			"ベラルーシ",
+			"ハワイ",
+			"ルーマニア"};
+		
+		// Cycle through kanjiQ and remove loan origin (ie ドイツ)
+		// (why did I use a queue lol)
+		// Watch out for this: カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
+		for(int i = 0; i < kanjiQ.size(); i++)
+		{
+			// Narrow down to kanjiQ listings that have a space in them
+			if (kanjiQ.front().find(" ") != -1)
+			{
+				// Loop through loanWordOrigins list
+				for (int i = 0; i < loanOriginSize; i++)
+				{
+					// If found, erase loan origin
+					// (and don't check the rest of the loanOrigin list)
+					int loanOriginPos = kanjiQ.front().find(" " + loanOrigin[i]);
+					if (loanOriginPos != -1)
+					{
+						kanjiQ.front().erase(loanOriginPos);
+						break;
+					}
+				}
+			}
+			
+			// Cycle through the queue since I made the excellent decision of using a queue
+			if (kanjiQ.size() > 1)
+			{
+				string temp = kanjiQ.front();
+				kanjiQ.pop();
+				kanjiQ.push(temp);
+			}
+		}
 		
 		// NOTE: Skip alphabetical kanji forms here (except from ALPH.svg entries)?
 		//		Could just delete from the queue if
