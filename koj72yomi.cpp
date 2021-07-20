@@ -489,15 +489,17 @@ int main()
 				if (tagAttributes == "class=\\\"siki\\\"")
 				{
 					// Gonna guess as in 式
-					// How to format for yomichan?? italics? simply print `s on outside?
-					// 6th ed in ebwin just bolds / different font? 組合せ, 差集合
-					fnNeutralize = true;
+					// 6th ed in ebwin just bolds / different font eg 組合せ, 差集合
+					// 7th ed logovista puts in「」but they don't really know shit
+					// I'm just going to put in「」since I don't really know a better option
+					fnOpenReplace = "「";
+					fnCloseReplace =  "」";
 				}
 				else if (tagAttributes == "class=\\\"kente\\\"")
 				{
 					// ...圏点?? btw typing that in ime brings some up
-					// internet too slow to research 
-					// 6th edition in ebwin just bolds for this: 沓冠; 序詞冠
+					// 6th edition in ebwin just bolds for this eg 沓冠; 序詞冠
+					// NOTE: still need to handle these
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"kenten2\\\"")
@@ -505,6 +507,7 @@ int main()
 					// Gonna guess as in 圏点
 					// This only exists in entry for 沓冠
 					// 6th ed in ebwin doesn't show any sign of it
+					// NOTE: still need to handle these
 					fnNeutralize = true;
 				}
 				else if (tagAttributes == "class=\\\"bousen1\\\"")
@@ -522,7 +525,6 @@ int main()
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
 					//		See: わそう‐コート 【和装コート】
 					// Example where having rubi formatting is important アートマン 【ātman 梵】
-					// NOTE: how does this look bold? super script?
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace =  "\"}, \"";
 				}
@@ -543,7 +545,6 @@ int main()
 			else if (tagType == "sup")
 			{
 				// Superscript
-				// NOTE: have a single source for the sup style for this and midashi
 				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"";
 				fnCloseReplace =  "\"}, \"";
 			}
