@@ -711,13 +711,14 @@ int main()
 		bool v1Flag = false;
 		bool v5Flag = false;
 		bool vsFlag = false;
+		bool vzFlag = false;
 		bool vkFlag = false;
 		bool adjiFlag = false;
 		
 		// Extract PoS info
-		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable endings?
+		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable う endings?
 		//		since you are unlikely to mismatch?
-		//		Koj doesn't include PoS info for those
+		//		(Koj doesn't include PoS info for those)
 		// Referencing these:
 		//		file:///C:/Program%20Files%20(x86)/LogoVista/LVEDBRSR/DIC/KOJIEN7/HANREI/contents/ryakugo.html
 		//		https://github.com/FooSoft/yomichan-import/blob/master/koujien.go
@@ -756,25 +757,27 @@ int main()
 				posRaw == "自他五" ||
 				posRaw == "他五" ||
 				
-				// NOTE: I think these can go here?
+				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
 				posRaw == "四" ||
 				posRaw == "自四" ||
 				posRaw == "自他四" ||
 				posRaw == "他四" ||
 				
-				// NOTE: I think these can go here?
+				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
 				posRaw == "上二" ||
 				posRaw == "自上二" ||
 				posRaw == "自他上二" ||
 				posRaw == "他上二" ||
 				
-				// NOTE: I think these can go here?
+				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
 				posRaw == "下二" ||
 				posRaw == "自下二" ||
 				posRaw == "自他下二" ||
 				posRaw == "他下二" ||
 				
 				// NOTE: Can maybe just throw these here too?
+				//		epis koj leaves them blank
+				//		jmdict has v5 in addition to vn - irregular nu verb
 				// 		Full list:
 				//		往ぬ・去ぬ (いぬ)
 				//		酔ひ死ぬ (えいしぬ)
@@ -785,48 +788,52 @@ int main()
 			{
 				v5Flag = true;
 			}
-			// vs: suru verb
-			// NOTE: looks like yomi import limits to `(strings.HasSuffix(term.Expression, "する") || strings.HasSuffix(term.Expression, "為る")`?
-			// NOTE: wait does yomichan have a vz tag too?
-			//		https://github.com/FooSoft/yomichan-import/blob/35175a5a1ef618847f940767fb94b8ce82c728d0/edict.go#L36
-			// TEMP: Some examples of these:
-			//		願ず (がんず) // NOTE: give these nothing?
-			//		観ずる (かんずる) // NOTE: give these `vz`?
-			//		燗す (かんす) // NOTE: give these nothing?
-			//		刊する (かんする) // NOTE: restrict vs to these?
+			// vs: suru verb & vz: zuru verb
 			else if (posRaw == "サ変" ||
 				posRaw == "自サ変" ||
 				posRaw == "自他サ変" ||
 				posRaw == "他サ変")
 			{
-				vsFlag = true;
+				// EG: 願ず (がんず)
+				if (kanji.find("ず", kanji.length() - 3) == kanji.length() - 3)
+				{
+					// NOTE: no PoS?
+				}
+				// EG: 観ずる (かんずる)
+				else if (kanji.find("ずる", kanji.length() - 6) == kanji.length() - 6)
+				{
+					vzFlag = true;
+				}
+				// EG: 燗す (かんす)
+				else if (kanji.find("す", kanji.length() - 3) == kanji.length() - 3)
+				{
+					// NOTE: no PoS?
+				}
+				// EG: 刊する (かんする)
+				else if (kanji.find("為る", kanji.length() - 6) == kanji.length() - 6 ||
+					kanji.find("する", kanji.length() - 6) == kanji.length() - 6)
+				{
+					vsFlag = true;
+				}
+				// 為 (す) is the only remaining result
+				else
+				{
+					// no PoS
+				}
 			}
 			// vk: kuru verb
-			// NOTE: looks like yomi import koj6 limits to only `term.Expression == "来る"`?
-			//		Full list:
-			//		在り来 (ありく)
-			//		行って来る (いってくる)
-			//		出で来 (いでく)
-			//		来 (く)
-			//		来る (くる)
-			//		漕ぎ来る (こぎくる)
-			//		立ち来 (たちく)
-			//		出来 (でく)
-			//		尋め来 (とめく)
-			//		参来 (まいく)
-			//		参出来 (まいでく)
-			//		参り来 (まいりく)
-			//		詣で来 (までく)
-			//		惑ひ来 (まどいく)
-			//		参来 (もうく)
-			//		詣で来 (もうでく)
-			//		遣って来る (やってくる)
-			//		行き来・往き来 (ゆきく)
-			//		寄せ来る (よせくる)
-			//		寄り来る (よりくる)
 			else if (posRaw == "自カ変")
 			{
-				vkFlag = true;
+				// EG: 行って来る (いってくる)
+				if (kanji.find("来る", kanji.length() - 6) == kanji.length() - 6)
+				{
+					vkFlag = true;
+				}
+				// Remainder is some ancient stuff that ends in `来`
+				else
+				{
+					// no PoS
+				}
 			}
 			// adj-i: i-adjective
 			else if (posRaw == "形")
@@ -841,7 +848,7 @@ int main()
 				posRaw == "他ラ変" ||
 				
 				posRaw == "助詞" ||
-				posRaw == "助動" || // I think?
+				posRaw == "助動" ||
 				
 				posRaw == "接続" ||
 				posRaw == "接頭" ||
@@ -858,7 +865,7 @@ int main()
 				posRaw == "枕" ||
 				posRaw == "名")
 			{
-				// Do absolutely nothing
+				// no PoS
 			}
 			// Otherwise there is some sort of error
 			else
@@ -871,6 +878,7 @@ int main()
 		if (v1Flag == true) pos += "v1 ";
 		if (v5Flag == true) pos += "v5 ";
 		if (vsFlag == true) pos += "vs ";
+		if (vzFlag == true) pos += "vz ";
 		if (vkFlag == true) pos += "vk ";
 		if (adjiFlag == true) pos += "adj-i ";
 		
@@ -1010,6 +1018,9 @@ int main()
 		//			whole thing matches isalpha()
 		//			has more than one or two or three chars?
 		//			don't forget the katakana needs to be moved to the kanji for yomichan tho
+		//		eg this:
+		//			カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
+		//			should probably have カタログ + 型録(カタログ)
 		
 		// Loop to fold out a copy of the entry for each kanji alt
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
