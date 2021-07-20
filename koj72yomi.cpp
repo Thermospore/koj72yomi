@@ -232,7 +232,6 @@ int main()
 		}
 				
 		// Extract reading and kanji from title
-		// NOTE: make case for ALPH entries
 		// Check for 【】 brackets
 		int brackPos = title.find("【");
 		if (brackPos == -1) 
@@ -635,22 +634,25 @@ int main()
 				if (tagAttributes.find("class=\\\"FIGc\\\" src=\\\"") != -1)
 				{
 					// These all contain 撮影/提供 credits in tagContents
-					// NOTE: look through some entries to see what these are
-					fnNeutralize = true;
+					// NOTE: extract these from logovista 7th ed
+					fnOpenReplace = "＜Photo not net extracted. ";
+					fnCloseReplace = "＞";
 				}
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
 				{
 					// These all seem to be mathematical figures. tagContents empty
 					// They get plopped inline, not in a div
 					// Basically gaiji; look at 陰関数 in 6th ed to compare
-					// NOTE: sure we can't get these?? only 38 of them
-					fnNeutralize = true;
+					// NOTE: extract these from logovista 7th ed
+					fnOpenReplace = "＜Mathematical figure not yet extracted.";
+					fnCloseReplace = "＞";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
-					// Empty tagContents
-					// NOTE: look through some entries to see what these are
-					fnNeutralize = true;
+					// Diagrams. Empty tagContents
+					// NOTE: extract these from logovista 7th ed
+					fnOpenReplace = "＜Diagram not yet extracted.";
+					fnCloseReplace = "＞";
 				}
 				else if (tagAttributes.find("class=\\\"icon\\\" src=\\\"") != -1)
 				{
@@ -1022,6 +1024,7 @@ int main()
 		//		eg this:
 		//			カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
 		//			should probably have カタログ + 型録(カタログ)
+		//		stuff like スリー‐エー 【AAA・3A】?
 		
 		// Loop to fold out a copy of the entry for each kanji alt
 		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
