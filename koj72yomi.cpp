@@ -565,14 +565,12 @@ int main()
 				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
 				{
 					// Map from external gaiji text file
-					// NOTE: change (i) and (ii) to {i} and {ii} so they stand apart a bit more?
 					// NOTE: make E565.svg	＊ <sup>? can just add html right into the gaiji file like with <strike>
 					// NOTE: change those cap leters to these?
 					//		https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
 					// NOTE: is A16A really supposed to be F? why did they gaiji it?
 					// NOTE: match these to icons file? A428.svg	🈔
 					// NOTE: what's up with E1E7; is it supposed to be null?
-					// NOTE: not sure how I feel about B925.svg	（縦線二本）＄
 					// Get filename from <object> attributes
 					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);
 					

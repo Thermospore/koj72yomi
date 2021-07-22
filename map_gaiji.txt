@@ -50,8 +50,8 @@ DD50.svg	襅
 B05D.svg	藛
 B15F.svg	gaiji/B160.svg
 B160.svg	℥
-B922.svg	(i)
-B923.svg	(ii)
+B922.svg	{i}
+B923.svg	{ii}
 B561.svg	Ａ
 B562.svg	Ｂ
 A337.svg	レ
