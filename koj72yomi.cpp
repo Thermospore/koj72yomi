@@ -588,11 +588,10 @@ int main()
 								fnDelete = true;
 							}
 							// SVG mapping. Insert structured content
-							// NOTE: try how different imageRendering settings look, since these are vector graphics not images
 							else if (gaijiReplace[i].find(".svg") != -1)
 							{
 								fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"" + gaijiReplace[i];
-								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"imageRendering\": \"crisp-edges\", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\"}, \"";
+								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\"}, \"";
 							}
 							// Unicode mapping
 							else
