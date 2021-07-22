@@ -572,10 +572,6 @@ int main()
 					// NOTE: is A16A really supposed to be F? why did they gaiji it?
 					// NOTE: match these to icons file? A428.svg	🈔
 					// NOTE: what's up with E1E7; is it supposed to be null?
-					// NOTE: AD56.svg	𬮆 doesn't show up for me, might not have good font support?
-					//		same with B258.svg	𭸻
-					//		same with AE46.svg	𬝟
-					//		same with AE6E.svg	𫫠
 					// NOTE: not sure how I feel about B925.svg	（縦線二本）＄
 					// Get filename from <object> attributes
 					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);

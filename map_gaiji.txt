@@ -129,7 +129,7 @@ DD4E.svg	〄
 AD61.svg	𣏾
 AF57.svg	⺗
 AC38.svg	gaiji/AC38.svg
-AD56.svg	𬮆
+AD56.svg	gaiji/AD56.svg
 A847.svg	𦆠
 E222.svg	鬘
 chou.svg	朓
@@ -139,7 +139,7 @@ AC66.svg	gaiji/AC66.svg
 B637.svg	䰳
 B638.svg	𩸎
 E058.svg	徽
-B258.svg	𭸻
+B258.svg	gaiji/B258.svg
 B632.svg	垿
 E1BD.svg	臈
 A761.svg	𣠽
@@ -183,7 +183,7 @@ AF2F.svg	虍
 B925.svg	（縦線二本）＄
 DC62.svg	gaiji/DC62.svg
 DD46.svg	楑
-AE46.svg	𬝟
+AE46.svg	gaiji/AE46.svg
 B05A.svg	䠸
 B05B.svg	㴔
 B56C.svg	你
@@ -205,7 +205,7 @@ B434.svg	粬
 AA4E.svg	𨰃
 AE77.svg	䌇
 AC64.svg	gaiji/AC64.svg
-AE6E.svg	𫫠
+AE6E.svg	gaiji/AE6E.svg
 A82F.svg	丰
 B839.svg	½
 E431.svg	null
