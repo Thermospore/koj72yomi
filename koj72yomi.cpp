@@ -712,11 +712,12 @@ int main()
 		bool adjiFlag = false;
 		
 		// Extract PoS info
-		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable う endings?
-		//		since you are unlikely to mismatch?
+		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable う endings
+		//		since you are unlikely to mismatch
 		//		(Koj doesn't include PoS info for those)
 		// Referencing these:
 		//		file:///C:/Program%20Files%20(x86)/LogoVista/LVEDBRSR/DIC/KOJIEN7/HANREI/contents/ryakugo.html
+		//		https://discord.com/channels/841492951644373012/841497050058326046/868485931525623869
 		//		https://github.com/FooSoft/yomichan-import/blob/master/koujien.go
 		//		https://github.com/FooSoft/yomichan-import/blob/master/edict.go
 		// Fun Fact: あ・く 【明く・開く・空く】 and おのれ 【己】 have the most〘PoS〙tags at 4
@@ -753,33 +754,27 @@ int main()
 				posRaw == "自他五" ||
 				posRaw == "他五" ||
 				
-				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
+				// epi: "四段 are matched correctly when tagged as v5"
+				// May as well include these
 				posRaw == "四" ||
 				posRaw == "自四" ||
 				posRaw == "自他四" ||
 				posRaw == "他四" ||
 				
-				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
+				// epi: "二段 is a mixed bag when tagged as v5 (verbs in づ, ふ and ゆ are an issue)"
+				// Suppose I'll just leave these out
+				/*
 				posRaw == "上二" ||
 				posRaw == "自上二" ||
 				posRaw == "自他上二" ||
 				posRaw == "他上二" ||
-				
-				// NOTE: I think yomi import koj adds these here, but epis koj leaves them blank?
 				posRaw == "下二" ||
 				posRaw == "自下二" ||
 				posRaw == "自他下二" ||
 				posRaw == "他下二" ||
+				*/
 				
-				// NOTE: Can maybe just throw these here too?
-				//		epis koj leaves them blank
-				//		jmdict has v5 in addition to vn - irregular nu verb
-				// 		Full list:
-				//		往ぬ・去ぬ (いぬ)
-				//		酔ひ死ぬ (えいしぬ)
-				//		思ひ死ぬ (おもいしぬ)
-				//		恋ひ死ぬ (こいしぬ)
-				//		乾死ぬ・干死ぬ (ひしぬ)
+				// epi says these will match correctly as v5
 				posRaw == "自ナ変")
 			{
 				v5Flag = true;
@@ -790,10 +785,11 @@ int main()
 				posRaw == "自他サ変" ||
 				posRaw == "他サ変")
 			{
-				// EG: 願ず (がんず)
-				if (kanji.find("ず", kanji.length() - 3) == kanji.length() - 3)
+				// EG: 刊する (かんする)
+				if (kanji.find("為る", kanji.length() - 6) == kanji.length() - 6 ||
+					kanji.find("する", kanji.length() - 6) == kanji.length() - 6)
 				{
-					// NOTE: no PoS?
+					vsFlag = true;
 				}
 				// EG: 観ずる (かんずる)
 				else if (kanji.find("ずる", kanji.length() - 6) == kanji.length() - 6)
@@ -803,13 +799,14 @@ int main()
 				// EG: 燗す (かんす)
 				else if (kanji.find("す", kanji.length() - 3) == kanji.length() - 3)
 				{
-					// NOTE: no PoS?
+					// epi: "most of those have become either v5 or vs: 愛す > 愛す 帰す > 帰する.
+					//		It's just like 1, it will match when labelled as v5."
+					v5Flag = true;
 				}
-				// EG: 刊する (かんする)
-				else if (kanji.find("為る", kanji.length() - 6) == kanji.length() - 6 ||
-					kanji.find("する", kanji.length() - 6) == kanji.length() - 6)
+				// EG: 願ず (がんず)
+				else if (kanji.find("ず", kanji.length() - 3) == kanji.length() - 3)
 				{
-					vsFlag = true;
+					// suppose v5 wouldn't do anything, so no PoS
 				}
 				// 為 (す) is the only remaining result
 				else
