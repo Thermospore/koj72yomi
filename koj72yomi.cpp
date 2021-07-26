@@ -761,19 +761,6 @@ int main()
 				posRaw == "自他四" ||
 				posRaw == "他四" ||
 				
-				// epi: "二段 is a mixed bag when tagged as v5 (verbs in づ, ふ and ゆ are an issue)"
-				// Suppose I'll just leave these out
-				/*
-				posRaw == "上二" ||
-				posRaw == "自上二" ||
-				posRaw == "自他上二" ||
-				posRaw == "他上二" ||
-				posRaw == "下二" ||
-				posRaw == "自下二" ||
-				posRaw == "自他下二" ||
-				posRaw == "他下二" ||
-				*/
-				
 				// epi says these will match correctly as v5
 				posRaw == "自ナ変")
 			{
@@ -856,7 +843,18 @@ int main()
 				posRaw == "代" ||
 				posRaw == "副" ||
 				posRaw == "枕" ||
-				posRaw == "名")
+				posRaw == "名" ||
+				
+				// epi: "二段 is a mixed bag when tagged as v5 (verbs in づ, ふ and ゆ are an issue)"
+				// Suppose I'll just leave these out
+				posRaw == "上二" ||
+				posRaw == "自上二" ||
+				posRaw == "自他上二" ||
+				posRaw == "他上二" ||
+				posRaw == "下二" ||
+				posRaw == "自下二" ||
+				posRaw == "自他下二" ||
+				posRaw == "他下二")
 			{
 				// no PoS
 			}
