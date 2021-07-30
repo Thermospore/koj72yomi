@@ -1014,9 +1014,48 @@ int main()
 		//			should probably have カタログ + 型録(カタログ)
 		//		stuff like スリー‐エー 【AAA・3A】?
 		
+		// Scrape out empty ""s in html in an incredibly efficient and eloquent manner
+		string garboFind = "";
+		string garboReplace = "";
+		int garboPos = -1;
+		while(1<2)
+		{
+			garboFind = "[\"\", {";
+			garboReplace = "[{";
+			garboPos = html.find(garboFind);
+			if (garboPos != -1)
+			{
+				html.replace(garboPos, garboFind.length(), garboReplace);
+			}
+			else
+				break;
+		}
+		while(1<2)
+		{
+			garboFind = "}, \"\", {";
+			garboReplace = "}, {";
+			garboPos = html.find(garboFind);
+			if (garboPos != -1)
+			{
+				html.replace(garboPos, garboFind.length(), garboReplace);
+			}
+			else
+				break;
+		}
+		while(1<2)
+		{
+			garboFind = "}, \"\"]";
+			garboReplace = "}]";
+			garboPos = html.find(garboFind);
+			if (garboPos != -1)
+			{
+				html.replace(garboPos, garboFind.length(), garboReplace);
+			}
+			else
+				break;
+		}
+		
 		// Loop to fold out a copy of the entry for each kanji alt
-		// NOTE: avoid leaving all those excessive empty ""s between divs etc in structured-content?
-		//		maybe just be lazy and loop to remove all ` "",` in html lol
 		while(kanjiQ.empty() == false)
 		{
 			// Close previous line/entry (if applicable)
