@@ -180,7 +180,7 @@ B04E.svg	㯓
 E1EA.svg	謗
 E210.svg	鄭
 AF2F.svg	虍
-B925.svg	（縦線二本）＄
+B925.svg	gaiji/B925.svg
 DC62.svg	gaiji/DC62.svg
 DD46.svg	楑
 AE46.svg	gaiji/AE46.svg
