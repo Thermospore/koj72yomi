@@ -398,6 +398,20 @@ int main()
 						if (readingPos != -1)
 						reading = tagContents.substr(readingPos + 5, tagContents.length() - readingPos - 11);
 					}
+					
+					// Add readings for ALPH entries
+					// NOTE: still need to handle WWOOF and CO-OP cases
+					// Watch out for:
+					//		WWOOF (ウオフ; ウーフ) // multiple readings. Only 5 entries with this
+					//		CO-OP (コープ; coop) // alphabetical reading. Only occurs in this entry
+					//		DoS (ドス攻撃) // leaving as is; yomichan doesn't care actually haha
+					//		5W1H (ごダブリューいちエッチ) // some of them have hiragana too btw
+					if (alphEntry == true)
+					{
+						int alphReadingPos = tagContents.find("(");
+						if (alphReadingPos != -1)
+							reading = tagContents.substr(alphReadingPos + 1, tagContents.length() - alphReadingPos - 2);
+					}
 				}
 				if (tagAttributes == "class=\\\"honbun\\\"")
 				{
