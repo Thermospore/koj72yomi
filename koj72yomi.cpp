@@ -726,9 +726,6 @@ int main()
 		bool adjiFlag = false;
 		
 		// Extract PoS info
-		// NOTE: Blindly toss verb tags onto phrase ◯ entries with applicable う endings
-		//		since you are unlikely to mismatch
-		//		(Koj doesn't include PoS info for those)
 		// Referencing these:
 		//		file:///C:/Program%20Files%20(x86)/LogoVista/LVEDBRSR/DIC/KOJIEN7/HANREI/contents/ryakugo.html
 		//		https://discord.com/channels/841492951644373012/841497050058326046/868485931525623869
@@ -877,6 +874,44 @@ int main()
 			{
 				debugOutput << posRaw << "; " << kanji << " (" << reading << ")" << endl;
 			}
+		}
+		
+		// Blindly toss PoS tags onto phrase ○ entries with applicable endings
+		//		Koj doesn't include PoS info for these
+		//		unlikely to mismatch since it's a whole phrase
+		if (phraseEntry == true)
+		{
+			if (kanji.find("る", kanji.length() - 3) == kanji.length() - 3)
+				v1Flag = true;
+			
+			if (kanji.find("う", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("く", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("ぐ", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("す", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("つ", kanji.length() - 3) == kanji.length() - 3 ||
+				// EG: 門を出づ(かどをいず)
+				// Don't think yomichan even has handling for these atm,
+				//		but koj has some v5 entries like this EG: 漬づ・沾づ(ひず)
+				kanji.find("づ", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("ぬ", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("ふ", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("ぶ", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("む", kanji.length() - 3) == kanji.length() - 3 ||
+				kanji.find("る", kanji.length() - 3) == kanji.length() - 3)
+				v5Flag = true;
+			
+			if (kanji.find("する", kanji.length() - 6) == kanji.length() - 6)
+				vsFlag = true; // There are no instances of 為る(する) btw
+			
+			if (kanji.find("ずる", kanji.length() - 6) == kanji.length() - 6)
+				vzFlag = true;
+			
+			if (kanji.find("来る", kanji.length() - 6) == kanji.length() - 6 ||
+				kanji.find("くる", kanji.length() - 6) == kanji.length() - 6)
+				vkFlag = true;
+			
+			if (kanji.find("い", kanji.length() - 3) == kanji.length() - 3)
+				adjiFlag = true;
 		}
 		
 		// Print PoS flags to `pos` string
