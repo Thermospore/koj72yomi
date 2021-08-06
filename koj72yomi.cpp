@@ -1053,15 +1053,72 @@ int main()
 			}
 		}
 		
-		// NOTE: Skip alphabetical kanji forms here (except from ALPH.svg entries)?
-		//		Could just delete from the queue if
-		//			whole thing matches isalpha()
-		//			has more than one or two or three chars?
-		//			don't forget the katakana needs to be moved to the kanji for yomichan tho
-		//		eg this:
-		//			カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
-		//			should probably have カタログ + 型録(カタログ)
-		//		stuff like スリー‐エー 【AAA・3A】?
+		// Remove loan source words (ie "class" as kanji for クラス)
+		// NOTE: print out and double check all the deletions once you are done!!!
+		// NOTE: check deletions for entries that are only one charachter (in unicode; ie Σ or β)
+		// NOTE: don't forget the katakana needs to be moved to the kanji for yomichan
+		// NOTE: カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
+		//		should probably have カタログ + 型録(カタログ)
+		// NOTE: stuff like スリー‐エー 【AAA・3A】?
+		// NOTE: how to handle stuff like OL? people are going to write it as `OL` or `ＯＬ`, not `オーエル`. 
+		//		honestly I think that alph section handles all the stuff like OL
+		//		Maybe don't strip out single character entries (ie【Σ・σ・�】【I・i】) etc though?
+		if (!alphEntry)
+		{
+			// Cycle through each kanji form in kanjiQ
+			for(int i = 0; i < kanjiQ.size(); i++)
+			{
+				bool deleteCurKanji = false;
+				
+				// Always keep if it's a single char (ie "r" or "V" or something)
+				if (kanjiQ.front().length() > 1)
+				{
+					// Shave off stuff we don't care about, to see if anything remains
+					string SHAVEITUP = kanjiQ.front();
+					
+					// Start with single char stuff
+					// Loop through each char in the string
+					for(int i = 0; i < SHAVEITUP.length(); i++)
+					{
+						if (isalpha(SHAVEITUP[i]) ||
+							isdigit(SHAVEITUP[i]) ||
+							SHAVEITUP[i] == ' ' ||
+							SHAVEITUP[i] == '.' ||
+							SHAVEITUP[i] == '(' ||
+							SHAVEITUP[i] == ')' ||
+							SHAVEITUP[i] == '-' ||
+							SHAVEITUP[i] == ',' ||
+							SHAVEITUP[i] == '\'' ||
+							SHAVEITUP[i] == '/' ||
+							SHAVEITUP[i] == '!')
+						{
+							SHAVEITUP.erase(i, 1);
+							i--;
+						}
+					}
+					
+					// If nothing remains, flag this kanji form for deletion
+					deleteCurKanji = (SHAVEITUP.length() == 0) ? true : false;
+					
+					// TEMP: a lot of this stuff should be removed
+					/*if (SHAVEITUP.length() == 2)
+					debugOutput<<kanjiQ.front()<<endl;*/
+					
+				}
+				
+				// TEMP: debug output
+				/*if (deleteCurKanji)
+					debugOutput<<kanjiQ.front()<<endl;*/
+				
+				// Cycle through the queue since I made the excellent decision of using a queue
+				if (kanjiQ.size() > 1)
+				{
+					string temp = kanjiQ.front();
+					kanjiQ.pop();
+					kanjiQ.push(temp);
+				}
+			}
+		}
 		
 		// Scrape out empty ""s in html in an incredibly efficient and eloquent manner
 		string garboFind = "";
