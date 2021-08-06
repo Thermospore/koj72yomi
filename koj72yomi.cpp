@@ -1031,11 +1031,11 @@ int main()
 			if (kanjiQ.front().find(" ") != -1)
 			{
 				// Loop through loanWordOrigins list
-				for (int i = 0; i < loanOriginSize; i++)
+				for (int j = 0; j < loanOriginSize; j++)
 				{
 					// If found, erase loan origin
 					// (and don't check the rest of the loanOrigin list)
-					int loanOriginPos = kanjiQ.front().find(" " + loanOrigin[i]);
+					int loanOriginPos = kanjiQ.front().find(" " + loanOrigin[j]);
 					if (loanOriginPos != -1)
 					{
 						kanjiQ.front().erase(loanOriginPos);
@@ -1078,22 +1078,22 @@ int main()
 					
 					// Start with single char stuff
 					// Loop through each char in the string
-					for(int i = 0; i < SHAVEITUP.length(); i++)
+					for(int j = 0; j < SHAVEITUP.length(); j++)
 					{
-						if (isalpha(SHAVEITUP[i]) ||
-							isdigit(SHAVEITUP[i]) ||
-							SHAVEITUP[i] == ' ' ||
-							SHAVEITUP[i] == '.' ||
-							SHAVEITUP[i] == '(' ||
-							SHAVEITUP[i] == ')' ||
-							SHAVEITUP[i] == '-' ||
-							SHAVEITUP[i] == ',' ||
-							SHAVEITUP[i] == '\'' ||
-							SHAVEITUP[i] == '/' ||
-							SHAVEITUP[i] == '!')
+						if (isalpha(SHAVEITUP[j]) ||
+							isdigit(SHAVEITUP[j]) ||
+							SHAVEITUP[j] == ' ' ||
+							SHAVEITUP[j] == '.' ||
+							SHAVEITUP[j] == '(' ||
+							SHAVEITUP[j] == ')' ||
+							SHAVEITUP[j] == '-' ||
+							SHAVEITUP[j] == ',' ||
+							SHAVEITUP[j] == '\'' ||
+							SHAVEITUP[j] == '/' ||
+							SHAVEITUP[j] == '!')
 						{
-							SHAVEITUP.erase(i, 1);
-							i--;
+							SHAVEITUP.erase(j, 1);
+							j--;
 						}
 					}
 					
@@ -1103,7 +1103,6 @@ int main()
 					// TEMP: a lot of this stuff should be removed
 					/*if (SHAVEITUP.length() == 2)
 					debugOutput<<kanjiQ.front()<<endl;*/
-					
 				}
 				
 				// TEMP: debug output
