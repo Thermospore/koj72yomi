@@ -1053,6 +1053,36 @@ int main()
 			}
 		}
 		
+		// Define junk　string list (to be used in next section)
+		const int junkSize = 78;
+		string junk [junkSize] = {
+			"（", "）",
+			"Ā", "Á", "Ä", "Å",
+			"ā", "ä", "á", "à", "â", "ã", "ă",
+			"Ç", "Č",
+			"ć", "ç", "č",
+			"É", "Ē",
+			"ē", "é", "è", "ê", "ę", "ė", "ë", "ě",
+			"ğ",
+			"İ",
+			"î", "ī", "ï", "í", "ı",
+			"ł",
+			"ń", "ñ", "ň",
+			"Ö", "Ø", "Ō",
+			"ō", "ö", "ó", "ø", "ŏ", "õ", "ô", "ò", "ő",
+			"ř",
+			"Ś", "Š",
+			"ś", "š", "ş", "ș",
+			"ț",
+			"Ú", "Ū", "Ü",
+			"û", "ū", "ü", "ú", "ù",
+			"ÿ", "ý",
+			"Ż",
+			"ž",
+			"œ",
+			"α", "γ", "ß", "β",
+			"ʻ", "’"};
+		
 		// Remove loan source words (ie "class" as kanji for クラス)
 		// NOTE: print out and double check all the deletions once you are done!!!
 		// NOTE: check deletions for entries that are only one charachter (in unicode; ie Σ or β)
@@ -1070,8 +1100,15 @@ int main()
 			{
 				bool deleteCurKanji = false;
 				
-				// Always keep if it's a single char (ie "r" or "V" or something)
-				if (kanjiQ.front().length() > 1)
+				// Only check for deletion if 
+				if (
+					// it's not a single char ie "r" or "V" etc
+					kanjiQ.front().length() > 1
+					// it's not a single char ie "ω" or "β" etc
+					&& !(kanjiQ.front().length() == 2 &&
+					!isalpha(kanjiQ.front()[0]) &&
+					!isalpha(kanjiQ.front()[1]))
+					)
 				{
 					// Shave off stuff we don't care about, to see if anything remains
 					string SHAVEITUP = kanjiQ.front();
@@ -1097,17 +1134,40 @@ int main()
 						}
 					}
 					
+					// Now multi char stuff
+					// Loop until it is all gone
+					while(1<2)
+					{
+						bool keepChecking = false;
+						
+						// Loop through junk string list
+						for (int j = 0; j < junkSize; j++)
+						{
+							// If string found, erase it
+							int junkPos = SHAVEITUP.find(junk[j]);
+							if (junkPos != -1)
+							{
+								SHAVEITUP.erase(junkPos,junk[j].length());
+								keepChecking = true;
+							}
+						}
+						
+						// Break if we didn't find anything that loop
+						if (!keepChecking)
+							break;
+					}
+					
 					// If nothing remains, flag this kanji form for deletion
 					deleteCurKanji = (SHAVEITUP.length() == 0) ? true : false;
 					
 					// TEMP: a lot of this stuff should be removed
-					/*if (SHAVEITUP.length() == 2)
-					debugOutput<<kanjiQ.front()<<endl;*/
+					//if (SHAVEITUP.length() == 3)
+					//debugOutput<<kanjiQ.front()<<endl;
 				}
 				
 				// TEMP: debug output
-				/*if (deleteCurKanji)
-					debugOutput<<kanjiQ.front()<<endl;*/
+				//if (deleteCurKanji)
+				//debugOutput<<kanjiQ.front()<<endl;
 				
 				// Remove the kanji form, if flagged
 				if (deleteCurKanji)
