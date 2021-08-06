@@ -1109,13 +1109,26 @@ int main()
 				/*if (deleteCurKanji)
 					debugOutput<<kanjiQ.front()<<endl;*/
 				
+				// Remove the kanji form, if flagged
+				if (deleteCurKanji)
+				{
+					kanjiQ.pop();
+					i--;
+				}				
 				// Cycle through the queue since I made the excellent decision of using a queue
-				if (kanjiQ.size() > 1)
+				else if (kanjiQ.size() > 1)
 				{
 					string temp = kanjiQ.front();
 					kanjiQ.pop();
 					kanjiQ.push(temp);
 				}
+			}
+			
+			// If we removed all the kanji forms, move the reading to the kanji field
+			if (kanjiQ.empty())
+			{
+				kanjiQ.push(reading);
+				reading = "";
 			}
 		}
 		
