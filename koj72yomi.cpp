@@ -1054,45 +1054,43 @@ int main()
 		}
 		
 		// Define junk　string list (to be used in next section)
-		const int junkSize = 78;
+		const int junkSize = 98;
 		string junk [junkSize] = {
 			"（", "）",
 			"Ā", "Á", "Ä", "Å",
-			"ā", "ä", "á", "à", "â", "ã", "ă",
+			"ā", "ä", "á", "à", "â", "ã", "ă", "ạ",
 			"Ç", "Č",
 			"ć", "ç", "č",
+			"ḍ",
 			"É", "Ē",
 			"ē", "é", "è", "ê", "ę", "ė", "ë", "ě",
 			"ğ",
-			"İ",
+			"Ḥ",
+			"ḥ",
+			"İ", "Ī",
 			"î", "ī", "ï", "í", "ı",
+			"Ł",
 			"ł",
-			"ń", "ñ", "ň",
+			"ṃ",
+			"ń", "ñ", "ň", "ṅ", "ṇ",
 			"Ö", "Ø", "Ō",
 			"ō", "ö", "ó", "ø", "ŏ", "õ", "ô", "ò", "ő",
-			"ř",
-			"Ś", "Š",
-			"ś", "š", "ş", "ș",
-			"ț",
+			"Ṛ",
+			"ř", "ṛ",
+			"Ś", "Š", "Ṣ",
+			"ś", "š", "ş", "ș", "ṣ",
+			"Ṭ",
+			"ț", "ṭ",
 			"Ú", "Ū", "Ü",
 			"û", "ū", "ü", "ú", "ù",
 			"ÿ", "ý",
-			"Ż",
-			"ž",
+			"Ż", "Ẓ",
+			"ž", "ẓ", "ź",
 			"œ",
 			"α", "γ", "ß", "β",
-			"ʻ", "’"};
+			"‘", "’", "ʼ", "ʻ"};
 		
 		// Remove loan source words (ie "class" as kanji for クラス)
-		// NOTE: print out and double check all the deletions once you are done!!!
-		// NOTE: check deletions for entries that are only one charachter (in unicode; ie Σ or β)
-		// NOTE: don't forget the katakana needs to be moved to the kanji for yomichan
-		// NOTE: カタログ 【catalogue フランス・ イギリス・catalog アメリカ・型録】
-		//		should probably have カタログ + 型録(カタログ)
-		// NOTE: stuff like スリー‐エー 【AAA・3A】?
-		// NOTE: how to handle stuff like OL? people are going to write it as `OL` or `ＯＬ`, not `オーエル`. 
-		//		honestly I think that alph section handles all the stuff like OL
-		//		Maybe don't strip out single character entries (ie【Σ・σ・�】【I・i】) etc though?
 		if (!alphEntry)
 		{
 			// Cycle through each kanji form in kanjiQ
@@ -1159,15 +1157,7 @@ int main()
 					
 					// If nothing remains, flag this kanji form for deletion
 					deleteCurKanji = (SHAVEITUP.length() == 0) ? true : false;
-					
-					// TEMP: a lot of this stuff should be removed
-					//if (SHAVEITUP.length() == 3)
-					//debugOutput<<kanjiQ.front()<<endl;
 				}
-				
-				// TEMP: debug output
-				//if (deleteCurKanji)
-				//debugOutput<<kanjiQ.front()<<endl;
 				
 				// Remove the kanji form, if flagged
 				if (deleteCurKanji)
