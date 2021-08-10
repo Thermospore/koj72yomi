@@ -1157,6 +1157,25 @@ int main()
 					
 					// If nothing remains, flag this kanji form for deletion
 					deleteCurKanji = (SHAVEITUP.length() == 0) ? true : false;
+					
+					// BUT if it was all caps (and digits), we do actually want to keep it haha
+					// EX: 4WD, CIF, 3A, WYSIWYG, or LGBT
+					if (deleteCurKanji)
+					{
+						bool allCaps = true;
+						for(int j = 0; j < kanjiQ.front().length(); j++)
+						{
+							if (!isupper(kanjiQ.front()[j]) &&
+								!isdigit(kanjiQ.front()[j]))
+							{
+								allCaps = false;
+								break;
+							}
+						}
+						
+						if (allCaps)
+							deleteCurKanji = false;
+					}
 				}
 				
 				// Remove the kanji form, if flagged
