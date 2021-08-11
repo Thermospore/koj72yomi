@@ -1,0 +1,82 @@
+mappings to double check later; I have no internet rn
+many are probably just font differences (I don't know any chinese lol)
+but some are actually incorrect I think
+
+shoui: might want to check these in your gaiji maps for other dicts as well
+
+****this link from my notes might be helpful for those cap letters, but I can't check it rn https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+****what's up with E1E7; is it supposed to be null?
+
+svg / mapping / example entry headword / reading // comments
+5676.svg / 噶 / あかこっこ / 
+B463.svg / 驓 / 足駁・足斑・驓 / あしぶち // might just be a font thing...
+E16E.svg / 梶 / 当たる・中る / あたる
+B45B.svg / 穴 / 穴冠 / あなかんむり // double check there isn't unicode for this
+B45C.svg / 雨 / 雨冠 / あめかんむり
+AF7C.svg / 𥫱 / 𥫱・篅 / いざる
+A53D.svg / 莔 / 莔麻 / いちび
+E3F8.svg / 入 / 入頭 / いりがしら
+B652.svg / 朮 / うけらが花 / うけらがはな
+B565.svg / Ｌ / L・l / エル // Might be in that style for a reason; need to look into it
+B55B.svg / Ｄ / L・l / エル // ditto
+B135.svg / 蛿 / 蛿・白貝 / おう // p sure this is simply a font thing
+E6C1.svg / 煕 / 王公族 / おうこうぞく
+B064.svg / 䩠 / 帯革・帯皮 / おびかわ // probably just font, but im curious
+DD50.svg / 襅 / 小忌衣 / おみごろも // same
+B05D.svg / 藛 / 沢瀉・面高 / おもだか // same
+B561.svg / Ａ / 外積 / がいせき // the styling is needed. maybe bold + italic with struc cont, or find these in unicode
+B562.svg / Ｂ / 外積 / がいせき // ditto
+A337.svg / レ / 返り点 / かえりてん // probably good enough, but maybe check again
+B17B.svg / 蒁 / 莪蒁・莪荗 / がじゅつ
+719C.svg / 熜 / 嘉靖帝 / かせいてい
+E050.svg / 葛 / 葛城 / かつらぎ
+B47B.svg / 餕 / 迦陵伽・Kaliṅga / カリンガ
+AF51.svg / 运 / 簡体字 / かんたいじ
+E213.svg / 革 / 黄威 / きおどし
+DD53.svg / 牙 / 牙偏 / きばへん
+B050.svg / 蔥 / 行者葫 / ぎょうじゃにんにく
+E565.svg / ＊ / 鏡像異性体 / きょうぞういせいたい // make this <sup>? can just add html right into the gaiji file like with <strike>
+AA27.svg / 筟 / 管・筟 / くだ
+A971.svg / 𑑛 / 管朱引 / くだしゅびき // im just curious about this
+AD58.svg / 堗 / 竈 / くど
+B821.svg / Ⅷ / 血液凝固因子 / けつえきぎょうこいんし
+AD6A.svg / 玄 / 闕画・欠画 / けっかく
+E1AF.svg / 蘰 / けり / 
+B449.svg / 狦 / 呼韓邪単于 / こかんやぜんう
+DD54.svg / エﾞ / gondola イタリア / ゴンドラ // just curious about this
+B34D.svg / 𦬇 / 𦬇 / ささてんぼだい
+A937.svg / 𦬇 / 𦬇 / ささてんぼだい
+E11B.svg / 叟 / 式三番 / しきさんばん // juuuuust wanna double check
+DD4E.svg / 〄 / ジスマーク / // map is probably fine, I just want to look this up when I have internet
+A847.svg / 𦆠 / 𦆠 / しね // almost certainly just chinese font difference
+chou.svg / 朓 / 謝脁 / しゃちょう // why did they gaiji this even though it's in the headword lol??? the file has a non-generic name too
+A76A.svg / 顖 / 顖門 / しんもん
+B446.svg / 祹 / 世宗 / せいそう
+AD7A.svg / 萡 / そぐう / 
+AD78.svg / 𠷏 / 𠷏 / そそろ
+6FC9.svg / 濉 / 戴顒 / たいぎょう // p sure just a font thing, but I wanna double check
+E0DF.svg / … / 長ける・闌ける / たける
+AF58.svg / 王 / 玉偏 / たまへん
+AA3B.svg / 驇 / 驇 / たり
+AE3B.svg / 𦿔 / 禿ぶ / つぶ
+B04E.svg / 㯓 / 床 / とこ
+E1EA.svg / 謗 / 閉めの事 / とじめのこと
+E210.svg / 鄭 / 杜甫 / とほ
+AF2F.svg / 虍 / 虎冠 / とらかんむり
+B05B.svg / 㴔 / 波打つ / なみうつ
+B56C.svg / 你 / 你好 / ニーハオ // odds are pretty good this is just a font thing, but hey lol
+AE4A.svg / 繀 / 繀車 / ぬきかぶり // p sure this is just font
+A16A.svg / F / は / might be a reason it's stylized this way
+AE77.svg / 䌇 / 糄䌇 / ひめ
+A82F.svg / 丰 / 風丰 / ふうぼう // just curious about this one
+A824.svg / 䃾 / 袘・䃾 / ふき
+B32F.svg / 不 / 白不子 / ペイトンツ
+B330.svg / 繃 / ペテン / 
+AF3D.svg / 土 / 偏 / へん
+AF3E.svg / 木 / 偏 / へん
+E6B9.svg / 㸅 / 㸅・細𪸫 / ほそくず
+AE7A.svg / 𪸫 / 㸅・細𪸫 / ほそくず
+B441.svg / 𩸽 / 𩸽 / ほっけ // probably font difference, but I see some of these ones get different codepoints
+845F.svg / 葟 / 蓑米 / みのごめ
+AF43.svg / 𫐯 / 𫐯迫 / ゆはく
+C65E.svg / 懶 / 懶惰・懶惰・嬾惰 / らんだ
