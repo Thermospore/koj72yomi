@@ -6,6 +6,9 @@ using namespace std;
 
 int main()
 {
+	// (this is just used for debugging gaiji)
+	int lastGaijiTest = -1;
+	
 	// Get seqNo range from user
 	int startSeq = 0;
 	int endSeq = 0;
@@ -579,12 +582,7 @@ int main()
 				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
 				{
 					// Map from external gaiji text file
-					// NOTE: make E565.svg	＊ <sup>? can just add html right into the gaiji file like with <strike>
-					// NOTE: change those cap leters to these?
-					//		https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
-					// NOTE: is A16A really supposed to be F? why did they gaiji it?
-					// NOTE: match these to icons file? A428.svg	🈔
-					// NOTE: what's up with E1E7; is it supposed to be null?
+					// NOTE: see `TEMP_check these gaiji maps.txt`
 					// Get filename from <object> attributes
 					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);
 					
@@ -609,6 +607,17 @@ int main()
 							else
 							{
 								fnAllReplace = gaijiReplace[i];
+								// DEBUG: Uncomment this to generate a dict for checking gaiji mappings
+								//		+ a list of example entries to search
+								/*
+								fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"gaiji/" + gaijiFind[i];
+								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\"}, \"" + gaijiReplace[i];
+								if (i > lastGaijiTest)
+								{
+									debugOutput << gaijiFind[i]<< " / " << gaijiReplace[i] << " / " << kanji << " / " << reading << endl;
+									lastGaijiTest = i;
+								}
+								*/
 							}
 							
 							break;
