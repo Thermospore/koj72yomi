@@ -1,6 +1,6 @@
-# Author: shoui520
-# Null means you should just remove it as i found them useless 
-# Any png gaiji in headwords and any "unable to get" should be changed to �. 
+# Author: shoui520 & Thermospore
+# Null means you should just remove it
+# Any svg gaiji in headwords should be changed to �
 AC6E.svg	gaiji/AC6E.svg
 A428.svg	🈔
 A434.svg	〻

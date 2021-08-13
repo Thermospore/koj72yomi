@@ -1,82 +1,50 @@
-mappings to double check later; I have no internet rn
-many are probably just font differences (I don't know any chinese lol)
-but some are actually incorrect I think
+I'm kinda new to this sort of thing, but this website seems useful https://glyphwiki.org/
+this might be helpful for those math symbols https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+NOTE: add the above info to a comment in the main code, or maybe the gaiji map file itself
 
 shoui: might want to check these in your gaiji maps for other dicts as well
 
-****this link from my notes might be helpful for those cap letters, but I can't check it rn https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
-****what's up with E1E7; is it supposed to be null?
-
-svg / mapping / example entry headword / reading // comments
-5676.svg / 噶 / あかこっこ / 
-B463.svg / 驓 / 足駁・足斑・驓 / あしぶち // might just be a font thing...
-E16E.svg / 梶 / 当たる・中る / あたる
-B45B.svg / 穴 / 穴冠 / あなかんむり // double check there isn't unicode for this
-B45C.svg / 雨 / 雨冠 / あめかんむり
-AF7C.svg / 𥫱 / 𥫱・篅 / いざる
-A53D.svg / 莔 / 莔麻 / いちび
-E3F8.svg / 入 / 入頭 / いりがしら
-B652.svg / 朮 / うけらが花 / うけらがはな
-B565.svg / Ｌ / L・l / エル // Might be in that style for a reason; need to look into it
+svg / old mapping / example entry headword / reading // comments
+E16E.svg / 梶 / 当たる・中る / あたる // looks like 楫 to me
+B45B.svg / 穴 / 穴冠 / あなかんむり // I'd rather drop to svg, if there isn't unicode for the radical
+B45C.svg / 雨 / 雨冠 / あめかんむり // I think it's this ⻗
+AF7C.svg / 𥫱 / 𥫱・篅 / いざる // AFAICT 𥫱 can be used for いざる, but it looks like they are using 𥫬
+A53D.svg / 莔 / 莔麻 / いちび // I think they are technically using this codepoint 苘 https://glyphwiki.org/wiki/chunichidaijiten_qing3b364 , which doesn't suprise me, as the dict seems to prefer that sort of thing. maybe using 莔 instead would be of more practical use..? I'm inclined to use what they indended though
+E3F8.svg / 入 / 入頭 / いりがしら // unless we use 全 and force a font from a different region, I think the only option is to drop to svg https://glyphwiki.org/wiki/u5168
+B652.svg / 朮 / うけらが花 / うけらがはな // it's this 𦬸 https://glyphwiki.org/wiki/u26b38
+B565.svg / Ｌ / L・l / エル // They clearly don't want it to be a plain old L for some reason? Not that hot on my o-chem (maybe ask cailey), but AFAICT you can use use plain old L and D for this concept (I'm googling levorotatory, 鏡像異性体, etc). Looking at image in 鏡像異性体 def as a reference, I think they simply want the font size a bit smaller, which we can do with struct cont
 B55B.svg / Ｄ / L・l / エル // ditto
-B135.svg / 蛿 / 蛿・白貝 / おう // p sure this is simply a font thing
-E6C1.svg / 煕 / 王公族 / おうこうぞく
-B064.svg / 䩠 / 帯革・帯皮 / おびかわ // probably just font, but im curious
-DD50.svg / 襅 / 小忌衣 / おみごろも // same
-B05D.svg / 藛 / 沢瀉・面高 / おもだか // same
-B561.svg / Ａ / 外積 / がいせき // the styling is needed. maybe bold + italic with struc cont, or find these in unicode
-B562.svg / Ｂ / 外積 / がいせき // ditto
-A337.svg / レ / 返り点 / かえりてん // probably good enough, but maybe check again
-B17B.svg / 蒁 / 莪蒁・莪荗 / がじゅつ
-719C.svg / 熜 / 嘉靖帝 / かせいてい
-E050.svg / 葛 / 葛城 / かつらぎ
-B47B.svg / 餕 / 迦陵伽・Kaliṅga / カリンガ
-AF51.svg / 运 / 簡体字 / かんたいじ
-E213.svg / 革 / 黄威 / きおどし
-DD53.svg / 牙 / 牙偏 / きばへん
-B050.svg / 蔥 / 行者葫 / ぎょうじゃにんにく
-E565.svg / ＊ / 鏡像異性体 / きょうぞういせいたい // make this <sup>? can just add html right into the gaiji file like with <strike>
-AA27.svg / 筟 / 管・筟 / くだ
-A971.svg / 𑑛 / 管朱引 / くだしゅびき // im just curious about this
-AD58.svg / 堗 / 竈 / くど
-B821.svg / Ⅷ / 血液凝固因子 / けつえきぎょうこいんし
-AD6A.svg / 玄 / 闕画・欠画 / けっかく
-E1AF.svg / 蘰 / けり / 
-B449.svg / 狦 / 呼韓邪単于 / こかんやぜんう
-DD54.svg / エﾞ / gondola イタリア / ゴンドラ // just curious about this
-B34D.svg / 𦬇 / 𦬇 / ささてんぼだい
-A937.svg / 𦬇 / 𦬇 / ささてんぼだい
-E11B.svg / 叟 / 式三番 / しきさんばん // juuuuust wanna double check
-DD4E.svg / 〄 / ジスマーク / // map is probably fine, I just want to look this up when I have internet
-A847.svg / 𦆠 / 𦆠 / しね // almost certainly just chinese font difference
-chou.svg / 朓 / 謝脁 / しゃちょう // why did they gaiji this even though it's in the headword lol??? the file has a non-generic name too
-A76A.svg / 顖 / 顖門 / しんもん
-B446.svg / 祹 / 世宗 / せいそう
-AD7A.svg / 萡 / そぐう / 
-AD78.svg / 𠷏 / 𠷏 / そそろ
-6FC9.svg / 濉 / 戴顒 / たいぎょう // p sure just a font thing, but I wanna double check
-E0DF.svg / … / 長ける・闌ける / たける
-AF58.svg / 王 / 玉偏 / たまへん
-AA3B.svg / 驇 / 驇 / たり
-AE3B.svg / 𦿔 / 禿ぶ / つぶ
-B04E.svg / 㯓 / 床 / とこ
-E1EA.svg / 謗 / 閉めの事 / とじめのこと
-E210.svg / 鄭 / 杜甫 / とほ
-AF2F.svg / 虍 / 虎冠 / とらかんむり
-B05B.svg / 㴔 / 波打つ / なみうつ
-B56C.svg / 你 / 你好 / ニーハオ // odds are pretty good this is just a font thing, but hey lol
-AE4A.svg / 繀 / 繀車 / ぬきかぶり // p sure this is just font
-A16A.svg / F / は / might be a reason it's stylized this way
-AE77.svg / 䌇 / 糄䌇 / ひめ
-A82F.svg / 丰 / 風丰 / ふうぼう // just curious about this one
-A824.svg / 䃾 / 袘・䃾 / ふき
-B32F.svg / 不 / 白不子 / ペイトンツ
-B330.svg / 繃 / ペテン / 
-AF3D.svg / 土 / 偏 / へん
-AF3E.svg / 木 / 偏 / へん
-E6B9.svg / 㸅 / 㸅・細𪸫 / ほそくず
-AE7A.svg / 𪸫 / 㸅・細𪸫 / ほそくず
-B441.svg / 𩸽 / 𩸽 / ほっけ // probably font difference, but I see some of these ones get different codepoints
-845F.svg / 葟 / 蓑米 / みのごめ
-AF43.svg / 𫐯 / 𫐯迫 / ゆはく
-C65E.svg / 懶 / 懶惰・懶惰・嬾惰 / らんだ
+E6C1.svg / 煕 / 王公族 / おうこうぞく // bit tricky to find, but it's this 𤋅
+B561.svg / Ａ / 外積 / がいせき // They've got fancy math symbols for this! 𝑨 https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols#Latin_letters
+B562.svg / Ｂ / 外積 / がいせき // ditto, 𝑩
+A337.svg / レ / 返り点 / かえりてん // I'm just going to upper align this and call it a day
+B47B.svg / 餕 / 迦陵伽・Kaliṅga / カリンガ // wasn't easy but I found it 𩜁 https://glyphwiki.org/wiki/u29701
+AF51.svg / 运 / 簡体字 / かんたいじ // Thinking it's actually this 远
+E213.svg / 革 / 黄威 / きおどし // Think it's simply 韋 ? Maybe they forgot to un-gaiji it
+E1E7.svg / null / 貴種流離譚 / きしゅりゅうりたん // 謫. Not sure why it was NULL'd; looks like they forgot to add it or something in the 6th ed
+DD53.svg / 牙 / 牙偏 / きばへん // technically the corrrect codepoint, but it needs to be kept as svg due to the context of the definition, unless we can force a different font
+B050.svg / 蔥 / 行者葫 / ぎょうじゃにんにく // think it's ok, but I'm not sure
+E565.svg / ＊ / 鏡像異性体 / きょうぞういせいたい // imma <sup> this (can just add html right into the gaiji file like with <strike>)
+A971.svg / 𑑛 / 管朱引 / くだしゅびき // I think ▯ (U+25AF : WHITE VERTICAL RECTANGLE) is more fitting, reading the 管朱引 def
+B821.svg / Ⅷ / 血液凝固因子 / けつえきぎょうこいんし // should be roman numeral 13 not 8, but AFAICT that doesn't exist in unicode... simply going to drop to svg so it looks nice, rather than trying to pidgeon hole something https://www.compart.com/en/unicode/search?q=Roman+Numeral#characters
+AD6A.svg / 玄 / 闕画・欠画 / けっかく // I think 𤣥 is the closest codepoint, but I think they intend to show 玄 sans the last stroke, rather than the character 𤣥? 𤣥 also lacks jp font support, so it shows up in a different style. Would make the def not as clear. Droping to svg
+E1AF.svg / 蘰 / けり / // looks like 縵
+B34D.svg / 𦬇 / 𦬇 / ささてんぼだい // I think it's this 𬻋 https://glyphwiki.org/wiki/shincho-09970 , but it's not in any of my fonts so svg it is
+DD4E.svg / 〄 / ジスマーク / // AFAICT 〄 specifically refers to the old jis symbol, and the new one isn't in unicode yet, so dropping to svg https://en.wikipedia.org/wiki/Japanese_Industrial_Standards
+chou.svg / 朓 / 謝脁 / しゃちょう // why did they gaiji this even though it's in the headword lol??? the file has a non-generic name too. Weird. Anyway, looks like it's 脁
+A76A.svg / 顖 / 顖門 / しんもん // not 100% sure 顖 is what is in the svg, but 顖門 is certainly a thing, so good enough I guess
+B446.svg / 祹 / 世宗 / せいそう // think it's 裪
+E0DF.svg / … / 長ける・闌ける / たける // this 誹
+AF58.svg / 王 / 玉偏 / たまへん // this ⺩
+AA3B.svg / 驇 / 驇 / たり // this 騺
+B651.svg / テータ / テータ関数 / テータかんすう // they have unicode for that ϑ (though honestly using テータ would make the entry more searchable...) https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+E1EA.svg / 謗 / 閉めの事 / とじめのこと // they changed it to 譏 in the 7th ed
+E210.svg / 鄭 / 杜甫 / とほ // they use 鞏 in 7th ed. But why did they gaiji this, they use it earlier in the def lol
+AF2F.svg / 虍 / 虎冠 / とらかんむり // drop to svg. seems 虍 does look like the svg/radical in certain fonts? https://en.wikipedia.org/wiki/Radical_141 but not in shueitai at least, which is why they use gaiji
+A16A.svg / F / は / might be a reason it's stylized this way. compare to L and D. might need to reevaluate those too.
+AE77.svg / 䌇 / 糄䌇 / ひめ // it's this 𥻨
+A824.svg / 䃾 / 袘・䃾 / ふき // I almost missed that; should be 𧘱
+B32F.svg / 不 / 白不子 / ペイトンツ // Kinda torn on this. I think the svg is of 𣎴? but 白𣎴子 gets no hits, as opposed to 白不子. But clearly there is a reason the dict authors didn't simply use 不. Maybe I'll go ask the chinese department at uni lol
+B330.svg / 繃 / ペテン / // drop to svg. looks like 弓+幷 but I can't find it. they do something interesting here though https://zhuanlan.zhihu.com/p/382075230
+AF3D.svg / 土 / 偏 / へん // can't find; dropping to svg. But I mean, if you look at the def for 土偏 they just use 土 there, so I guess it doesn't really matter.
+AF3E.svg / 木 / 偏 / へん // ditto
