@@ -595,29 +595,36 @@ int main()
 					// 6th ed in ebwin just bolds / different font eg 組合せ, 差集合
 					// 7th ed logovista puts in「」but they don't really know shit
 					// I'm just going to put in「」since I don't really know a better option
+					// NOTE: check physical copy
 					fnOpenReplace = "「";
 					fnCloseReplace =  "」";
 				}
 				else if (tagAttributes == "class=\\\"kente\\\"")
 				{
-					// ...圏点?? btw typing that in ime brings some up
+					// 圏点. Had to go to the library to see what 1 vs 2 should look like lol
 					// 6th edition in ebwin just bolds for this eg 沓冠; 序詞冠
-					// NOTE: still need to handle these
-					fnNeutralize = true;
+					
+					// Loop to add a 圏点 for each char
+					// NOTE: check physical copy to verify
+					string kente = "";
+					for(int k = tagContents.length() / 3; k > 0; k--)
+						kente += "●";
+					
+					fnOpenReplace = "\", {\"tag\": \"ruby\", \"content\": [\"";
+					fnCloseReplace = "\", {\"tag\": \"rp\", \"content\": \"(\"}, {\"tag\": \"rt\", \"content\": \"" + kente + "\"}, {\"tag\": \"rp\", \"content\": \")\"}]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"kenten2\\\"")
 				{
-					// Gonna guess as in 圏点
 					// This only exists in entry for 沓冠
 					// 6th ed in ebwin doesn't show any sign of it
-					// NOTE: still need to handle these
-					fnNeutralize = true;
+					fnOpenReplace = "\", {\"tag\": \"ruby\", \"content\": [\"";
+					fnCloseReplace = "\", {\"tag\": \"rp\", \"content\": \"(\"}, {\"tag\": \"rt\", \"content\": \"○\"}, {\"tag\": \"rp\", \"content\": \")\"}]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"bousen1\\\"")
 				{
 					// Gonna guess as in 傍線/棒線. Goes on top, not bottom
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"overline\"}, \"content\": [\"";
-					fnCloseReplace =  "\"]}, \"";
+					fnCloseReplace = "\"]}, \"";
 				}
 			}
 			else if (tagType == "sub")
@@ -629,13 +636,13 @@ int main()
 					//		See: わそう‐コート 【和装コート】
 					// Example where having rubi formatting is important アートマン 【ātman 梵】
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
-					fnCloseReplace =  "\"}, \"";
+					fnCloseReplace = "\"}, \"";
 				}
 				else if (tagAttributes == "")
 				{
 					// Plain ol subscript. Technically making this `bottom`, not sub (to match rubi)
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
-					fnCloseReplace =  "\"}, \"";
+					fnCloseReplace = "\"}, \"";
 				}
 			}
 			else if (tagType == "下")
@@ -643,7 +650,7 @@ int main()
 				// Seems to be used exactly the same as the sub with no attributes
 				// Fun Fact: literally the only two entries that have this are LC50 and LD50
 				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
-				fnCloseReplace =  "\"}, \"";
+				fnCloseReplace = "\"}, \"";
 			}
 			else if (tagType == "sup")
 			{
@@ -656,13 +663,13 @@ int main()
 				// Italic
 				// Fun Fact: literally the only two entries that have this are NOx and SOx
 				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontStyle\": \"italic\"}, \"content\": \"";
-				fnCloseReplace =  "\"}, \"";
+				fnCloseReplace = "\"}, \"";
 			}
 			else if (tagType == "strike")
 			{
 				// Tag I added myself for a single pair of gaiji lol (E535.svg and E536.svg)
 				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"textDecorationLine\": \"line-through\"}, \"content\": [\"";
-				fnCloseReplace =  "\"]}, \"";
+				fnCloseReplace = "\"]}, \"";
 			}
 			else if (tagType == "object")
 			{
