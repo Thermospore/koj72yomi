@@ -99,14 +99,14 @@ int main()
 	// Get seqNo range from user
 	int startSeq = 0;
 	int endSeq = 0;
-	cout << "startSeq: ";
+	cout << "Due to file size limits (and copyright concerns), only have the first 300 entries exported when making commits."
+		<< "\n\nstartSeq: ";
 	cin >> startSeq;
 	cout << "endSeq (0 for no cap): ";
 	cin >> endSeq;
 	cout << "\nExport position:\n";
 	
 	// Create and open output files
-	// NOTE: should just take term bank and debug offline, but keep a .old copy and use a local diff program
 	ofstream termBank("term_bank_1.json");
 	ofstream debugOutput("debugOutput.txt");
 	
