@@ -478,9 +478,7 @@ int main()
 			else if (tagType == "br")
 			{
 				// Used for newlines in xref sections, image sections, etc
-				// NOTE: what <br>s exist outside of oyko_link div?
-				// NOTE: wait, yomi has actual <br>s dumbo
-				fnOpenReplace = "\\n";
+				fnOpenReplace = "\", {\"tag\": \"br\"}, \"";
 			}
 			else if (tagType == "div")
 			{
