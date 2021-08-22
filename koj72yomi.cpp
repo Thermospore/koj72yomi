@@ -327,9 +327,7 @@ int main()
 			title.erase(tagPos, title.find(">") - tagPos + 1);
 		}
 		
-		// Remove ‐s from title
-		// NOTE: count entry with largest number of these
-		// NOTE: check for entries that don't have the same number in title and midashi
+		// Remove ‐s from title (not to be confused with -, jfc)
 		int hyphPos = 0;
 		while(1<2)
 		{
@@ -344,7 +342,6 @@ int main()
 		if (brackPos == -1) 
 		{
 			// No 【】 brackets; kana only
-			// NOTE: export a bunch of these to see how they look
 			// Check for （） brackets
 			brackPos = title.find("（");
 			if (brackPos == -1) 
@@ -355,14 +352,12 @@ int main()
 			else
 			{
 				// Ignore （） bracket stuff at end
-				// NOTE: maybe add these in tags? some show up in honbun and some don't
 				kanji = title.substr(0, brackPos);
 			}
 		}
 		else 
 		{
 			// Yes 【】 brackets; kanji + reading
-			// NOTE: export a bunch of stuff outside of 】 to see how it looks
 			reading = title.substr(0, brackPos);
 			kanji = title.substr(brackPos + 3, title.find("】") - brackPos - 3);
 		}
