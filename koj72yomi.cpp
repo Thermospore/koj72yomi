@@ -186,11 +186,11 @@ int main()
 		// Init term bank components
 		string kanji = "";
 		string reading = "";
+		string titleTag = "";
 		string pos = "";
 		int score = 0;
 		
 		// Extract Title and Html
-		// NOTE: should print all the titles out to check them
 		int separatorPos = line.find(",\"<rn></rn><a name=\"\"");
 		title = line.substr(0, separatorPos);
 		html = line.substr(separatorPos + 2, line.length() - separatorPos - 3);
@@ -200,6 +200,23 @@ int main()
 		
 		// Detect if ALPH entry
 		bool alphEntry = (title.find("ALPH.svg") == -1) ? false : true;
+		
+		// Extract that（）tag thing that isn't included in the midashi
+		// Watch out for:
+		//		（ in【】ie アース‐カラー 【earth colo（u）r】
+		//		stuff like（地名（京都府））
+		//		titles in quotes ie "てならいこ【手習子】<sub class=""rubi"">‥ナラヒ‥</sub>（作品名）"
+		int startPos = title.find("】") == -1 ?
+				title.find("（") : title.find("（", title.find("】"));
+		if (startPos != -1)
+		{
+			// Grab titleTag from end of title
+			titleTag = title.substr(startPos);
+			
+			// Remove " from end, if needed
+			if (titleTag.find("\"") != -1)
+				titleTag = titleTag.substr(0, titleTag.length() - 1);
+		}
 		
 		// Handle titles in quotation marks
 		if (title[0] == '\"')
@@ -476,9 +493,10 @@ int main()
 				{
 					// Encapsulates the headword. Dropping the structured div
 					// (otherwise you can't have dict name and midashi on same line)
-					// NOTE: underline / bold the midashi?
+					// Insert the titleTag here, which we extracted from the title earlier
+					// (ie（地名）in あいおい 【相生】)
 					fnOpenReplace = "\"";
-					fnCloseReplace = "\", ";
+					fnCloseReplace = titleTag + "\", ";
 					
 					// Add readings for phrase entries
 					if (phraseEntry == true)
