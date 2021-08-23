@@ -610,7 +610,6 @@ int main()
 					// 6th ed in ebwin just bolds / different font eg 組合せ, 差集合
 					// 7th ed logovista puts in「」but they don't really know shit
 					// I'm just going to put in「」since I don't really know a better option
-					// NOTE: check physical copy
 					fnOpenReplace = "「";
 					fnCloseReplace =  "」";
 				}
@@ -620,7 +619,6 @@ int main()
 					// 6th edition in ebwin just bolds for this eg 沓冠; 序詞冠
 					
 					// Loop to add a 圏点 for each char
-					// NOTE: check physical copy to verify
 					string kente = "";
 					for(int k = tagContents.length() / 3; k > 0; k--)
 						kente += "●";
@@ -691,7 +689,6 @@ int main()
 				if (tagAttributes.find("class=\\\"gaiji\\\" data=\\\"") != -1)
 				{
 					// Map from external gaiji text file
-					// NOTE: see `TEMP_check these gaiji maps.txt`
 					// Get filename from <object> attributes
 					string gaijiFilename = tagAttributes.substr(23, tagAttributes.length() - 25);
 					
