@@ -609,7 +609,10 @@ int main()
 					// Gonna guess as in 式
 					// 6th ed in ebwin just bolds / different font eg 組合せ, 差集合
 					// 7th ed logovista puts in「」but they don't really know shit
-					// I'm just going to put in「」since I don't really know a better option
+					// Looking at a physical copy of the 5th ed, they put everything in a math-y looking font?
+					//		eg in うんどう‐エネルギー 【運動エネルギー】, イー 【E・e】, うら‐がね 【裏曲・裏矩】, えんすい‐めん 【円錐面】
+					//		but that might just be how their latin letters normally look, idk
+					// NOTE: I'm just going to put in「」for now
 					fnOpenReplace = "「";
 					fnCloseReplace =  "」";
 				}
