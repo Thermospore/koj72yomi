@@ -115,6 +115,7 @@ int main()
 	vector<string> iconReplace;
 	ifstream iconMap("map_icon.txt");
 	string line;
+	string yajirusi2Map = "";
 	while (getline(iconMap, line))
 	{
 		// Skip comment lines
@@ -127,6 +128,10 @@ int main()
 		// Store contents
 		iconFind.push_back(line.substr(0,tabPos));
 		iconReplace.push_back(line.substr(tabPos + 1));
+		
+		// Store yajirusi2.svg mapping for easy reference later
+		if (iconFind.back() == "yajirusi2.svg")
+			yajirusi2Map = iconReplace.back();			
 	}
 	iconMap.close();
 	
@@ -572,8 +577,7 @@ int main()
 					if (tagContents.find("→") == 0 ||
 						tagContents.find("<sup>(→)</sup>") == 0 ||
 						tagContents.find("<object class=\\\"icon\\\" data=\\\"yajirusi1.svg\\\"></object>") == 0 ||
-						// NOTE: kinda dangerous; should ref the icon list instead of hardcoding lol
-						html.find("➡", openTagStart - 3) == openTagStart - 3 ||
+						html.find(yajirusi2Map, openTagStart - yajirusi2Map.length()) == openTagStart - yajirusi2Map.length() ||
 						// These are exclusively the "参照" refs (with a single exception in こ‐じっかり 【小確】)
 						(tagContents.find("「") == 0 && tagContents.find("」") == tagContents.length() - 3))
 					{
