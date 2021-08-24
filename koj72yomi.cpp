@@ -115,7 +115,8 @@ int main()
 	vector<string> iconReplace;
 	ifstream iconMap("map_icon.txt");
 	string line;
-	string yajirusi2Map = "";
+	int yaj2Pos = -1;
+	int ALPHPos = -1;
 	while (getline(iconMap, line))
 	{
 		// Skip comment lines
@@ -129,9 +130,11 @@ int main()
 		iconFind.push_back(line.substr(0,tabPos));
 		iconReplace.push_back(line.substr(tabPos + 1));
 		
-		// Store yajirusi2.svg mapping for easy reference later
+		// Store some mapping indexes for easy reference later
 		if (iconFind.back() == "yajirusi2.svg")
-			yajirusi2Map = iconReplace.back();			
+			yaj2Pos = iconReplace.size() - 1;
+		if (iconFind.back() == "ALPH.svg")
+			ALPHPos = iconReplace.size() - 1;
 	}
 	iconMap.close();
 	
@@ -496,6 +499,11 @@ int main()
 					fnOpenReplace = "\"";
 					fnCloseReplace = titleTag + "\", ";
 					
+					// Add ALPH.svg icon mapping for ALPH entries
+					// (originally it was in the title, not the midashi, so you couldn't see it)
+					if(alphEntry)
+						fnOpenReplace += iconReplace[ALPHPos];
+					
 					// Add readings for phrase entries
 					if (phraseEntry == true)
 					{
@@ -577,7 +585,7 @@ int main()
 					if (tagContents.find("→") == 0 ||
 						tagContents.find("<sup>(→)</sup>") == 0 ||
 						tagContents.find("<object class=\\\"icon\\\" data=\\\"yajirusi1.svg\\\"></object>") == 0 ||
-						html.find(yajirusi2Map, openTagStart - yajirusi2Map.length()) == openTagStart - yajirusi2Map.length() ||
+						html.find(iconReplace[yaj2Pos], openTagStart - iconReplace[yaj2Pos].length()) == openTagStart - iconReplace[yaj2Pos].length() ||
 						// These are exclusively the "参照" refs (with a single exception in こ‐じっかり 【小確】)
 						(tagContents.find("「") == 0 && tagContents.find("」") == tagContents.length() - 3))
 					{

@@ -1,5 +1,5 @@
 # Author: shoui520 & thermospore
-# Null means you should just remove it
+# Any whitespace at the end of the line is intentional
 square_a.svg	〘
 square_b.svg	〙
 yajirusi2.svg	➡
@@ -11,5 +11,5 @@ kigo.svg	季:
 angle_b.svg	》
 kan3.svg	🈪
 kan4.svg	", {"tag": "img", "path": "gaiji/kan4.svg", "width": 1, "height": 1, "background": false, "appearance": "monochrome", "collapsible": false, "collapsed": false, "sizeUnits": "em"}, "
-ALPH.svg	null
+ALPH.svg	🄰 
 bungo.png	〚文〛
