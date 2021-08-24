@@ -1,15 +1,15 @@
-# Author: shoui520
-# Null means you should just remove it as i found them useless 
+# Author: shoui520 & thermospore
+# Null means you should just remove it
 square_a.svg	〘
 square_b.svg	〙
 yajirusi2.svg	➡
 yajirusi1.svg	⇨
-kan1.svg	[一]
-kan2.svg	[二]
+kan1.svg	🈩
+kan2.svg	🈔
 angle_a.svg	《
 kigo.svg	季: 
 angle_b.svg	》
-kan3.svg	[三]
-kan4.svg	[四]
+kan3.svg	🈪
+kan4.svg	", {"tag": "img", "path": "gaiji/kan4.svg", "width": 1, "height": 1, "background": false, "appearance": "monochrome", "collapsible": false, "collapsed": false, "sizeUnits": "em"}, "
 ALPH.svg	null
 bungo.png	〚文〛
