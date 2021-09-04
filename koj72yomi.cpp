@@ -556,25 +556,15 @@ int main()
 				}
 				else if (tagAttributes == "class=\\\"oyko_link\\\"")
 				{
-					// Encapsulate those long xref lists that use yajirusi2.svg
-					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"fontSize\": \"x-small\"}, \"content\": [\"";
-					fnCloseReplace = "\"]}, \"";
+					// List of words that are grouped in the same physical location in the paper copy
+					// Ugly, takes up a lot of space, and serves no practical use. Removing entirely
+					// Details: https://github.com/FooSoft/yomichan/issues/1910
+					fnDelete = true;
 					
-					// Strip <br> tags (because look at shit like まくら 【枕】or even worse にほん 【日本】)
-					// ...while carefully adjusting closeTagStart position lol
-					while(1<2)
-					{
-						int brPos = html.find("<br>", openTagEnd);
-						if (brPos != -1 && brPos < closeTagStart)
-						{
-							html.replace(brPos, 4, " ");
-							closeTagStart -= 3;
-						}
-						else
-						{
-							break;
-						}
-					}
+					// fnDelete removes the tag itself but leaves the contents, so we need to remove that manually
+					// (while not forgetting to adjust our closeTagStart index...)
+					html.erase(openTagEnd + 1, tagContents.length());
+					closeTagStart = openTagEnd + 1;
 				}
 			}
 			else if (tagType == "a")
