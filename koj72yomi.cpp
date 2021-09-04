@@ -544,7 +544,8 @@ int main()
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
 					// Encapsulates senses etc in entry (this is the juicy stuff rh, mwah～)
-					fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+					// These are all indented by 1em
+					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"marginLeft\": 1}, \"content\": [\"";
 					fnCloseReplace = "\"]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"media\\\"")
