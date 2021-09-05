@@ -389,6 +389,9 @@ int main()
 			// Fun fact: my internet is down rn and I just hoped and prayed that insert was a real function
 		}
 		
+		// Define bool used for removing the outermost margin
+		bool inOuterMarginLayer = true;
+		
 		// Handle tags in html from left to right until they are all gone
 		int loopNo = 0;
 		while(1<2)
@@ -488,6 +491,12 @@ int main()
 				// Used for newlines in xref sections, image sections, etc
 				fnOpenReplace = "\", {\"tag\": \"br\"}, \"";
 			}
+			else if (tagType == "omlResume")
+			{
+				// I insert this tag myself as a flag help track when you are in the outer margin layer
+				fnDelete = true;
+				inOuterMarginLayer = true;
+			}
 			else if (tagType == "div")
 			{
 				if (tagAttributes == "class=\\\"midashi\\\"")
@@ -544,8 +553,19 @@ int main()
 				else if (tagAttributes == "style=\\\"margin-left:1em;\\\"")
 				{
 					// Encapsulates senses etc in entry (this is the juicy stuff rh, mwah～)
-					// These are all indented by 1em
-					fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"marginLeft\": 1}, \"content\": [\"";
+					
+					// Omit indent for the outermost layer
+					if (inOuterMarginLayer)
+					{
+						fnOpenReplace = "\", {\"tag\": \"div\", \"content\": [\"";
+						inOuterMarginLayer = false;
+						html.insert(closeTagStart + 6, "<omlResume></omlResume>");
+					}
+					else
+					{
+						fnOpenReplace = "\", {\"tag\": \"div\", \"style\": {\"marginLeft\": 1}, \"content\": [\"";
+					}
+					
 					fnCloseReplace = "\"]}, \"";
 				}
 				else if (tagAttributes == "class=\\\"media\\\"")
