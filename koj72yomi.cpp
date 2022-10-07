@@ -779,7 +779,7 @@ int main()
 				{
 					// These all contain 撮影/提供 credits in tagContents
 					// NOTE: extract these from logovista 7th ed
-					fnOpenReplace = "＜Photo not net extracted. ";
+					fnOpenReplace = "＜Photo not yet extracted. ";
 					fnCloseReplace = "＞";
 				}
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
