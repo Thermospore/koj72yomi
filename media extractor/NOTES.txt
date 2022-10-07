@@ -1,0 +1,8 @@
+tool made to extract the images from the pc version
+
+(remove the .txt)
+
+images are stored in a sql database:
+LogoVista\LVEDBRSR\DIC\KOJIEN7\vlpljblM
+
+https://github.com/sqlitebrowser/sqlitebrowser/issues/3183
