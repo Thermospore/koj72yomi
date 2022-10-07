@@ -112,7 +112,7 @@ E1F5.svg	躬
 E534.svg	⛤
 AD47.svg	gaiji/AD47.svg
 B345.svg	髡
-DD54.svg	エﾞ
+DD54.svg	エ゙
 AE59.svg	gaiji/AE59.svg
 B477.svg	殑
 B64C.svg	蜢
