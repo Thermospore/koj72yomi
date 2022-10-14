@@ -26,7 +26,7 @@ AF7C.svg	gaiji/AF7C.svg
 B645.svg	羕
 B62B.svg	gaiji/B62B.svg
 A744.svg	𩊱
-A53D.svg	苘
+A53D.svg	𦯶
 A427.svg	🈩
 B530.svg	…
 E3F8.svg	gaiji/E3F8.svg
