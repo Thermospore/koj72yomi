@@ -787,9 +787,11 @@ int main()
 					// These all seem to be mathematical figures. tagContents empty
 					// They get plopped inline, not in a div
 					// Basically gaiji; look at 陰関数 in 6th ed to compare
-					// NOTE: extract these from logovista 7th ed
-					fnOpenReplace = "＜Mathematical figure not yet extracted.";
-					fnCloseReplace = "＞";
+					// NOTE: need to get height / vertical align sorted out
+					//       might add a space on either side as well. check with paper copy
+					debugOutput << kanji << " / " << tagAttributes.substr(21, 13) << endl;
+					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + tagAttributes.substr(21, 13);
+					fnCloseReplace = "\", \"height\": 2, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
