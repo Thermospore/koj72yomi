@@ -1,8 +1,17 @@
 # Author: shoui520 & Thermospore
-# Null means you should just remove it
-# Any svg gaiji in headwords should be changed to �
+#
 # reference: https://glyphwiki.org/
 # reference: https://en.wikipedia.org/wiki/Mathematical_Alphanumeric_Symbols
+#
+# if the gaiji should be removed entirely, map it to null
+# any svg gaiji in headwords should be changed to �
+#
+# mapping policy:
+#    - map the svg to its exact unicode representation
+#    - if one does not exist or can not be found, leave it as svg (don't use 代用字)
+#    - even if the unicode is rare and has poor font support, it should still be used
+#    - rules are a bit more lax for symbols/icons used for formatting
+#    - for discussion see: https://github.com/Thermospore/koj72yomi/pull/1
 AC6E.svg	gaiji/AC6E.svg
 A428.svg	🈔
 A434.svg	〻
