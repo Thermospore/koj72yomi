@@ -778,9 +778,15 @@ int main()
 				if (tagAttributes.find("class=\\\"FIGc\\\" src=\\\"") != -1)
 				{
 					// These all contain 撮影/提供 credits in tagContents
-					// NOTE: extract these from logovista 7th ed
-					fnOpenReplace = "＜Photo not yet extracted. ";
-					fnCloseReplace = "＞";
+					// NOTE: check sizing/formatting with paper copy
+					//       move image credits to description; once you figure out how...
+					//       (then remove the space at the end of fnOpenReplace)
+					//       fix fnCloseReplace - just having a space is kinda jank lol but my function doesn't like this being empty
+					string imageFileName = tagAttributes.substr(21, 12);
+					debugOutput << imageFileName << " / " << kanji << " / " << tagContents << endl;
+					
+					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"" + imageFileName + "\"}, \" ";
+					fnCloseReplace = " ";
 				}
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
 				{
@@ -789,16 +795,21 @@ int main()
 					// Basically gaiji; look at 陰関数 in 6th ed to compare
 					// NOTE: need to get height / vertical align sorted out
 					//       might add a space on either side as well. check with paper copy
-					debugOutput << kanji << " / " << tagAttributes.substr(21, 13) << endl;
-					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + tagAttributes.substr(21, 13);
-					fnCloseReplace = "\", \"height\": 2, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\"}, \"";
+					string imageFileName = tagAttributes.substr(21, 13);
+					debugOutput << imageFileName << " / " << kanji << endl;
+					
+					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
+					fnCloseReplace = "\", \"height\": 2, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"" + imageFileName + "\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
 					// Diagrams. Empty tagContents
-					// NOTE: extract these from logovista 7th ed
-					fnOpenReplace = "＜Diagram not yet extracted.";
-					fnCloseReplace = "＞";
+					// NOTE: check sizing/formatting with paper copy
+					string imageFileName = tagAttributes.substr(21, 10);
+					debugOutput << imageFileName << " / " << kanji << endl;
+					
+					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
+					fnCloseReplace = "\", \"title\": \"" + imageFileName + "\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"icon\\\" src=\\\"") != -1)
 				{
