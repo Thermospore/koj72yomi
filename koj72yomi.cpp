@@ -783,7 +783,7 @@ int main()
 					//       (then remove the space at the end of fnOpenReplace)
 					//       fix fnCloseReplace - just having a space is kinda jank lol but my function doesn't like this being empty
 					string imageFileName = tagAttributes.substr(21, 12);
-					debugOutput << imageFileName << " / " << kanji << " / " << tagContents << endl;
+					debugOutput << "FIGc // " + imageFileName + " // " + kanji + "(" + reading + ") // " + tagContents << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"" + imageFileName + "\"}, \" ";
 					fnCloseReplace = " ";
@@ -796,7 +796,7 @@ int main()
 					// NOTE: need to get height / vertical align sorted out
 					//       might add a space on either side as well. check with paper copy
 					string imageFileName = tagAttributes.substr(21, 13);
-					debugOutput << imageFileName << " / " << kanji << endl;
+					debugOutput << "FIGm // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
 					fnCloseReplace = "\", \"height\": 2, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"" + imageFileName + "\"}, \"";
@@ -806,7 +806,7 @@ int main()
 					// Diagrams. Empty tagContents
 					// NOTE: check sizing/formatting with paper copy
 					string imageFileName = tagAttributes.substr(21, 10);
-					debugOutput << imageFileName << " / " << kanji << endl;
+					debugOutput << "FIGs // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
 					fnCloseReplace = "\", \"title\": \"" + imageFileName + "\"}, \"";
