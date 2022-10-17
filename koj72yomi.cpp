@@ -779,14 +779,11 @@ int main()
 				{
 					// These all contain 撮影/提供 credits in tagContents
 					// NOTE: check sizing/formatting with paper copy
-					//       move image credits to description; once you figure out how...
-					//       (then remove the space at the end of fnOpenReplace)
-					//       fix fnCloseReplace - just having a space is kinda jank lol but my function doesn't like this being empty
 					string imageFileName = tagAttributes.substr(21, 12);
 					debugOutput << "FIGc // " + imageFileName + " // " + kanji + "(" + reading + ") // " + tagContents << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"" + imageFileName + "\"}, \" ";
-					fnCloseReplace = " ";
+					fnCloseReplace = " "; // kinda jank, but the fn doesn't work if this is empty, and the space doesn't show up in yomichan...
 				}
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
 				{
