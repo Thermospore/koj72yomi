@@ -27,12 +27,12 @@ E16E.svg	楫
 B45B.svg	gaiji/B45B.svg
 B04C.svg	䲑
 B45C.svg	⻗
-B346.svg	gaiji/B346.svg
+B346.svg	𛀁
 B14D.svg	𩺊
 E532.svg	𝄵
 B131.svg	gaiji/B131.svg
-AF7C.svg	gaiji/AF7C.svg
-B645.svg	羕
+AF7C.svg	𥫥
+B645.svg	𦍛
 B62B.svg	gaiji/B62B.svg
 A744.svg	𩊱
 A53D.svg	𦯶
@@ -58,7 +58,7 @@ B24C.svg	𨳯
 B064.svg	䩠
 DD50.svg	襅
 B05D.svg	藛
-B15F.svg	gaiji/B160.svg
+B15F.svg	𑖌𑖽
 B160.svg	℥
 B922.svg	{i}
 B923.svg	{ii}
@@ -70,8 +70,8 @@ B338.svg	gaiji/B338.svg
 E21C.svg	馭
 AC44.svg	▬
 AB7B.svg	╍
-B17B.svg	蒁
-AD64.svg	gaiji/AD64.svg
+B17B.svg	蒁󠄄
+AD64.svg	䐿
 719C.svg	熜
 A849.svg	𤸎
 E050.svg	葛
@@ -138,7 +138,7 @@ B37D.svg	ς
 DD4E.svg	gaiji/DD4E.svg
 AD61.svg	𣏾
 AF57.svg	⺗
-AC38.svg	gaiji/AC38.svg
+AC38.svg	䔧
 AD56.svg	𬮆
 A847.svg	𦆠
 E222.svg	鬘
@@ -166,7 +166,7 @@ AD7A.svg	萡
 AD78.svg	𠷏
 AE50.svg	炲
 6FC9.svg	濉
-B177.svg	gaiji/B177.svg
+B177.svg	䑨
 AE5A.svg	゛
 B532.svg	∘∘
 B531.svg	....
@@ -178,11 +178,11 @@ DD4F.svg	gaiji/DD4F.svg
 DD48.svg	疍
 AE36.svg	gaiji/AE36.svg
 AE2F.svg	𢷡
-AE3F.svg	gaiji/AE3F.svg
+AE3F.svg	𪆂
 AE3C.svg	𡱖
 AE3B.svg	𦿔
 DD4A.svg	敾
-B651.svg	ϑ
+B651.svg	𝜗
 E535.svg	<strike>(</strike>
 E536.svg	<strike>)</strike>
 A94B.svg	𣔺
@@ -232,7 +232,7 @@ E64A.svg	gaiji/E64A.svg
 E6BF.svg	gaiji/E6BF.svg
 AB66.svg	〰
 AF50.svg	gaiji/AF50.svg
-B32F.svg	gaiji/B32F.svg
+B32F.svg	𣎴
 B330.svg	gaiji/B330.svg
 AF3D.svg	gaiji/AF3D.svg
 AF3E.svg	gaiji/AF3E.svg
@@ -261,7 +261,7 @@ B552.svg	⑼
 B553.svg	⑽
 AF43.svg	𫐯
 B13F.svg	𦞜
-B33F.svg	gaiji/B33F.svg
+B33F.svg	𩸭
 C65E.svg	懶
 AC76.svg	gaiji/AC76.svg
 B32E.svg	坶
