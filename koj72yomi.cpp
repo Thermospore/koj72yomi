@@ -2,6 +2,7 @@
 #include <fstream>
 #include <queue>
 #include <vector>
+#include <sstream>
 using namespace std;
 
 int main()
@@ -59,7 +60,7 @@ int main()
 		"ハワイ",
 		"ルーマニア"};
 	
-	// Define junk　string list (used for loan source word removal)
+	// Define junk string list (used for loan source word removal)
 	const int junkSize = 98;
 	const string junk [junkSize] = {
 		"（", "）",
@@ -95,6 +96,51 @@ int main()
 		"œ",
 		"α", "γ", "ß", "β",
 		"‘", "’", "ʼ", "ʻ"};
+	
+	// Define sizes of FIGm files (used to set a proper display size)
+	const int FIGmHeightSize = 41;
+	const int FIGmHeight [FIGmHeightSize] = {
+		0, // filler so you don't have to offset index by 1
+		91,
+		94,
+		94,
+		100,
+		100,
+		100,
+		89,
+		105,
+		178,
+		180,
+		178,
+		178,
+		180,
+		178,
+		177,
+		176,
+		100,
+		86,
+		78,
+		100,
+		101,
+		104,
+		183,
+		183,
+		183,
+		174,
+		183,
+		183,
+		155,
+		86,
+		89,
+		104,
+		96,
+		97,
+		104,
+		86,
+		86,
+		66,
+		178,
+		104};
 	
 	// Get seqNo range from user
 	int startSeq = 0;
@@ -778,9 +824,8 @@ int main()
 				if (tagAttributes.find("class=\\\"FIGc\\\" src=\\\"") != -1)
 				{
 					// These all contain 撮影/提供 credits in tagContents
-					// NOTE: check sizing/formatting with paper copy
 					string imageFileName = tagAttributes.substr(21, 12);
-					debugOutput << "FIGc // " + imageFileName + " // " + kanji + "(" + reading + ") // " + tagContents << endl;
+					//debugOutput << "FIGc // " + imageFileName + " // " + kanji + "(" + reading + ") // " + tagContents << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"" + imageFileName + "\"}, \" ";
 					fnCloseReplace = " "; // kinda jank, but the fn doesn't work if this is empty, and the space doesn't show up in yomichan...
@@ -788,22 +833,40 @@ int main()
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
 				{
 					// These all seem to be mathematical figures. tagContents empty
-					// They get plopped inline, not in a div
 					// Basically gaiji; look at 陰関数 in 6th ed to compare
-					// NOTE: need to get height / vertical align sorted out
-					//       might add a space on either side as well. check with paper copy
+					// They get plopped inline, not in a div
+					// In paper copy, these either take up 1 or 2 whole lines;
+					// when two lines wide, the figure is aligned in the center of the text as so:
+					// ＝＝＝＝＝
+					// －－口－－
+					// ＝＝＝＝＝
+					// having trouble nailing that in yomi, but "text-bottom" looks the best overall
 					string imageFileName = tagAttributes.substr(21, 13);
-					debugOutput << "FIGm // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
 					
+					// Get height (from hardcoded list)
+					string indexText = imageFileName.substr(6,3); // ie "001"
+					int index;
+					istringstream(indexText) >> index;
+					int heightPX = FIGmHeight[index];
+					
+					// Process height
+					ostringstream sstream;
+					sstream << heightPX / 75.0; // scaling factor
+					string heightEM = sstream.str();
+					
+					//debugOutput << "FIGm // " + imageFileName + " // " + kanji + "(" + reading + ")";
+					//debugOutput << " // height (em): " + heightEM << endl;
+					
+					// NOTE: for some reason, yomi is treating both text-bottom and bottom as bottom, for images...
+					//       this should look better once it's ACTUALLY text-bottom in browser
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
-					fnCloseReplace = "\", \"height\": 2, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"" + imageFileName + "\"}, \"";
+					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"" + imageFileName + "\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
 					// Diagrams. Empty tagContents
-					// NOTE: check sizing/formatting with paper copy
 					string imageFileName = tagAttributes.substr(21, 10);
-					debugOutput << "FIGs // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
+					//debugOutput << "FIGs // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
 					fnCloseReplace = "\", \"title\": \"" + imageFileName + "\"}, \"";
