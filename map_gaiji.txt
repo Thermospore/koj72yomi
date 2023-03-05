@@ -93,7 +93,7 @@ AC2C.svg	𧏛
 B221.svg	𣑊
 E1E7.svg	謫
 DD53.svg	gaiji/DD53.svg
-AC32.svg	gaiji/AC32.svg
+AC32.svg	φ
 B44A.svg	𨗈
 B050.svg	蔥
 E565.svg	<sup>＊</sup>
@@ -174,7 +174,7 @@ E0DF.svg	誹
 AE4F.svg	嘋
 AF58.svg	⺩
 AA3B.svg	騺
-DD4F.svg	gaiji/DD4F.svg
+DD4F.svg	𝄋
 DD48.svg	疍
 AE36.svg	gaiji/AE36.svg
 AE2F.svg	𢷡
@@ -191,7 +191,7 @@ E1EA.svg	譏
 E210.svg	鞏
 AF2F.svg	gaiji/AF2F.svg
 B925.svg	gaiji/B925.svg
-DC62.svg	gaiji/DC62.svg
+DC62.svg	𝅘𝅩𝅥
 DD46.svg	楑
 AE46.svg	𬝟
 B05A.svg	䠸
@@ -219,14 +219,14 @@ AE6E.svg	𫫠
 A82F.svg	丰
 B839.svg	½
 E431.svg	null
-AF4F.svg	gaiji/AF4F.svg
+AF4F.svg	𝄐
 A824.svg	𧘱
 B33E.svg	gaiji/B33E.svg
 AF3C.svg	㔾
 AF26.svg	gaiji/AF26.svg
-B34A.svg	gaiji/B34A.svg
-B34B.svg	gaiji/B34B.svg
-B34C.svg	gaiji/B34C.svg
+B34A.svg	𝅗𝅥𝅭
+B34B.svg	𝅘𝅥𝅭
+B34C.svg	𝅘𝅥𝅮𝅭
 E6C0.svg	gaiji/E6C0.svg
 E64A.svg	gaiji/E64A.svg
 E6BF.svg	gaiji/E6BF.svg
