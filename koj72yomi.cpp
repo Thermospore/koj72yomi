@@ -863,7 +863,8 @@ int main()
 					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\", \"title\": \"media/" + imageFileName + "\"}]}, \"";
 					
 					// For elinea038.png (虫食い算 box) use Unicode instead
-					// NOTE: at some point, pass through other FIGms to see if unicode is suitable
+					// I think some of the other FIGms *could* be Unicode化'd,
+					// but I think they are best left as is, tbh
 					if (imageFileName == "elinea038.png")
 					{
 						fnOpenReplace = "";
