@@ -10,6 +10,6 @@ angle_a.svg	《
 kigo.svg	季: 
 angle_b.svg	》
 kan3.svg	🈪
-kan4.svg	", {"tag": "img", "path": "gaiji/kan4.svg", "width": 1, "height": 1, "background": false, "appearance": "monochrome", "collapsible": false, "collapsed": false, "sizeUnits": "em"}, "
+kan4.svg	", {"tag": "img", "path": "gaiji/kan4.svg", "width": 1, "height": 1, "background": false, "appearance": "monochrome", "collapsible": false, "collapsed": false, "sizeUnits": "em", "title": "gaiji/kan4.svg"}, "
 ALPH.svg	🄰 
 bungo.png	〚文〛

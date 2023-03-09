@@ -775,7 +775,7 @@ int main()
 							else if (gaijiReplace[i].find(".svg") != -1)
 							{
 								fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"" + gaijiReplace[i];
-								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\"}, \"";
+								fnCloseReplace = "\", \"width\": 1, \"height\": 1, \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\", \"title\": \"" + gaijiReplace[i] + "\"}, \"";
 							}
 							// Unicode mapping
 							else
@@ -827,7 +827,7 @@ int main()
 					string imageFileName = tagAttributes.substr(21, 12);
 					//debugOutput << "FIGc // " + imageFileName + " // " + kanji + "(" + reading + ") // " + tagContents << endl;
 					
-					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"" + imageFileName + "\"}, \" ";
+					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName + "\", \"title\": \"media/" + imageFileName + "\"}, \" ";
 					fnCloseReplace = " "; // kinda jank, but the fn doesn't work if this is empty, and the space doesn't show up in yomichan...
 				}
 				else if (tagAttributes.find("class=\\\"FIGm\\\" src=\\\"") != -1)
@@ -860,7 +860,7 @@ int main()
 					// NOTE: for some reason, yomi is treating both text-bottom and bottom as bottom, for images...
 					//       this should look better once it's ACTUALLY text-bottom in browser
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
-					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"" + imageFileName + "\"}, \"";
+					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"media/" + imageFileName + "\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
@@ -869,7 +869,7 @@ int main()
 					//debugOutput << "FIGs // " + imageFileName + " // " + kanji + "(" + reading + ")" << endl;
 					
 					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
-					fnCloseReplace = "\", \"title\": \"" + imageFileName + "\"}, \"";
+					fnCloseReplace = "\", \"title\": \"media/" + imageFileName + "\"}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"icon\\\" src=\\\"") != -1)
 				{
