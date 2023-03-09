@@ -857,10 +857,19 @@ int main()
 					//debugOutput << "FIGm // " + imageFileName + " // " + kanji + "(" + reading + ")";
 					//debugOutput << " // height (em): " + heightEM << endl;
 					
-					// for some reason, yomi is treating both text-bottom and bottom as bottom, for images...
+					// For some reason, yomi is treating both text-bottom and bottom as bottom, for images...
 					// but I worked around it by slapping the image in a span and making the span text-bottom lol
 					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"verticalAlign\": \"text-bottom\"}, \"content\": [{\"tag\": \"img\", \"path\": \"media/" + imageFileName;
 					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\", \"title\": \"media/" + imageFileName + "\"}]}, \"";
+					
+					// For elinea038.png (虫食い算 box) use Unicode instead
+					// NOTE: at some point, pass through other FIGms to see if unicode is suitable
+					if (imageFileName == "elinea038.png")
+					{
+						fnOpenReplace = "";
+						fnCloseReplace = "";
+						fnAllReplace = "▯";
+					}
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
