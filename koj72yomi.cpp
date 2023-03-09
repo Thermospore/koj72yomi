@@ -857,10 +857,10 @@ int main()
 					//debugOutput << "FIGm // " + imageFileName + " // " + kanji + "(" + reading + ")";
 					//debugOutput << " // height (em): " + heightEM << endl;
 					
-					// NOTE: for some reason, yomi is treating both text-bottom and bottom as bottom, for images...
-					//       this should look better once it's ACTUALLY text-bottom in browser
-					fnOpenReplace = "\", {\"tag\": \"img\", \"path\": \"media/" + imageFileName;
-					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"verticalAlign\": \"text-bottom\", \"sizeUnits\": \"em\", \"title\": \"media/" + imageFileName + "\"}, \"";
+					// for some reason, yomi is treating both text-bottom and bottom as bottom, for images...
+					// but I worked around it by slapping the image in a span and making the span text-bottom lol
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"verticalAlign\": \"text-bottom\"}, \"content\": [{\"tag\": \"img\", \"path\": \"media/" + imageFileName;
+					fnCloseReplace = "\", \"height\": " + heightEM + ", \"background\": false, \"appearance\": \"monochrome\", \"collapsible\": false, \"collapsed\": false, \"sizeUnits\": \"em\", \"title\": \"media/" + imageFileName + "\"}]}, \"";
 				}
 				else if (tagAttributes.find("class=\\\"FIGs\\\" src=\\\"") != -1)
 				{
