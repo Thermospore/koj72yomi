@@ -716,13 +716,13 @@ int main()
 					// There is no way to detect what kanji the furigana should go over, so doing this instead
 					//		See: わそう‐コート 【和装コート】
 					// Example where having rubi formatting is important アートマン 【ātman 梵】
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"60%\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace = "\"}, \"";
 				}
 				else if (tagAttributes == "")
 				{
 					// Plain ol subscript. Technically making this `bottom`, not sub (to match rubi)
-					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
+					fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"60%\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 					fnCloseReplace = "\"}, \"";
 				}
 			}
@@ -730,13 +730,13 @@ int main()
 			{
 				// Seems to be used exactly the same as the sub with no attributes
 				// Fun Fact: literally the only two entries that have this are LC50 and LD50
-				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"60%\", \"verticalAlign\": \"bottom\"}, \"content\": \"";
 				fnCloseReplace = "\"}, \"";
 			}
 			else if (tagType == "sup")
 			{
 				// Superscript
-				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"x-small\", \"verticalAlign\": \"super\"}, \"content\": \"";
+				fnOpenReplace = "\", {\"tag\": \"span\", \"style\": {\"fontSize\": \"60%\", \"verticalAlign\": \"super\"}, \"content\": \"";
 				fnCloseReplace =  "\"}, \"";
 			}
 			else if (tagType == "i")
